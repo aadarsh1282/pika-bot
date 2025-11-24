@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Hackeroos Local Game Jam",
+    "url": "https://www.hackeroos.com.au",
+    "start_date": "2025-12-01T09:00:00Z",
+    "location": "Online",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "Global Hack Week",
+    "url": "https://mlh.io/events",
+    "start_date": "2025-12-10T09:00:00Z",
+    "location": "Online",
+    "source": "MLH"
+  },
+  {
+    "title": "Devpost Featured Hackathons",
+    "url": "https://devpost.com/hackathons",
+    "start_date": "2025-12-15T09:00:00Z",
+    "location": "Online",
+    "source": "Devpost"
+  }
+]
