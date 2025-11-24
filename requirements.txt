@@ -1,0 +1,19 @@
+# --- Discord Bot Core ---
+discord.py==2.3.2
+python-dotenv
+
+# --- Async HTTP + utilities (required by discord & general Python) ---
+aiohttp
+python-dateutil
+
+# --- AI / HuggingFace Router ---
+openai>=1.12.0
+
+# --- (Optional) If using any ML / AI inference in future ---
+gradio_client
+
+# --- JSON / parsing support ---
+beautifulsoup4
+
+# Github Scrapping
+ httpx
