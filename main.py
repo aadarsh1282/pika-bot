@@ -505,13 +505,46 @@ async def hackathons(interaction: discord.Interaction):
     events = await fetch_hackathons_from_github()
 
     if not events:
-        await interaction.followup.send(
-            "⚠️ I couldn’t fetch hackathons just now. Try again later.\n"
-            "You can still check:\n"
-            "• https://devpost.com/hackathons\n"
-            "• https://mlh.io/events\n"
-            "• https://www.hackeroos.com.au/#whats-on",
+        # Nice fallback embed with clickable links
+        embed = discord.Embed(
+            title="🌍 No Live Hackathons Found (Right Now)",
+            description=(
+                "I checked our global sources but didn’t find any future events.\n\n"
+                "**This doesn’t mean hackathons are over!**\n"
+                "Some seasons (MLH / Devpost) refresh monthly, so new events drop soon.\n\n"
+                "You can manually browse active hackathons here 👇"
+            ),
+            color=0xffc300
         )
+
+        embed.add_field(
+            name="🔗 Devpost — Global Online + In-Person Hackathons",
+            value="[Open Devpost](https://devpost.com/hackathons)",
+            inline=False
+        )
+        embed.add_field(
+            name="🔗 MLH (Major League Hacking) — Official Season Events",
+            value="[Open MLH Events](https://mlh.io/events)",
+            inline=False
+        )
+        embed.add_field(
+            name="🔗 Hack Club Events — Teen Hackathons Worldwide",
+            value="[Open Hack Club](https://events.hackclub.com/)",
+            inline=False
+        )
+        embed.add_field(
+            name="🔗 Hackathon.com — International Community Events",
+            value="[Open Hackathon.com](https://www.hackathon.com/city/global)",
+            inline=False
+        )
+        embed.add_field(
+            name="🔗 Hackeroos — Local Aussie Events",
+            value="[Open Hackeroos What's On](https://www.hackeroos.com.au/#whats-on)",
+            inline=False
+        )
+
+        embed.set_footer(text="Pika-Bot • Data sources temporarily empty, will auto-refresh soon.")
+        await interaction.followup.send(embed=embed)
         return
 
     embed = discord.Embed(
@@ -714,14 +747,42 @@ async def ask(interaction: discord.Interaction, question: str):
     if any(k in lower_q for k in event_keywords) and any(t in lower_q for t in time_keywords):
         events = await fetch_hackathons_from_github()
         if not events:
-            await interaction.followup.send(
-                "⚠️ I tried to look up current hackathons, but couldn’t fetch any just now.\n"
-                "You can still check:\n"
-                "• https://devpost.com/hackathons\n"
-                "• https://mlh.io/events\n"
-                "• https://www.hackeroos.com.au/#whats-on",
-                ephemeral=True
+            # Ephemeral version of the same nice fallback embed
+            embed = discord.Embed(
+                title="🌍 No Live Hackathons Found (Right Now)",
+                description=(
+                    "I tried to look up current hackathons but didn’t find any future events in my feed.\n\n"
+                    "You can manually browse active hackathons here 👇"
+                ),
+                color=0xffc300
             )
+            embed.add_field(
+                name="🔗 Devpost — Global Online + In-Person Hackathons",
+                value="[Open Devpost](https://devpost.com/hackathons)",
+                inline=False
+            )
+            embed.add_field(
+                name="🔗 MLH (Major League Hacking) — Official Season Events",
+                value="[Open MLH Events](https://mlh.io/events)",
+                inline=False
+            )
+            embed.add_field(
+                name="🔗 Hack Club Events — Teen Hackathons Worldwide",
+                value="[Open Hack Club](https://events.hackclub.com/)",
+                inline=False
+            )
+            embed.add_field(
+                name="🔗 Hackathon.com — International Community Events",
+                value="[Open Hackathon.com](https://www.hackathon.com/city/global)",
+                inline=False
+            )
+            embed.add_field(
+                name="🔗 Hackeroos — Local Aussie Events",
+                value="[Open Hackeroos What's On](https://www.hackeroos.com.au/#whats-on)",
+                inline=False
+            )
+            embed.set_footer(text="Pika-Bot • /hackathons uses the same sources.")
+            await interaction.followup.send(embed=embed, ephemeral=True)
             return
 
         lines = ["🌍 Here are some live / upcoming hackathons I know about:\n"]
