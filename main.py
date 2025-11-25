@@ -3,6 +3,8 @@ import re
 import logging
 import json
 import asyncio
+import time
+from collections import defaultdict, deque
 from typing import Dict, List
 from datetime import datetime, timezone
 
@@ -10,13 +12,11 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-import httpx  # fetch hackathons from GitHub JSON
+import httpx  # for GitHub JSON
 
-from openai import OpenAI  # used with Hugging Face router
+from openai import OpenAI  # HF router client
 
-# -------------------------------------------------
-# 1) ENV + CONFIG
-# -------------------------------------------------
+# basic env + config
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
@@ -24,20 +24,22 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_TOKEN")
 HF_MODEL = os.getenv(
     "HUGGINGFACE_MODEL",
-    "Qwen/Qwen2.5-72B-Instruct"  # change to any HF router-supported chat model
+    "Qwen/Qwen2.5-72B-Instruct"
 )
 
-# channels
-WELCOME_CHANNEL_NAME = "welcome"             # public welcome channel
-HACKATHON_CHANNEL_NAME = "all-hackathons"    # global hackathons feed
-ANNOUNCEMENTS_CHANNEL_NAME = "announcements" # where you announce winners (for auto-detect)
+# channel names used by the bot (must match server)
+WELCOME_CHANNEL_NAME = "welcome"
+HACKATHON_CHANNEL_NAME = "all-hackathons"
+ANNOUNCEMENTS_CHANNEL_NAME = "announcements"
+MOD_LOG_CHANNEL_NAME = "mod-logs"
 
-# roles
+# roles used by the bot
 ROLE_VERIFY = "Verified Hackeroos"
 ROLE_TECH = "Tech Hackeroos"
 ROLE_COMMUNITY = "Community Hackeroos"
+QUARANTINE_ROLE_NAME = "Quarantined"
 
-# naughty words 😀 (extended for family-friendly community)
+# basic word filter for a PG server
 BLOCKED_WORDS = [
     "shit", "fuck", "bitch", "bastard", "cunt", "slut", "whore",
     "dick", "pussy", "fag", "faggot", "nigga", "nigger",
@@ -45,73 +47,79 @@ BLOCKED_WORDS = [
     "porn", "nsfw", "sex", "cum", "jerk off", "jerking", "rape",
 ]
 
-# data files
+# data files stored next to the bot
 WINNERS_FILE = "winners.json"
-HACKATHON_WINNERS: Dict[str, dict] = {}
+STRIKES_FILE = "strikes.json"
 
-# in-memory cache of last hackathon list (for auto alerts)
+HACKATHON_WINNERS: Dict[str, dict] = {}
+USER_STRIKES: Dict[str, int] = {}  # key = f"{guild_id}:{user_id}"
+
+# cache last hackathon list for auto alerts
 LAST_HACKATHONS: List[dict] = []
 
-# GitHub JSON with merged hackathons (configurable via .env)
+# recent joins per guild for raid detection
+RECENT_JOINS: Dict[int, deque] = defaultdict(deque)
+
+# GitHub JSON with merged hackathons (updated by GH Actions)
 HACKATHONS_JSON_URL = os.getenv(
     "HACKATHONS_JSON_URL",
     "https://raw.githubusercontent.com/aadarsh1282/pika-bot/main/data/hackathons.json",
 )
 
-# -------------------------------------------------
-# Emoji stripper (to clean "🎃 WINNERS 🎃")
-# -------------------------------------------------
+# simple thresholds – can tune later
+RAID_JOIN_WINDOW_SECONDS = 30               # look at joins in this window
+RAID_JOIN_THRESHOLD = 5                     # joins in that window to flag raid
+NEW_ACCOUNT_MAX_AGE_SECONDS = 24 * 60 * 60  # treat <24h old as “very new”
+
+MENTION_SPAM_THRESHOLD = 6                  # count mentions in one message
+EMOJI_SPAM_THRESHOLD = 15                   # count emoji in one message
+
+# strip most emoji so we can clean titles like "🎃 WINNERS 🎃"
 EMOJI_PATTERN = re.compile(
-    "["                     # Start of character class
-    "\U0001F300-\U0001F5FF" # Misc symbols and pictographs
-    "\U0001F600-\U0001F64F" # Emoticons
-    "\U0001F680-\U0001F6FF" # Transport & map symbols
+    "["
+    "\U0001F300-\U0001F5FF"
+    "\U0001F600-\U0001F64F"
+    "\U0001F680-\U0001F6FF"
     "\U0001F700-\U0001F77F"
     "\U0001F780-\U0001F7FF"
     "\U0001F800-\U0001F8FF"
     "\U0001F900-\U0001F9FF"
     "\U0001FA00-\U0001FA6F"
     "\U0001FA70-\U0001FAFF"
-    "\u2600-\u26FF"         # Misc symbols
-    "\u2700-\u27BF"         # Dingbats
+    "\u2600-\u26FF"
+    "\u2700-\u27BF"
     "]+",
     flags=re.UNICODE,
 )
 
 
 def strip_emojis(text: str) -> str:
-    """Remove most emoji characters from the text."""
     return EMOJI_PATTERN.sub("", text)
 
-# -------------------------------------------------
-# 2) LOGGING
-# -------------------------------------------------
-handler = logging.FileHandler(filename="discord.log", encoding="utf-8", mode="w")
 
+# very basic logging to file
+handler = logging.FileHandler(filename="discord.log", encoding="utf-8", mode="w")
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
 )
 log = logging.getLogger("pika-bot")
 
-# -------------------------------------------------
-# 3) INTENTS + BOT
-# -------------------------------------------------
+# intents + bot
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
-# -------------------------------------------------
-# 4) HACKATHONS: FETCH FROM GITHUB JSON
-# -------------------------------------------------
+
+# -------- hackathon fetch / auto alerts --------
 
 
 async def fetch_hackathons_from_github() -> List[dict]:
     """
-    Fetch merged hackathon list from GitHub (updated by GitHub Actions).
-    Returns a list of dicts with keys: title, url, start_date, location, source.
+    Fetch merged hackathon list from GitHub.
+    Expected: list of dicts with title, url, start_date, location, source.
     """
     try:
         async with httpx.AsyncClient(timeout=10.0) as client:
@@ -124,19 +132,15 @@ async def fetch_hackathons_from_github() -> List[dict]:
             log.warning("Hackathons JSON is not a list, got: %s", type(data))
             return []
     except Exception as e:
-        log.warning("⚠️ Could not fetch hackathons JSON: %s", e)
+        log.warning("Could not fetch hackathons JSON: %s", e)
         return []
 
 
 async def pin_and_unpin(message: discord.Message):
-    """
-    Pins the new message and unpins the previous pinned one in that channel.
-    Keeps the latest hackathon announcement at the top.
-    """
+    """Pin new hackathon embed and unpin old one in the same channel."""
     channel = message.channel
     try:
         pinned = await channel.pins()
-        # unpin the last pinned message if exists
         if pinned:
             try:
                 await pinned[0].unpin()
@@ -145,16 +149,14 @@ async def pin_and_unpin(message: discord.Message):
 
         await message.pin(reason="New Hackathon Announcement")
     except Exception as e:
-        log.warning("⚠️ Could not pin/unpin: %s", e)
+        log.warning("Could not pin/unpin: %s", e)
 
 
-# -------------------------------------------------
-# AUTO ALERTS LOOP (improved)
-# -------------------------------------------------
 async def auto_alerts_loop():
+    """Background task: poll GitHub JSON and announce new hackathons."""
     global LAST_HACKATHONS
     await bot.wait_until_ready()
-    log.info("Auto-alerts loop started — checking every 3 hours")
+    log.info("Auto-alerts loop started (every 3 hours)")
 
     while not bot.is_closed():
         try:
@@ -164,24 +166,22 @@ async def auto_alerts_loop():
                 await asyncio.sleep(3 * 60 * 60)
                 continue
 
-            # First run: just cache
+            # first run – just cache
             if not LAST_HACKATHONS:
                 LAST_HACKATHONS = events
                 log.info("First run: cached %d hackathons", len(events))
                 await asyncio.sleep(3 * 60 * 60)
                 continue
 
-            # Detect new events by URL (primary)
+            # detect new events by URL
             old_urls = {e.get("url") for e in LAST_HACKATHONS if e.get("url")}
             new_events = [
                 e for e in events
                 if e.get("url") and e["url"] not in old_urls
             ]
 
-            # (Optional) fallback: if URL missing, we could compare title+date here
-
             if new_events:
-                log.info("NEW HACKATHONS DETECTED: %d", len(new_events))
+                log.info("New hackathons detected: %d", len(new_events))
 
                 for guild in bot.guilds:
                     channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
@@ -212,16 +212,15 @@ async def auto_alerts_loop():
             else:
                 log.info("No new hackathons this cycle")
 
-            LAST_HACKATHONS = events[:100]  # keep memory lean
+            LAST_HACKATHONS = events[:100]
 
         except Exception as e:
             log.exception("auto_alerts_loop crashed: %s", e)
 
-        await asyncio.sleep(3 * 60 * 60)  # 3 hours
+        await asyncio.sleep(3 * 60 * 60)
 
-# -------------------------------------------------
-# WINNERS UTILITIES
-# -------------------------------------------------
+
+# -------- winners load/save --------
 
 
 def load_winners():
@@ -232,7 +231,7 @@ def load_winners():
                 HACKATHON_WINNERS = json.load(f)
             log.info("Loaded %d winners from %s", len(HACKATHON_WINNERS), WINNERS_FILE)
         except Exception as e:
-            log.warning("⚠️ Could not load winners: %s", e)
+            log.warning("Could not load winners: %s", e)
             HACKATHON_WINNERS = {}
     else:
         HACKATHON_WINNERS = {}
@@ -244,31 +243,191 @@ def save_winners():
             json.dump(HACKATHON_WINNERS, f, indent=2, ensure_ascii=False)
         log.info("Saved %d winners to %s", len(HACKATHON_WINNERS), WINNERS_FILE)
     except Exception as e:
-        log.warning("⚠️ Could not save winners: %s", e)
+        log.warning("Could not save winners: %s", e)
 
-# -------------------------------------------------
-# 6) ON READY
-# -------------------------------------------------
+
+# -------- strikes storage (for moderation) --------
+
+
+def load_strikes():
+    global USER_STRIKES
+    if os.path.exists(STRIKES_FILE):
+        try:
+            with open(STRIKES_FILE, "r", encoding="utf-8") as f:
+                USER_STRIKES = json.load(f)
+            log.info("Loaded %d strikes from %s", len(USER_STRIKES), STRIKES_FILE)
+        except Exception as e:
+            log.warning("Could not load strikes: %s", e)
+            USER_STRIKES = {}
+    else:
+        USER_STRIKES = {}
+
+
+def save_strikes():
+    try:
+        with open(STRIKES_FILE, "w", encoding="utf-8") as f:
+            json.dump(USER_STRIKES, f, indent=2, ensure_ascii=False)
+        log.info("Saved %d strikes to %s", len(USER_STRIKES), STRIKES_FILE)
+    except Exception as e:
+        log.warning("Could not save strikes: %s", e)
+
+
+def _strike_key(guild_id: int, user_id: int) -> str:
+    return f"{guild_id}:{user_id}"
+
+
+def add_strike(guild: discord.Guild, user: discord.abc.User, reason: str) -> int:
+    """Increment strike counter for a user and return total."""
+    key = _strike_key(guild.id, user.id)
+    USER_STRIKES[key] = USER_STRIKES.get(key, 0) + 1
+    save_strikes()
+    log.info(
+        "Strike added: %s in %s (total %d) — reason: %s",
+        user, guild.name, USER_STRIKES[key], reason
+    )
+    return USER_STRIKES[key]
+
+
+def get_strikes(guild: discord.Guild, user: discord.abc.User) -> int:
+    return USER_STRIKES.get(_strike_key(guild.id, user.id), 0)
+
+
+# -------- mod log helpers --------
+
+
+async def get_mod_log_channel(guild: discord.Guild) -> discord.TextChannel | None:
+    if guild is None:
+        return None
+    chan = discord.utils.get(guild.text_channels, name=MOD_LOG_CHANNEL_NAME)
+    return chan
+
+
+async def send_mod_log(
+    guild: discord.Guild,
+    title: str,
+    description: str = "",
+    *,
+    user: discord.abc.User | None = None,
+    channel: discord.abc.GuildChannel | None = None,
+    extra: dict | None = None,
+):
+    """Send a simple embed to #mod-logs if it exists."""
+    chan = await get_mod_log_channel(guild)
+    if not chan:
+        return
+
+    embed = discord.Embed(
+        title=title,
+        description=description or "",
+        color=0xff5555,
+        timestamp=datetime.now(timezone.utc),
+    )
+
+    if user:
+        embed.add_field(name="User", value=f"{user} (`{user.id}`)", inline=False)
+    if channel:
+        embed.add_field(name="Channel", value=f"{channel.mention} (`{channel.id}`)", inline=False)
+    if extra:
+        for k, v in extra.items():
+            embed.add_field(name=k, value=str(v), inline=False)
+
+    embed.set_footer(text="Pika-Bot • Moderation Log")
+    try:
+        await chan.send(embed=embed)
+    except discord.Forbidden:
+        pass
+    except Exception as e:
+        log.warning("Could not send mod log: %s", e)
+
+
+# -------- raid detection --------
+
+
+async def handle_possible_raid(member: discord.Member):
+    """
+    Called on each join.
+    Tracks join timestamps per guild and applies slowmode / kicks new accounts
+    if a bunch of people join quickly.
+    """
+    guild = member.guild
+    now = time.time()
+    dq = RECENT_JOINS[guild.id]
+
+    dq.append(now)
+
+    # drop old joins
+    while dq and now - dq[0] > RAID_JOIN_WINDOW_SECONDS:
+        dq.popleft()
+
+    join_count = len(dq)
+
+    if join_count >= RAID_JOIN_THRESHOLD:
+        # looks like a raid pattern
+        log.warning(
+            "Potential raid in %s (%d joins in %ds)",
+            guild.name, join_count, RAID_JOIN_WINDOW_SECONDS
+        )
+        await send_mod_log(
+            guild,
+            "Potential Raid Detected",
+            f"{join_count} new accounts joined within {RAID_JOIN_WINDOW_SECONDS} seconds.",
+            user=member,
+            extra={"Action": "Slowmode + kick very new accounts"},
+        )
+
+        # enable slowmode on most text channels
+        for ch in guild.text_channels:
+            try:
+                perms = ch.permissions_for(guild.me)
+                if perms.manage_channels and ch.name != MOD_LOG_CHANNEL_NAME:
+                    await ch.edit(slowmode_delay=10)
+            except Exception:
+                continue
+
+        # optionally kick accounts that are very new
+        try:
+            account_age = (datetime.now(timezone.utc) - member.created_at).total_seconds()
+            if account_age <= NEW_ACCOUNT_MAX_AGE_SECONDS:
+                reason = f"Auto-kick during suspected raid (account age {int(account_age)}s)"
+                await member.kick(reason=reason)
+                await send_mod_log(
+                    guild,
+                    "Auto-kick (Raid Protection)",
+                    description=reason,
+                    user=member,
+                    extra={"Account Age (seconds)": int(account_age)},
+                )
+        except discord.Forbidden:
+            log.warning("Could not auto-kick suspicious user %s", member)
+        except Exception as e:
+            log.warning("Error while auto-kicking in raid mode: %s", e)
+
+
+# -------- lifecycle events --------
+
+
 @bot.event
 async def on_ready():
     load_winners()
+    load_strikes()
 
-    # start auto alerts loop
     bot.loop.create_task(auto_alerts_loop())
 
-    # sync slash commands globally
     try:
         await bot.tree.sync()
         log.info("Slash commands synced globally")
-        print("✅ Slash commands synced globally.")  # optional console print
+        print("✅ Slash commands synced globally.")
     except Exception as e:
-        log.warning("⚠️ Error syncing slash commands: %s", e)
-        print("⚠️ Error syncing slash commands:", e)
+        log.warning("Error syncing slash commands: %s", e)
+        print("Error syncing slash commands:", e)
 
-    log.info("Pika-Bot online | Guilds: %d | Hackathons cached: %d", len(bot.guilds), len(LAST_HACKATHONS))
+    log.info(
+        "Pika-Bot online | Guilds: %d | Hackathons cached: %d",
+        len(bot.guilds), len(LAST_HACKATHONS)
+    )
 
     print("🦘------------------------------------------------------------")
-    print(f"⚡ {bot.user.name} is online and hopping!")
+    print(f"⚡ {bot.user.name} is online")
     print(f"🏠 Connected servers: {len(bot.guilds)}")
     print("🦘------------------------------------------------------------")
 
@@ -277,21 +436,26 @@ async def on_ready():
         status=discord.Status.online
     )
 
-    # optional welcome in #all-hackathons if present
+    # one-time hello in hackathon channel if it exists
     for guild in bot.guilds:
         hack_channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
         if hack_channel:
             try:
-                await hack_channel.send("🌍 **Pika-Bot** is live! Use `/hackathons` to see global hackathons ⚡")
+                await hack_channel.send(
+                    "🌍 **Pika-Bot** is live! Use `/hackathons` to see global hackathons ⚡"
+                )
             except discord.Forbidden:
                 pass
 
-# -------------------------------------------------
-# 7) EVENTS
-# -------------------------------------------------
+
 @bot.event
 async def on_member_join(member: discord.Member):
-    # DM
+    guild = member.guild
+
+    # basic raid check
+    await handle_possible_raid(member)
+
+    # DM welcome
     try:
         await member.send(
             f"Welcome to Hackeroos, {member.name}! 🦘💛\n"
@@ -299,14 +463,87 @@ async def on_member_join(member: discord.Member):
             f"To unlock channels, run `/verify` in #{WELCOME_CHANNEL_NAME}."
         )
     except discord.Forbidden:
-        log.warning("⚠️ Could not DM %s", member.name)
+        log.warning("Could not DM %s", member.name)
 
     # public welcome
-    channel = discord.utils.get(member.guild.text_channels, name=WELCOME_CHANNEL_NAME)
+    channel = discord.utils.get(guild.text_channels, name=WELCOME_CHANNEL_NAME)
     if channel:
         await channel.send(
-            f"⚡ G’day {member.mention}! Welcome to **{member.guild.name}** — run `/verify` to get access!"
+            f"⚡ G’day {member.mention}! Welcome to **{guild.name}** — run `/verify` to get access!"
         )
+
+    # log join
+    await send_mod_log(
+        guild,
+        "Member Joined",
+        user=member,
+        extra={"Account created": member.created_at.strftime("%Y-%m-%d %H:%M UTC")},
+    )
+
+
+@bot.event
+async def on_member_remove(member: discord.Member):
+    guild = member.guild
+    await send_mod_log(
+        guild,
+        "Member Left",
+        user=member,
+    )
+
+
+@bot.event
+async def on_member_ban(guild: discord.Guild, user: discord.abc.User):
+    await send_mod_log(
+        guild,
+        "Member Banned",
+        user=user,
+    )
+
+
+@bot.event
+async def on_member_unban(guild: discord.Guild, user: discord.abc.User):
+    await send_mod_log(
+        guild,
+        "Member Unbanned",
+        user=user,
+    )
+
+
+@bot.event
+async def on_message_delete(message: discord.Message):
+    if message.author == bot.user:
+        return
+    if not message.guild or not isinstance(message.channel, discord.TextChannel):
+        return
+
+    await send_mod_log(
+        message.guild,
+        "Message Deleted",
+        user=message.author,
+        channel=message.channel,
+        extra={"Content": message.content or "(no content / embed only)"},
+    )
+
+
+@bot.event
+async def on_message_edit(before: discord.Message, after: discord.Message):
+    if before.author == bot.user:
+        return
+    if not before.guild or not isinstance(before.channel, discord.TextChannel):
+        return
+    if before.content == after.content:
+        return
+
+    await send_mod_log(
+        before.guild,
+        "Message Edited",
+        user=before.author,
+        channel=before.channel,
+        extra={
+            "Before": before.content or "(empty)",
+            "After": after.content or "(empty)",
+        },
+    )
 
 
 @bot.event
@@ -314,27 +551,139 @@ async def on_message(message: discord.Message):
     if message.author == bot.user:
         return
 
-    lowered = message.content.lower()
+    # for DMs just run commands, no moderation
+    if not isinstance(message.channel, discord.TextChannel):
+        await bot.process_commands(message)
+        return
 
-    # bad-word filter
+    guild = message.guild
+    author = message.author
+    is_admin = author.guild_permissions.administrator or author.guild_permissions.manage_guild
+
+    lowered = (message.content or "").lower()
+
+    # simple bad-word filter
     if any(bad in lowered for bad in BLOCKED_WORDS):
         try:
             await message.delete()
         except discord.Forbidden:
             pass
-        await message.channel.send(f"{message.author.mention}, let’s keep it clean, mate! 🧹")
+
+        await message.channel.send(f"{author.mention}, let’s keep it clean, mate! 🧹")
+        await send_mod_log(
+            guild,
+            "Message Deleted (Bad Word Filter)",
+            user=author,
+            channel=message.channel,
+            extra={"Content": message.content},
+        )
         return
 
-    # 🏆 Semi-automatic winner capture (supports Kasey-style "🎃 WINNERS 🎃" posts)
+    # mention spam check
+    if not is_admin:
+        mention_count = len(message.mentions)
+        if message.mention_everyone:
+            mention_count += 5
+        if message.mention_roles:
+            mention_count += len(message.role_mentions) * 2
+
+        if mention_count >= MENTION_SPAM_THRESHOLD:
+            try:
+                await message.delete()
+            except discord.Forbidden:
+                pass
+
+            strikes = add_strike(guild, author, reason=f"Mention spam ({mention_count} mentions)")
+            await send_mod_log(
+                guild,
+                "Mention Spam Detected",
+                user=author,
+                channel=message.channel,
+                extra={
+                    "Mentions": mention_count,
+                    "Message": message.content,
+                    "Strikes (after)": strikes,
+                },
+            )
+
+            if strikes >= 3:
+                try:
+                    await guild.ban(author, reason="Auto-ban: 3 strikes (mention spam)")
+                    await send_mod_log(
+                        guild,
+                        "Auto-ban (3 Strikes)",
+                        user=author,
+                        extra={"Reason": "Mention spam / 3 strikes"},
+                    )
+                except discord.Forbidden:
+                    log.warning("Could not auto-ban %s", author)
+            else:
+                try:
+                    await message.channel.send(
+                        f"{author.mention}, please don’t spam mentions. "
+                        f"You now have **{strikes} strike(s)** (auto-ban at 3)."
+                    )
+                except discord.Forbidden:
+                    pass
+
+            return
+
+    # emoji spam check
+    if not is_admin and message.content:
+        emojis_found = EMOJI_PATTERN.findall(message.content)
+        emoji_count = len(emojis_found)
+
+        if emoji_count >= EMOJI_SPAM_THRESHOLD:
+            try:
+                await message.delete()
+            except discord.Forbidden:
+                pass
+
+            strikes = add_strike(guild, author, reason=f"Emoji spam ({emoji_count} emojis)")
+            await send_mod_log(
+                guild,
+                "Emoji Spam Detected",
+                user=author,
+                channel=message.channel,
+                extra={
+                    "Emoji count": emoji_count,
+                    "Message": message.content,
+                    "Strikes (after)": strikes,
+                },
+            )
+
+            if strikes >= 3:
+                try:
+                    await guild.ban(author, reason="Auto-ban: 3 strikes (emoji spam)")
+                    await send_mod_log(
+                        guild,
+                        "Auto-ban (3 Strikes)",
+                        user=author,
+                        extra={"Reason": "Emoji spam / 3 strikes"},
+                    )
+                except discord.Forbidden:
+                    log.warning("Could not auto-ban %s", author)
+            else:
+                try:
+                    await message.channel.send(
+                        f"{author.mention}, please don’t spam emojis. "
+                        f"You now have **{strikes} strike(s)** (auto-ban at 3)."
+                    )
+                except discord.Forbidden:
+                    pass
+
+            return
+
+    # winner auto-capture from #announcements
     if (
         isinstance(message.channel, discord.TextChannel)
         and message.channel.name == ANNOUNCEMENTS_CHANNEL_NAME
         and message.author.guild_permissions.administrator
-        and "winner" in lowered  # matches "winner" and "winners"
+        and "winner" in lowered
     ):
         hackathon = team = project = prize = None
 
-        # 1) Try structured regex first (for "Winner: Hackathon | Team: ...")
+        # structured: "Winner: Hackathon | Team: ... | Project: ... | Prize: ..."
         pattern = re.compile(
             r"(?:.*?)(?:winner|winners)\s*[:\-–]?\s*(?P<hackathon>[^|\n]+)"
             r"(?:\|\s*team:\s*(?P<team>[^|]+))?"
@@ -356,9 +705,9 @@ async def on_message(message: discord.Message):
                 project = (match.group("project") or "").strip() or "—"
                 prize = (match.group("prize") or "").strip() or "—"
             else:
-                match = None  # force fallback if hackathon is basically just emojis
+                match = None
 
-        # 2) Fallback: Kasey-style multi-line post
+        # fallback style (multi-line announcements)
         if not match or not hackathon:
             lines = [ln for ln in message.content.splitlines() if ln.strip()]
 
@@ -378,7 +727,6 @@ async def on_message(message: discord.Message):
                     team = project = prize = "—"
 
         if hackathon:
-            # Preserve any existing record but add announcement details
             existing = HACKATHON_WINNERS.get(hackathon, {})
             HACKATHON_WINNERS[hackathon] = {
                 "hackathon": hackathon,
@@ -403,23 +751,23 @@ async def on_message(message: discord.Message):
 
     await bot.process_commands(message)
 
-# -------------------------------------------------
-# 8) SLASH COMMANDS
-# -------------------------------------------------
-@bot.tree.command(name="pika-help", description="Show all Pika-Bot slash commands dynamically 🦘")
+
+# -------- slash commands --------
+
+
+@bot.tree.command(name="pika-help", description="Show all Pika-Bot slash commands 🦘")
 async def pika_help(interaction: discord.Interaction):
     embed = discord.Embed(
-        title="🦘 Pika-Bot — Hackeroos Helper",
-        description="Here’s everything I can do right now 👇",
+        title="Pika-Bot — Hackeroos Helper",
+        description="Slash commands currently available:",
         color=0xffc300
     )
 
-    # Dynamically list ALL registered slash commands
     for cmd in bot.tree.get_commands():
         desc = cmd.description or "No description provided"
         embed.add_field(name=f"/{cmd.name}", value=desc, inline=False)
 
-    embed.set_footer(text="Built by Pika-Bots (AIHE Group 19) ⚡")
+    embed.set_footer(text="Built by Pika-Bots (AIHE Group 19)")
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
 
@@ -441,12 +789,11 @@ async def about(interaction: discord.Interaction):
         name="What Pika-Bot does",
         value=(
             "• welcome members (DM + public)\n"
-            "• verify users with `/verify` (no reactions)\n"
+            "• verify users with `/verify`\n"
             "• polls\n"
             "• global hackathon feed\n"
-            "• natural language Q&A with `/ask` (grounded + HF router)\n"
-            "• winners tracking with `/set-winner` + `/winners`\n"
-            "• (next) dataset / project helpers"
+            "• `/ask` with Hugging Face model\n"
+            "• winners tracking via `/set-winner` + `/winners`"
         ),
         inline=False
     )
@@ -487,7 +834,7 @@ async def verify(interaction: discord.Interaction):
 @bot.tree.command(name="poll", description="Create a yes/no poll")
 async def poll(interaction: discord.Interaction, question: str):
     embed = discord.Embed(
-        title="🐾 Hackeroos Poll",
+        title="Hackeroos Poll",
         description=question,
         color=0xffc300
     )
@@ -499,60 +846,51 @@ async def poll(interaction: discord.Interaction, question: str):
 
 @bot.tree.command(name="hackathons", description="Show upcoming global hackathons 🌍")
 async def hackathons(interaction: discord.Interaction):
-    # Not ephemeral so others can see the list too
     await interaction.response.defer(ephemeral=False)
 
     events = await fetch_hackathons_from_github()
 
     if not events:
-        # Nice fallback embed with clickable links
         embed = discord.Embed(
-            title="🌍 No Live Hackathons Found (Right Now)",
+            title="No Live Hackathons Found (Right Now)",
             description=(
-                "I checked our global sources but didn’t find any future events.\n\n"
-                "**This doesn’t mean hackathons are over!**\n"
-                "Some seasons (MLH / Devpost) refresh monthly, so new events drop soon.\n\n"
-                "You can manually browse active hackathons here 👇"
+                "Couldn’t find any future events in the JSON feed.\n\n"
+                "You can still browse manually here:"
             ),
             color=0xffc300
         )
-
         embed.add_field(
-            name="🔗 Devpost — Global Online + In-Person Hackathons",
-            value="[Open Devpost](https://devpost.com/hackathons)",
+            name="Devpost",
+            value="[devpost.com/hackathons](https://devpost.com/hackathons)",
             inline=False
         )
         embed.add_field(
-            name="🔗 MLH (Major League Hacking) — Official Season Events",
-            value="[Open MLH Events](https://mlh.io/events)",
+            name="MLH",
+            value="[mlh.io/events](https://mlh.io/events)",
             inline=False
         )
         embed.add_field(
-            name="🔗 Hack Club Events — Teen Hackathons Worldwide",
-            value="[Open Hack Club](https://events.hackclub.com/)",
+            name="Hack Club",
+            value="[events.hackclub.com](https://events.hackclub.com/)",
             inline=False
         )
         embed.add_field(
-            name="🔗 Hackathon.com — International Community Events",
-            value="[Open Hackathon.com](https://www.hackathon.com/city/global)",
+            name="Hackathon.com",
+            value="[hackathon.com](https://www.hackathon.com/city/global)",
             inline=False
         )
         embed.add_field(
-            name="🔗 Hackeroos — Local Aussie Events",
-            value="[Open Hackeroos What's On](https://www.hackeroos.com.au/#whats-on)",
+            name="Hackeroos What's On",
+            value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
             inline=False
         )
-
-        embed.set_footer(text="Pika-Bot • Data sources temporarily empty, will auto-refresh soon.")
+        embed.set_footer(text="Pika-Bot • /hackathons uses the same sources.")
         await interaction.followup.send(embed=embed)
         return
 
     embed = discord.Embed(
-        title="🌍 Live Global Hackathons",
-        description=(
-            "Here are some current and upcoming hackathons 🦘 "
-            "(source: GitHub auto-updated feed)"
-        ),
+        title="Live Global Hackathons",
+        description="Some current / upcoming hackathons from the GitHub feed:",
         color=0x00bcd4,
         timestamp=datetime.now(timezone.utc),
     )
@@ -566,7 +904,7 @@ async def hackathons(interaction: discord.Interaction):
             value=f"[{source}] • {location} • [Details]({url})",
             inline=False
         )
-    embed.set_footer(text="Sources: MLH, Lu.ma, Hack Club, etc. • Auto-updated via GitHub • Pika-Bot ⚡")
+    embed.set_footer(text="Sources: MLH, Lu.ma, Hack Club, etc. • Pika-Bot ⚡")
 
     await interaction.followup.send(embed=embed)
 
@@ -586,8 +924,8 @@ async def update_hackathons(interaction: discord.Interaction):
             continue
 
         embed = discord.Embed(
-            title="🌍 New Global Hackathons!",
-            description="Fresh hackathons just dropped 🦘⚡",
+            title="New Global Hackathons!",
+            description="Fresh hackathons from the JSON feed:",
             color=0x00bcd4,
             timestamp=datetime.now(timezone.utc),
         )
@@ -606,7 +944,10 @@ async def update_hackathons(interaction: discord.Interaction):
         msg = await channel.send(embed=embed)
         await pin_and_unpin(msg)
 
-    await interaction.followup.send("✅ Posted latest hackathons to #all-hackathons (where available).", ephemeral=True)
+    await interaction.followup.send(
+        "✅ Posted latest hackathons to #all-hackathons (where available).",
+        ephemeral=True
+    )
 
 
 @bot.tree.command(name="refresh-hackathons", description="Force refresh hackathons feed (admin only)")
@@ -614,7 +955,6 @@ async def refresh_hackathons(interaction: discord.Interaction):
     global LAST_HACKATHONS
     await interaction.response.defer(ephemeral=True)
 
-    # simple admin check for slash command
     if not interaction.user.guild_permissions.administrator:
         await interaction.followup.send("⚠️ Only admins can use `/refresh-hackathons`.", ephemeral=True)
         return
@@ -622,7 +962,7 @@ async def refresh_hackathons(interaction: discord.Interaction):
     events = await fetch_hackathons_from_github()
     LAST_HACKATHONS = events
     await interaction.followup.send(
-        f"✅ Hackathons cache forcefully refreshed ({len(events)} events cached).",
+        f"✅ Hackathons cache refreshed ({len(events)} events cached).",
         ephemeral=True
     )
 
@@ -630,8 +970,8 @@ async def refresh_hackathons(interaction: discord.Interaction):
 @bot.tree.command(name="faq", description="Common questions about Hackeroos / Pika-Bot")
 async def faq(interaction: discord.Interaction):
     embed = discord.Embed(
-        title="📘 Hackeroos FAQ",
-        description="Quick answers for new members 👇",
+        title="Hackeroos FAQ",
+        description="Quick answers for new members:",
         color=0x3b82f6
     )
     embed.add_field(
@@ -641,29 +981,27 @@ async def faq(interaction: discord.Interaction):
     )
     embed.add_field(
         name="2. How do I see global hackathons?",
-        value="Use `/hackathons` — Pika-Bot will show current sources.",
+        value="Use `/hackathons`.",
         inline=False
     )
     embed.add_field(
         name="3. Can I ask AI-style questions?",
-        value="Yes — use `/ask <your question>` and I’ll answer using real Hackeroos data + a Hugging Face model.",
+        value="Yes, use `/ask <your question>`.",
         inline=False
     )
     embed.add_field(
         name="4. How do I see past winners?",
-        value="Use `/winners` to see recent Hackeroos hackathon winners.",
+        value="Use `/winners`.",
         inline=False
     )
     embed.add_field(
         name="5. Who built this?",
-        value="Pika-Bots — AIHE Group 19 🦘⚡",
+        value="Pika-Bots — AIHE Group 19.",
         inline=False
     )
     await interaction.response.send_message(embed=embed, ephemeral=True)
 
-# -------------------------------------------------
-# /status — simple health check
-# -------------------------------------------------
+
 @bot.tree.command(name="status", description="Bot health check")
 async def status(interaction: discord.Interaction):
     await interaction.response.send_message(
@@ -671,20 +1009,16 @@ async def status(interaction: discord.Interaction):
         ephemeral=True
     )
 
-# -------------------------------------------------
-# /ASK — Grounded first, HF router as fallback
-# -------------------------------------------------
+
 @bot.tree.command(name="ask", description="Ask Pika-Bot in natural language 🤖")
 async def ask(interaction: discord.Interaction, question: str):
-    # Defer to avoid interaction timeout
     await interaction.response.defer(ephemeral=True)
 
     lower_q = question.lower().strip()
 
-    # --- 1) Winner-related questions (grounded in winners.json) ---
+    # winner questions → answer from winners.json
     winner_keywords = ["winner", "winners", "who won", "who is the winner", "who are the winners"]
     if any(k in lower_q for k in winner_keywords) and HACKATHON_WINNERS:
-        # Try to match a specific hackathon name from the question
         matched = None
         for name, data in HACKATHON_WINNERS.items():
             name_lower = name.lower()
@@ -692,7 +1026,6 @@ async def ask(interaction: discord.Interaction, question: str):
                 matched = data
                 break
 
-        # If we found a specific hackathon in the question
         if matched:
             hackathon_name = matched.get("hackathon", "Unknown hackathon")
             source = matched.get("source")
@@ -711,7 +1044,6 @@ async def ask(interaction: discord.Interaction, question: str):
             await interaction.followup.send(msg, ephemeral=True)
             return
         else:
-            # No specific hackathon detected → show a short recent winners summary
             valid_entries = [
                 v for v in HACKATHON_WINNERS.values()
                 if v.get("hackathon", "").strip().lower() not in ("winner", "winners")
@@ -740,45 +1072,44 @@ async def ask(interaction: discord.Interaction, question: str):
             await interaction.followup.send("\n".join(lines), ephemeral=True)
             return
 
-    # --- 2) Event / hackathon questions (grounded in /hackathons) ---
+    # event questions → use same source as /hackathons
     event_keywords = ["hackathon", "event", "competition", "game jam"]
     time_keywords = ["next", "upcoming", "coming", "what's on", "whats on", "when"]
 
     if any(k in lower_q for k in event_keywords) and any(t in lower_q for t in time_keywords):
         events = await fetch_hackathons_from_github()
         if not events:
-            # Ephemeral version of the same nice fallback embed
             embed = discord.Embed(
-                title="🌍 No Live Hackathons Found (Right Now)",
+                title="No Live Hackathons Found (Right Now)",
                 description=(
-                    "I tried to look up current hackathons but didn’t find any future events in my feed.\n\n"
-                    "You can manually browse active hackathons here 👇"
+                    "I tried to look up current hackathons from the JSON feed and got nothing.\n\n"
+                    "You can manually browse here:"
                 ),
                 color=0xffc300
             )
             embed.add_field(
-                name="🔗 Devpost — Global Online + In-Person Hackathons",
-                value="[Open Devpost](https://devpost.com/hackathons)",
+                name="Devpost",
+                value="[devpost.com/hackathons](https://devpost.com/hackathons)",
                 inline=False
             )
             embed.add_field(
-                name="🔗 MLH (Major League Hacking) — Official Season Events",
-                value="[Open MLH Events](https://mlh.io/events)",
+                name="MLH",
+                value="[mlh.io/events](https://mlh.io/events)",
                 inline=False
             )
             embed.add_field(
-                name="🔗 Hack Club Events — Teen Hackathons Worldwide",
-                value="[Open Hack Club](https://events.hackclub.com/)",
+                name="Hack Club",
+                value="[events.hackclub.com](https://events.hackclub.com/)",
                 inline=False
             )
             embed.add_field(
-                name="🔗 Hackathon.com — International Community Events",
-                value="[Open Hackathon.com](https://www.hackathon.com/city/global)",
+                name="Hackathon.com",
+                value="[hackathon.com](https://www.hackathon.com/city/global)",
                 inline=False
             )
             embed.add_field(
-                name="🔗 Hackeroos — Local Aussie Events",
-                value="[Open Hackeroos What's On](https://www.hackeroos.com.au/#whats-on)",
+                name="Hackeroos What's On",
+                value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
                 inline=False
             )
             embed.set_footer(text="Pika-Bot • /hackathons uses the same sources.")
@@ -795,7 +1126,7 @@ async def ask(interaction: discord.Interaction, question: str):
         await interaction.followup.send("\n".join(lines), ephemeral=True)
         return
 
-    # --- 3) For everything else, fall back to Hugging Face chat model ---
+    # everything else → send to HF router
     if not HF_TOKEN:
         await interaction.followup.send(
             "⚠️ No Hugging Face token configured.\n"
@@ -819,8 +1150,7 @@ async def ask(interaction: discord.Interaction, question: str):
                         "You are Pika-Bot, a friendly Australian hackathon assistant for the "
                         "Hackeroos Discord community. Be concise, encouraging, and clear. "
                         "If the user asks about specific Hackeroos winners or upcoming events, "
-                        "you should say you don't have that internal data here and ask them "
-                        "to use the bot's built-in commands instead: /winners and /hackathons."
+                        "ask them to use the bot's commands instead: /winners and /hackathons."
                     ),
                 },
                 {"role": "user", "content": question},
@@ -836,9 +1166,7 @@ async def ask(interaction: discord.Interaction, question: str):
             ephemeral=True
         )
 
-# -------------------------------------------------
-# WINNERS COMMANDS (manual + display)
-# -------------------------------------------------
+
 @bot.tree.command(name="set-winner", description="Set the winner for a hackathon (admin only) 🏆")
 async def set_winner(
     interaction: discord.Interaction,
@@ -875,7 +1203,6 @@ async def winners(interaction: discord.Interaction):
         await interaction.response.send_message("🏆 No winners saved yet.", ephemeral=True)
         return
 
-    # Filter out obviously bad entries like hackathon == "winner"
     valid_entries = [
         v for v in HACKATHON_WINNERS.values()
         if v.get("hackathon", "").strip().lower() not in ("winner", "winners")
@@ -885,11 +1212,10 @@ async def winners(interaction: discord.Interaction):
         await interaction.response.send_message("🏆 No valid winners saved yet.", ephemeral=True)
         return
 
-    # show last 3 entries
     entries = valid_entries[-3:]
 
     embed = discord.Embed(
-        title="🏆 Hackeroos Hackathon Winners",
+        title="Hackeroos Hackathon Winners",
         color=0xfbbf24
     )
 
@@ -897,8 +1223,6 @@ async def winners(interaction: discord.Interaction):
         hackathon_name = item.get("hackathon", "Unknown")
         source = item.get("source")
 
-        # If this came from an announcement and we have the full text,
-        # show the exact announcement content:
         if source == "announcement" and item.get("announcement_text"):
             embed.add_field(
                 name=f"🏁 {hackathon_name}",
@@ -906,7 +1230,6 @@ async def winners(interaction: discord.Interaction):
                 inline=False,
             )
         else:
-            # Manual (or legacy) entry – show structured fields
             embed.add_field(
                 name=f"🏁 {hackathon_name}",
                 value=(
@@ -917,12 +1240,10 @@ async def winners(interaction: discord.Interaction):
                 inline=False,
             )
 
-    embed.set_footer(text="Configured via /set-winner or announcements • Pika-Bot 🦘")
+    embed.set_footer(text="Configured via /set-winner or announcements • Pika-Bot")
     await interaction.response.send_message(embed=embed, ephemeral=False)
 
-# -------------------------------------------------
-# 8.3) !sync — manual sync for admins
-# -------------------------------------------------
+
 @bot.command(name="sync")
 @commands.has_permissions(administrator=True)
 async def sync_cmd(ctx: commands.Context):
@@ -932,9 +1253,8 @@ async def sync_cmd(ctx: commands.Context):
     except Exception as e:
         await ctx.send(f"⚠️ Could not sync slash commands:\n`{e}`")
 
-# -------------------------------------------------
-# 9) RUN
-# -------------------------------------------------
+
+# run the bot
 if not TOKEN:
     raise RuntimeError("DISCORD_TOKEN missing in `.env` as DISCORD_TOKEN!")
 
