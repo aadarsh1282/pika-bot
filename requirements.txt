@@ -2,19 +2,21 @@
 discord.py==2.3.2
 python-dotenv
 
-# --- Async HTTP + utilities (required by discord & general Python) ---
+# --- Async HTTP / Utilities ---
 aiohttp
 python-dateutil
+httpx
 
 # --- AI / HuggingFace Router ---
 openai>=1.12.0
-
-# --- (Optional) If using any ML / AI inference in future ---
 gradio_client
 
-# --- JSON / parsing support ---
+# --- Web Scraping / Parsing ---
 beautifulsoup4
 
-# Github Scrapping
- httpx
+# --- Audio (required for Render buildpack) ---
 audioop-lts
+
+# --- SeleniumBase Scraping (NEW) ---
+seleniumbase
+undetected-chromedriver
