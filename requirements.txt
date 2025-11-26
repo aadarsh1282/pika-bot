@@ -14,9 +14,6 @@ gradio_client
 # --- Web Scraping / Parsing ---
 beautifulsoup4
 
-# --- Audio (required for Render buildpack) ---
-audioop-lts
-
 # --- SeleniumBase Scraping (NEW) ---
 seleniumbase
 undetected-chromedriver
