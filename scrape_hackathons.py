@@ -2,23 +2,20 @@
 # Scrapes multiple hackathon sources (Devpost, MLH, Lu.ma, Hack Club)
 # and writes a merged JSON file to data/hackathons.json for Pika-Bot.
 
-
 import os
 import json
 from datetime import datetime
 from typing import List, Dict
 
+import httpx
 from bs4 import BeautifulSoup
 from seleniumbase import SB
-
 
 OUTPUT_PATH = os.path.join("data", "hackathons.json")
 
 
 def normalise_date(raw: str) -> str:
-    """Light normaliser – just strips and returns string.
-    If you want full ISO parsing later, you can improve this.
-    """
+    """Light normaliser – just strips and returns a single-spaced string."""
     if not raw:
         return ""
     return " ".join(raw.split())
@@ -42,51 +39,66 @@ def make_event(
 
 
 # -------------------------------------------------
-# 1) DEVPOST
+# 1) DEVPOST — use JSON API instead of HTML scraping
 # -------------------------------------------------
 
 def scrape_devpost() -> List[Dict]:
-    """Scrape upcoming Devpost hackathons."""
-    url = "https://devpost.com/hackathons?status=upcoming&challenge_type=all"
+    """
+    Fetch upcoming Devpost hackathons via their public JSON API.
+    This is much more stable than scraping HTML.
+    """
+    base_url = "https://devpost.com/api/hackathons"
     events: List[Dict] = []
 
-    with SB(uc=True, headless=True) as sb:
-        sb.open(url)
-        sb.sleep(4)  # let content load
-        html = sb.get_page_source()
-
-    soup = BeautifulSoup(html, "html.parser")
-
-    # Devpost changes layout sometimes; this targets common card styles.
-    # If it ever breaks, inspect HTML and adjust selectors here.
-    cards = soup.select("ul.hackathons-list li, div.challenge-listing")
-
-    for card in cards:
-        link = card.find("a", href=True)
-        if not link:
-            continue
-
-        title = link.get_text(strip=True)
-        href = link["href"]
-        if href.startswith("/"):
-            href = f"https://devpost.com{href}"
-
-        # try to find date & location
-        meta = card.get_text(" ", strip=True)
-        # this is intentionally relaxed; you can add regex if you want.
-        start_date = ""
-        location = ""
-
-        events.append(
-            make_event(
-                title=title,
-                url=href,
-                start_date=start_date,
-                location=location,
-                source="Devpost",
-            )
+    # Safety: don't hammer them, just grab a few pages max.
+    max_pages = 3
+    params = {
+        "status": "upcoming",
+        "challenge_type": "all",
+        "per_page": 50,
+    }
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (compatible; PikaBotHackeroos/1.0; "
+            "+https://github.com/aadarsh1282/pika-bot)"
         )
+    }
 
+    for page in range(1, max_pages + 1):
+        qp = dict(params)
+        qp["page"] = page
+
+        try:
+            resp = httpx.get(base_url, params=qp, headers=headers, timeout=15.0)
+            resp.raise_for_status()
+            data = resp.json()
+        except Exception as e:
+            print(f"[Devpost] Error on page {page}: {e}")
+            break
+
+        hacks = data.get("hackathons") or []
+        if not hacks:
+            break
+
+        for h in hacks:
+            title = h.get("title") or ""
+            url = h.get("url") or ""
+            loc_obj = h.get("displayed_location") or {}
+            location = loc_obj.get("location") or "Online / TBA"
+            # e.g. "Oct 31 - Dec 05, 2025"
+            start_str = h.get("submission_period_dates") or ""
+
+            events.append(
+                make_event(
+                    title=title,
+                    url=url,
+                    start_date=start_str,
+                    location=location,
+                    source="Devpost",
+                )
+            )
+
+    print(f"[Devpost] Collected {len(events)} events from API")
     return events
 
 
@@ -106,14 +118,15 @@ def scrape_mlh() -> List[Dict]:
 
     soup = BeautifulSoup(html, "html.parser")
 
-    # MLH "Upcoming Events" section – each event is basically a link row.
+    # "Upcoming Events" header
     upcoming_header = soup.find(
         lambda tag: tag.name in ["h2", "h3"] and "Upcoming Events" in tag.get_text()
     )
     if not upcoming_header:
+        print("[MLH] Could not find 'Upcoming Events' header")
         return events
 
-    # Grab links until we hit "Past Events"
+    # Walk links until "Past Events"
     current = upcoming_header
     while current:
         current = current.find_next(["a", "h2", "h3"])
@@ -126,18 +139,16 @@ def scrape_mlh() -> List[Dict]:
         if current.name == "a" and current.has_attr("href"):
             text = current.get_text(" ", strip=True)
             href = current["href"]
+
             if not text or "Upcoming Events" in text:
                 continue
 
-            # Very loose parsing: "HackDavis Apr 19th - 20th Davis , CA In-Person Only"
-            parts = text.split()
             title = text
-            start_date = ""
+            start_date = ""  # you can parse text to extract date later if you want
             location = ""
-            # You can refine this later with regex if you like.
 
             if not href.startswith("http"):
-                href = href if href.startswith("http") else f"https://mlh.io{href}"
+                href = f"https://mlh.io{href}"
 
             events.append(
                 make_event(
@@ -149,6 +160,7 @@ def scrape_mlh() -> List[Dict]:
                 )
             )
 
+    print(f"[MLH] Collected {len(events)} events")
     return events
 
 
@@ -163,13 +175,11 @@ def scrape_luma() -> List[Dict]:
 
     with SB(uc=True, headless=True) as sb:
         sb.open(url)
-        sb.sleep(5)  # Lu.ma can be a bit slower
+        sb.sleep(5)  # Lu.ma is more JS-heavy
         html = sb.get_page_source()
 
     soup = BeautifulSoup(html, "html.parser")
 
-    # Layout changes sometimes; target generic event cards with links.
-    # You may want to tweak this selector if Lu.ma redesigns.
     cards = soup.select("a[href*='/event/'], a[href*='lu.ma/']")
 
     for link in cards:
@@ -177,7 +187,7 @@ def scrape_luma() -> List[Dict]:
         if not href:
             continue
 
-        # avoid obvious non-event links
+        # skip tag links
         if "/tag/" in href:
             continue
 
@@ -188,9 +198,6 @@ def scrape_luma() -> List[Dict]:
         if href.startswith("/"):
             href = f"https://lu.ma{href}"
 
-        # try to find date + location near the link
-        parent = link.find_parent()
-        text_block = parent.get_text(" ", strip=True) if parent else title
         start_date = ""
         location = ""
 
@@ -204,6 +211,7 @@ def scrape_luma() -> List[Dict]:
             )
         )
 
+    print(f"[Lu.ma] Collected {len(events)} events")
     return events
 
 
@@ -223,7 +231,6 @@ def scrape_hackclub() -> List[Dict]:
 
     soup = BeautifulSoup(html, "html.parser")
 
-    # Hack Club events are usually cards linking out to event pages.
     cards = soup.select("a[href*='events.hackclub.com/event'], a[href*='/event/']")
 
     for link in cards:
@@ -238,9 +245,6 @@ def scrape_hackclub() -> List[Dict]:
         if href.startswith("/"):
             href = f"https://events.hackclub.com{href}"
 
-        parent = link.find_parent()
-        text_block = parent.get_text(" ", strip=True) if parent else title
-
         start_date = ""
         location = ""
 
@@ -254,6 +258,7 @@ def scrape_hackclub() -> List[Dict]:
             )
         )
 
+    print(f"[Hack Club] Collected {len(events)} events")
     return events
 
 
@@ -268,15 +273,13 @@ def merge_and_dedupe(all_lists: List[List[Dict]]) -> List[Dict]:
 
     for lst in all_lists:
         for item in lst:
-            url = item.get("url", "").strip()
-            if not url:
-                continue
-            if url in seen:
+            url = (item.get("url") or "").strip()
+            if not url or url in seen:
                 continue
             seen.add(url)
             merged.append(item)
 
-    # optional: sort by title, or by source, etc.
+    # sort by (source, title) just to keep it tidy; /hackathons will re-sort by date
     merged.sort(key=lambda x: (x.get("source", ""), x.get("title", "").lower()))
     return merged
 
@@ -285,15 +288,13 @@ def main():
     print("🔎 Scraping hackathons from multiple sources...")
 
     devpost_events = scrape_devpost()
-    print(f"Devpost: {len(devpost_events)} events")
-
     mlh_events = scrape_mlh()
-    print(f"MLH: {len(mlh_events)} events")
-
     luma_events = scrape_luma()
-    print(f"Lu.ma: {len(luma_events)} events")
-
     hackclub_events = scrape_hackclub()
+
+    print(f"Devpost: {len(devpost_events)} events")
+    print(f"MLH: {len(mlh_events)} events")
+    print(f"Lu.ma: {len(luma_events)} events")
     print(f"Hack Club: {len(hackclub_events)} events")
 
     merged = merge_and_dedupe([devpost_events, mlh_events, luma_events, hackclub_events])
