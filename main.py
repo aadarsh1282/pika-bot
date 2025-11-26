@@ -28,7 +28,7 @@ HF_MODEL = os.getenv(
 )
 
 # channel names used by the bot (must match server)
-WELCOME_CHANNEL_NAME = "welcome"
+WELCOME_CHANNEL_NAME = "welcome-verify"
 HACKATHON_CHANNEL_NAME = "all-hackathons"
 ANNOUNCEMENTS_CHANNEL_NAME = "announcements"
 MOD_LOG_CHANNEL_NAME = "mod-logs"
