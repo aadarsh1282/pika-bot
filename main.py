@@ -851,10 +851,11 @@ async def hackathons(interaction: discord.Interaction):
     events = await fetch_hackathons_from_github()
 
     if not events:
+        # Hard fallback – JSON unreachable or empty
         embed = discord.Embed(
             title="No Live Hackathons Found (Right Now)",
             description=(
-                "Couldn’t find any future events in the JSON feed.\n\n"
+                "I couldn’t read any upcoming hackathons from the JSON feed.\n\n"
                 "You can still browse manually here:"
             ),
             color=0xffc300
@@ -867,6 +868,11 @@ async def hackathons(interaction: discord.Interaction):
         embed.add_field(
             name="MLH",
             value="[mlh.io/events](https://mlh.io/events)",
+            inline=False
+        )
+        embed.add_field(
+            name="Lu.ma",
+            value="[lu.ma/tag/hackathon](https://lu.ma/tag/hackathon)",
             inline=False
         )
         embed.add_field(
@@ -884,28 +890,48 @@ async def hackathons(interaction: discord.Interaction):
             value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
             inline=False
         )
-        embed.set_footer(text="Pika-Bot • /hackathons uses the same sources.")
+        embed.set_footer(text="Pika-Bot • /hackathons uses a JSON feed built from these sites.")
         await interaction.followup.send(embed=embed)
         return
 
+    # Limit to 10 items for /hackathons as requested
+    top_events = events[:10]
+
     embed = discord.Embed(
         title="Live Global Hackathons",
-        description="Some current / upcoming hackathons from the GitHub feed:",
+        description=(
+            "Here are ~10 upcoming hackathons from our JSON feed.\n"
+            "Sources include Devpost, MLH, Lu.ma and Hack Club."
+        ),
         color=0x00bcd4,
         timestamp=datetime.now(timezone.utc),
     )
-    for e in events[:12]:
+    for e in top_events:
         title = (e.get("title") or "Untitled")[:100]
         source = e.get("source", "Unknown")
-        location = e.get("location", "Online")
+        location = e.get("location") or "Location TBA / Online"
+        start = e.get("start_date") or "Date TBA"
         url = e.get("url", "#")
         embed.add_field(
             name=title,
-            value=f"[{source}] • {location} • [Details]({url})",
+            value=f"[{source}] • {location} • {start} • [Details]({url})",
             inline=False
         )
-    embed.set_footer(text="Sources: MLH, Lu.ma, Hack Club, etc. • Pika-Bot ⚡")
 
+    # Soft fallback: manual browsing links even when JSON works
+    embed.add_field(
+        name="Prefer browsing manually?",
+        value=(
+            "• Devpost – https://devpost.com/hackathons\n"
+            "• MLH – https://mlh.io/events\n"
+            "• Lu.ma – https://lu.ma/tag/hackathon\n"
+            "• Hack Club – https://events.hackclub.com/\n"
+            "• Hackeroos – https://www.hackeroos.com.au/#whats-on"
+        ),
+        inline=False
+    )
+
+    embed.set_footer(text="Pika-Bot • JSON updated via GitHub Actions from multiple sources.")
     await interaction.followup.send(embed=embed)
 
 
@@ -923,20 +949,23 @@ async def update_hackathons(interaction: discord.Interaction):
         if not channel:
             continue
 
+        top_events = events[:10]
+
         embed = discord.Embed(
             title="New Global Hackathons!",
             description="Fresh hackathons from the JSON feed:",
             color=0x00bcd4,
             timestamp=datetime.now(timezone.utc),
         )
-        for e in events[:12]:
+        for e in top_events:
             title = (e.get("title") or "Untitled")[:100]
             source = e.get("source", "Unknown")
-            location = e.get("location", "Online")
+            location = e.get("location") or "Location TBA / Online"
+            start = e.get("start_date") or "Date TBA"
             url = e.get("url", "#")
             embed.add_field(
                 name=f"{source}: {title}",
-                value=f"{location} • [View event]({url})",
+                value=f"{location} • {start} • [View event]({url})",
                 inline=False,
             )
         embed.set_footer(text="Auto-updated from GitHub • Pika-Bot ⚡")
@@ -945,7 +974,7 @@ async def update_hackathons(interaction: discord.Interaction):
         await pin_and_unpin(msg)
 
     await interaction.followup.send(
-        "✅ Posted latest hackathons to #all-hackathons (where available).",
+        "✅ Posted latest hackathons to #all-hackathons (top ~10 where available).",
         ephemeral=True
     )
 
@@ -1050,7 +1079,7 @@ async def ask(interaction: discord.Interaction, question: str):
             ]
             if not valid_entries:
                 await interaction.followup.send(
-                    "🏆 I don’t have any valid winners stored yet.",
+                    "🏆 I don’t have any valid winners saved yet.",
                     ephemeral=True
                 )
                 return
@@ -1098,6 +1127,11 @@ async def ask(interaction: discord.Interaction, question: str):
                 inline=False
             )
             embed.add_field(
+                name="Lu.ma",
+                value="[lu.ma/tag/hackathon](https://lu.ma/tag/hackathon)",
+                inline=False
+            )
+            embed.add_field(
                 name="Hack Club",
                 value="[events.hackclub.com](https://events.hackclub.com/)",
                 inline=False
@@ -1112,7 +1146,7 @@ async def ask(interaction: discord.Interaction, question: str):
                 value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
                 inline=False
             )
-            embed.set_footer(text="Pika-Bot • /hackathons uses the same sources.")
+            embed.set_footer(text="Pika-Bot • /hackathons uses the same JSON feed.")
             await interaction.followup.send(embed=embed, ephemeral=True)
             return
 
@@ -1122,7 +1156,11 @@ async def ask(interaction: discord.Interaction, question: str):
             url = e.get("url", "#")
             source = e.get("source", "Unknown")
             lines.append(f"• **{title}** — ({source}) → {url}")
-        lines.append("\nYou can also run `/hackathons` for an embed version.")
+        lines.append(
+            "\nYou can also run `/hackathons` for an embed version, "
+            "or browse manually:\n"
+            "Devpost / MLH / Lu.ma / Hack Club / Hackeroos."
+        )
         await interaction.followup.send("\n".join(lines), ephemeral=True)
         return
 
