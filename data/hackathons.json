@@ -119,9 +119,23 @@
     "source": "Devpost"
   },
   {
+    "title": "Code Spring",
+    "url": "https://codespring.devpost.com/",
+    "start_date": "Jan 05 - Feb 11, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "CodeFest Hackathon 2025 SubmissionPortal | Register@codefesthack2025.vercel.app",
     "url": "https://codefesthack2025.devpost.com/",
     "start_date": "Dec 08 - 16, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "CodeFest: Edition Dec 2025 - Session B — In-Person",
+    "url": "https://codefesthack2025sb.devpost.com/",
+    "start_date": "Dec 06, 2025",
     "location": "Online",
     "source": "Devpost"
   },
@@ -203,10 +217,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Geyser Hackathon for All or Nothing creators",
-    "url": "https://all-or-nothing-creators-27547.devpost.com/",
-    "start_date": "Nov 28, 2025",
-    "location": "Cyphermunk House",
+    "title": "GDG UWB Build with AI Ideathon: Head in the Clouds",
+    "url": "https://uwb-head-in-the-clouds.devpost.com/",
+    "start_date": "Dec 02 - 03, 2025",
+    "location": "Bothell, Washington, USA",
     "source": "Devpost"
   },
   {
@@ -252,6 +266,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hackathon 2025 - megabrAIns",
+    "url": "https://dtit-hackathon2025.devpost.com/",
+    "start_date": "Nov 29 - 30, 2025",
+    "location": "Technical University of Košice - Library",
+    "source": "Devpost"
+  },
+  {
     "title": "HackCWRU 2026: Ideas into Impact",
     "url": "https://hackcwru-012025.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
@@ -276,7 +297,7 @@
     "title": "HackHive 2026",
     "url": "https://hackhive-2026.devpost.com/",
     "start_date": "Jan 18, 2026",
-    "location": "Microsoft Canada HQ",
+    "location": "Ontario Tech University",
     "source": "Devpost"
   },
   {
@@ -298,6 +319,13 @@
     "url": "https://hackrift-2025.devpost.com/",
     "start_date": "Dec 07 - 10, 2025",
     "location": "SIT Punggol Campus",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackSLC",
+    "url": "https://hackslc.devpost.com/",
+    "start_date": "Nov 29, 2025",
+    "location": "St lawrence college, Innovation hall",
     "source": "Devpost"
   },
   {
@@ -359,7 +387,7 @@
   {
     "title": "ImpactX 2025",
     "url": "https://impactx2025.devpost.com/",
-    "start_date": "Dec 05 - 07, 2025",
+    "start_date": "Dec 13 - 15, 2025",
     "location": "Online",
     "source": "Devpost"
   },
