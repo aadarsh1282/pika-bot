@@ -6,7 +6,7 @@ import asyncio
 import time
 from collections import defaultdict, deque
 from typing import Dict, List, Any
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import discord
 from discord.ext import commands
@@ -145,7 +145,7 @@ async def fetch_hackathons() -> List[dict]:
         url = base.rstrip("/") + "/hackathons/upcoming"
         try:
             async with httpx.AsyncClient(timeout=10.0) as client:
-                r = await client.get(url, params={"days": 90, "limit": 200})
+                r = await client.get(url, params={"days": 365, "limit": 300})
                 r.raise_for_status()
                 data = r.json()
                 if isinstance(data, dict) and "events" in data:
@@ -271,28 +271,143 @@ async def auto_alerts_loop():
 
 
 # -------------------------------------------------
-# 5) HACKEROOS REMINDER LOOP (Hackeroos-only)
+# 5) DATE + MINI AGENT HELPERS
 # -------------------------------------------------
 
 def parse_iso_date(date_str: str | None) -> datetime | None:
+    """
+    Try to parse a few simple ISO-like date formats.
+    If parsing fails, return None.
+    """
     if not date_str:
         return None
+
     s = date_str.strip()
-    # try a few simple formats
-    for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ"):
+
+    # Try strict ISO with Z: 2025-12-03T10:00:00Z
+    try:
+        if s.endswith("Z"):
+            dt = datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            return dt
+    except Exception:
+        pass
+
+    # Try ISO with timezone: 2025-12-03T10:00:00+00:00 or plain date 2025-12-03
+    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
         try:
-            if fmt.endswith("Z"):
-                # handle trailing Z
-                dt = datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-            else:
-                dt = datetime.strptime(s, fmt)
+            dt = datetime.strptime(s, fmt)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return dt
         except Exception:
             continue
+
+    # Last resort: find "YYYY-MM-DD" inside a longer string
+    m = re.search(r"\d{4}-\d{2}-\d{2}", s)
+    if m:
+        try:
+            dt = datetime.strptime(m.group(0), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            return dt
+        except Exception:
+            pass
+
     return None
 
+
+def infer_time_window(question: str) -> tuple[int | None, str]:
+    """
+    Very simple NLP: map phrases like 'next week', 'this weekend'
+    into a (days, friendly_label).
+    days=None means 'no date filter, just general upcoming'.
+    """
+    q = question.lower()
+
+    # explicit phrases first
+    if "next week" in q or "coming week" in q or "upcoming week" in q:
+        return 7, "the next 7 days"
+
+    if "this weekend" in q or "on the weekend" in q:
+        return 4, "this weekend"
+
+    if "today" in q or "tonight" in q:
+        return 1, "today"
+
+    if "tomorrow" in q:
+        # today + tomorrow
+        return 2, "tomorrow (and the following day)"
+
+    if "next month" in q:
+        return 31, "the next month"
+
+    if "this month" in q:
+        return 31, "this month"
+
+    # generic 'soon', 'coming up', etc.
+    if "soon" in q or "coming up" in q or "upcoming" in q:
+        return 14, "the next couple of weeks"
+
+    # default: no strict filter
+    return None, "upcoming"
+
+
+def filter_events_for_question(
+    events: list[dict],
+    *,
+    question: str,
+) -> tuple[list[tuple[dict, datetime | None]], str]:
+    """
+    Apply mini-agent logic:
+      - detect time window
+      - detect Hackeroos-only
+      - detect online-only
+    Return (filtered_events_with_dt, label_for_answer)
+    """
+    lower_q = question.lower()
+    window_days, window_label = infer_time_window(lower_q)
+
+    only_hackeroos = "hackeroos" in lower_q
+    online_only = "online only" in lower_q or "remote" in lower_q or "virtual" in lower_q
+
+    now = datetime.now(timezone.utc)
+    filtered: list[tuple[dict, datetime | None]] = []
+
+    for e in events:
+        source = (e.get("source") or "").strip().lower()
+        location = (e.get("location") or "").strip().lower()
+        raw_date = e.get("start_date")
+
+        # 1) filter by source
+        if only_hackeroos and source != "hackeroos":
+            continue
+
+        # 2) filter by online-only
+        if online_only and "online" not in location and "virtual" not in location:
+            continue
+
+        # 3) filter by time window (if we can parse a date)
+        dt = parse_iso_date(raw_date)
+        if window_days is not None and dt is not None:
+            end = now + timedelta(days=window_days)
+            if not (now <= dt <= end):
+                continue
+
+        filtered.append((e, dt))
+
+    # sort: first by date (if known) then by title
+    filtered.sort(
+        key=lambda pair: (
+            0 if pair[1] is not None else 1,
+            pair[1].timestamp() if pair[1] is not None else float("inf"),
+            (pair[0].get("title") or "").lower(),
+        )
+    )
+
+    return filtered, window_label
+
+
+# -------------------------------------------------
+# 6) HACKEROOS REMINDER LOOP (Hackeroos-only)
+# -------------------------------------------------
 
 async def hackeroos_reminder_loop():
     """
@@ -396,7 +511,7 @@ async def hackeroos_reminder_loop():
 
 
 # -------------------------------------------------
-# 6) WINNERS LOAD/SAVE
+# 7) WINNERS LOAD/SAVE
 # -------------------------------------------------
 
 def load_winners():
@@ -417,13 +532,13 @@ def save_winners():
     try:
         with open(WINNERS_FILE, "w", encoding="utf-8") as f:
             json.dump(HACKATHON_WINNERS, f, indent=2, ensure_ascii=False)
-        log.info("Saved %d winners to %s", WINNERS_FILE)
+        log.info("Saved %d winners to %s", len(HACKATHON_WINNERS), WINNERS_FILE)
     except Exception as e:
         log.warning("Could not save winners: %s", e)
 
 
 # -------------------------------------------------
-# 7) STRIKES STORAGE
+# 8) STRIKES STORAGE
 # -------------------------------------------------
 
 def load_strikes():
@@ -432,7 +547,7 @@ def load_strikes():
         try:
             with open(STRIKES_FILE, "r", encoding="utf-8") as f:
                 USER_STRIKES = json.load(f)
-            log.info("Loaded %d strikes from %s", STRIKES_FILE)
+            log.info("Loaded %d strikes from %s", len(USER_STRIKES), STRIKES_FILE)
         except Exception as e:
             log.warning("Could not load strikes: %s", e)
             USER_STRIKES = {}
@@ -470,7 +585,7 @@ def get_strikes(guild: discord.Guild, user: discord.abc.User) -> int:
 
 
 # -------------------------------------------------
-# 8) MOD LOG HELPERS
+# 9) MOD LOG HELPERS
 # -------------------------------------------------
 
 async def get_mod_log_channel(guild: discord.Guild) -> discord.TextChannel | None:
@@ -519,7 +634,7 @@ async def send_mod_log(
 
 
 # -------------------------------------------------
-# 9) RAID DETECTION
+# 10) RAID DETECTION
 # -------------------------------------------------
 
 async def handle_possible_raid(member: discord.Member):
@@ -583,7 +698,7 @@ async def handle_possible_raid(member: discord.Member):
 
 
 # -------------------------------------------------
-# 10) LIFECYCLE EVENTS
+# 11) LIFECYCLE EVENTS
 # -------------------------------------------------
 
 @bot.event
@@ -934,7 +1049,7 @@ async def on_message(message: discord.Message):
 
 
 # -------------------------------------------------
-# 11) SLASH COMMANDS
+# 12) SLASH COMMANDS
 # -------------------------------------------------
 
 @bot.tree.command(name="pika-help", description="Show all Pika-Bot slash commands 🦘")
@@ -1175,7 +1290,9 @@ async def ask(interaction: discord.Interaction, question: str):
 
     lower_q = question.lower().strip()
 
-    # winner questions → answer from winners.json
+    # -------------------------------------------------
+    # 1) Winner questions → answer from winners.json
+    # -------------------------------------------------
     winner_keywords = ["winner", "winners", "who won", "who is the winner", "who are the winners"]
     if any(k in lower_q for k in winner_keywords) and HACKATHON_WINNERS:
         matched = None
@@ -1231,13 +1348,14 @@ async def ask(interaction: discord.Interaction, question: str):
             await interaction.followup.send("\n".join(lines), ephemeral=True)
             return
 
-    # event questions → use same source as /hackathons
-    event_keywords = ["hackathon", "event", "competition", "game jam"]
-    time_keywords = ["next", "upcoming", "coming", "what's on", "whats on", "when"]
-
-    if any(k in lower_q for k in event_keywords) and any(t in lower_q for t in time_keywords):
+    # -------------------------------------------------
+    # 2) Event / hackathon questions → mini MCP-style agent
+    # -------------------------------------------------
+    event_keywords = ["hackathon", "event", "competition", "game jam", "buildathon", "challenge"]
+    if any(k in lower_q for k in event_keywords):
         events = await fetch_hackathons()
         if not events:
+            # Same fallback as /hackathons
             embed = discord.Embed(
                 title="No Live Hackathons Found (Right Now)",
                 description=(
@@ -1275,24 +1393,66 @@ async def ask(interaction: discord.Interaction, question: str):
             await interaction.followup.send(embed=embed, ephemeral=True)
             return
 
-        lines = ["🌍 Here are some live / upcoming hackathons I know about:\n"]
-        for e in events[:8]:
+        filtered, window_label = filter_events_for_question(events, question=question)
+
+        if not filtered:
+            # No exact matches in the time window → show a friendly fallback
+            lines = [
+                f"🤔 I couldn’t find hackathons that strictly match **{window_label}** for that query.",
+                "",
+                "Here are some upcoming ones anyway:\n",
+            ]
+            for e in events[:8]:
+                title = e.get("title", "Untitled")
+                url = e.get("url", "#")
+                source = e.get("source", "Unknown")
+                label = source
+                if (source or "").strip().lower() == "hackeroos":
+                    label = "Hackeroos 🦘"
+                lines.append(f"• **{title}** — ({label}) → {url}")
+
+            lines.append(
+                "\nYou can also run `/hackathons` for an embed version, or browse manually:\n"
+                "Devpost / MLH / Lu.ma / Hack Club / Hackeroos."
+            )
+            await interaction.followup.send("\n".join(lines), ephemeral=True)
+            return
+
+        # We have filtered results: answer like an intelligent agent
+        lines = [f"🌍 Here are hackathons I found for **{window_label}**:\n"]
+        count = 0
+        for e, dt in filtered:
+            if count >= 10:
+                break
+            count += 1
+
             title = e.get("title", "Untitled")
             url = e.get("url", "#")
             source = e.get("source", "Unknown")
+            location = e.get("location") or "Location TBA / Online"
             label = source
             if (source or "").strip().lower() == "hackeroos":
                 label = "Hackeroos 🦘"
-            lines.append(f"• **{title}** — ({label}) → {url}")
+
+            if dt:
+                date_str = dt.strftime("%Y-%m-%d")
+            else:
+                date_str = e.get("start_date") or "Date TBA"
+
+            lines.append(f"• **{title}** — ({label}) • {location} • {date_str} → {url}")
+
         lines.append(
-            "\nYou can also run `/hackathons` for an embed version, "
-            "or browse manually:\n"
-            "Devpost / MLH / Lu.ma / Hack Club / Hackeroos."
+            "\nYou can also run `/hackathons` for an embed view, or ask more specific things like:\n"
+            "• *\"Show Hackeroos events next month\"*\n"
+            "• *\"Only online hackathons this weekend\"*"
         )
+
         await interaction.followup.send("\n".join(lines), ephemeral=True)
         return
 
-    # everything else → send to HF router
+    # -------------------------------------------------
+    # 3) Everything else → send to Hugging Face LLM
+    # -------------------------------------------------
     if not HF_TOKEN:
         await interaction.followup.send(
             "⚠️ No Hugging Face token configured.\n"
@@ -1421,7 +1581,7 @@ async def sync_cmd(ctx: commands.Context):
 
 
 # -------------------------------------------------
-# 12) RUN THE BOT
+# 13) RUN THE BOT
 # -------------------------------------------------
 
 if not TOKEN:
