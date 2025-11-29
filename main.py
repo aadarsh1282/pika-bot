@@ -5,18 +5,20 @@ import json
 import asyncio
 import time
 from collections import defaultdict, deque
-from typing import Dict, List
+from typing import Dict, List, Any
 from datetime import datetime, timezone
 
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-import httpx  # for GitHub JSON
+import httpx  # for Insights API + GitHub JSON
 
 from openai import OpenAI  # HF router client
 
-# basic env + config
+# -------------------------------------------------
+# 1) ENV + CONFIG
+# -------------------------------------------------
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
@@ -60,12 +62,6 @@ LAST_HACKATHONS: List[dict] = []
 # recent joins per guild for raid detection
 RECENT_JOINS: Dict[int, deque] = defaultdict(deque)
 
-# GitHub JSON with merged hackathons (updated by GH Actions)
-HACKATHONS_JSON_URL = os.getenv(
-    "HACKATHONS_JSON_URL",
-    "https://raw.githubusercontent.com/aadarsh1282/pika-bot/main/data/hackathons.json",
-)
-
 # simple thresholds – can tune later
 RAID_JOIN_WINDOW_SECONDS = 30               # look at joins in this window
 RAID_JOIN_THRESHOLD = 5                     # joins in that window to flag raid
@@ -73,6 +69,22 @@ NEW_ACCOUNT_MAX_AGE_SECONDS = 24 * 60 * 60  # treat <24h old as “very new”
 
 MENTION_SPAM_THRESHOLD = 6                  # count mentions in one message
 EMOJI_SPAM_THRESHOLD = 15                   # count emoji in one message
+
+# Hackathons backend
+# 1) Primary: Insights API on Railway
+HACKATHONS_API_BASE = os.getenv(
+    "HACKATHONS_API_BASE",
+    "https://hackeroos-insights-api-production.up.railway.app",
+)
+
+# 2) Fallback: GitHub JSON with merged hackathons (updated by GH Actions)
+HACKATHONS_JSON_URL = os.getenv(
+    "HACKATHONS_JSON_URL",
+    "https://raw.githubusercontent.com/aadarsh1282/pika-bot/main/data/hackathons.json",
+)
+
+# Hackeroos reminders
+HACKEROOS_REMINDER_INTERVAL_HOURS = 12
 
 # strip most emoji so we can clean titles like "🎃 WINNERS 🎃"
 EMOJI_PATTERN = re.compile(
@@ -113,28 +125,62 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
 
-# -------- hackathon fetch / auto alerts --------
+# -------------------------------------------------
+# 2) HACKATHONS FETCH HELPERS (Insights API + fallback)
+# -------------------------------------------------
 
+async def fetch_hackathons() -> List[dict]:
+    """
+    Fetch merged hackathons list.
 
-async def fetch_hackathons_from_github() -> List[dict]:
+    Priority:
+      1) Hackeroos Insights API (/hackathons/upcoming)
+      2) Fallback to GitHub JSON (data/hackathons.json)
+
+    Expected event shape: title, url, start_date, location, source.
     """
-    Fetch merged hackathon list from GitHub.
-    Expected: list of dicts with title, url, start_date, location, source.
-    """
+    # 1) Try Insights API first
+    base = (HACKATHONS_API_BASE or "").strip()
+    if base:
+        url = base.rstrip("/") + "/hackathons/upcoming"
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                r = await client.get(url, params={"days": 90, "limit": 200})
+                r.raise_for_status()
+                data = r.json()
+                if isinstance(data, dict) and "events" in data:
+                    events = data["events"]
+                elif isinstance(data, list):
+                    events = data
+                else:
+                    log.warning("Insights API: unexpected JSON shape: %s", type(data))
+                    events = []
+
+                if isinstance(events, list):
+                    log.info("Fetched %d hackathons from Insights API", len(events))
+                    return events
+        except Exception as e:
+            log.warning("Could not fetch hackathons from Insights API: %s", e)
+
+    # 2) Fallback: GitHub JSON
     try:
         async with httpx.AsyncClient(timeout=10.0) as client:
             r = await client.get(HACKATHONS_JSON_URL)
             r.raise_for_status()
             data = r.json()
             if isinstance(data, list):
-                log.info("Fetched %d hackathons from GitHub JSON", len(data))
+                log.info("Fetched %d hackathons from GitHub JSON fallback", len(data))
                 return data
-            log.warning("Hackathons JSON is not a list, got: %s", type(data))
+            log.warning("Hackathons JSON fallback is not a list, got: %s", type(data))
             return []
     except Exception as e:
-        log.warning("Could not fetch hackathons JSON: %s", e)
+        log.warning("Could not fetch hackathons fallback JSON: %s", e)
         return []
 
+
+# -------------------------------------------------
+# 3) PIN/UNPIN HELPER
+# -------------------------------------------------
 
 async def pin_and_unpin(message: discord.Message):
     """Pin new hackathon embed and unpin old one in the same channel."""
@@ -152,17 +198,21 @@ async def pin_and_unpin(message: discord.Message):
         log.warning("Could not pin/unpin: %s", e)
 
 
+# -------------------------------------------------
+# 4) AUTO ALERTS LOOP (ALL SOURCES)
+# -------------------------------------------------
+
 async def auto_alerts_loop():
-    """Background task: poll GitHub JSON and announce new hackathons."""
+    """Background task: poll hackathons feed and announce new hackathons."""
     global LAST_HACKATHONS
     await bot.wait_until_ready()
     log.info("Auto-alerts loop started (every 3 hours)")
 
     while not bot.is_closed():
         try:
-            events = await fetch_hackathons_from_github()
+            events = await fetch_hackathons()
             if not events:
-                log.warning("Hackathons JSON empty or unreachable")
+                log.warning("Hackathons feed empty or unreachable")
                 await asyncio.sleep(3 * 60 * 60)
                 continue
 
@@ -197,15 +247,15 @@ async def auto_alerts_loop():
                     for e in new_events[:10]:
                         title = (e.get("title") or "Untitled")[:80]
                         source = e.get("source", "Unknown")
-                        start = e.get("start_date", "")[:10] if e.get("start_date") else "TBA"
-                        loc = e.get("location", "Online")
+                        start = (e.get("start_date") or "")[:10] if e.get("start_date") else "TBA"
+                        loc = e.get("location", "Online / TBA")
                         url = e.get("url", "#")
                         embed.add_field(
                             name=f"{source} · {title}",
                             value=f"{loc} • {start} • [Register]({url})",
                             inline=False,
                         )
-                    embed.set_footer(text="Pika-Bot • Auto-updated from GitHub")
+                    embed.set_footer(text="Pika-Bot • Auto-updated from Insights/GitHub")
 
                     msg = await channel.send(embed=embed, content="@here New hackathons!")
                     await pin_and_unpin(msg)
@@ -220,8 +270,134 @@ async def auto_alerts_loop():
         await asyncio.sleep(3 * 60 * 60)
 
 
-# -------- winners load/save --------
+# -------------------------------------------------
+# 5) HACKEROOS REMINDER LOOP (Hackeroos-only)
+# -------------------------------------------------
 
+def parse_iso_date(date_str: str | None) -> datetime | None:
+    if not date_str:
+        return None
+    s = date_str.strip()
+    # try a few simple formats
+    for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%SZ"):
+        try:
+            if fmt.endswith("Z"):
+                # handle trailing Z
+                dt = datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            else:
+                dt = datetime.strptime(s, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except Exception:
+            continue
+    return None
+
+
+async def hackeroos_reminder_loop():
+    """
+    Every 12 hours:
+      - Fetch hackathons
+      - Filter to source == "Hackeroos"
+      - Post a pinned reminder in announcements / all-hackathons
+      - Tag @here
+    """
+    await bot.wait_until_ready()
+    log.info("Hackeroos reminder loop started (every %d hours)", HACKEROOS_REMINDER_INTERVAL_HOURS)
+
+    while not bot.is_closed():
+        try:
+            events = await fetch_hackathons()
+            if not events:
+                log.warning("[Hackeroos reminder] No events from feed.")
+                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
+                continue
+
+            hackeroos_events = [
+                e for e in events
+                if (e.get("source") or "").strip().lower() == "hackeroos"
+            ]
+
+            if not hackeroos_events:
+                log.info("[Hackeroos reminder] No Hackeroos events in feed this cycle.")
+                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
+                continue
+
+            # sort by start date when possible, TBA at the end
+            def sort_key(e: dict):
+                dt = parse_iso_date(e.get("start_date"))
+                return (0, dt.timestamp()) if dt else (1, float("inf"))
+
+            hackeroos_events.sort(key=sort_key)
+
+            for guild in bot.guilds:
+                # Prefer announcements; fallback to all-hackathons
+                channel = discord.utils.get(guild.text_channels, name=ANNOUNCEMENTS_CHANNEL_NAME)
+                if not channel:
+                    channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
+                if not channel:
+                    continue
+
+                embed = discord.Embed(
+                    title="Hackeroos Events & Reminders 🦘",
+                    description=(
+                        "Here are upcoming **Hackeroos-run** events.\n"
+                        "Follow updates on X: https://x.com/hackeroos_au"
+                    ),
+                    color=0xfbbf24,
+                    timestamp=datetime.now(timezone.utc),
+                )
+
+                now_utc = datetime.now(timezone.utc)
+
+                for e in hackeroos_events[:5]:
+                    title = e.get("title") or "Hackeroos Event"
+                    url = e.get("url", "#")
+                    loc = e.get("location") or "Australia / Online"
+                    raw_date = e.get("start_date")
+                    dt = parse_iso_date(raw_date)
+                    if dt:
+                        days_left = (dt - now_utc).days
+                        date_str = dt.strftime("%Y-%m-%d")
+                        if days_left < 0:
+                            status = "Already finished"
+                        elif days_left == 0:
+                            status = "Starts **today**"
+                        elif days_left == 1:
+                            status = "Starts in **1 day**"
+                        else:
+                            status = f"Starts in **{days_left} days**"
+                    else:
+                        date_str = "Dates coming soon"
+                        status = "Keep an eye out for announcements"
+
+                    embed.add_field(
+                        name=title,
+                        value=(
+                            f"{loc} • {date_str}\n"
+                            f"{status}\n"
+                            f"[Details]({url})"
+                        ),
+                        inline=False,
+                    )
+
+                embed.set_footer(text="Pika-Bot • Hackeroos-first reminders from Insights/GitHub")
+
+                msg = await channel.send(
+                    content="@here Hackeroos events update 🦘",
+                    embed=embed,
+                )
+                await pin_and_unpin(msg)
+
+        except Exception as e:
+            log.exception("hackeroos_reminder_loop crashed: %s", e)
+
+        await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
+
+
+# -------------------------------------------------
+# 6) WINNERS LOAD/SAVE
+# -------------------------------------------------
 
 def load_winners():
     global HACKATHON_WINNERS
@@ -241,13 +417,14 @@ def save_winners():
     try:
         with open(WINNERS_FILE, "w", encoding="utf-8") as f:
             json.dump(HACKATHON_WINNERS, f, indent=2, ensure_ascii=False)
-        log.info("Saved %d winners to %s", len(HACKATHON_WINNERS), WINNERS_FILE)
+        log.info("Saved %d winners to %s", WINNERS_FILE)
     except Exception as e:
         log.warning("Could not save winners: %s", e)
 
 
-# -------- strikes storage (for moderation) --------
-
+# -------------------------------------------------
+# 7) STRIKES STORAGE
+# -------------------------------------------------
 
 def load_strikes():
     global USER_STRIKES
@@ -255,7 +432,7 @@ def load_strikes():
         try:
             with open(STRIKES_FILE, "r", encoding="utf-8") as f:
                 USER_STRIKES = json.load(f)
-            log.info("Loaded %d strikes from %s", len(USER_STRIKES), STRIKES_FILE)
+            log.info("Loaded %d strikes from %s", STRIKES_FILE)
         except Exception as e:
             log.warning("Could not load strikes: %s", e)
             USER_STRIKES = {}
@@ -267,7 +444,7 @@ def save_strikes():
     try:
         with open(STRIKES_FILE, "w", encoding="utf-8") as f:
             json.dump(USER_STRIKES, f, indent=2, ensure_ascii=False)
-        log.info("Saved %d strikes to %s", len(USER_STRIKES), STRIKES_FILE)
+        log.info("Saved %d strikes to %s", STRIKES_FILE)
     except Exception as e:
         log.warning("Could not save strikes: %s", e)
 
@@ -292,8 +469,9 @@ def get_strikes(guild: discord.Guild, user: discord.abc.User) -> int:
     return USER_STRIKES.get(_strike_key(guild.id, user.id), 0)
 
 
-# -------- mod log helpers --------
-
+# -------------------------------------------------
+# 8) MOD LOG HELPERS
+# -------------------------------------------------
 
 async def get_mod_log_channel(guild: discord.Guild) -> discord.TextChannel | None:
     if guild is None:
@@ -340,8 +518,9 @@ async def send_mod_log(
         log.warning("Could not send mod log: %s", e)
 
 
-# -------- raid detection --------
-
+# -------------------------------------------------
+# 9) RAID DETECTION
+# -------------------------------------------------
 
 async def handle_possible_raid(member: discord.Member):
     """
@@ -403,8 +582,9 @@ async def handle_possible_raid(member: discord.Member):
             log.warning("Error while auto-kicking in raid mode: %s", e)
 
 
-# -------- lifecycle events --------
-
+# -------------------------------------------------
+# 10) LIFECYCLE EVENTS
+# -------------------------------------------------
 
 @bot.event
 async def on_ready():
@@ -412,6 +592,7 @@ async def on_ready():
     load_strikes()
 
     bot.loop.create_task(auto_alerts_loop())
+    bot.loop.create_task(hackeroos_reminder_loop())
 
     try:
         await bot.tree.sync()
@@ -752,8 +933,9 @@ async def on_message(message: discord.Message):
     await bot.process_commands(message)
 
 
-# -------- slash commands --------
-
+# -------------------------------------------------
+# 11) SLASH COMMANDS
+# -------------------------------------------------
 
 @bot.tree.command(name="pika-help", description="Show all Pika-Bot slash commands 🦘")
 async def pika_help(interaction: discord.Interaction):
@@ -788,13 +970,19 @@ async def about(interaction: discord.Interaction):
     embed.add_field(
         name="What Pika-Bot does",
         value=(
-            "• welcome members (DM + public)\n"
-            "• verify users with `/verify`\n"
-            "• polls\n"
-            "• global hackathon feed\n"
-            "• `/ask` with Hugging Face model\n"
-            "• winners tracking via `/set-winner` + `/winners`"
+            "• Welcome members (DM + public)\n"
+            "• Verify users with `/verify`\n"
+            "• Create polls with `/poll`\n"
+            "• Show global hackathons with `/hackathons`\n"
+            "• AI Q&A with `/ask`\n"
+            "• Track Hackeroos winners with `/set-winner` + `/winners`\n"
+            "• Hackeroos-first reminders every 12 hours\n"
         ),
+        inline=False
+    )
+    embed.add_field(
+        name="Follow Hackeroos",
+        value="X: https://x.com/hackeroos_au\nWeb: https://www.hackeroos.com.au/",
         inline=False
     )
     embed.add_field(name="Team", value="Pika-Bots — AIHE Group 19", inline=False)
@@ -848,14 +1036,14 @@ async def poll(interaction: discord.Interaction, question: str):
 async def hackathons(interaction: discord.Interaction):
     await interaction.response.defer(ephemeral=False)
 
-    events = await fetch_hackathons_from_github()
+    events = await fetch_hackathons()
 
     if not events:
-        # Hard fallback – JSON unreachable or empty
+        # Hard fallback – feed unreachable or empty
         embed = discord.Embed(
             title="No Live Hackathons Found (Right Now)",
             description=(
-                "I couldn’t read any upcoming hackathons from the JSON feed.\n\n"
+                "I couldn’t read any upcoming hackathons from the feed.\n\n"
                 "You can still browse manually here:"
             ),
             color=0xffc300
@@ -881,27 +1069,22 @@ async def hackathons(interaction: discord.Interaction):
             inline=False
         )
         embed.add_field(
-            name="Hackathon.com",
-            value="[hackathon.com](https://www.hackathon.com/city/global)",
-            inline=False
-        )
-        embed.add_field(
             name="Hackeroos What's On",
             value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
             inline=False
         )
-        embed.set_footer(text="Pika-Bot • /hackathons uses a JSON feed built from these sites.")
+        embed.set_footer(text="Pika-Bot • /hackathons uses a feed built from these sites.")
         await interaction.followup.send(embed=embed)
         return
 
-    # Limit to 10 items for /hackathons as requested
+    # Limit to ~10 items for /hackathons
     top_events = events[:10]
 
     embed = discord.Embed(
         title="Live Global Hackathons",
         description=(
-            "Here are ~10 upcoming hackathons from our JSON feed.\n"
-            "Sources include Devpost, MLH, Lu.ma and Hack Club."
+            "Here are ~10 upcoming hackathons from the merged feed.\n"
+            "Sources include Devpost, MLH, Lu.ma, Hack Club, and Hackeroos."
         ),
         color=0x00bcd4,
         timestamp=datetime.now(timezone.utc),
@@ -912,13 +1095,16 @@ async def hackathons(interaction: discord.Interaction):
         location = e.get("location") or "Location TBA / Online"
         start = e.get("start_date") or "Date TBA"
         url = e.get("url", "#")
+        label = f"[{source}]"
+        if (source or "").strip().lower() == "hackeroos":
+            label = "🦘 Hackeroos"
         embed.add_field(
             name=title,
-            value=f"[{source}] • {location} • {start} • [Details]({url})",
+            value=f"{label} • {location} • {start} • [Details]({url})",
             inline=False
         )
 
-    # Soft fallback: manual browsing links even when JSON works
+    # Soft fallback: manual browsing links even when feed works
     embed.add_field(
         name="Prefer browsing manually?",
         value=(
@@ -931,69 +1117,8 @@ async def hackathons(interaction: discord.Interaction):
         inline=False
     )
 
-    embed.set_footer(text="Pika-Bot • JSON updated via GitHub Actions from multiple sources.")
+    embed.set_footer(text="Pika-Bot • Feed updated via GitHub Actions + Insights API.")
     await interaction.followup.send(embed=embed)
-
-
-@bot.tree.command(name="update-hackathons", description="Post latest hackathons to #all-hackathons 🌏")
-async def update_hackathons(interaction: discord.Interaction):
-    await interaction.response.defer(ephemeral=True)
-
-    events = await fetch_hackathons_from_github()
-    if not events:
-        await interaction.followup.send("⚠️ Could not fetch hackathons from GitHub JSON.", ephemeral=True)
-        return
-
-    for guild in bot.guilds:
-        channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
-        if not channel:
-            continue
-
-        top_events = events[:10]
-
-        embed = discord.Embed(
-            title="New Global Hackathons!",
-            description="Fresh hackathons from the JSON feed:",
-            color=0x00bcd4,
-            timestamp=datetime.now(timezone.utc),
-        )
-        for e in top_events:
-            title = (e.get("title") or "Untitled")[:100]
-            source = e.get("source", "Unknown")
-            location = e.get("location") or "Location TBA / Online"
-            start = e.get("start_date") or "Date TBA"
-            url = e.get("url", "#")
-            embed.add_field(
-                name=f"{source}: {title}",
-                value=f"{location} • {start} • [View event]({url})",
-                inline=False,
-            )
-        embed.set_footer(text="Auto-updated from GitHub • Pika-Bot ⚡")
-
-        msg = await channel.send(embed=embed)
-        await pin_and_unpin(msg)
-
-    await interaction.followup.send(
-        "✅ Posted latest hackathons to #all-hackathons (top ~10 where available).",
-        ephemeral=True
-    )
-
-
-@bot.tree.command(name="refresh-hackathons", description="Force refresh hackathons feed (admin only)")
-async def refresh_hackathons(interaction: discord.Interaction):
-    global LAST_HACKATHONS
-    await interaction.response.defer(ephemeral=True)
-
-    if not interaction.user.guild_permissions.administrator:
-        await interaction.followup.send("⚠️ Only admins can use `/refresh-hackathons`.", ephemeral=True)
-        return
-
-    events = await fetch_hackathons_from_github()
-    LAST_HACKATHONS = events
-    await interaction.followup.send(
-        f"✅ Hackathons cache refreshed ({len(events)} events cached).",
-        ephemeral=True
-    )
 
 
 @bot.tree.command(name="faq", description="Common questions about Hackeroos / Pika-Bot")
@@ -1026,6 +1151,11 @@ async def faq(interaction: discord.Interaction):
     embed.add_field(
         name="5. Who built this?",
         value="Pika-Bots — AIHE Group 19.",
+        inline=False
+    )
+    embed.add_field(
+        name="6. Where can I follow Hackeroos?",
+        value="X: https://x.com/hackeroos_au\nWeb: https://www.hackeroos.com.au/",
         inline=False
     )
     await interaction.response.send_message(embed=embed, ephemeral=True)
@@ -1106,12 +1236,12 @@ async def ask(interaction: discord.Interaction, question: str):
     time_keywords = ["next", "upcoming", "coming", "what's on", "whats on", "when"]
 
     if any(k in lower_q for k in event_keywords) and any(t in lower_q for t in time_keywords):
-        events = await fetch_hackathons_from_github()
+        events = await fetch_hackathons()
         if not events:
             embed = discord.Embed(
                 title="No Live Hackathons Found (Right Now)",
                 description=(
-                    "I tried to look up current hackathons from the JSON feed and got nothing.\n\n"
+                    "I tried to look up current hackathons from the feed and got nothing.\n\n"
                     "You can manually browse here:"
                 ),
                 color=0xffc300
@@ -1137,16 +1267,11 @@ async def ask(interaction: discord.Interaction, question: str):
                 inline=False
             )
             embed.add_field(
-                name="Hackathon.com",
-                value="[hackathon.com](https://www.hackathon.com/city/global)",
-                inline=False
-            )
-            embed.add_field(
                 name="Hackeroos What's On",
                 value="[hackeroos.com.au/#whats-on](https://www.hackeroos.com.au/#whats-on)",
                 inline=False
             )
-            embed.set_footer(text="Pika-Bot • /hackathons uses the same JSON feed.")
+            embed.set_footer(text="Pika-Bot • /hackathons uses the same feed.")
             await interaction.followup.send(embed=embed, ephemeral=True)
             return
 
@@ -1155,7 +1280,10 @@ async def ask(interaction: discord.Interaction, question: str):
             title = e.get("title", "Untitled")
             url = e.get("url", "#")
             source = e.get("source", "Unknown")
-            lines.append(f"• **{title}** — ({source}) → {url}")
+            label = source
+            if (source or "").strip().lower() == "hackeroos":
+                label = "Hackeroos 🦘"
+            lines.append(f"• **{title}** — ({label}) → {url}")
         lines.append(
             "\nYou can also run `/hackathons` for an embed version, "
             "or browse manually:\n"
@@ -1292,7 +1420,10 @@ async def sync_cmd(ctx: commands.Context):
         await ctx.send(f"⚠️ Could not sync slash commands:\n`{e}`")
 
 
-# run the bot
+# -------------------------------------------------
+# 12) RUN THE BOT
+# -------------------------------------------------
+
 if not TOKEN:
     raise RuntimeError("DISCORD_TOKEN missing in `.env` as DISCORD_TOKEN!")
 
