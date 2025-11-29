@@ -86,6 +86,22 @@ HACKATHONS_JSON_URL = os.getenv(
 # Hackeroos reminders
 HACKEROOS_REMINDER_INTERVAL_HOURS = 12
 
+# month map for Devpost-style strings
+MONTH_MAP = {
+    "jan": 1, "january": 1,
+    "feb": 2, "february": 2,
+    "mar": 3, "march": 3,
+    "apr": 4, "april": 4,
+    "may": 5,
+    "jun": 6, "june": 6,
+    "jul": 7, "july": 7,
+    "aug": 8, "august": 8,
+    "sep": 9, "sept": 9, "september": 9,
+    "oct": 10, "october": 10,
+    "nov": 11, "november": 11,
+    "dec": 12, "december": 12,
+}
+
 # strip most emoji so we can clean titles like "🎃 WINNERS 🎃"
 EMOJI_PATTERN = re.compile(
     "["
@@ -276,15 +292,18 @@ async def auto_alerts_loop():
 
 def parse_iso_date(date_str: str | None) -> datetime | None:
     """
-    Try to parse a few simple ISO-like date formats.
-    If parsing fails, return None.
+    Try to parse:
+      - ISO formats: 2025-12-03, 2025-12-03T10:00:00Z, 2025-12-03T10:00:00+00:00
+      - Devpost-style: "Dec 17, 2025", "Dec 01 - 21, 2025",
+                       "Dec 31, 2025 - Feb 07, 2026"
+    We always take the *first* date as "start".
     """
     if not date_str:
         return None
 
     s = date_str.strip()
 
-    # Try strict ISO with Z: 2025-12-03T10:00:00Z
+    # 1) Strict ISO with Z
     try:
         if s.endswith("Z"):
             dt = datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
@@ -292,7 +311,7 @@ def parse_iso_date(date_str: str | None) -> datetime | None:
     except Exception:
         pass
 
-    # Try ISO with timezone: 2025-12-03T10:00:00+00:00 or plain date 2025-12-03
+    # 2) ISO with timezone or plain date
     for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d"):
         try:
             dt = datetime.strptime(s, fmt)
@@ -302,7 +321,20 @@ def parse_iso_date(date_str: str | None) -> datetime | None:
         except Exception:
             continue
 
-    # Last resort: find "YYYY-MM-DD" inside a longer string
+    # 3) Devpost-style: pick first "MonthName DD, YYYY"
+    matches = re.findall(r"([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})", s)
+    if matches:
+        month_name, day_str, year_str = matches[0]
+        month = MONTH_MAP.get(month_name.lower()[:3]) or MONTH_MAP.get(month_name.lower())
+        try:
+            if month:
+                day = int(day_str)
+                year = int(year_str)
+                return datetime(year, month, day, tzinfo=timezone.utc)
+        except Exception:
+            pass
+
+    # 4) Last resort: find "YYYY-MM-DD" anywhere
     m = re.search(r"\d{4}-\d{2}-\d{2}", s)
     if m:
         try:
@@ -322,12 +354,14 @@ def infer_time_window(question: str) -> tuple[int | None, str]:
     """
     q = question.lower()
 
-    # explicit phrases first
     if "next week" in q or "coming week" in q or "upcoming week" in q:
         return 7, "the next 7 days"
 
     if "this weekend" in q or "on the weekend" in q:
         return 4, "this weekend"
+
+    if "next weekend" in q:
+        return 7, "next weekend"
 
     if "today" in q or "tonight" in q:
         return 1, "today"
@@ -342,7 +376,6 @@ def infer_time_window(question: str) -> tuple[int | None, str]:
     if "this month" in q:
         return 31, "this month"
 
-    # generic 'soon', 'coming up', etc.
     if "soon" in q or "coming up" in q or "upcoming" in q:
         return 14, "the next couple of weeks"
 
@@ -360,13 +393,26 @@ def filter_events_for_question(
       - detect time window
       - detect Hackeroos-only
       - detect online-only
+      - properly filter out events with unparseable dates when user asks
+        for a specific time window
     Return (filtered_events_with_dt, label_for_answer)
     """
     lower_q = question.lower()
     window_days, window_label = infer_time_window(lower_q)
 
     only_hackeroos = "hackeroos" in lower_q
-    online_only = "online only" in lower_q or "remote" in lower_q or "virtual" in lower_q
+    online_only = (
+        "online only" in lower_q
+        or "only online" in lower_q
+        or (
+            "online" in lower_q
+            and "in person" not in lower_q
+            and "in-person" not in lower_q
+            and "offline" not in lower_q
+        )
+        or "remote" in lower_q
+        or "virtual" in lower_q
+    )
 
     now = datetime.now(timezone.utc)
     filtered: list[tuple[dict, datetime | None]] = []
@@ -381,12 +427,21 @@ def filter_events_for_question(
             continue
 
         # 2) filter by online-only
-        if online_only and "online" not in location and "virtual" not in location:
-            continue
+        if online_only:
+            if (
+                "online" not in location
+                and "virtual" not in location
+                and "remote" not in location
+            ):
+                continue
 
-        # 3) filter by time window (if we can parse a date)
+        # 3) date parsing + time window
         dt = parse_iso_date(raw_date)
-        if window_days is not None and dt is not None:
+
+        # If user asked for a time window and we can't parse date → skip
+        if window_days is not None:
+            if dt is None:
+                continue
             end = now + timedelta(days=window_days)
             if not (now <= dt <= end):
                 continue
