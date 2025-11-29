@@ -1,17 +1,19 @@
 # scrape_hackathons.py
-# Scrapes multiple hackathon sources (Devpost, MLH, Lu.ma, Hack Club)
+# Scrapes multiple hackathon sources (Devpost, MLH, Lu.ma, Hack Club, Hackeroos)
 # and writes a merged JSON file to data/hackathons.json for Pika-Bot.
 
 import os
 import json
 from datetime import datetime
-from typing import List, Dict
+from typing import List, Dict, Any
 
 import httpx
 from bs4 import BeautifulSoup
 from seleniumbase import SB
 
-OUTPUT_PATH = os.path.join("data", "hackathons.json")
+DATA_DIR = "data"
+OUTPUT_PATH = os.path.join(DATA_DIR, "hackathons.json")
+HACKEROOS_INPUT = os.path.join(DATA_DIR, "hackeroos_events.json")
 
 
 def normalise_date(raw: str) -> str:
@@ -28,7 +30,7 @@ def make_event(
     start_date: str = "",
     location: str = "",
     source: str,
-) -> Dict:
+) -> Dict[str, Any]:
     return {
         "title": title.strip() if title else "",
         "url": url.strip() if url else "",
@@ -36,6 +38,64 @@ def make_event(
         "location": location.strip() if location else "",
         "source": source,
     }
+
+
+# -------------------------------------------------
+# 0) HACKEROOS (curated JSON in repo)
+# -------------------------------------------------
+
+def load_hackeroos_events() -> List[Dict[str, Any]]:
+    """
+    Load curated Hackeroos events from data/hackeroos_events.json.
+
+    This is the 'source of truth' for Hackeroos-run events.
+    It lets Hackeroos control their own events cleanly without
+    fighting the React frontend.
+    """
+    events: List[Dict[str, Any]] = []
+
+    if not os.path.exists(HACKEROOS_INPUT):
+        print(f"[Hackeroos] File not found at {HACKEROOS_INPUT} (skipping).")
+        return events
+
+    try:
+        with open(HACKEROOS_INPUT, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(f"[Hackeroos] Failed to read JSON: {e}")
+        return events
+
+    if not isinstance(data, list):
+        print(f"[Hackeroos] JSON is not a list, got {type(data)} – skipping.")
+        return events
+
+    for raw in data:
+        if not isinstance(raw, dict):
+            continue
+
+        title = raw.get("title") or "Untitled Hackeroos Event"
+        url = raw.get("url") or "https://www.hackeroos.com.au/#whats-on"
+        start_date = raw.get("start_date") or raw.get("startDate") or ""
+        location = raw.get("location") or "Hackeroos / TBA"
+        source = raw.get("source") or "Hackeroos"
+
+        ev = make_event(
+            title=title,
+            url=url,
+            start_date=start_date,
+            location=location,
+            source=source,
+        )
+
+        # keep extra optional fields if present
+        for extra_key in ["end_date", "mode", "tags", "description"]:
+            if extra_key in raw:
+                ev[extra_key] = raw[extra_key]
+
+        events.append(ev)
+
+    print(f"[Hackeroos] Loaded {len(events)} curated events from {HACKEROOS_INPUT}")
+    return events
 
 
 # -------------------------------------------------
@@ -287,17 +347,21 @@ def merge_and_dedupe(all_lists: List[List[Dict]]) -> List[Dict]:
 def main():
     print("🔎 Scraping hackathons from multiple sources...")
 
+    hackeroos_events = load_hackeroos_events()
     devpost_events = scrape_devpost()
     mlh_events = scrape_mlh()
     luma_events = scrape_luma()
     hackclub_events = scrape_hackclub()
 
-    print(f"Devpost: {len(devpost_events)} events")
-    print(f"MLH: {len(mlh_events)} events")
-    print(f"Lu.ma: {len(luma_events)} events")
+    print(f"Hackeroos: {len(hackeroos_events)} events")
+    print(f"Devpost:   {len(devpost_events)} events")
+    print(f"MLH:       {len(mlh_events)} events")
+    print(f"Lu.ma:     {len(luma_events)} events")
     print(f"Hack Club: {len(hackclub_events)} events")
 
-    merged = merge_and_dedupe([devpost_events, mlh_events, luma_events, hackclub_events])
+    merged = merge_and_dedupe(
+        [hackeroos_events, devpost_events, mlh_events, luma_events, hackclub_events]
+    )
     print(f"Total after merge/dedupe: {len(merged)} events")
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
