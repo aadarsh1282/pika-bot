@@ -119,6 +119,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Code for Impact 2025",
+    "url": "https://code-for-impact-2025.devpost.com/",
+    "start_date": "Dec 05 - 07, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Spring",
     "url": "https://codespring.devpost.com/",
     "start_date": "Jan 05 - Feb 11, 2026",
@@ -231,13 +238,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Days in Bengaluru",
-    "url": "https://hack-days-in-bengaluru.devpost.com/",
-    "start_date": "Nov 29, 2025",
-    "location": "Polaris School of Technology",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack for Humanity | 2026",
     "url": "https://hack-for-humanity-26.devpost.com/",
     "start_date": "Feb 01 - 28, 2026",
@@ -263,13 +263,6 @@
     "url": "https://hackamerica.devpost.com/",
     "start_date": "Apr 11 - 18, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hackathon 2025 - megabrAIns",
-    "url": "https://dtit-hackathon2025.devpost.com/",
-    "start_date": "Nov 29 - 30, 2025",
-    "location": "Technical University of Košice - Library",
     "source": "Devpost"
   },
   {
@@ -319,13 +312,6 @@
     "url": "https://hackrift-2025.devpost.com/",
     "start_date": "Dec 07 - 10, 2025",
     "location": "SIT Punggol Campus",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackSLC",
-    "url": "https://hackslc.devpost.com/",
-    "start_date": "Nov 29, 2025",
-    "location": "St lawrence college, Innovation hall",
     "source": "Devpost"
   },
   {
@@ -483,13 +469,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Open Sourcery Fall 2025 Project Showcase",
-    "url": "https://os-fall-2025-showcase.devpost.com/",
-    "start_date": "Nov 30 - Dec 01, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -574,6 +553,13 @@
     "source": "Devpost"
   },
   {
+    "title": "TecStorm'26",
+    "url": "https://tecstorm26.devpost.com/",
+    "start_date": "Jan 01 - 27, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Jan 26 - 29, 2026",
@@ -628,6 +614,39 @@
     "start_date": "Feb 20 - 22, 2026",
     "location": "Duke + Harvard + MIT + NYU",
     "source": "Devpost"
+  },
+  {
+    "title": "Agent.AI Challenge",
+    "url": "https://www.hackerearth.com/agent-ai",
+    "start_date": "2025-09-16T00:00:00Z",
+    "location": "Online",
+    "source": "Hackeroos",
+    "end_date": "2025-12-14T23:59:00Z",
+    "mode": "online",
+    "tags": [
+      "ai",
+      "agents",
+      "no-code",
+      "hackerearth",
+      "global"
+    ],
+    "description": "We're supporting HackerEarth to promote Agent.AI, founded by Dharmesh Shah, co-founder of HubSpot. Now anyone can build AI agents with no code!"
+  },
+  {
+    "title": "Hackeroos Mental Health Buildathon",
+    "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Australia / Online",
+    "source": "Hackeroos",
+    "end_date": null,
+    "mode": "hybrid",
+    "tags": [
+      "mental health",
+      "buildathon",
+      "australia",
+      "2026"
+    ],
+    "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
   },
   {
     "title": "Bitcamp Apr 10th - 12th College Park , Maryland In-Person Only",
