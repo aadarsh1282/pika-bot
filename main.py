@@ -86,7 +86,10 @@ HACKATHONS_JSON_URL = os.getenv(
 # Hackeroos reminders
 HACKEROOS_REMINDER_INTERVAL_HOURS = 12
 
-# month map for Devpost-style strings
+# NEW: auto alert interval (global hackathons)
+AUTO_ALERT_INTERVAL_HOURS = 24
+
+# month map for Devpost-style + MLH-style strings
 MONTH_MAP = {
     "jan": 1, "january": 1,
     "feb": 2, "february": 2,
@@ -215,28 +218,51 @@ async def pin_and_unpin(message: discord.Message):
 
 
 # -------------------------------------------------
-# 4) AUTO ALERTS LOOP (ALL SOURCES)
+# 4) AUTO ALERTS LOOP (ALL SOURCES, ONLINE-ONLY, 24H)
 # -------------------------------------------------
 
 async def auto_alerts_loop():
-    """Background task: poll hackathons feed and announce new hackathons."""
+    """
+    Background task: every 24 hours:
+      - Poll hackathons feed
+      - Filter to ONLINE-ONLY events (location contains online/virtual/remote/digital)
+      - Announce NEW ones compared to last run
+      - Skip events with no date to avoid TBA spam
+    """
     global LAST_HACKATHONS
     await bot.wait_until_ready()
-    log.info("Auto-alerts loop started (every 3 hours)")
+    log.info("Auto-alerts loop started (every %d hours)", AUTO_ALERT_INTERVAL_HOURS)
 
     while not bot.is_closed():
         try:
             events = await fetch_hackathons()
             if not events:
                 log.warning("Hackathons feed empty or unreachable")
-                await asyncio.sleep(3 * 60 * 60)
+                await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
                 continue
+
+            # filter to online-only events
+            online_events: List[dict] = []
+            for e in events:
+                loc_lower = (e.get("location") or "").strip().lower()
+                if any(
+                    kw in loc_lower
+                    for kw in ("online", "virtual", "remote", "digital")
+                ):
+                    online_events.append(e)
+
+            if not online_events:
+                log.info("No online-only hackathons found this cycle.")
+                await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
+                continue
+
+            events = online_events
 
             # first run – just cache
             if not LAST_HACKATHONS:
                 LAST_HACKATHONS = events
-                log.info("First run: cached %d hackathons", len(events))
-                await asyncio.sleep(3 * 60 * 60)
+                log.info("First run: cached %d online hackathons", len(events))
+                await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
                 continue
 
             # detect new events by URL
@@ -246,8 +272,15 @@ async def auto_alerts_loop():
                 if e.get("url") and e["url"] not in old_urls
             ]
 
+            # skip events that don't have any date at all (avoid TBA spam)
+            def has_any_date(ev: dict) -> bool:
+                raw = (ev.get("start_date") or "").strip()
+                return bool(raw)
+
+            new_events = [e for e in new_events if has_any_date(e)]
+
             if new_events:
-                log.info("New hackathons detected: %d", len(new_events))
+                log.info("New ONLINE hackathons detected: %d", len(new_events))
 
                 for guild in bot.guilds:
                     channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
@@ -255,35 +288,42 @@ async def auto_alerts_loop():
                         continue
 
                     embed = discord.Embed(
-                        title="NEW GLOBAL HACKATHONS!",
-                        description=f"{len(new_events)} new event(s) just dropped!",
+                        title="NEW ONLINE HACKATHONS!",
+                        description=f"{len(new_events)} new online event(s) just dropped!",
                         color=0x00ff88,
                         timestamp=datetime.now(timezone.utc),
                     )
                     for e in new_events[:10]:
                         title = (e.get("title") or "Untitled")[:80]
                         source = e.get("source", "Unknown")
-                        start = (e.get("start_date") or "")[:10] if e.get("start_date") else "TBA"
-                        loc = e.get("location", "Online / TBA")
+                        loc = e.get("location") or "Online"
+                        raw_date = e.get("start_date") or ""
+                        dt = parse_iso_date(raw_date)
+                        if dt:
+                            start = dt.strftime("%Y-%m-%d")
+                        elif raw_date:
+                            start = raw_date
+                        else:
+                            start = "Date coming soon"
                         url = e.get("url", "#")
                         embed.add_field(
                             name=f"{source} · {title}",
                             value=f"{loc} • {start} • [Register]({url})",
                             inline=False,
                         )
-                    embed.set_footer(text="Pika-Bot • Auto-updated from Insights/GitHub")
+                    embed.set_footer(text="Pika-Bot • Auto-updated (online-only) from Insights/GitHub")
 
-                    msg = await channel.send(embed=embed, content="@here New hackathons!")
+                    msg = await channel.send(embed=embed, content="@here New online hackathons!")
                     await pin_and_unpin(msg)
             else:
-                log.info("No new hackathons this cycle")
+                log.info("No new online hackathons this cycle")
 
             LAST_HACKATHONS = events[:100]
 
         except Exception as e:
             log.exception("auto_alerts_loop crashed: %s", e)
 
-        await asyncio.sleep(3 * 60 * 60)
+        await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
 
 
 # -------------------------------------------------
@@ -296,6 +336,7 @@ def parse_iso_date(date_str: str | None) -> datetime | None:
       - ISO formats: 2025-12-03, 2025-12-03T10:00:00Z, 2025-12-03T10:00:00+00:00
       - Devpost-style: "Dec 17, 2025", "Dec 01 - 21, 2025",
                        "Dec 31, 2025 - Feb 07, 2026"
+      - MLH-style: "Feb 14th - 15th, 2026" or "Feb 14th - 15th"
     We always take the *first* date as "start".
     """
     if not date_str:
@@ -333,6 +374,35 @@ def parse_iso_date(date_str: str | None) -> datetime | None:
                 return datetime(year, month, day, tzinfo=timezone.utc)
         except Exception:
             pass
+
+    # 3b) MLH-style: "Feb 14th - 15th, 2026" or "Feb 14th - 15th"
+    m = re.search(
+        r"([A-Za-z]{3,9})\s+(\d{1,2})(?:st|nd|rd|th)?"
+        r"(?:\s*-\s*\d{1,2}(?:st|nd|rd|th)?)?"
+        r"(?:,\s*(\d{4}))?",
+        s,
+    )
+    if m:
+        month_name = m.group(1)
+        day_str = m.group(2)
+        year_str = m.group(3)
+
+        month = MONTH_MAP.get(month_name.lower()[:3]) or MONTH_MAP.get(month_name.lower())
+        if month:
+            try:
+                day = int(day_str)
+                if year_str:
+                    year = int(year_str)
+                else:
+                    # If no year, guess: use current year or next year if already passed
+                    now = datetime.now(timezone.utc)
+                    year = now.year
+                    try_date = datetime(year, month, day, tzinfo=timezone.utc)
+                    if try_date < now:
+                        year += 1
+                return datetime(year, month, day, tzinfo=timezone.utc)
+            except Exception:
+                pass
 
     # 4) Last resort: find "YYYY-MM-DD" anywhere
     m = re.search(r"\d{4}-\d{2}-\d{2}", s)
@@ -432,6 +502,7 @@ def filter_events_for_question(
                 "online" not in location
                 and "virtual" not in location
                 and "remote" not in location
+                and "digital" not in location
             ):
                 continue
 
@@ -461,6 +532,7 @@ def filter_events_for_question(
 
 
 # -------------------------------------------------
+# -------------------------------------------------
 # 6) HACKEROOS REMINDER LOOP (Hackeroos-only)
 # -------------------------------------------------
 
@@ -469,8 +541,10 @@ async def hackeroos_reminder_loop():
     Every 12 hours:
       - Fetch hackathons
       - Filter to source == "Hackeroos"
-      - Post a pinned reminder in announcements / all-hackathons
-      - Tag @here
+      - Use end_date/deadline if available to show
+        'X days left before applications close'
+      - Only show active/upcoming events (no 'already finished')
+      - Pin a single countdown embed in announcements / all-hackathons
     """
     await bot.wait_until_ready()
     log.info("Hackeroos reminder loop started (every %d hours)", HACKEROOS_REMINDER_INTERVAL_HOURS)
@@ -483,6 +557,7 @@ async def hackeroos_reminder_loop():
                 await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
                 continue
 
+            # Only Hackeroos-run events
             hackeroos_events = [
                 e for e in events
                 if (e.get("source") or "").strip().lower() == "hackeroos"
@@ -493,13 +568,65 @@ async def hackeroos_reminder_loop():
                 await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
                 continue
 
-            # sort by start date when possible, TBA at the end
-            def sort_key(e: dict):
-                dt = parse_iso_date(e.get("start_date"))
-                return (0, dt.timestamp()) if dt else (1, float("inf"))
+            now_utc = datetime.now(timezone.utc).date()
 
-            hackeroos_events.sort(key=sort_key)
+            # Build list: (event, deadline_dt|None, start_dt|None)
+            processed: list[tuple[dict, datetime | None, datetime | None]] = []
+            for e in hackeroos_events:
+                raw_start = e.get("start_date") or ""
+                raw_deadline = (
+                    e.get("end_date")
+                    or e.get("deadline")
+                    or e.get("apply_by")
+                    or ""
+                )
 
+                dt_start = parse_iso_date(raw_start) if raw_start else None
+                dt_deadline = parse_iso_date(raw_deadline) if raw_deadline else None
+
+                processed.append((e, dt_deadline, dt_start))
+
+            # Only show events that are upcoming / active:
+            #   - if we have a deadline: keep if deadline >= today
+            #   - else if we only have start_date: keep if start >= today
+            #   - else: keep (dates coming soon)
+            upcoming: list[tuple[dict, datetime | None, datetime | None]] = []
+            for e, dt_deadline, dt_start in processed:
+                if dt_deadline is not None:
+                    if dt_deadline.date() < now_utc:
+                        continue  # applications already closed
+                    upcoming.append((e, dt_deadline, dt_start))
+                elif dt_start is not None:
+                    if dt_start.date() < now_utc:
+                        continue  # event already started and no deadline info
+                    upcoming.append((e, dt_deadline, dt_start))
+                else:
+                    # no dates at all → still show as "dates coming soon"
+                    upcoming.append((e, dt_deadline, dt_start))
+
+            if not upcoming:
+                log.info("[Hackeroos reminder] No upcoming Hackeroos events with open applications.")
+                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
+                continue
+
+            # Sort by deadline first, then start date, then title
+            def sort_key(item: tuple[dict, datetime | None, datetime | None]):
+                e, dt_deadline, dt_start = item
+
+                if dt_deadline is not None:
+                    return (0, dt_deadline.timestamp(),
+                            dt_start.timestamp() if dt_start else float("inf"),
+                            (e.get("title") or "").lower())
+                if dt_start is not None:
+                    return (1, dt_start.timestamp(),
+                            float("inf"),
+                            (e.get("title") or "").lower())
+                return (2, float("inf"), float("inf"),
+                        (e.get("title") or "").lower())
+
+            upcoming.sort(key=sort_key)
+
+            # Build embed
             for guild in bot.guilds:
                 # Prefer announcements; fallback to all-hackathons
                 channel = discord.utils.get(guild.text_channels, name=ANNOUNCEMENTS_CHANNEL_NAME)
@@ -518,25 +645,32 @@ async def hackeroos_reminder_loop():
                     timestamp=datetime.now(timezone.utc),
                 )
 
-                now_utc = datetime.now(timezone.utc)
-
-                for e in hackeroos_events[:5]:
+                for e, dt_deadline, dt_start in upcoming[:5]:
                     title = e.get("title") or "Hackeroos Event"
                     url = e.get("url", "#")
                     loc = e.get("location") or "Australia / Online"
-                    raw_date = e.get("start_date")
-                    dt = parse_iso_date(raw_date)
-                    if dt:
-                        days_left = (dt - now_utc).days
-                        date_str = dt.strftime("%Y-%m-%d")
-                        if days_left < 0:
-                            status = "Already finished"
-                        elif days_left == 0:
-                            status = "Starts **today**"
+
+                    # Choose main date for countdown: deadline > start_date > “coming soon”
+                    if dt_deadline is not None:
+                        d = dt_deadline.date()
+                        days_left = (d - now_utc).days
+                        date_str = d.strftime("%Y-%m-%d")
+                        if days_left == 0:
+                            status = "Applications close **today**"
                         elif days_left == 1:
-                            status = "Starts in **1 day**"
+                            status = "Applications close **tomorrow**"
                         else:
-                            status = f"Starts in **{days_left} days**"
+                            status = f"Applications close in **{days_left} days**"
+                    elif dt_start is not None:
+                        d = dt_start.date()
+                        days_left = (d - now_utc).days
+                        date_str = d.strftime("%Y-%m-%d")
+                        if days_left == 0:
+                            status = "Event **starts today**"
+                        elif days_left == 1:
+                            status = "Event starts in **1 day**"
+                        else:
+                            status = f"Event starts in **{days_left} days**"
                     else:
                         date_str = "Dates coming soon"
                         status = "Keep an eye out for announcements"
@@ -544,8 +678,8 @@ async def hackeroos_reminder_loop():
                     embed.add_field(
                         name=title,
                         value=(
-                            f"{loc} • {date_str}\n"
-                            f"{status}\n"
+                            f"{loc}\n"
+                            f"{date_str} — {status}\n"
                             f"[Details]({url})"
                         ),
                         inline=False,
@@ -793,7 +927,7 @@ async def on_ready():
         if hack_channel:
             try:
                 await hack_channel.send(
-                    "🌍 **Pika-Bot** is live! Use `/hackathons` to see global hackathons ⚡"
+                    "🌍 **Pika-Bot** is live! Use `/hackathons` to see online global hackathons ⚡"
                 )
             except discord.Forbidden:
                 pass
@@ -1143,7 +1277,7 @@ async def about(interaction: discord.Interaction):
             "• Welcome members (DM + public)\n"
             "• Verify users with `/verify`\n"
             "• Create polls with `/poll`\n"
-            "• Show global hackathons with `/hackathons`\n"
+            "• Show online global hackathons with `/hackathons`\n"
             "• AI Q&A with `/ask`\n"
             "• Track Hackeroos winners with `/set-winner` + `/winners`\n"
             "• Hackeroos-first reminders every 12 hours\n"
@@ -1202,7 +1336,7 @@ async def poll(interaction: discord.Interaction, question: str):
     await interaction.response.send_message("Poll created ✅", ephemeral=True)
 
 
-@bot.tree.command(name="hackathons", description="Show upcoming global hackathons 🌍")
+@bot.tree.command(name="hackathons", description="Show upcoming ONLINE global hackathons 🌍")
 async def hackathons(interaction: discord.Interaction):
     await interaction.response.defer(ephemeral=False)
 
@@ -1247,13 +1381,54 @@ async def hackathons(interaction: discord.Interaction):
         await interaction.followup.send(embed=embed)
         return
 
+    # Filter to ONLINE-ONLY events
+    online_events: List[dict] = []
+    for e in events:
+        loc_lower = (e.get("location") or "").strip().lower()
+        if any(kw in loc_lower for kw in ("online", "virtual", "remote", "digital")):
+            online_events.append(e)
+
+    events = online_events
+
+    if not events:
+        embed = discord.Embed(
+            title="No Online Hackathons Found (Right Now)",
+            description=(
+                "I couldn’t find online-only hackathons in the merged feed.\n\n"
+                "Try browsing manually on Devpost / MLH / Lu.ma / Hack Club / Hackeroos."
+            ),
+            color=0xffc300
+        )
+        await interaction.followup.send(embed=embed)
+        return
+
+    # For display: skip events with no date at all (avoid TBA spam)
+    cleaned_events: List[dict] = []
+    for e in events:
+        raw_date = (e.get("start_date") or "").strip()
+        if not raw_date:
+            continue  # no date → don't show
+        cleaned_events.append(e)
+
+    if not cleaned_events:
+        embed = discord.Embed(
+            title="Online Hackathons (Dates Coming Soon)",
+            description=(
+                "The feed has online events but without clear dates.\n"
+                "Please check Devpost / MLH / Lu.ma / Hack Club / Hackeroos directly."
+            ),
+            color=0xffc300
+        )
+        await interaction.followup.send(embed=embed)
+        return
+
     # Limit to ~10 items for /hackathons
-    top_events = events[:10]
+    top_events = cleaned_events[:10]
 
     embed = discord.Embed(
-        title="Live Global Hackathons",
+        title="Live Online Global Hackathons",
         description=(
-            "Here are ~10 upcoming hackathons from the merged feed.\n"
+            "Here are ~10 upcoming **online** hackathons from the merged feed.\n"
             "Sources include Devpost, MLH, Lu.ma, Hack Club, and Hackeroos."
         ),
         color=0x00bcd4,
@@ -1262,8 +1437,16 @@ async def hackathons(interaction: discord.Interaction):
     for e in top_events:
         title = (e.get("title") or "Untitled")[:100]
         source = e.get("source", "Unknown")
-        location = e.get("location") or "Location TBA / Online"
-        start = e.get("start_date") or "Date TBA"
+        location = e.get("location") or "Online"
+        raw_date = e.get("start_date") or ""
+        dt = parse_iso_date(raw_date)
+        if dt:
+            start = dt.strftime("%Y-%m-%d")
+        elif raw_date:
+            start = raw_date
+        else:
+            # should not happen because we filtered earlier, but just in case
+            start = "Date coming soon"
         url = e.get("url", "#")
         label = f"[{source}]"
         if (source or "").strip().lower() == "hackeroos":
@@ -1287,7 +1470,7 @@ async def hackathons(interaction: discord.Interaction):
         inline=False
     )
 
-    embed.set_footer(text="Pika-Bot • Feed updated via GitHub Actions + Insights API.")
+    embed.set_footer(text="Pika-Bot • Online-only feed from GitHub Actions + Insights API.")
     await interaction.followup.send(embed=embed)
 
 
@@ -1305,7 +1488,7 @@ async def faq(interaction: discord.Interaction):
     )
     embed.add_field(
         name="2. How do I see global hackathons?",
-        value="Use `/hackathons`.",
+        value="Use `/hackathons` (online-only).",
         inline=False
     )
     embed.add_field(
@@ -1489,10 +1672,13 @@ async def ask(interaction: discord.Interaction, question: str):
             if (source or "").strip().lower() == "hackeroos":
                 label = "Hackeroos 🦘"
 
+            raw_date = e.get("start_date") or ""
             if dt:
                 date_str = dt.strftime("%Y-%m-%d")
+            elif raw_date:
+                date_str = raw_date
             else:
-                date_str = e.get("start_date") or "Date TBA"
+                date_str = "Date coming soon"
 
             lines.append(f"• **{title}** — ({label}) • {location} • {date_str} → {url}")
 
