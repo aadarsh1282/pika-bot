@@ -342,6 +342,7 @@ async def auto_alerts_loop():
 
         await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
 
+
 # -------------------------------------------------
 # 5) DATE + MINI AGENT HELPERS
 # -------------------------------------------------
@@ -551,19 +552,7 @@ def filter_events_for_question(
 
     return filtered, window_label
 
-    # sort: first by date (if known) then by title
-    filtered.sort(
-        key=lambda pair: (
-            0 if pair[1] is not None else 1,
-            pair[1].timestamp() if pair[1] is not None else float("inf"),
-            (pair[0].get("title") or "").lower(),
-        )
-    )
 
-    return filtered, window_label
-
-
-# -------------------------------------------------
 # -------------------------------------------------
 # 6) HACKEROOS REMINDER LOOP (Hackeroos-only)
 # -------------------------------------------------
@@ -1018,7 +1007,7 @@ async def on_member_ban(guild: discord.Guild, user: discord.abc.User):
 
 
 @bot.event
-async def on_member_unban(guild: discord.Guild, user: discord.abc.User):
+async def on_member_unban(guild: discord.Guild, user:discord.abc.User):
     await send_mod_log(
         guild,
         "Member Unbanned",
@@ -1516,57 +1505,6 @@ async def hackathons(interaction: discord.Interaction):
     embed.set_footer(text="Pika-Bot • Online-only feed from GitHub Actions + Insights API.")
     await interaction.followup.send(embed=embed)
 
-    # Limit to ~10 items for /hackathons
-    top_events = cleaned_events[:10]
-
-    embed = discord.Embed(
-        title="Live Online Global Hackathons",
-        description=(
-            "Here are ~10 upcoming **online** hackathons from the merged feed.\n"
-            "Sources include Devpost, MLH, Lu.ma, Hack Club, and Hackeroos."
-        ),
-        color=0x00bcd4,
-        timestamp=datetime.now(timezone.utc),
-    )
-    for e in top_events:
-        title = (e.get("title") or "Untitled")[:100]
-        source = e.get("source", "Unknown")
-        location = e.get("location") or "Online"
-        raw_date = e.get("start_date") or ""
-        dt = parse_iso_date(raw_date)
-        if dt:
-            start = dt.strftime("%Y-%m-%d")
-        elif raw_date:
-            start = raw_date
-        else:
-            # should not happen because we filtered earlier, but just in case
-            start = "Date coming soon"
-        url = e.get("url", "#")
-        label = f"[{source}]"
-        if (source or "").strip().lower() == "hackeroos":
-            label = "🦘 Hackeroos"
-        embed.add_field(
-            name=title,
-            value=f"{label} • {location} • {start} • [Details]({url})",
-            inline=False
-        )
-
-    # Soft fallback: manual browsing links even when feed works
-    embed.add_field(
-        name="Prefer browsing manually?",
-        value=(
-            "• Devpost – https://devpost.com/hackathons\n"
-            "• MLH – https://mlh.io/events\n"
-            "• Lu.ma – https://lu.ma/tag/hackathon\n"
-            "• Hack Club – https://events.hackclub.com/\n"
-            "• Hackeroos – https://www.hackeroos.com.au/#whats-on"
-        ),
-        inline=False
-    )
-
-    embed.set_footer(text="Pika-Bot • Online-only feed from GitHub Actions + Insights API.")
-    await interaction.followup.send(embed=embed)
-
 
 @bot.tree.command(name="faq", description="Common questions about Hackeroos / Pika-Bot")
 async def faq(interaction: discord.Interaction):
@@ -1913,6 +1851,7 @@ async def sync_cmd(ctx: commands.Context):
         await ctx.send(f"✅ Slash commands synced again ({len(synced)} commands).")
     except Exception as e:
         await ctx.send(f"⚠️ Could not sync slash commands:\n`{e}`")
+
 
 @bot.tree.command(name="update-hackathons", description="Manually refresh hackathons feed (admin only)")
 async def update_hackathons(interaction: discord.Interaction):
