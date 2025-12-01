@@ -1434,7 +1434,7 @@ async def hackathons(interaction: discord.Interaction):
         await interaction.followup.send(embed=embed)
         return
 
-    # For display: skip events with no date at all (avoid TBA spam)
+       # For display: skip events with no date at all (avoid TBA spam)
     cleaned_events: List[dict] = []
     for e in events:
         raw_date = (e.get("start_date") or "").strip()
@@ -1454,13 +1454,27 @@ async def hackathons(interaction: discord.Interaction):
         await interaction.followup.send(embed=embed)
         return
 
-    # Limit to ~10 items for /hackathons
-    top_events = cleaned_events[:10]
+    # 🔽 NEW: sort by parsed start date and limit to next ~20 events
+    events_with_dates: List[tuple[dict, datetime | None]] = []
+    for e in cleaned_events:
+        dt = parse_iso_date(e.get("start_date") or "")
+        events_with_dates.append((e, dt))
+
+    # Events with valid dates first (soonest → latest), then anything unparseable at the end
+    events_with_dates.sort(
+        key=lambda pair: (
+            0 if pair[1] is not None else 1,
+            pair[1].timestamp() if pair[1] is not None else float("inf"),
+        )
+    )
+
+    MAX_EVENTS = 20  
+    top_events = [e for (e, _) in events_with_dates[:MAX_EVENTS]]
 
     embed = discord.Embed(
         title="Live Online Global Hackathons",
         description=(
-            "Here are ~10 upcoming **online** hackathons from the merged feed.\n"
+            f"Here are the next ~{MAX_EVENTS} upcoming **online** hackathons from the merged feed.\n"
             "Sources include Devpost, MLH, Lu.ma, Hack Club, and Hackeroos."
         ),
         color=0x00bcd4,
@@ -1504,7 +1518,6 @@ async def hackathons(interaction: discord.Interaction):
 
     embed.set_footer(text="Pika-Bot • Online-only feed from GitHub Actions + Insights API.")
     await interaction.followup.send(embed=embed)
-
 
 @bot.tree.command(name="faq", description="Common questions about Hackeroos / Pika-Bot")
 async def faq(interaction: discord.Interaction):
