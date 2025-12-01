@@ -224,13 +224,6 @@
     "source": "Devpost"
   },
   {
-    "title": "DreamWeave Global Hackathon",
-    "url": "https://dreamweave-hackathon.devpost.com/",
-    "start_date": "Dec 01, 2025 - Jan 02, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "East Bay Hackers' Winter Hackathon",
     "url": "https://east-bay-hacker-winter.devpost.com/",
     "start_date": "Dec 06, 2025",
@@ -719,283 +712,323 @@
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
   },
   {
-    "title": "Bitcamp Apr 10th - 12th College Park , Maryland In-Person Only",
-    "url": "https://bit.camp/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "ConUHacks X Jan 24th - 25th Montreal , Quebec In-Person Only",
-    "url": "https://www.conuhacks.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "CrimsonCode Hackathon Feb 21st - 22nd Pullman , Washington In-Person Only",
-    "url": "https://wsu-acm.github.io/crimsoncode/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "CruzHacks Jan 16th - 18th Santa Cruz , California In-Person Only",
-    "url": "https://cruzhacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DeltaHacks Jan 10th - 11th Hamilton , Ontario In-Person Only",
-    "url": "https://www.deltahacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DevFest Feb 7th - 8th New York , New York In-Person Only",
-    "url": "https://26-devfest.netlify.app/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DiamondHacks Apr 4th - 5th San Diego , California In-Person Only",
-    "url": "https://diamondhacks.acmucsd.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY cmd-f 2026 Mar 7th - 8th Vancouver , Canada In-Person Only",
-    "url": "https://cmd-f.nwplus.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY ElleHacks Jan 30th - Feb 1st Toronto , Ontario In-Person Only",
-    "url": "https://ellehacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY HackHERS Feb 21st - 22nd New Brunswick , New Jersey In-Person Only",
-    "url": "https://ruhackhers.org",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY HackViolet Jan 31st - Feb 1st Blacksburg , Virginia In-Person Only",
-    "url": "https://main--hackviolet.netlify.app/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY Pearl Hacks Feb 21st - 22nd Chapel Hill , North Carolina In-Person Only",
-    "url": "https://pearlhacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY QWER Hacks Jan 24th - 25th Los Angeles , California In-Person Only",
-    "url": "https://www.qwerhacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "DIVERSITY WEHack Apr 11th - 12th Richardson , Texas In-Person Only",
-    "url": "https://www.wehackutd.com",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Global Hack Week: AI/ML Dec 12th - 18th Everywhere , Online Digital Only",
-    "url": "https://events.mlh.io/events/12943",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Global Hack Week: Beginners Jan 9th - 15th Everywhere , Online Digital Only",
-    "url": "https://events.mlh.io/events/13277",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Global Hack Week: Data Feb 13th - 19th Everywhere , Online Digital Only",
-    "url": "https://events.mlh.io/events/13382",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Hack@URI Feb 21st - 22nd Kingston , Rhode Island In-Person Only",
-    "url": "https://hackaturi.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Hack_NCState Feb 14th - 15th Raleigh , North Carolina In-Person Only",
-    "url": "https://hackncstate.org/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "HackByte 4.0 Apr 3rd - 5th Jabalpur , Madhya Pradesh In-Person Only",
-    "url": "https://www.hackbyte.in/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Hacklytics Feb 20th - 22nd Atlanta , Georgia In-Person Only",
-    "url": "https://hacklytics.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Hacks for Hackers Jan 2nd - 4th Everywhere , Worldwide Digital Only",
-    "url": "https://events.mlh.io/events/13143",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "HackSussex GameJam 2025 Dec 6th - 7th Brighton , Sussex In-Person Only",
-    "url": "https://www.hacksussex.com/Events/gamejam",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "HenHacks Feb 28th - Mar 1st Newark , Delaware In-Person Only",
-    "url": "https://www.henhackshackathon.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "HIGH SCHOOL Hack BI Jan 17th - 18th Alexandria , Virginia In-Person Only",
-    "url": "https://hackbi.org/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Hoya Hacks Jan 23rd - 25th Washington , District of Columbia In-Person Only",
-    "url": "https://hoyahacks.georgetown.domains/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Kent Hack Enough Mar 28th - 29th Kent , Ohio In-Person Only",
-    "url": "https://khe.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "LA Hacks Apr 24th - 26th Los Angeles , California In-Person Only",
-    "url": "https://lahacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "McHacks Jan 17th - 18th Montreal , Quebec In-Person Only",
-    "url": "https://mchacks.ca/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "nwHacks Jan 17th - 18th Vancouver , Canada In-Person Only",
-    "url": "https://nwhacks.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "PEC Hacks 3.0 Dec 27th - 28th Chennai , Tamil Nadu In-Person Only",
-    "url": "https://pechacks.org/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "QHacks Feb 6th - 8th Kingston , Ontario In-Person Only",
-    "url": "https://qhacks.io/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "RevolutionUC Mar 28th - 29th Cincinnati , Ohio In-Person Only",
-    "url": "https://revolutionuc.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "Rice Datathon Jan 23rd - 25th Houston , Texas In-Person Only",
-    "url": "https://datathon.rice.edu/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "SFHacks 2026 Feb 13th - 15th San Francisco , California In-Person Only",
-    "url": "https://sfhacks.io",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "SwampHacks Jan 23rd - 25th Gainesville , Florida In-Person Only",
-    "url": "https://xi.swamphacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
-  },
-  {
-    "title": "UGAHacks 11 Feb 6th - 8th Athens , Georgia In-Person Only",
+    "title": "",
     "url": "https://11.ugahacks.com",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
+    "start_date": "UGAHacks 11",
+    "location": "Feb 6th - 8th Athens, Georgia",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
-    "title": "UofTHacks Jan 16th - 18th Toronto , Ontario In-Person Only",
+    "title": "",
+    "url": "https://sfhacks.io",
+    "start_date": "SFHacks 20",
+    "location": "26 Feb 13th - 15th San Francisco, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "",
+    "url": "https://www.hackbyte.in/",
+    "start_date": "HackByte 4",
+    "location": ".0 Apr 3rd - 5th Jabalpur, Madhya Pradesh",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Bitcamp",
+    "url": "https://bit.camp/",
+    "start_date": "Apr 10th - 12th",
+    "location": "College Park, Maryland",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "ConUHacks X",
+    "url": "https://www.conuhacks.io/",
+    "start_date": "Jan 24th - 25th",
+    "location": "Montreal, Quebec",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "CrimsonCode Hackathon",
+    "url": "https://wsu-acm.github.io/crimsoncode/",
+    "start_date": "Feb 21st - 22nd",
+    "location": "Pullman, Washington",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "CruzHacks",
+    "url": "https://cruzhacks.com/",
+    "start_date": "Jan 16th - 18th",
+    "location": "Santa Cruz, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DeltaHacks",
+    "url": "https://www.deltahacks.com/",
+    "start_date": "Jan 10th - 11th",
+    "location": "Hamilton, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DevFest",
+    "url": "https://26-devfest.netlify.app/",
+    "start_date": "Feb 7th - 8th",
+    "location": "New York, New York",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DiamondHacks",
+    "url": "https://diamondhacks.acmucsd.com/",
+    "start_date": "Apr 4th - 5th",
+    "location": "San Diego, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY cmd-f 2026",
+    "url": "https://cmd-f.nwplus.io/",
+    "start_date": "Mar 7th - 8th",
+    "location": "Vancouver, Canada",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY ElleHacks",
+    "url": "https://ellehacks.com/",
+    "start_date": "Jan 30th",
+    "location": "- Feb 1st Toronto, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY HackHERS",
+    "url": "https://ruhackhers.org",
+    "start_date": "Feb 21st - 22nd",
+    "location": "New Brunswick, New Jersey",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY HackViolet",
+    "url": "https://main--hackviolet.netlify.app/",
+    "start_date": "Jan 31st",
+    "location": "- Feb 1st Blacksburg, Virginia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY Pearl Hacks",
+    "url": "https://pearlhacks.com/",
+    "start_date": "Feb 21st - 22nd",
+    "location": "Chapel Hill, North Carolina",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY QWER Hacks",
+    "url": "https://www.qwerhacks.com/",
+    "start_date": "Jan 24th - 25th",
+    "location": "Los Angeles, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY WEHack",
+    "url": "https://www.wehackutd.com",
+    "start_date": "Apr 11th - 12th",
+    "location": "Richardson, Texas",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Global Hack Week: AI/ML",
+    "url": "https://events.mlh.io/events/12943",
+    "start_date": "Dec 12th - 18th",
+    "location": "Everywhere,",
+    "source": "MLH",
+    "mode": "Online Digital Only"
+  },
+  {
+    "title": "Global Hack Week: Beginners",
+    "url": "https://events.mlh.io/events/13277",
+    "start_date": "Jan 9th - 15th",
+    "location": "Everywhere,",
+    "source": "MLH",
+    "mode": "Online Digital Only"
+  },
+  {
+    "title": "Global Hack Week: Data",
+    "url": "https://events.mlh.io/events/13382",
+    "start_date": "Feb 13th - 19th",
+    "location": "Everywhere,",
+    "source": "MLH",
+    "mode": "Online Digital Only"
+  },
+  {
+    "title": "Hack@URI",
+    "url": "https://hackaturi.com/",
+    "start_date": "Feb 21st - 22nd",
+    "location": "Kingston, Rhode Island",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hack_NCState",
+    "url": "https://hackncstate.org/",
+    "start_date": "Feb 14th - 15th",
+    "location": "Raleigh, North Carolina",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hacklytics",
+    "url": "https://hacklytics.io/",
+    "start_date": "Feb 20th - 22nd",
+    "location": "Atlanta, Georgia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hacks for Hackers",
+    "url": "https://events.mlh.io/events/13143",
+    "start_date": "Jan 2nd - 4th",
+    "location": "Everywhere, Worldwide",
+    "source": "MLH",
+    "mode": "Digital Only"
+  },
+  {
+    "title": "HackSussex",
+    "url": "https://www.hacksussex.com/Events/gamejam",
+    "start_date": "GameJam 20",
+    "location": "25 Dec 6th - 7th Brighton, Sussex",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "HenHacks",
+    "url": "https://www.henhackshackathon.com/",
+    "start_date": "Feb 28th",
+    "location": "- Mar 1st Newark, Delaware",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "HIGH SCHOOL Hack BI",
+    "url": "https://hackbi.org/",
+    "start_date": "Jan 17th - 18th",
+    "location": "Alexandria, Virginia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hoya Hacks",
+    "url": "https://hoyahacks.georgetown.domains/",
+    "start_date": "Jan 23rd - 25th",
+    "location": "Washington, District of Columbia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Kent Hack Enough",
+    "url": "https://khe.io/",
+    "start_date": "Mar 28th - 29th",
+    "location": "Kent, Ohio",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "LA Hacks",
+    "url": "https://lahacks.com/",
+    "start_date": "Apr 24th - 26th",
+    "location": "Los Angeles, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "McHacks",
+    "url": "https://mchacks.ca/",
+    "start_date": "Jan 17th - 18th",
+    "location": "Montreal, Quebec",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "nwHacks",
+    "url": "https://nwhacks.io/",
+    "start_date": "Jan 17th - 18th",
+    "location": "Vancouver, Canada",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "PEC",
+    "url": "https://pechacks.org/",
+    "start_date": "Hacks 3",
+    "location": ".0 Dec 27th - 28th Chennai, Tamil Nadu",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "QHacks",
+    "url": "https://qhacks.io/",
+    "start_date": "Feb 6th - 8th",
+    "location": "Kingston, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "RevolutionUC",
+    "url": "https://revolutionuc.com/",
+    "start_date": "Mar 28th - 29th",
+    "location": "Cincinnati, Ohio",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Rice Datathon",
+    "url": "https://datathon.rice.edu/",
+    "start_date": "Jan 23rd - 25th",
+    "location": "Houston, Texas",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "SwampHacks",
+    "url": "https://xi.swamphacks.com/",
+    "start_date": "Jan 23rd - 25th",
+    "location": "Gainesville, Florida",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "UofTHacks",
     "url": "https://uofthacks.com/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
+    "start_date": "Jan 16th - 18th",
+    "location": "Toronto, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
-    "title": "UTRA Hacks 2026 Jan 31st - Feb 1st Toronto , Ontario In-Person Only",
+    "title": "UTRA",
     "url": "https://hackathon.utra.ca/",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
+    "start_date": "Hacks 20",
+    "location": "26 Jan 31st - Feb 1st Toronto, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
-    "title": "WiCHacks Feb 28th - Mar 1st Rochester , New York In-Person Only",
+    "title": "WiCHacks",
     "url": "https://wichacks.io",
-    "start_date": "",
-    "location": "",
-    "source": "MLH"
+    "start_date": "Feb 28th",
+    "location": "- Mar 1st Rochester, New York",
+    "source": "MLH",
+    "mode": "In-Person Only"
   }
 ]
