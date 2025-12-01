@@ -3,6 +3,7 @@
 # and writes a merged JSON file to data/hackathons.json for Pika-Bot.
 
 import os
+import re
 import json
 from datetime import datetime
 from typing import List, Dict, Any
@@ -163,11 +164,22 @@ def scrape_devpost() -> List[Dict]:
 
 
 # -------------------------------------------------
-# 2) MLH
+# 2) MLH — now with parsed date + location
 # -------------------------------------------------
 
 def scrape_mlh() -> List[Dict]:
-    """Scrape upcoming MLH hackathons from the events page."""
+    """
+    Scrape upcoming MLH hackathons from the events page.
+
+    Each event appears as a single <a> tag like:
+      "HackSheffield 10 Nov 29th - 30th Sheffield , South Yorkshire In-Person Only"
+
+    We parse:
+      - title: "HackSheffield 10"
+      - start_date: "Nov 29th - 30th"
+      - location: "Sheffield , South Yorkshire In-Person Only"
+        (for online events you’ll see: "Everywhere , Online Digital Only")
+    """
     url = "https://mlh.io/events"
     events: List[Dict] = []
 
@@ -178,13 +190,24 @@ def scrape_mlh() -> List[Dict]:
 
     soup = BeautifulSoup(html, "html.parser")
 
-    # "Upcoming Events" header
+    # Find the "Upcoming Events" header
     upcoming_header = soup.find(
         lambda tag: tag.name in ["h2", "h3"] and "Upcoming Events" in tag.get_text()
     )
     if not upcoming_header:
         print("[MLH] Could not find 'Upcoming Events' header")
         return events
+
+    # Regex to split: title / date / location from the full link text
+    # Example text:
+    #   "Hack_NCState Feb 14th - 15th Raleigh , North Carolina In-Person Only"
+    month_regex = r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*"
+    mlh_pattern = re.compile(
+        rf"^(?P<title>.+?)\s+"
+        rf"(?P<date>{month_regex}.*?(?:\d{{1,2}}(?:st|nd|rd|th)?"
+        rf"(?:\s*-\s*\d{{1,2}}(?:st|nd|rd|th)?)?(?:,\s*\d{{4}})?))"
+        rf"(?:\s+(?P<loc>.+))?$"
+    )
 
     # Walk links until "Past Events"
     current = upcoming_header
@@ -197,18 +220,36 @@ def scrape_mlh() -> List[Dict]:
             break
 
         if current.name == "a" and current.has_attr("href"):
-            text = current.get_text(" ", strip=True)
+            raw_text = current.get_text(" ", strip=True)
+            text = " ".join(raw_text.split())  # normalise spaces
             href = current["href"]
 
             if not text or "Upcoming Events" in text:
                 continue
 
-            title = text
-            start_date = ""  # you can parse text to extract date later if you want
-            location = ""
-
+            # Make full URL
             if not href.startswith("http"):
                 href = f"https://mlh.io{href}"
+
+            # Try to parse title / date / location
+            m = mlh_pattern.match(text)
+            if not m:
+                # Fallback: keep whole text as title, leave date/location blank
+                print(f"[MLH] Could not parse event text: {text}")
+                events.append(
+                    make_event(
+                        title=text,
+                        url=href,
+                        start_date="",
+                        location="",
+                        source="MLH",
+                    )
+                )
+                continue
+
+            title = m.group("title") or ""
+            start_date = m.group("date") or ""
+            location = m.group("loc") or ""
 
             events.append(
                 make_event(
