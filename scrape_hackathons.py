@@ -164,21 +164,18 @@ def scrape_devpost() -> List[Dict]:
 
 
 # -------------------------------------------------
-# 2) MLH — now with parsed date + location
+# 2) MLH — parsed date + location + mode
 # -------------------------------------------------
 
 def scrape_mlh() -> List[Dict]:
     """
     Scrape upcoming MLH hackathons from the events page.
 
-    Each event appears as a single <a> tag like:
-      "HackSheffield 10 Nov 29th - 30th Sheffield , South Yorkshire In-Person Only"
-
     We parse:
-      - title: "HackSheffield 10"
-      - start_date: "Nov 29th - 30th"
-      - location: "Sheffield , South Yorkshire In-Person Only"
-        (for online events you’ll see: "Everywhere , Online Digital Only")
+      - name  (clean event name)
+      - start_date (e.g. "Feb 14th - 15th, 2026")
+      - location (e.g. "Raleigh , North Carolina" or "Everywhere , Online")
+      - mode (e.g. "In-Person Only", "Online Digital Only")
     """
     url = "https://mlh.io/events"
     events: List[Dict] = []
@@ -190,24 +187,13 @@ def scrape_mlh() -> List[Dict]:
 
     soup = BeautifulSoup(html, "html.parser")
 
-    # Find the "Upcoming Events" header
+    # "Upcoming Events" header
     upcoming_header = soup.find(
         lambda tag: tag.name in ["h2", "h3"] and "Upcoming Events" in tag.get_text()
     )
     if not upcoming_header:
         print("[MLH] Could not find 'Upcoming Events' header")
         return events
-
-    # Regex to split: title / date / location from the full link text
-    # Example text:
-    #   "Hack_NCState Feb 14th - 15th Raleigh , North Carolina In-Person Only"
-    month_regex = r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*"
-    mlh_pattern = re.compile(
-        rf"^(?P<title>.+?)\s+"
-        rf"(?P<date>{month_regex}.*?(?:\d{{1,2}}(?:st|nd|rd|th)?"
-        rf"(?:\s*-\s*\d{{1,2}}(?:st|nd|rd|th)?)?(?:,\s*\d{{4}})?))"
-        rf"(?:\s+(?P<loc>.+))?$"
-    )
 
     # Walk links until "Past Events"
     current = upcoming_header
@@ -220,48 +206,84 @@ def scrape_mlh() -> List[Dict]:
             break
 
         if current.name == "a" and current.has_attr("href"):
-            raw_text = current.get_text(" ", strip=True)
-            text = " ".join(raw_text.split())  # normalise spaces
+            text = current.get_text(" ", strip=True)
             href = current["href"]
 
             if not text or "Upcoming Events" in text:
                 continue
 
-            # Make full URL
             if not href.startswith("http"):
                 href = f"https://mlh.io{href}"
 
-            # Try to parse title / date / location
-            m = mlh_pattern.match(text)
-            if not m:
-                # Fallback: keep whole text as title, leave date/location blank
-                print(f"[MLH] Could not parse event text: {text}")
-                events.append(
-                    make_event(
-                        title=text,
-                        url=href,
-                        start_date="",
-                        location="",
-                        source="MLH",
-                    )
-                )
-                continue
+            full_text = text
 
-            title = m.group("title") or ""
-            start_date = m.group("date") or ""
-            location = m.group("loc") or ""
-
-            events.append(
-                make_event(
-                    title=title,
-                    url=href,
-                    start_date=start_date,
-                    location=location,
-                    source="MLH",
-                )
+            # ---------------------------
+            # 1) Find date segment
+            # ---------------------------
+            date_match = re.search(
+                r"([A-Za-z]{3,9}\s+\d{1,2}(?:st|nd|rd|th)?"
+                r"(?:\s*-\s*\d{1,2}(?:st|nd|rd|th)?)?"
+                r"(?:,\s*\d{4})?)",
+                full_text,
             )
 
-    print(f"[MLH] Collected {len(events)} events")
+            start_date = ""
+            location = ""
+            mode: str | None = None
+            name = full_text  # fallback if regex fails
+
+            mode_keywords = [
+                "In-Person Only",
+                "In-person Only",
+                "Online Digital Only",
+                "Digital Only",
+                "Online Only",
+                "Hybrid",
+            ]
+
+            if date_match:
+                # the bit before the date is (usually) the name
+                name = full_text[:date_match.start()].rstrip(" -–,")
+                start_date = date_match.group(1).strip()
+
+                # part after the date contains location + mode
+                after = full_text[date_match.end():].strip()
+                lower_after = after.lower()
+
+                cut_idx = None
+                found_mode = None
+                for kw in mode_keywords:
+                    pos = lower_after.find(kw.lower())
+                    if pos != -1:
+                        cut_idx = pos
+                        found_mode = kw
+                        break
+
+                if cut_idx is not None:
+                    loc_part = after[:cut_idx].strip()
+                    mode = found_mode
+                else:
+                    loc_part = after
+
+                # clean up spacing like " ,"
+                location = loc_part.replace(" ,", ",").strip()
+            else:
+                # no date found; keep full_text as name
+                name = full_text
+
+            ev = make_event(
+                title=name,
+                url=href,
+                start_date=start_date,
+                location=location,
+                source="MLH",
+            )
+            if mode:
+                ev["mode"] = mode
+
+            events.append(ev)
+
+    print(f"[MLH] Collected {len(events)} events (with parsed dates/locations)")
     return events
 
 
