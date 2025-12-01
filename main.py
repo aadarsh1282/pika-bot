@@ -225,9 +225,13 @@ async def auto_alerts_loop():
     """
     Background task: every 24 hours:
       - Poll hackathons feed
-      - Filter to ONLINE-ONLY events (location contains online/virtual/remote/digital)
+      - Filter to ONLINE-ONLY events (location/mode contains online/virtual/remote/digital)
       - Announce NEW ones compared to last run
       - Skip events with no date to avoid TBA spam
+
+    NOTE: This loop no longer pins messages.
+          Only the Hackeroos reminder loop controls the pinned countdown
+          (Option A: Hackeroos-only pinned reminder).
     """
     global LAST_HACKATHONS
     await bot.wait_until_ready()
@@ -241,14 +245,22 @@ async def auto_alerts_loop():
                 await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
                 continue
 
-            # filter to online-only events
+            # filter to online-only events (location or mode)
             online_events: List[dict] = []
             for e in events:
                 loc_lower = (e.get("location") or "").strip().lower()
-                if any(
+                mode_lower = (e.get("mode") or "").strip().lower()
+
+                is_online_location = any(
                     kw in loc_lower
                     for kw in ("online", "virtual", "remote", "digital")
-                ):
+                )
+                is_online_mode = any(
+                    kw in mode_lower
+                    for kw in ("online", "digital", "remote", "virtual")
+                )
+
+                if is_online_location or is_online_mode:
                     online_events.append(e)
 
             if not online_events:
@@ -288,8 +300,13 @@ async def auto_alerts_loop():
                         continue
 
                     embed = discord.Embed(
-                        title="NEW ONLINE HACKATHONS!",
-                        description=f"{len(new_events)} new online event(s) just dropped!",
+                        title="New Online Global Hackathons 🌍",
+                        description=(
+                            f"{len(new_events)} new **online** global event(s) just dropped!\n\n"
+                            "These are *not* Hackeroos-run events.\n"
+                            "For official Hackeroos things, check the pinned "
+                            "countdown in #announcements. 🦘"
+                        ),
                         color=0x00ff88,
                         timestamp=datetime.now(timezone.utc),
                     )
@@ -313,8 +330,8 @@ async def auto_alerts_loop():
                         )
                     embed.set_footer(text="Pika-Bot • Auto-updated (online-only) from Insights/GitHub")
 
-                    msg = await channel.send(embed=embed, content="@here New online hackathons!")
-                    await pin_and_unpin(msg)
+                    # IMPORTANT: no pin, no @here — just a normal message
+                    await channel.send(embed=embed)
             else:
                 log.info("No new online hackathons this cycle")
 
@@ -324,7 +341,6 @@ async def auto_alerts_loop():
             log.exception("auto_alerts_loop crashed: %s", e)
 
         await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
-
 
 # -------------------------------------------------
 # 5) DATE + MINI AGENT HELPERS
@@ -490,19 +506,24 @@ def filter_events_for_question(
     for e in events:
         source = (e.get("source") or "").strip().lower()
         location = (e.get("location") or "").strip().lower()
+        mode = (e.get("mode") or "").strip().lower()
         raw_date = e.get("start_date")
 
         # 1) filter by source
         if only_hackeroos and source != "hackeroos":
             continue
 
-        # 2) filter by online-only
+        # 2) filter by online-only (location or mode)
         if online_only:
             if (
                 "online" not in location
                 and "virtual" not in location
                 and "remote" not in location
                 and "digital" not in location
+                and "online" not in mode
+                and "virtual" not in mode
+                and "remote" not in mode
+                and "digital" not in mode
             ):
                 continue
 
@@ -518,6 +539,17 @@ def filter_events_for_question(
                 continue
 
         filtered.append((e, dt))
+
+    # sort: first by date (if known) then by title
+    filtered.sort(
+        key=lambda pair: (
+            0 if pair[1] is not None else 1,
+            pair[1].timestamp() if pair[1] is not None else float("inf"),
+            (pair[0].get("title") or "").lower(),
+        )
+    )
+
+    return filtered, window_label
 
     # sort: first by date (if known) then by title
     filtered.sort(
@@ -1381,11 +1413,22 @@ async def hackathons(interaction: discord.Interaction):
         await interaction.followup.send(embed=embed)
         return
 
-    # Filter to ONLINE-ONLY events
+    # Filter to ONLINE-ONLY events (location or mode says online/digital)
     online_events: List[dict] = []
     for e in events:
         loc_lower = (e.get("location") or "").strip().lower()
-        if any(kw in loc_lower for kw in ("online", "virtual", "remote", "digital")):
+        mode_lower = (e.get("mode") or "").strip().lower()
+
+        is_online_location = any(
+            kw in loc_lower
+            for kw in ("online", "virtual", "remote", "digital")
+        )
+        is_online_mode = any(
+            kw in mode_lower
+            for kw in ("online", "digital", "remote", "virtual")
+        )
+
+        if is_online_location or is_online_mode:
             online_events.append(e)
 
     events = online_events
@@ -1421,6 +1464,57 @@ async def hackathons(interaction: discord.Interaction):
         )
         await interaction.followup.send(embed=embed)
         return
+
+    # Limit to ~10 items for /hackathons
+    top_events = cleaned_events[:10]
+
+    embed = discord.Embed(
+        title="Live Online Global Hackathons",
+        description=(
+            "Here are ~10 upcoming **online** hackathons from the merged feed.\n"
+            "Sources include Devpost, MLH, Lu.ma, Hack Club, and Hackeroos."
+        ),
+        color=0x00bcd4,
+        timestamp=datetime.now(timezone.utc),
+    )
+    for e in top_events:
+        title = (e.get("title") or "Untitled")[:100]
+        source = e.get("source", "Unknown")
+        location = e.get("location") or "Online"
+        raw_date = e.get("start_date") or ""
+        dt = parse_iso_date(raw_date)
+        if dt:
+            start = dt.strftime("%Y-%m-%d")
+        elif raw_date:
+            start = raw_date
+        else:
+            # should not happen because we filtered earlier, but just in case
+            start = "Date coming soon"
+        url = e.get("url", "#")
+        label = f"[{source}]"
+        if (source or "").strip().lower() == "hackeroos":
+            label = "🦘 Hackeroos"
+        embed.add_field(
+            name=title,
+            value=f"{label} • {location} • {start} • [Details]({url})",
+            inline=False
+        )
+
+    # Soft fallback: manual browsing links even when feed works
+    embed.add_field(
+        name="Prefer browsing manually?",
+        value=(
+            "• Devpost – https://devpost.com/hackathons\n"
+            "• MLH – https://mlh.io/events\n"
+            "• Lu.ma – https://lu.ma/tag/hackathon\n"
+            "• Hack Club – https://events.hackclub.com/\n"
+            "• Hackeroos – https://www.hackeroos.com.au/#whats-on"
+        ),
+        inline=False
+    )
+
+    embed.set_footer(text="Pika-Bot • Online-only feed from GitHub Actions + Insights API.")
+    await interaction.followup.send(embed=embed)
 
     # Limit to ~10 items for /hackathons
     top_events = cleaned_events[:10]
