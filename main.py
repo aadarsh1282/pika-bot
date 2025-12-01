@@ -1820,6 +1820,38 @@ async def sync_cmd(ctx: commands.Context):
     except Exception as e:
         await ctx.send(f"⚠️ Could not sync slash commands:\n`{e}`")
 
+@bot.tree.command(name="update-hackathons", description="Manually refresh hackathons feed (admin only)")
+async def update_hackathons(interaction: discord.Interaction):
+    # admin check
+    if not interaction.user.guild_permissions.administrator:
+        await interaction.response.send_message(
+            "⚠️ Only admins can update hackathons.",
+            ephemeral=True
+        )
+        return
+
+    await interaction.response.defer(ephemeral=True)
+
+    events = await fetch_hackathons()
+    if not events:
+        await interaction.followup.send("⚠️ Could not fetch any hackathons from API or fallback.", ephemeral=True)
+        return
+
+    # Save to data/hackathons.json
+    os.makedirs("data", exist_ok=True)
+    try:
+        with open("data/hackathons.json", "w", encoding="utf-8") as f:
+            json.dump(events, f, indent=2, ensure_ascii=False)
+        await interaction.followup.send(
+            f"✅ Hackathons updated successfully.\nTotal events saved: **{len(events)}**.",
+            ephemeral=True
+        )
+    except Exception as e:
+        await interaction.followup.send(
+            f"⚠️ Failed to save hackathons.json:\n```{e}```",
+            ephemeral=True
+        )
+
 
 # -------------------------------------------------
 # 13) RUN THE BOT
