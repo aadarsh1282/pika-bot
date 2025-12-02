@@ -168,10 +168,10 @@
     "source": "Devpost"
   },
   {
-    "title": "CSW-SWE December Hacks",
-    "url": "https://csw-swe-december-hacks.devpost.com/",
-    "start_date": "Dec 02 - 14, 2025",
-    "location": "Online",
+    "title": "Columbia hackathon - AI club x Iterate",
+    "url": "https://columbia-iterate-hackathon.devpost.com/",
+    "start_date": "Dec 04, 2025",
+    "location": "Columbia Business school",
     "source": "Devpost"
   },
   {
@@ -324,7 +324,7 @@
   {
     "title": "HackHive 2026",
     "url": "https://hackhive-2026.devpost.com/",
-    "start_date": "Jan 18, 2026",
+    "start_date": "Jan 23 - 25, 2026",
     "location": "Ontario Tech University",
     "source": "Devpost"
   },
@@ -406,6 +406,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hook 'Em Hacks",
+    "url": "https://hook-em-hacks.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "University of Texas Austin - Union",
+    "source": "Devpost"
+  },
+  {
     "title": "Hoya Hacks 2026",
     "url": "https://hoya-hacks-2026.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
@@ -452,6 +459,13 @@
     "url": "https://makeuoft-2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
     "location": "TBH",
+    "source": "Devpost"
+  },
+  {
+    "title": "MathHacks",
+    "url": "https://mathhacks.devpost.com/",
+    "start_date": "Feb 21, 2026",
+    "location": "De La Salle College",
     "source": "Devpost"
   },
   {
@@ -529,13 +543,6 @@
     "url": "https://roslyn-code-overload-2025-fall.devpost.com/",
     "start_date": "Dec 06, 2025",
     "location": "Roslyn High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "SAP Business AI Innovation Challenge",
-    "url": "https://sap.devpost.com/",
-    "start_date": "Dec 01, 2025 - Jan 07, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -661,13 +668,6 @@
     "title": "Winter MelonJam 2025",
     "url": "https://wmj2025.devpost.com/",
     "start_date": "Dec 26 - 29, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "zzzyy",
-    "url": "https://zzzyy.devpost.com/",
-    "start_date": "Dec 02 - 31, 2025",
     "location": "Online",
     "source": "Devpost"
   },
@@ -872,6 +872,14 @@
     "mode": "Online Digital Only"
   },
   {
+    "title": "Hack@Brown",
+    "url": "https://hackatbrown.org/",
+    "start_date": "Jan 31st",
+    "location": "- Feb 1st Providence, Rhode Island",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
     "title": "Hack@URI",
     "url": "https://hackaturi.com/",
     "start_date": "Feb 21st - 22nd",
@@ -1004,6 +1012,14 @@
     "url": "https://xi.swamphacks.com/",
     "start_date": "Jan 23rd - 25th",
     "location": "Gainesville, Florida",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "TAMUhack",
+    "url": "https://th26.tamuhack.org",
+    "start_date": "Jan 24th - 25th",
+    "location": "College Station, Texas",
     "source": "MLH",
     "mode": "In-Person Only"
   },
