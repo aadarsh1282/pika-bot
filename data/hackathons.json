@@ -245,17 +245,17 @@
     "source": "Devpost"
   },
   {
-    "title": "GDG UWB Build with AI Ideathon: Head in the Clouds",
-    "url": "https://uwb-head-in-the-clouds.devpost.com/",
-    "start_date": "Dec 02 - 03, 2025",
-    "location": "Bothell, Washington, USA",
-    "source": "Devpost"
-  },
-  {
     "title": "Grizzly Hacks II",
     "url": "https://grizzly-hacks-ii.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Days by Cod3rs",
+    "url": "https://hack-days-by-cod3rs.devpost.com/",
+    "start_date": "Dec 06, 2025",
+    "location": "Erhvervsakademi SydVest Esbjerg",
     "source": "Devpost"
   },
   {
@@ -270,6 +270,13 @@
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack The Ridge 2025",
+    "url": "https://hack-the-ridge.devpost.com/",
+    "start_date": "Dec 06, 2025",
+    "location": "Iroquois Ridge High School",
     "source": "Devpost"
   },
   {
@@ -609,6 +616,13 @@
     "source": "Devpost"
   },
   {
+    "title": "STEMpower Hacks",
+    "url": "https://stempower-her-hacks.devpost.com/",
+    "start_date": "Dec 21 - 29, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Tech for good - first",
     "url": "https://ccds-tech-for-good-2026.devpost.com/",
     "start_date": "Jan 31 - Feb 18, 2026",
@@ -870,6 +884,22 @@
     "location": "Everywhere,",
     "source": "MLH",
     "mode": "Online Digital Only"
+  },
+  {
+    "title": "Hack with MLH and DigitalOcean: NYC",
+    "url": "https://luma.com/MLHAIHackathonNYC",
+    "start_date": "Dec 11th - 12th",
+    "location": "Brooklyn, New York",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hack with MLH and DigitalOcean: SF",
+    "url": "https://luma.com/MLHAIHackathonSF",
+    "start_date": "Dec 4th - 5th",
+    "location": "San Francisco, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
     "title": "Hack@Brown",
