@@ -105,13 +105,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Claude Builder Club @ TCD Hackathon",
-    "url": "https://cbc-at-trinity-hackathon.devpost.com/",
-    "start_date": "Dec 03, 2025",
-    "location": "Classroom 119, Trinity Business School",
-    "source": "Devpost"
-  },
-  {
     "title": "Code Collab",
     "url": "https://code-collab.devpost.com/",
     "start_date": "Dec 12 - 14, 2025",
@@ -277,6 +270,13 @@
     "url": "https://hack-the-ridge.devpost.com/",
     "start_date": "Dec 06, 2025",
     "location": "Iroquois Ridge High School",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack with MLH and DigitalOcean: SF",
+    "url": "https://mlhaihackathonsf.devpost.com/",
+    "start_date": "Dec 04 - 06, 2025",
+    "location": "San Francisco, CA, USA",
     "source": "Devpost"
   },
   {
@@ -494,6 +494,13 @@
     "url": "https://mega-hackathon-2026-students.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Mercile J. Lee Hackathon",
+    "url": "https://mercile-j-lee-hackathon.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Madison, WI, USA",
     "source": "Devpost"
   },
   {
@@ -848,7 +855,7 @@
   {
     "title": "DIVERSITY QWER Hacks",
     "url": "https://www.qwerhacks.com/",
-    "start_date": "Jan 24th - 25th",
+    "start_date": "Feb 7th - 8th",
     "location": "Los Angeles, California",
     "source": "MLH",
     "mode": "In-Person Only"
