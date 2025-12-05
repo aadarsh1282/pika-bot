@@ -30,7 +30,7 @@
   {
     "title": "AI Agents Hackathon: Memories That Last",
     "url": "https://memories-that-last.devpost.com/",
-    "start_date": "Dec 17, 2025",
+    "start_date": "Dec 17 - 18, 2025",
     "location": "SFO28",
     "source": "Devpost"
   },
@@ -119,13 +119,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Code for Impact 2025",
-    "url": "https://code-for-impact-2025.devpost.com/",
-    "start_date": "Dec 05 - 07, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Code Nova",
     "url": "https://code-nova.devpost.com/",
     "start_date": "Dec 13 - 16, 2025",
@@ -158,13 +151,6 @@
     "url": "https://codesync.devpost.com/",
     "start_date": "Dec 14, 2025",
     "location": "Anand International College",
-    "source": "Devpost"
-  },
-  {
-    "title": "Columbia hackathon - AI club x Iterate",
-    "url": "https://columbia-iterate-hackathon.devpost.com/",
-    "start_date": "Dec 04, 2025",
-    "location": "Columbia Business school",
     "source": "Devpost"
   },
   {
@@ -238,13 +224,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Grizzly Hacks II",
-    "url": "https://grizzly-hacks-ii.devpost.com/",
-    "start_date": "Feb 21 - 22, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack Days by Cod3rs",
     "url": "https://hack-days-by-cod3rs.devpost.com/",
     "start_date": "Dec 06, 2025",
@@ -270,13 +249,6 @@
     "url": "https://hack-the-ridge.devpost.com/",
     "start_date": "Dec 06, 2025",
     "location": "Iroquois Ridge High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack with MLH and DigitalOcean: SF",
-    "url": "https://mlhaihackathonsf.devpost.com/",
-    "start_date": "Dec 04 - 06, 2025",
-    "location": "San Francisco, CA, USA",
     "source": "Devpost"
   },
   {
@@ -340,13 +312,6 @@
     "url": "https://hackhorizon.devpost.com/",
     "start_date": "Dec 15 - 17, 2025",
     "location": "Jecrc University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hackmas: HackMars 2.0",
-    "url": "https://hackmars-2.devpost.com/",
-    "start_date": "Dec 10 - 31, 2025",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -438,13 +403,6 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "LaunchHacks V",
-    "url": "https://launchhacks-v.devpost.com/",
-    "start_date": "Jun 06 - 07, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -574,6 +532,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SensAI Hack - San Francisco",
+    "url": "https://sensai-hack-san-francisco.devpost.com/",
+    "start_date": "Dec 05 - 07, 2025",
+    "location": "Frontier Tower",
+    "source": "Devpost"
+  },
+  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -592,13 +557,6 @@
     "url": "https://solve-for-society.devpost.com/",
     "start_date": "Dec 06 - 07, 2025",
     "location": "Newark, NJ, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "SOTA-AI December Contest",
-    "url": "https://sota-ai-december-contest.devpost.com/",
-    "start_date": "Dec 08, 2025 - Jan 07, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -630,7 +588,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Tech for good - first",
+    "title": "Tech For Good 2026: The LLM Desktop Challenge",
     "url": "https://ccds-tech-for-good-2026.devpost.com/",
     "start_date": "Jan 31 - Feb 18, 2026",
     "location": "College Of Computing & Data Science",
