@@ -154,13 +154,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Cursor x Anthropic Hackathon Malaysia",
-    "url": "https://cursor-hack-my.devpost.com/",
-    "start_date": "Dec 05 - 06, 2025",
-    "location": "Monash University Malaysia",
-    "source": "Devpost"
-  },
-  {
     "title": "December AI Challenge",
     "url": "https://december-ai-challenge.devpost.com/",
     "start_date": "Dec 13, 2025 - Jan 05, 2026",
@@ -221,13 +214,6 @@
     "url": "https://gde-mit-hackathon.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Gábor Dénes Egyetem",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack Days by Cod3rs",
-    "url": "https://hack-days-by-cod3rs.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Erhvervsakademi SydVest Esbjerg",
     "source": "Devpost"
   },
   {
@@ -322,13 +308,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hackrift 2025",
-    "url": "https://hackrift-2025.devpost.com/",
-    "start_date": "Dec 07 - 10, 2025",
-    "location": "SIT Punggol Campus",
-    "source": "Devpost"
-  },
-  {
     "title": "HackSmart",
     "url": "https://hacksmart-27647.devpost.com/",
     "start_date": "Jan 30 - Feb 01, 2026",
@@ -403,6 +382,13 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
+    "source": "Devpost"
+  },
+  {
+    "title": "Kifiya Inspire 2.0",
+    "url": "https://kifiya-inspire-2-0.devpost.com/",
+    "start_date": "Dec 20, 2025",
+    "location": "Addis Ababa, Ethiopia",
     "source": "Devpost"
   },
   {
@@ -532,13 +518,6 @@
     "source": "Devpost"
   },
   {
-    "title": "SensAI Hack - San Francisco",
-    "url": "https://sensai-hack-san-francisco.devpost.com/",
-    "start_date": "Dec 05 - 07, 2025",
-    "location": "Frontier Tower",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -588,16 +567,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Tech For Good 2026: The LLM Desktop Challenge",
-    "url": "https://ccds-tech-for-good-2026.devpost.com/",
-    "start_date": "Jan 31 - Feb 18, 2026",
-    "location": "College Of Computing & Data Science",
-    "source": "Devpost"
-  },
-  {
-    "title": "TecStorm'26",
-    "url": "https://tecstorm26.devpost.com/",
-    "start_date": "Jan 01 - 27, 2026",
+    "title": "TechSprint Hackathon 2025 - Leveraging The Power of AI",
+    "url": "https://techsprint-2025-.devpost.com/",
+    "start_date": "Dec 07 - 25, 2025",
     "location": "Online",
     "source": "Devpost"
   },
@@ -620,6 +592,13 @@
     "url": "https://triton-hacks-2026.devpost.com/",
     "start_date": "Jan 16 - 18, 2026",
     "location": "San Diego, CA, USA",
+    "source": "Devpost"
+  },
+  {
+    "title": "UD CIS Honors Hackathon 2025",
+    "url": "https://f25-ud-cis-honors-hackathon.devpost.com/",
+    "start_date": "Dec 06, 2025",
+    "location": "Newark, DE",
     "source": "Devpost"
   },
   {
@@ -819,6 +798,14 @@
     "mode": "In-Person Only"
   },
   {
+    "title": "DIVERSITY SheHacks+ 10",
+    "url": "https://www.shehacks.ca/",
+    "start_date": "Jan 9th - 11th",
+    "location": "London, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
     "title": "DIVERSITY WEHack",
     "url": "https://www.wehackutd.com",
     "start_date": "Apr 11th - 12th",
@@ -855,14 +842,6 @@
     "url": "https://luma.com/MLHAIHackathonNYC",
     "start_date": "Dec 11th - 12th",
     "location": "Brooklyn, New York",
-    "source": "MLH",
-    "mode": "In-Person Only"
-  },
-  {
-    "title": "Hack with MLH and DigitalOcean: SF",
-    "url": "https://luma.com/MLHAIHackathonSF",
-    "start_date": "Dec 4th - 5th",
-    "location": "San Francisco, California",
     "source": "MLH",
     "mode": "In-Person Only"
   },
@@ -911,6 +890,14 @@
     "url": "https://www.hacksussex.com/Events/gamejam",
     "start_date": "GameJam 20",
     "location": "25 Dec 6th - 7th Brighton, Sussex",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hackville",
+    "url": "https://hackville.io/",
+    "start_date": "Jan 17th - 18th",
+    "location": "Mississauga, Ontario",
     "source": "MLH",
     "mode": "In-Person Only"
   },
