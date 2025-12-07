@@ -140,17 +140,17 @@
     "source": "Devpost"
   },
   {
-    "title": "CodeFest: Edition Dec 2025 - Session B — In-Person",
-    "url": "https://codefesthack2025sb.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "codesync",
     "url": "https://codesync.devpost.com/",
     "start_date": "Dec 14, 2025",
     "location": "Anand International College",
+    "source": "Devpost"
+  },
+  {
+    "title": "Codorra",
+    "url": "https://codorra1.devpost.com/",
+    "start_date": "Apr 17 - 27, 2026",
+    "location": "Bengaluru, India",
     "source": "Devpost"
   },
   {
@@ -182,24 +182,10 @@
     "source": "Devpost"
   },
   {
-    "title": "DevFest Linz: Great AI Hackathon",
-    "url": "https://devfest-linz-2025.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Johannes Kepler University Linz",
-    "source": "Devpost"
-  },
-  {
     "title": "DevNetwork [AI + ML] Hackathon 2026",
     "url": "https://devnetwork-ai-ml-hack-2026.devpost.com/",
     "start_date": "May 11 - 28, 2026",
     "location": "South SF Conference Center + Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "East Bay Hackers' Winter Hackathon",
-    "url": "https://east-bay-hacker-winter.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Samba HQ",
     "source": "Devpost"
   },
   {
@@ -231,10 +217,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack The Ridge 2025",
-    "url": "https://hack-the-ridge.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Iroquois Ridge High School",
+    "title": "Hack The Problem",
+    "url": "https://hack-the-problem.devpost.com/",
+    "start_date": "Dec 08 - 09, 2025",
+    "location": "CSE Department",
     "source": "Devpost"
   },
   {
@@ -319,13 +305,6 @@
     "url": "https://hackstorm.devpost.com/",
     "start_date": "Jan 09 - 11, 2026",
     "location": "Silicon Valley",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackSussex GameJam 2025",
-    "url": "https://hacksussex-gamejam-2025.devpost.com/",
-    "start_date": "Dec 06 - 07, 2025",
-    "location": "Chichester 1",
     "source": "Devpost"
   },
   {
@@ -448,6 +427,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Missing Amps Winter Classic",
+    "url": "https://winter-classic.devpost.com/",
+    "start_date": "Dec 07, 2025 - Jan 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "MVHacks 9.0",
     "url": "https://mvhacks-9-0.devpost.com/",
     "start_date": "Mar 28, 2026",
@@ -497,13 +483,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Roslyn Code Overload 2025",
-    "url": "https://roslyn-code-overload-2025-fall.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Roslyn High School",
-    "source": "Devpost"
-  },
-  {
     "title": "SASEHacks 2026",
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
@@ -529,13 +508,6 @@
     "url": "https://snow-fest.devpost.com/",
     "start_date": "Jan 01 - 31, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Solve for Society",
-    "url": "https://solve-for-society.devpost.com/",
-    "start_date": "Dec 06 - 07, 2025",
-    "location": "Newark, NJ, USA",
     "source": "Devpost"
   },
   {
@@ -567,13 +539,6 @@
     "source": "Devpost"
   },
   {
-    "title": "TechSprint Hackathon 2025 - Leveraging The Power of AI",
-    "url": "https://techsprint-2025-.devpost.com/",
-    "start_date": "Dec 07 - 25, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Jan 26 - 29, 2026",
@@ -592,13 +557,6 @@
     "url": "https://triton-hacks-2026.devpost.com/",
     "start_date": "Jan 16 - 18, 2026",
     "location": "San Diego, CA, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "UD CIS Honors Hackathon 2025",
-    "url": "https://f25-ud-cis-honors-hackathon.devpost.com/",
-    "start_date": "Dec 06, 2025",
-    "location": "Newark, DE",
     "source": "Devpost"
   },
   {
