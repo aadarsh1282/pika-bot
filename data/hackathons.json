@@ -79,7 +79,7 @@
   {
     "title": "Bitcoin++ Sovereignty Edition",
     "url": "https://freedom.devpost.com/",
-    "start_date": "Dec 16, 2025",
+    "start_date": "Dec 15 - 16, 2025",
     "location": "Taipei",
     "source": "Devpost"
   },
@@ -133,13 +133,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CodeFest Hackathon 2025 SubmissionPortal | Register@codefesthack2025.vercel.app",
-    "url": "https://codefesthack2025.devpost.com/",
-    "start_date": "Dec 08 - 16, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "codesync",
     "url": "https://codesync.devpost.com/",
     "start_date": "Dec 14, 2025",
@@ -150,6 +143,13 @@
     "title": "Codorra",
     "url": "https://codorra1.devpost.com/",
     "start_date": "Apr 17 - 27, 2026",
+    "location": "Bengaluru, India",
+    "source": "Devpost"
+  },
+  {
+    "title": "Codorra",
+    "url": "https://codorra-27769.devpost.com/",
+    "start_date": "Apr 25 - Jun 30, 2026",
     "location": "Bengaluru, India",
     "source": "Devpost"
   },
@@ -214,13 +214,6 @@
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack The Problem",
-    "url": "https://hack-the-problem.devpost.com/",
-    "start_date": "Dec 08 - 09, 2025",
-    "location": "CSE Department",
     "source": "Devpost"
   },
   {
@@ -352,7 +345,7 @@
   {
     "title": "ImpactX 2025",
     "url": "https://impactx2025.devpost.com/",
-    "start_date": "Dec 13 - 15, 2025",
+    "start_date": "Dec 12 - 15, 2025",
     "location": "Online",
     "source": "Devpost"
   },
@@ -424,13 +417,6 @@
     "url": "https://mercile-j-lee-hackathon.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "Madison, WI, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "Missing Amps Winter Classic",
-    "url": "https://winter-classic.devpost.com/",
-    "start_date": "Dec 07, 2025 - Jan 01, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -511,6 +497,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SOTA-AI December Contest",
+    "url": "https://sota-ai-december-contest.devpost.com/",
+    "start_date": "Dec 08, 2025 - Jan 07, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Square Hacks- Build for Rural India",
     "url": "https://squarehacks.devpost.com/",
     "start_date": "Dec 26 - 27, 2025",
@@ -543,6 +536,13 @@
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Jan 26 - 29, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "TinkerX",
+    "url": "https://tinkerx.devpost.com/",
+    "start_date": "Dec 19 - 21, 2025",
+    "location": "Kathmandu, Nepal",
     "source": "Devpost"
   },
   {
@@ -844,14 +844,6 @@
     "mode": "Digital Only"
   },
   {
-    "title": "HackSussex",
-    "url": "https://www.hacksussex.com/Events/gamejam",
-    "start_date": "GameJam 20",
-    "location": "25 Dec 6th - 7th Brighton, Sussex",
-    "source": "MLH",
-    "mode": "In-Person Only"
-  },
-  {
     "title": "Hackville",
     "url": "https://hackville.io/",
     "start_date": "Jan 17th - 18th",
@@ -880,6 +872,14 @@
     "url": "https://hoyahacks.georgetown.domains/",
     "start_date": "Jan 23rd - 25th",
     "location": "Washington, District of Columbia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Innerve",
+    "url": "https://www.innerve.tech/",
+    "start_date": "Jan 30th - 31st",
+    "location": "Pune, Maharashtra",
     "source": "MLH",
     "mode": "In-Person Only"
   },
