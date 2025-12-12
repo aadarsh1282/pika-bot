@@ -21,6 +21,13 @@
     "source": "Devpost"
   },
   {
+    "title": "305 Hack'Jan26 SubmissionPortal | Register@hackuniversity-hackathons.vercel.app",
+    "url": "https://305hackjan2026.devpost.com/",
+    "start_date": "Jan 16 - 24, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "757 BLD WKND 2026",
     "url": "https://757-bld-wknd-2026.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -147,13 +154,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Code Collab",
-    "url": "https://code-collab.devpost.com/",
-    "start_date": "Dec 12 - 14, 2025",
-    "location": "Shankara Institute of Technology",
-    "source": "Devpost"
-  },
-  {
     "title": "CODE FIESTA",
     "url": "https://code-fiesta.devpost.com/",
     "start_date": "Dec 15 - 18, 2025",
@@ -196,6 +196,13 @@
     "source": "Devpost"
   },
   {
+    "title": "ColorStack Winter Break Hackathon Edition 2025",
+    "url": "https://colorstackwinterhackathon2025.devpost.com/",
+    "start_date": "Dec 19, 2025 - Jan 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "December AI Challenge",
     "url": "https://december-ai-challenge.devpost.com/",
     "start_date": "Dec 13, 2025 - Jan 05, 2026",
@@ -207,13 +214,6 @@
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
     "location": "UofT Mississauga - Maanjiwe Nendamowinan",
-    "source": "Devpost"
-  },
-  {
-    "title": "Dev Meet",
-    "url": "https://dev-meet.devpost.com/",
-    "start_date": "Dec 12 - 14, 2025",
-    "location": "Arya College Of Engineering & IT",
     "source": "Devpost"
   },
   {
@@ -249,6 +249,13 @@
     "url": "https://gde-mit-hackathon.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Gábor Dénes Egyetem",
+    "source": "Devpost"
+  },
+  {
+    "title": "Global Innovation Build Challenge V1",
+    "url": "https://global-innovation-challenge-v1.devpost.com/",
+    "start_date": "Dec 15, 2025 - Jan 08, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -312,13 +319,6 @@
     "url": "https://hackcwru-012025.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
     "location": "Case Western Reserve University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hacker,s Meetup",
-    "url": "https://hacker-s-meetup.devpost.com/",
-    "start_date": "Dec 12 - 15, 2025",
-    "location": "JK Lakshmipat University,Jaipur",
     "source": "Devpost"
   },
   {
@@ -581,6 +581,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Single Shot Hackathon by Berrry.app",
+    "url": "https://one-shot-one-app.devpost.com/",
+    "start_date": "Dec 13, 2025",
+    "location": "Homebrew Club",
+    "source": "Devpost"
+  },
+  {
     "title": "Snow Fest",
     "url": "https://snow-fest.devpost.com/",
     "start_date": "Jan 01 - 31, 2026",
@@ -817,6 +824,14 @@
     "mode": "In-Person Only"
   },
   {
+    "title": "DIVERSITY InnovateHer",
+    "url": "https://innovateherhacks.org/",
+    "start_date": "Feb 7th - 8th",
+    "location": "West Lafayette, Indiana",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
     "title": "DIVERSITY Pearl Hacks",
     "url": "https://pearlhacks.com/",
     "start_date": "Feb 21st - 22nd",
@@ -977,10 +992,26 @@
     "mode": "In-Person Only"
   },
   {
+    "title": "Mac-a-Thon",
+    "url": "https://mac-a-thon.gdscmcmasteru.ca/",
+    "start_date": "Feb 6th - 8th",
+    "location": "Hamilton, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
     "title": "McHacks",
     "url": "https://mchacks.ca/",
     "start_date": "Jan 17th - 18th",
     "location": "Montreal, Quebec",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "NexHacks",
+    "url": "https://nexhacks.com",
+    "start_date": "Jan 17th - 18th",
+    "location": "Pittsburgh, PA",
     "source": "MLH",
     "mode": "In-Person Only"
   },
