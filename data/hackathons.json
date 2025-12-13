@@ -21,13 +21,6 @@
     "source": "Devpost"
   },
   {
-    "title": "305 Hack'Jan26 SubmissionPortal | Register@hackuniversity-hackathons.vercel.app",
-    "url": "https://305hackjan2026.devpost.com/",
-    "start_date": "Jan 16 - 24, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "757 BLD WKND 2026",
     "url": "https://757-bld-wknd-2026.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -52,6 +45,13 @@
     "title": "Alameda Hacks",
     "url": "https://alameda-hacks.devpost.com/",
     "start_date": "Jan 01 - 11, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Apertre 3.0",
+    "url": "https://apertre.devpost.com/",
+    "start_date": "Jan 31 - Mar 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -133,13 +133,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Build w/ MongoDB",
-    "url": "https://build-w-mongodb.devpost.com/",
-    "start_date": "Dec 15, 2025",
-    "location": "Bhubaneswar, India",
-    "source": "Devpost"
-  },
-  {
     "title": "CalgaryHacks 2026",
     "url": "https://calgaryhacks2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
@@ -158,13 +151,6 @@
     "url": "https://code-fiesta.devpost.com/",
     "start_date": "Dec 15 - 18, 2025",
     "location": "jaipur institute of technology",
-    "source": "Devpost"
-  },
-  {
-    "title": "Code Nova",
-    "url": "https://code-nova.devpost.com/",
-    "start_date": "Dec 13 - 16, 2025",
-    "location": "Amity University, Jaipur",
     "source": "Devpost"
   },
   {
@@ -252,13 +238,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Global Innovation Build Challenge V1",
-    "url": "https://global-innovation-challenge-v1.devpost.com/",
-    "start_date": "Dec 15, 2025 - Jan 08, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Grizzly Hacks II",
     "url": "https://grizzly-hacks-ii.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
@@ -277,20 +256,6 @@
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack with MLH and DigitalOcean: NYC",
-    "url": "https://hack-with-mlh-and-do-nyc.devpost.com/",
-    "start_date": "Dec 12 - 13, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack world",
-    "url": "https://hack-world.devpost.com/",
-    "start_date": "Dec 29, 2025 - Jan 26, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -410,13 +375,6 @@
     "url": "https://hoya-hacks-2026.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
     "location": "Healey Family Student Center",
-    "source": "Devpost"
-  },
-  {
-    "title": "ImpactX 2025",
-    "url": "https://impactx2025.devpost.com/",
-    "start_date": "Dec 12 - 15, 2025",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -546,6 +504,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Portfoliathon Intra 1.0",
+    "url": "https://intra-portfoliathon.devpost.com/",
+    "start_date": "Dec 20 - 23, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -672,6 +637,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Zero-Wait Unstaking Using EIP-7702",
+    "url": "https://unstaking-using-eip-7702.devpost.com/",
+    "start_date": "Dec 15 - 23, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "✰ LIVE AI Ivy Plus 2026",
     "url": "https://liveai-ivyplus-2026.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -710,6 +682,14 @@
       "2026"
     ],
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
+  },
+  {
+    "title": "",
+    "url": "https://www.uottahack.ca/",
+    "start_date": "uOttaHack 8",
+    "location": "Jan 16th - 18th Ottawa, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
     "title": "",
@@ -1052,6 +1032,14 @@
     "url": "https://datathon.rice.edu/",
     "start_date": "Jan 23rd - 25th",
     "location": "Houston, Texas",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Rockethacks",
+    "url": "https://www.rockethacks.org/",
+    "start_date": "Mar 14th - 15th",
+    "location": "Toledo, Ohio",
     "source": "MLH",
     "mode": "In-Person Only"
   },
