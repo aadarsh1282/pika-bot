@@ -42,6 +42,13 @@
     "source": "Devpost"
   },
   {
+    "title": "AI Hack Night - Let’s build AI Agents",
+    "url": "https://ai-hack-night-ai-agents.devpost.com/",
+    "start_date": "Dec 17, 2025",
+    "location": "Antler株式会社 (Antler Japan)",
+    "source": "Devpost"
+  },
+  {
     "title": "Alameda Hacks",
     "url": "https://alameda-hacks.devpost.com/",
     "start_date": "Jan 01 - 11, 2026",
@@ -140,6 +147,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Caltech Longevity Hackathon 2026",
+    "url": "https://caltechlongevity.devpost.com/",
+    "start_date": "May 22 - 24, 2026",
+    "location": "Caltech Longevity Club",
+    "source": "Devpost"
+  },
+  {
     "title": "CircuitBreak 2025",
     "url": "https://circuitbreak-2025.devpost.com/",
     "start_date": "Jan 01 - 31, 2026",
@@ -158,13 +172,6 @@
     "url": "https://codespring.devpost.com/",
     "start_date": "Jan 05 - Feb 11, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "codesync",
-    "url": "https://codesync.devpost.com/",
-    "start_date": "Dec 14, 2025",
-    "location": "Anand International College",
     "source": "Devpost"
   },
   {
@@ -189,13 +196,6 @@
     "source": "Devpost"
   },
   {
-    "title": "December AI Challenge",
-    "url": "https://december-ai-challenge.devpost.com/",
-    "start_date": "Dec 13, 2025 - Jan 05, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "DeerHacks V",
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -207,6 +207,13 @@
     "url": "https://developerweek-2026-hackathon.devpost.com/",
     "start_date": "Feb 03 - 20, 2026",
     "location": "San Jose Convention Center + Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "DevForge",
+    "url": "https://nst-devforge.devpost.com/",
+    "start_date": "Dec 20, 2025",
+    "location": "S-VYASA School of Advanced Studies",
     "source": "Devpost"
   },
   {
@@ -546,13 +553,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Single Shot Hackathon by Berrry.app",
-    "url": "https://one-shot-one-app.devpost.com/",
-    "start_date": "Dec 13, 2025",
-    "location": "Homebrew Club",
-    "source": "Devpost"
-  },
-  {
     "title": "Snow Fest",
     "url": "https://snow-fest.devpost.com/",
     "start_date": "Jan 01 - 31, 2026",
@@ -633,6 +633,13 @@
     "title": "Winter MelonJam 2025",
     "url": "https://wmj2025.devpost.com/",
     "start_date": "Dec 26 - 29, 2025",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Young Innovators Hackathon",
+    "url": "https://young-innovators-hackathon.devpost.com/",
+    "start_date": "Dec 25, 2025 - Jan 13, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -866,14 +873,6 @@
     "location": "Everywhere,",
     "source": "MLH",
     "mode": "Online Digital Only"
-  },
-  {
-    "title": "Hack with MLH and DigitalOcean: NYC",
-    "url": "https://luma.com/MLHAIHackathonNYC",
-    "start_date": "Dec 12th - 13th",
-    "location": "Brooklyn, New York",
-    "source": "MLH",
-    "mode": "In-Person Only"
   },
   {
     "title": "Hack@Brown",
