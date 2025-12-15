@@ -105,13 +105,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BellHacks 3.0",
-    "url": "https://bellhacks3.devpost.com/",
-    "start_date": "Dec 14, 2025",
-    "location": "Bellarmine College Preparatory",
-    "source": "Devpost"
-  },
-  {
     "title": "BevHacks 2026",
     "url": "https://bevhacks-2026.devpost.com/",
     "start_date": "Jan 10, 2026",
@@ -158,13 +151,6 @@
     "url": "https://circuitbreak-2025.devpost.com/",
     "start_date": "Jan 01 - 31, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "CODE FIESTA",
-    "url": "https://code-fiesta.devpost.com/",
-    "start_date": "Dec 15 - 18, 2025",
-    "location": "jaipur institute of technology",
     "source": "Devpost"
   },
   {
@@ -259,6 +245,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack Nepal",
+    "url": "https://hack-nepal.devpost.com/",
+    "start_date": "Dec 25, 2025 - Jan 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack the Coast",
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
@@ -312,13 +305,6 @@
     "url": "https://hackhive-2026.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
     "location": "Ontario Tech University",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackHorizon",
-    "url": "https://hackhorizon.devpost.com/",
-    "start_date": "Dec 15 - 17, 2025",
-    "location": "Jecrc University",
     "source": "Devpost"
   },
   {
@@ -640,13 +626,6 @@
     "title": "Young Innovators Hackathon",
     "url": "https://young-innovators-hackathon.devpost.com/",
     "start_date": "Dec 25, 2025 - Jan 13, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Zero-Wait Unstaking Using EIP-7702",
-    "url": "https://unstaking-using-eip-7702.devpost.com/",
-    "start_date": "Dec 15 - 23, 2025",
     "location": "Online",
     "source": "Devpost"
   },
