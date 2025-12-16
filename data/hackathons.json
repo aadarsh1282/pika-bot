@@ -119,13 +119,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Bitcoin++ Sovereignty Edition",
-    "url": "https://freedom.devpost.com/",
-    "start_date": "Dec 15 - 16, 2025",
-    "location": "Taipei",
-    "source": "Devpost"
-  },
-  {
     "title": "Blue Line BuildFest",
     "url": "https://bluelinebuildfest.devpost.com/",
     "start_date": "Jan 24, 2026",
@@ -231,6 +224,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Gemini Hack Days FUTMINNA '26",
+    "url": "https://hack-days-futminna-26.devpost.com/",
+    "start_date": "Feb 14, 2026",
+    "location": "Windows on America, Main Library,",
+    "source": "Devpost"
+  },
+  {
     "title": "Grizzly Hacks II",
     "url": "https://grizzly-hacks-ii.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
@@ -256,6 +256,13 @@
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack With Indiaa - Live Hacking Event",
+    "url": "https://hackwithindiaa.devpost.com/",
+    "start_date": "Jan 17 - 18, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -469,6 +476,13 @@
     "source": "Devpost"
   },
   {
+    "title": "NUS Fintech Summit 2026",
+    "url": "https://nus-fintech-summit-2026.devpost.com/",
+    "start_date": "Jan 06 - 08, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "nwHacks 2026",
     "url": "https://nwhacks-2026.devpost.com/",
     "start_date": "Jan 17 - 18, 2026",
@@ -560,17 +574,17 @@
     "source": "Devpost"
   },
   {
-    "title": "StarkHacks",
-    "url": "https://starkhacks.devpost.com/",
-    "start_date": "Apr 17 - 19, 2026",
-    "location": "Purdue Armory",
-    "source": "Devpost"
-  },
-  {
     "title": "STEMpower Hacks",
     "url": "https://stempower-her-hacks.devpost.com/",
     "start_date": "Dec 21 - 29, 2025",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "The Developer's Connect",
+    "url": "https://the-developer-s-connect.devpost.com/",
+    "start_date": "Jan 12 - 13, 2026",
+    "location": "Jaipur, India",
     "source": "Devpost"
   },
   {
@@ -606,6 +620,13 @@
     "url": "https://unitedhacksv6.devpost.com/",
     "start_date": "Jan 16 - 18, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "ValleyHacks",
+    "url": "https://valleyhacks2026.devpost.com/",
+    "start_date": "Jan 10, 2026",
+    "location": "Newark Library",
     "source": "Devpost"
   },
   {
