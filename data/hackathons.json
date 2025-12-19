@@ -154,13 +154,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ColorStack Winter Break Hackathon Edition 2025",
-    "url": "https://colorstackwinterhackathon2025.devpost.com/",
-    "start_date": "Dec 19, 2025 - Jan 12, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "DeerHacks V",
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -296,7 +289,7 @@
   {
     "title": "HackFW",
     "url": "https://fwtx.devpost.com/",
-    "start_date": "Mar 26 - Apr 26, 2026",
+    "start_date": "Apr 03 - May 02, 2026",
     "location": "Fort Worth",
     "source": "Devpost"
   },
@@ -595,13 +588,6 @@
     "source": "Devpost"
   },
   {
-    "title": "TinkerX",
-    "url": "https://tinkerx.devpost.com/",
-    "start_date": "Dec 19 - 21, 2025",
-    "location": "Kathmandu, Nepal",
-    "source": "Devpost"
-  },
-  {
     "title": "TreeLine Hacks",
     "url": "https://treelinev1.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
@@ -707,6 +693,14 @@
   },
   {
     "title": "",
+    "url": "https://polyhacks.io/fr/home",
+    "start_date": "PolyHACKS 20",
+    "location": "26 Jan 31st - Feb 1st Montréal, Québec",
+    "source": "MLH",
+    "mode": "Digital Only"
+  },
+  {
+    "title": "",
     "url": "https://11.ugahacks.com",
     "start_date": "UGAHacks 11",
     "location": "Feb 6th - 8th Athens, Georgia",
@@ -738,6 +732,14 @@
     "mode": "In-Person Only"
   },
   {
+    "title": "BrébeufHx",
+    "url": "https://brebeufhackathon.com/",
+    "start_date": "Jan 16th - 17th",
+    "location": "Montréal, Quebec",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
     "title": "ConUHacks X",
     "url": "https://www.conuhacks.io/",
     "start_date": "Jan 24th - 25th",
@@ -758,6 +760,22 @@
     "url": "https://cruzhacks.com/",
     "start_date": "Jan 16th - 18th",
     "location": "Santa Cruz, California",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "CTRL+HACK+DEL",
+    "url": "https://ctrlhackdel.com/",
+    "start_date": "Feb 13th - 15th",
+    "location": "Markham, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "CUhackit",
+    "url": "https://cuhack.it/",
+    "start_date": "Feb 27th - 28th",
+    "location": "Clemson, South Carolina",
     "source": "MLH",
     "mode": "In-Person Only"
   },
@@ -858,17 +876,17 @@
     "mode": "In-Person Only"
   },
   {
-    "title": "Global Hack Week: AI/ML",
-    "url": "https://events.mlh.io/events/12943",
-    "start_date": "Dec 12th - 18th",
+    "title": "Global Hack Week: Beginners",
+    "url": "https://events.mlh.io/events/13277",
+    "start_date": "Jan 9th - 15th",
     "location": "Everywhere,",
     "source": "MLH",
     "mode": "Online Digital Only"
   },
   {
-    "title": "Global Hack Week: Beginners",
-    "url": "https://events.mlh.io/events/13277",
-    "start_date": "Jan 9th - 15th",
+    "title": "Global Hack Week: Cloud",
+    "url": "https://events.mlh.io/events/13471",
+    "start_date": "Mar 13th - 19th",
     "location": "Everywhere,",
     "source": "MLH",
     "mode": "Online Digital Only"
@@ -880,6 +898,14 @@
     "location": "Everywhere,",
     "source": "MLH",
     "mode": "Online Digital Only"
+  },
+  {
+    "title": "GoatHacks",
+    "url": "https://hack.wpi.edu/index.html",
+    "start_date": "Jan 16th - 18th",
+    "location": "Worcester, Massachusetts",
+    "source": "MLH",
+    "mode": "In-Person Only"
   },
   {
     "title": "Hack@Brown",
@@ -926,6 +952,14 @@
     "url": "https://hackville.io/",
     "start_date": "Jan 17th - 18th",
     "location": "Mississauga, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "Hard Hack",
+    "url": "https://hardhack.dev/",
+    "start_date": "Jan 24th - 25th",
+    "location": "La Jolla, California",
     "source": "MLH",
     "mode": "In-Person Only"
   },
