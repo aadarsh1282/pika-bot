@@ -141,15 +141,15 @@
   },
   {
     "title": "Codorra",
-    "url": "https://codorra1.devpost.com/",
-    "start_date": "Apr 17 - 27, 2026",
+    "url": "https://codorra-27769.devpost.com/",
+    "start_date": "Apr 25 - Jun 30, 2026",
     "location": "Bengaluru, India",
     "source": "Devpost"
   },
   {
     "title": "Codorra",
-    "url": "https://codorra-27769.devpost.com/",
-    "start_date": "Apr 25 - Jun 30, 2026",
+    "url": "https://codorra1.devpost.com/",
+    "start_date": "Apr 17 - 27, 2026",
     "location": "Bengaluru, India",
     "source": "Devpost"
   },
@@ -168,10 +168,10 @@
     "source": "Devpost"
   },
   {
-    "title": "DevForge",
-    "url": "https://nst-devforge.devpost.com/",
+    "title": "DEVFEST 2025",
+    "url": "https://devfest-2025.devpost.com/",
     "start_date": "Dec 20, 2025",
-    "location": "S-VYASA School of Advanced Studies",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -329,13 +329,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hacktivism",
-    "url": "https://hacktivism-27417.devpost.com/",
-    "start_date": "Dec 20 - 21, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "HackTrent 2026",
     "url": "https://hacktrent-2026.devpost.com/",
     "start_date": "Nov 06 - 08, 2026",
@@ -382,13 +375,6 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Kifiya Inspire 2.0",
-    "url": "https://kifiya-inspire-2-0.devpost.com/",
-    "start_date": "Dec 20, 2025",
-    "location": "Addis Ababa, Ethiopia",
     "source": "Devpost"
   },
   {
@@ -640,6 +626,13 @@
     "title": "Young Innovators Hackathon",
     "url": "https://young-innovators-hackathon.devpost.com/",
     "start_date": "Dec 25, 2025 - Jan 13, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Your dream",
+    "url": "https://your-dream.devpost.com/",
+    "start_date": "Dec 22 - 29, 2025",
     "location": "Online",
     "source": "Devpost"
   },
