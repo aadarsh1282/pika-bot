@@ -168,13 +168,6 @@
     "source": "Devpost"
   },
   {
-    "title": "DEVFEST 2025",
-    "url": "https://devfest-2025.devpost.com/",
-    "start_date": "Dec 20, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "DevNetwork [AI + ML] Hackathon 2026",
     "url": "https://devnetwork-ai-ml-hack-2026.devpost.com/",
     "start_date": "May 11 - 28, 2026",
@@ -192,6 +185,13 @@
     "title": "evensonarisnord",
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "FutureGrid — The INVESTECH Hackathon",
+    "url": "https://futuregrid-investech.devpost.com/",
+    "start_date": "Dec 22, 2025 - Jan 30, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -490,13 +490,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Portfoliathon Intra 1.0",
-    "url": "https://intra-portfoliathon.devpost.com/",
-    "start_date": "Dec 20 - 23, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -550,6 +543,13 @@
     "url": "https://stang-hacks-26.devpost.com/",
     "start_date": "Jan 24, 2026",
     "location": "Monte Vista High School - Workday Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "StartupMed",
+    "url": "https://startupmed.devpost.com/",
+    "start_date": "Jan 23 - 25, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
