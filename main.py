@@ -559,7 +559,7 @@ def filter_events_for_question(
 
 async def hackeroos_reminder_loop():
     """
-    Every 12 hours:
+    Once per week:
       - Fetch hackathons
       - Filter to source == "Hackeroos"
       - Use end_date/deadline if available to show
@@ -568,7 +568,10 @@ async def hackeroos_reminder_loop():
       - Pin a single countdown embed in announcements / all-hackathons
     """
     await bot.wait_until_ready()
-    log.info("Hackeroos reminder loop started (every %d hours)", HACKEROOS_REMINDER_INTERVAL_HOURS)
+    log.info(
+        "Hackeroos reminder loop started (every %d hours)",
+        HACKEROOS_REMINDER_INTERVAL_HOURS,
+    )
 
     while not bot.is_closed():
         try:
@@ -635,24 +638,38 @@ async def hackeroos_reminder_loop():
                 e, dt_deadline, dt_start = item
 
                 if dt_deadline is not None:
-                    return (0, dt_deadline.timestamp(),
-                            dt_start.timestamp() if dt_start else float("inf"),
-                            (e.get("title") or "").lower())
+                    return (
+                        0,
+                        dt_deadline.timestamp(),
+                        dt_start.timestamp() if dt_start else float("inf"),
+                        (e.get("title") or "").lower(),
+                    )
                 if dt_start is not None:
-                    return (1, dt_start.timestamp(),
-                            float("inf"),
-                            (e.get("title") or "").lower())
-                return (2, float("inf"), float("inf"),
-                        (e.get("title") or "").lower())
+                    return (
+                        1,
+                        dt_start.timestamp(),
+                        float("inf"),
+                        (e.get("title") or "").lower(),
+                    )
+                return (
+                    2,
+                    float("inf"),
+                    float("inf"),
+                    (e.get("title") or "").lower(),
+                )
 
             upcoming.sort(key=sort_key)
 
             # Build embed
             for guild in bot.guilds:
                 # Prefer announcements; fallback to all-hackathons
-                channel = discord.utils.get(guild.text_channels, name=ANNOUNCEMENTS_CHANNEL_NAME)
+                channel = discord.utils.get(
+                    guild.text_channels, name=ANNOUNCEMENTS_CHANNEL_NAME
+                )
                 if not channel:
-                    channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
+                    channel = discord.utils.get(
+                        guild.text_channels, name=HACKATHON_CHANNEL_NAME
+                    )
                 if not channel:
                     continue
 
@@ -706,10 +723,13 @@ async def hackeroos_reminder_loop():
                         inline=False,
                     )
 
-                embed.set_footer(text="Pika-Bot • Hackeroos-first reminders from Insights/GitHub")
+                embed.set_footer(
+                    text="Pika-Bot • Hackeroos-first reminders from Insights/GitHub"
+                )
 
+                # No @here ping now – gentler on the server
                 msg = await channel.send(
-                    content="@here Hackeroos events update 🦘",
+                    content="Hackeroos events update 🦘",
                     embed=embed,
                 )
                 await pin_and_unpin(msg)
@@ -717,6 +737,7 @@ async def hackeroos_reminder_loop():
         except Exception as e:
             log.exception("hackeroos_reminder_loop crashed: %s", e)
 
+        # Sleep for the configured interval (weekly)
         await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
 
 
