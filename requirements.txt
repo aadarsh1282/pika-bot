@@ -6,6 +6,7 @@ python-dotenv
 aiohttp
 python-dateutil
 httpx
+aiofiles
 
 # --- AI / HuggingFace Router ---
 openai>=1.12.0
