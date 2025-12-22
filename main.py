@@ -1547,8 +1547,23 @@ async def handle_winner_question(interaction: discord.Interaction, question: str
 
 async def handle_event_question(interaction: discord.Interaction, question: str) -> bool:
     lower_q = question.lower()
-    event_keywords = ["hackathon", "event", "competition", "game jam", "buildathon", "challenge"]
+
+    # Topic keywords: tells us the question is about events/hackathons.
+    event_keywords = ["hackathon", "hackathons", "event", "events", "competition", "game jam", "buildathon", "challenge"]
     if not any(k in lower_q for k in event_keywords):
+        return False
+
+    # Intent keywords: only trigger listing when user seems to want a LIST / DISCOVERY.
+    intent_keywords = [
+        "show", "list", "find", "search", "browse", "recommend",
+        "upcoming", "next", "soon", "today", "tomorrow",
+        "this week", "next week", "this weekend", "next weekend",
+        "online", "remote", "virtual",
+    ]
+
+    # If they mention hackathon but do NOT look like they want a list, let the LLM answer instead.
+    # Example: "what is a hackathon", "hackathon tips", "how to win a hackathon"
+    if not any(k in lower_q for k in intent_keywords):
         return False
 
     events = await fetch_hackathons()
