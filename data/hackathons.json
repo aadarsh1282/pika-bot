@@ -112,6 +112,13 @@
     "source": "Devpost"
   },
   {
+    "title": "BUIDL AI Hackathon",
+    "url": "https://buidl-ai.devpost.com/",
+    "start_date": "Jan 09 - 11, 2026",
+    "location": "Nest",
+    "source": "Devpost"
+  },
+  {
     "title": "CalgaryHacks 2026",
     "url": "https://calgaryhacks2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
@@ -165,6 +172,13 @@
     "url": "https://developerweek-2026-hackathon.devpost.com/",
     "start_date": "Feb 03 - 20, 2026",
     "location": "San Jose Convention Center + Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "DevFest 2026",
+    "url": "https://devfest-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Columbia University",
     "source": "Devpost"
   },
   {
@@ -224,24 +238,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Nepal",
-    "url": "https://hack-nepal.devpost.com/",
-    "start_date": "Dec 25, 2025 - Jan 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack the Coast",
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack With Indiaa - Live Hacking Event",
-    "url": "https://hackwithindiaa.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -312,6 +312,13 @@
     "url": "https://hackrush.devpost.com/",
     "start_date": "Jan 23, 2026",
     "location": "MGM College of Engineering & Technology",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hacks for Hackers",
+    "url": "https://hacks-for-hackers-27914.devpost.com/",
+    "start_date": "Jan 02 - 04, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -546,20 +553,6 @@
     "source": "Devpost"
   },
   {
-    "title": "StartupMed",
-    "url": "https://startupmed.devpost.com/",
-    "start_date": "Jan 23 - 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "TechPulsebyERON",
-    "url": "https://techulsebyeron.devpost.com/",
-    "start_date": "Dec 23 - 26, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "The Developer's Connect",
     "url": "https://the-developer-s-connect.devpost.com/",
     "start_date": "Jan 12 - 13, 2026",
@@ -570,6 +563,13 @@
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Jan 26 - 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "The Merge 2026 Hackathon",
+    "url": "https://the-merge-2026-hackathon.devpost.com/",
+    "start_date": "Jan 29 - Feb 22, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -619,13 +619,6 @@
     "title": "Winter MelonJam 2025",
     "url": "https://wmj2025.devpost.com/",
     "start_date": "Dec 26 - 29, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Young Innovators Hackathon",
-    "url": "https://young-innovators-hackathon.devpost.com/",
-    "start_date": "Dec 25, 2025 - Jan 13, 2026",
     "location": "Online",
     "source": "Devpost"
   },
