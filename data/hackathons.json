@@ -224,13 +224,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Days Kigali",
-    "url": "https://hack-days-kigali.devpost.com/",
-    "start_date": "Dec 23, 2025",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack for Humanity | 2026",
     "url": "https://hack-for-humanity-26.devpost.com/",
     "start_date": "Feb 01 - 28, 2026",
@@ -382,6 +375,13 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
+    "source": "Devpost"
+  },
+  {
+    "title": "Launch AI Summit",
+    "url": "https://launch-ai-summit.devpost.com/",
+    "start_date": "Mar 13 - 15, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -553,6 +553,20 @@
     "source": "Devpost"
   },
   {
+    "title": "StartupMed",
+    "url": "https://startupmed.devpost.com/",
+    "start_date": "Jan 23 - 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "TechElevate ScamShield Hackathon",
+    "url": "https://techelevate-scamshield.devpost.com/",
+    "start_date": "Jan 09 - 31, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "The Developer's Connect",
     "url": "https://the-developer-s-connect.devpost.com/",
     "start_date": "Jan 12 - 13, 2026",
@@ -664,6 +678,14 @@
   },
   {
     "title": "",
+    "url": "https://brainwave.aimsdtu.in/",
+    "start_date": "brAInwave 2",
+    "location": ".0 Jan 16th - 17th Delhi, Delhi",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "",
     "url": "https://www.uottahack.ca/",
     "start_date": "uOttaHack 8",
     "location": "Jan 16th - 18th Ottawa, Ontario",
@@ -683,6 +705,14 @@
     "url": "https://11.ugahacks.com",
     "start_date": "UGAHacks 11",
     "location": "Feb 6th - 8th Athens, Georgia",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "",
+    "url": "https://hacktu.ccstiet.com/",
+    "start_date": "HackTU 7",
+    "location": ".0 Feb 7th - 8th Patiala, Punjab",
     "source": "MLH",
     "mode": "In-Person Only"
   },
