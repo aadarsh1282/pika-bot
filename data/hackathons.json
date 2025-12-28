@@ -155,15 +155,15 @@
   },
   {
     "title": "Codorra",
-    "url": "https://codorra1.devpost.com/",
-    "start_date": "Apr 17 - 27, 2026",
+    "url": "https://codorra-27769.devpost.com/",
+    "start_date": "Apr 25 - Jun 30, 2026",
     "location": "Bengaluru, India",
     "source": "Devpost"
   },
   {
     "title": "Codorra",
-    "url": "https://codorra-27769.devpost.com/",
-    "start_date": "Apr 25 - Jun 30, 2026",
+    "url": "https://codorra1.devpost.com/",
+    "start_date": "Apr 17 - 27, 2026",
     "location": "Bengaluru, India",
     "source": "Devpost"
   },
@@ -249,6 +249,13 @@
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "UBC Life Science Institute",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack&Roll 2026",
+    "url": "https://hacknroll2026.devpost.com/",
+    "start_date": "Jan 16 - 17, 2026",
+    "location": "RC4-CAPT Dining Hall",
     "source": "Devpost"
   },
   {
@@ -364,6 +371,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hackville 2026",
+    "url": "https://hackville-2026.devpost.com/",
+    "start_date": "Jan 17 - 18, 2026",
+    "location": "Sheridan College HMC Campus",
+    "source": "Devpost"
+  },
+  {
     "title": "Hard Hack 2026",
     "url": "https://hard-hack-2026.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
@@ -459,13 +473,6 @@
     "url": "https://mvhacks-9-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Mountain View, California, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "Nexora Hacks 2026",
-    "url": "https://nexora-hacks-2026.devpost.com/",
-    "start_date": "Dec 28, 2025 - Jan 10, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -590,7 +597,7 @@
   {
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
-    "start_date": "Jan 26 - 29, 2026",
+    "start_date": "Feb 27, 2026",
     "location": "Online",
     "source": "Devpost"
   },
