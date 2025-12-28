@@ -69,7 +69,6 @@ EMOJI_SPAM_THRESHOLD = 15
 AUTO_BAN_STRIKE_THRESHOLD = 3
 
 # Intervals (in hours)
-HACKEROOS_REMINDER_INTERVAL_HOURS = 24 * 7
 AUTO_ALERT_INTERVAL_HOURS = 24 * 7
 
 # -------------------------------------------------
@@ -335,6 +334,71 @@ def infer_time_window(question: str) -> Tuple[int | None, str]:
         if any(kw in q for kw in keywords):
             return days, label
     return None, "upcoming"
+
+# -------------------------------------------------
+# 7.5) ANNOUNCEMENT BROADCAST 
+# -------------------------------------------------
+BROADCAST_CHANNELS = [
+    "all-hackathons",
+    "find-a-team",
+    "pika-bots",
+    "coworking-chat",
+]
+
+
+async def broadcast_announcement(message: discord.Message) -> None:
+    guild = message.guild
+    if not guild:
+        return
+    if not isinstance(message.channel, discord.TextChannel):
+        return
+
+    # Only mirror announcements channel
+    if message.channel.name != ANNOUNCEMENTS_CHANNEL_NAME:
+        return
+
+    # Prevent loops / spam
+    if message.author.bot:
+        return
+
+    content = (message.content or "").strip()
+
+    embed = discord.Embed(
+        title="📢 Announcement",
+        description=content[:4000] if content else "(no text)",
+        color=0xfbbf24,
+        timestamp=message.created_at,
+    )
+    embed.set_author(
+        name=message.author.display_name,
+        icon_url=message.author.display_avatar.url if message.author.display_avatar else None
+    )
+    embed.set_footer(text=f"From #{message.channel.name}")
+
+    if message.attachments:
+        attachment_links = "\n".join([a.url for a in message.attachments[:5]])
+        embed.add_field(name="Attachments", value=attachment_links, inline=False)
+
+    original_embeds = message.embeds[:3] if message.embeds else []
+
+    sent_count = 0
+    for channel_name in BROADCAST_CHANNELS:
+        channel = discord.utils.get(guild.text_channels, name=channel_name)
+        if channel and channel.id != message.channel.id:
+            try:
+                await channel.send(embed=embed)
+                for orig_embed in original_embeds:
+                    await channel.send(embed=orig_embed)
+                sent_count += 1
+            except Exception as e:
+                log.warning("Error broadcasting to %s: %s", channel_name, e)
+
+    try:
+        await message.add_reaction("📡")
+    except Exception:
+        pass
+
+    log.info("Broadcasted announcement to %d channels", sent_count)
 
 # -------------------------------------------------
 # 8) BOT STATE MANAGER
@@ -774,7 +838,7 @@ async def auto_alerts_loop() -> None:
                         description=(
                             f"{len(new_events)} new **online** global event(s) just dropped!\n\n"
                             "These are *not* Hackeroos-run events.\n"
-                            "For official Hackeroos things, check the pinned countdown in #announcements. 🦘"
+                            "For official Hackeroos things, check #announcements. 🦘"
                         ),
                         color=0x00ff88,
                         timestamp=datetime.now(timezone.utc),
@@ -817,145 +881,6 @@ async def auto_alerts_loop() -> None:
 
         await asyncio.sleep(AUTO_ALERT_INTERVAL_HOURS * 60 * 60)
 
-
-async def hackeroos_reminder_loop() -> None:
-    await bot.wait_until_ready()
-    log.info("Hackeroos reminder loop started (every %d hours)", HACKEROOS_REMINDER_INTERVAL_HOURS)
-
-    failure_count = 0
-
-    while not bot.is_closed():
-        try:
-            events = await fetch_hackathons()
-            if not events:
-                log.warning("[Hackeroos reminder] No events from feed.")
-                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
-                continue
-
-            hackeroos_events = [
-                e for e in events
-                if (e.get("source") or "").strip().lower() == "hackeroos"
-            ]
-
-            if not hackeroos_events:
-                log.info("[Hackeroos reminder] No Hackeroos events in feed this cycle.")
-                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
-                continue
-
-            now_utc = datetime.now(timezone.utc).date()
-
-            processed: List[Tuple[dict, datetime | None, datetime | None]] = []
-            for e in hackeroos_events:
-                dt_start = parse_iso_date(e.get("start_date") or "")
-                dt_deadline = parse_iso_date(e.get("end_date") or e.get("deadline") or e.get("apply_by") or "")
-                processed.append((e, dt_deadline, dt_start))
-
-            upcoming: List[Tuple[dict, datetime | None, datetime | None]] = []
-            for e, dt_deadline, dt_start in processed:
-                if dt_deadline is not None:
-                    if dt_deadline.date() < now_utc:
-                        continue
-                    upcoming.append((e, dt_deadline, dt_start))
-                elif dt_start is not None:
-                    if dt_start.date() < now_utc:
-                        continue
-                    upcoming.append((e, dt_deadline, dt_start))
-                else:
-                    upcoming.append((e, dt_deadline, dt_start))
-
-            if not upcoming:
-                log.info("[Hackeroos reminder] No upcoming Hackeroos events with open applications.")
-                await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
-                continue
-
-            def sort_key(item: Tuple[dict, datetime | None, datetime | None]):
-                e, dt_deadline, dt_start = item
-                if dt_deadline is not None:
-                    return (0, dt_deadline.timestamp(),
-                            dt_start.timestamp() if dt_start else float("inf"),
-                            (e.get("title") or "").lower())
-                if dt_start is not None:
-                    return (1, dt_start.timestamp(), float("inf"),
-                            (e.get("title") or "").lower())
-                return (2, float("inf"), float("inf"), (e.get("title") or "").lower())
-
-            upcoming.sort(key=sort_key)
-
-            for guild in bot.guilds:
-                channel = discord.utils.get(guild.text_channels, name=ANNOUNCEMENTS_CHANNEL_NAME)
-                if not channel:
-                    channel = discord.utils.get(guild.text_channels, name=HACKATHON_CHANNEL_NAME)
-                if not channel:
-                    continue
-
-                embed = discord.Embed(
-                    title="Hackeroos Events & Reminders 🦘",
-                    description=(
-                        "Here are upcoming **Hackeroos-run** events.\n"
-                        "Follow updates on X: https://x.com/hackeroos_au"
-                    ),
-                    color=0xfbbf24,
-                    timestamp=datetime.now(timezone.utc),
-                )
-
-                for e, dt_deadline, dt_start in upcoming[:5]:
-                    title = e.get("title") or "Hackeroos Event"
-                    url = e.get("url", "#")
-                    loc = e.get("location") or "Australia / Online"
-
-                    if dt_deadline is not None:
-                        d = dt_deadline.date()
-                        days_left = (d - now_utc).days
-                        date_str = d.strftime("%Y-%m-%d")
-                        if days_left == 0:
-                            status = "Applications close **today**"
-                        elif days_left == 1:
-                            status = "Applications close **tomorrow**"
-                        else:
-                            status = f"Applications close in **{days_left} days**"
-                    elif dt_start is not None:
-                        d = dt_start.date()
-                        days_left = (d - now_utc).days
-                        date_str = d.strftime("%Y-%m-%d")
-                        if days_left == 0:
-                            status = "Event **starts today**"
-                        elif days_left == 1:
-                            status = "Event starts in **1 day**"
-                        else:
-                            status = f"Event starts in **{days_left} days**"
-                    else:
-                        date_str = "Dates coming soon"
-                        status = "Keep an eye out for announcements"
-
-                    embed.add_field(
-                        name=title,
-                        value=f"{loc}\n{date_str} — {status}\n[Details]({url})",
-                        inline=False,
-                    )
-
-                embed.set_footer(text="Pika-Bot • Hackeroos-first reminders from Insights/GitHub")
-                msg = await channel.send(content="Hackeroos events update 🦘", embed=embed)
-                if bot.user:
-                    await pin_and_unpin(msg, bot.user)
-
-            failure_count = 0
-
-        except asyncio.CancelledError:
-            log.info("hackeroos_reminder_loop cancelled gracefully")
-            raise
-        except httpx.RequestError as e:
-            failure_count += 1
-            log.warning("Network error in hackeroos_reminder_loop (%d/%d): %s",
-                        failure_count, MAX_CONSECUTIVE_FAILURES, e)
-            if failure_count >= MAX_CONSECUTIVE_FAILURES:
-                log.error("Too many consecutive failures in reminder loop, backing off")
-                await asyncio.sleep(RAID_BACKOFF_SECONDS)
-                failure_count = 0
-        except Exception as e:
-            log.exception("hackeroos_reminder_loop crashed: %s", e)
-
-        await asyncio.sleep(HACKEROOS_REMINDER_INTERVAL_HOURS * 60 * 60)
-
 # -------------------------------------------------
 # 17) LIFECYCLE EVENTS
 # -------------------------------------------------
@@ -968,8 +893,7 @@ async def on_ready():
         if not getattr(bot, "_bg_tasks_started", False):
             bot._bg_tasks_started = True
             task1 = asyncio.create_task(auto_alerts_loop())
-            task2 = asyncio.create_task(hackeroos_reminder_loop())
-            _background_tasks.extend([task1, task2])
+            _background_tasks.extend([task1])
             log.info("✅ Background loops started once.")
         else:
             log.info("ℹ️ on_ready fired again — background loops already running.")
@@ -988,8 +912,8 @@ async def on_ready():
         status=discord.Status.online,
     )
 
-    # ✅ FIX: Removed “startup announcement” to avoid deploy spam.
-    # If you want it back, we can persist it to a JSON file per guild.
+    # Removed “startup announcement” to avoid deploy spam.
+    # If needed, we can persist it to a JSON file per guild.
 
 
 @bot.event
@@ -1079,6 +1003,9 @@ async def on_message(message: discord.Message):
     if not isinstance(message.channel, discord.TextChannel):
         await bot.process_commands(message)
         return
+
+    # Mirror any #announcements post as an embed into broadcast channels
+    await broadcast_announcement(message)
 
     guild = message.guild
     author = message.author
@@ -1286,7 +1213,6 @@ async def about(interaction: discord.Interaction):
             "• Show online global hackathons with `/hackathons`\n"
             "• AI Q&A with `/ask`\n"
             "• Track Hackeroos winners with `/set-winner` + `/winners`\n"
-            "• Hackeroos-first reminders every week\n"
         ),
         inline=False
     )
@@ -1548,12 +1474,10 @@ async def handle_winner_question(interaction: discord.Interaction, question: str
 async def handle_event_question(interaction: discord.Interaction, question: str) -> bool:
     lower_q = question.lower()
 
-    # Topic keywords: tells us the question is about events/hackathons.
     event_keywords = ["hackathon", "hackathons", "event", "events", "competition", "game jam", "buildathon", "challenge"]
     if not any(k in lower_q for k in event_keywords):
         return False
 
-    # Intent keywords: only trigger listing when user seems to want a LIST / DISCOVERY.
     intent_keywords = [
         "show", "list", "find", "search", "browse", "recommend",
         "upcoming", "next", "soon", "today", "tomorrow",
@@ -1561,8 +1485,6 @@ async def handle_event_question(interaction: discord.Interaction, question: str)
         "online", "remote", "virtual",
     ]
 
-    # If they mention hackathon but do NOT look like they want a list, let the LLM answer instead.
-    # Example: "what is a hackathon", "hackathon tips", "how to win a hackathon"
     if not any(k in lower_q for k in intent_keywords):
         return False
 
