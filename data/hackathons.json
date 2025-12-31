@@ -259,7 +259,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack for Humanity | 2026 (+non-cash prizes)",
+    "title": "Hack for Humanity | 2026 (12 non-cash prizes)",
     "url": "https://hack-for-humanity-26.devpost.com/",
     "start_date": "Feb 01 - 28, 2026",
     "location": "Online",
@@ -399,6 +399,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackXsprint",
+    "url": "https://hackxsprint.devpost.com/",
+    "start_date": "Jan 09 - 10, 2026",
+    "location": "Koni ,Bilaspur , Chhattisgarh",
+    "source": "Devpost"
+  },
+  {
     "title": "Hard Hack 2026",
     "url": "https://hard-hack-2026.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
@@ -438,6 +445,13 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
+    "source": "Devpost"
+  },
+  {
+    "title": "KingHacks",
+    "url": "https://kinghacks.devpost.com/",
+    "start_date": "Jan 09 - 16, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -979,6 +993,14 @@
     "url": "https://hackncstate.org/",
     "start_date": "Feb 14th - 15th",
     "location": "Raleigh, North Carolina",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "HackIllinois",
+    "url": "https://hackillinois.org/",
+    "start_date": "Feb 27th",
+    "location": "- Mar 1st Urbana, Illinois",
     "source": "MLH",
     "mode": "In-Person Only"
   },
