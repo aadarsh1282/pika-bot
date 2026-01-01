@@ -58,7 +58,7 @@
   {
     "title": "Arctic League of Code",
     "url": "https://arctic-league.devpost.com/",
-    "start_date": "Jan 05 - 31, 2026",
+    "start_date": "Feb 01 - Mar 31, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -112,13 +112,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BitBuilders New Year Fun Code Race 2026",
-    "url": "https://bitbuilders-code-race-jan-2026.devpost.com/",
-    "start_date": "Dec 31, 2025 - Jan 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Blue Line BuildFest",
     "url": "https://bluelinebuildfest.devpost.com/",
     "start_date": "Jan 24, 2026",
@@ -147,16 +140,9 @@
     "source": "Devpost"
   },
   {
-    "title": "CircuitBreak 2025",
-    "url": "https://circuitbreak-2025.devpost.com/",
-    "start_date": "Jan 01 - 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Code Spring",
     "url": "https://codespring.devpost.com/",
-    "start_date": "Jan 05 - Feb 11, 2026",
+    "start_date": "Jan 20 - Feb 11, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -434,13 +420,6 @@
     "source": "Devpost"
   },
   {
-    "title": "IngeniumSTEM Mega Hacks",
-    "url": "https://ingeniumstem-mega-hacks.devpost.com/",
-    "start_date": "Jan 01 - May 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2026",
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -588,13 +567,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Snow Fest",
-    "url": "https://snow-fest.devpost.com/",
-    "start_date": "Jan 01 - 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Stang Hacks",
     "url": "https://stang-hacks-26.devpost.com/",
     "start_date": "Jan 24, 2026",
@@ -619,6 +591,13 @@
     "title": "TechElevate ScamShield Hackathon",
     "url": "https://techelevate-scamshield.devpost.com/",
     "start_date": "Jan 09 - 31, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "TechnoHack - 2026",
+    "url": "https://technions-hackathon-2026.devpost.com/",
+    "start_date": "Jan 30 - 31, 2026",
     "location": "Online",
     "source": "Devpost"
   },
