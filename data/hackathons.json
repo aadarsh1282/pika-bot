@@ -42,9 +42,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Alameda Hacks",
-    "url": "https://alameda-hacks.devpost.com/",
-    "start_date": "Jan 01 - 11, 2026",
+    "title": "AI Vibe Coding Hackathon",
+    "url": "https://vibe.devpost.com/",
+    "start_date": "Jan 29 - Feb 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -140,6 +140,20 @@
     "source": "Devpost"
   },
   {
+    "title": "Cavista Hackathon 2026",
+    "url": "https://cavista-hackathon-2026.devpost.com/",
+    "start_date": "Feb 21 - 22, 2026",
+    "location": "Lagos",
+    "source": "Devpost"
+  },
+  {
+    "title": "Citrus Hack 2026",
+    "url": "https://citrus-hack-2026.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "UC Riverside - Winston Chung Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Spring",
     "url": "https://codespring.devpost.com/",
     "start_date": "Jan 20 - Feb 11, 2026",
@@ -207,13 +221,6 @@
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "Student Centre / eSports Lounge",
-    "source": "Devpost"
-  },
-  {
-    "title": "EduInnovate Hackathon 2026",
-    "url": "https://eduinnovate-hackathon-2026.devpost.com/",
-    "start_date": "Jan 02 - 30, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -539,6 +546,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Raven Hacks VTL",
+    "url": "https://raven-hacks-vtl.devpost.com/",
+    "start_date": "Feb 10 - 18, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "RoseHack 2026",
     "url": "https://rosehack.devpost.com/",
     "start_date": "Jan 25, 2026",
@@ -571,6 +585,13 @@
     "url": "https://stang-hacks-26.devpost.com/",
     "start_date": "Jan 24, 2026",
     "location": "Monte Vista High School - Workday Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "StarkHacks",
+    "url": "https://starkhacks.devpost.com/",
+    "start_date": "Apr 17 - 19, 2026",
+    "location": "Purdue Armory",
     "source": "Devpost"
   },
   {
