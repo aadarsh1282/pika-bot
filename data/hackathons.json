@@ -91,13 +91,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BellaBella's Hackathon",
-    "url": "https://bellabella-s-hackathon-26494.devpost.com/",
-    "start_date": "Jan 03 - 04, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "BevHacks 2026",
     "url": "https://bevhacks-2026.devpost.com/",
     "start_date": "Jan 10, 2026",
@@ -444,6 +437,13 @@
     "title": "LaunchHacks V",
     "url": "https://launchhacks-v.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Learn It Global Hackathon V2",
+    "url": "https://learnit-globalv2.devpost.com/",
+    "start_date": "Feb 14 - Mar 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
