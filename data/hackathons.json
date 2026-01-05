@@ -217,6 +217,13 @@
     "source": "Devpost"
   },
   {
+    "title": "DVHacks",
+    "url": "https://dvhacks2026.devpost.com/",
+    "start_date": "Jan 17 - Feb 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "evensonarisnord",
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
@@ -242,6 +249,13 @@
     "url": "https://hack-days-futminna-26.devpost.com/",
     "start_date": "Feb 14, 2026",
     "location": "Windows on America, Main Library,",
+    "source": "Devpost"
+  },
+  {
+    "title": "Get Funded @Prompt Driven Development with Toolhouse and 500 Global Hackathon",
+    "url": "https://get-funded-prompt-driven.devpost.com/",
+    "start_date": "Jan 31, 2026",
+    "location": "500 Global Office",
     "source": "Devpost"
   },
   {
@@ -305,6 +319,13 @@
     "url": "https://hackcwru-012025.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
     "location": "Case Western Reserve University",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackDay Butwal",
+    "url": "https://butwal.devpost.com/",
+    "start_date": "Jan 16 - 17, 2026",
+    "location": "Lumbini World School ,Tilottama-32903",
     "source": "Devpost"
   },
   {
@@ -417,6 +438,13 @@
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
+    "source": "Devpost"
+  },
+  {
+    "title": "JourneyHacks 2026",
+    "url": "https://journeyhacks2026.devpost.com/",
+    "start_date": "Jan 10, 2026",
+    "location": "Simon Fraser University",
     "source": "Devpost"
   },
   {
@@ -536,6 +564,13 @@
     "url": "https://pinus-hack-2026.devpost.com/",
     "start_date": "Jan 25 - 31, 2026",
     "location": "NUS – Shaw Foundation Alumni House",
+    "source": "Devpost"
+  },
+  {
+    "title": "PROMPT. TRAIN. PARTY — Hack Days (MLH)",
+    "url": "https://prompt-train-party-mlh.devpost.com/",
+    "start_date": "Jan 31, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -669,6 +704,13 @@
     "url": "https://triton-hacks-2026.devpost.com/",
     "start_date": "Jan 16 - 18, 2026",
     "location": "San Diego, CA, USA",
+    "source": "Devpost"
+  },
+  {
+    "title": "UBC UX Hub: UXathon 2026",
+    "url": "https://uxathon-2026.devpost.com/",
+    "start_date": "Jan 10 - 11, 2026",
+    "location": "IBLC 182 @UBC",
     "source": "Devpost"
   },
   {
@@ -1018,14 +1060,6 @@
     "location": "Atlanta, Georgia",
     "source": "MLH",
     "mode": "In-Person Only"
-  },
-  {
-    "title": "Hacks for Hackers",
-    "url": "https://events.mlh.io/events/13143",
-    "start_date": "Jan 2nd - 4th",
-    "location": "Everywhere, Worldwide",
-    "source": "MLH",
-    "mode": "Digital Only"
   },
   {
     "title": "Hackville",
