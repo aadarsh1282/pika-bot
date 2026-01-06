@@ -112,13 +112,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BUIDL AI Hackathon",
-    "url": "https://buidl-ai.devpost.com/",
-    "start_date": "Jan 09 - 11, 2026",
-    "location": "Nest",
-    "source": "Devpost"
-  },
-  {
     "title": "CalgaryHacks 2026",
     "url": "https://calgaryhacks2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
@@ -151,6 +144,13 @@
     "url": "https://codespring.devpost.com/",
     "start_date": "Jan 20 - Feb 11, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "CodeStorm 2026",
+    "url": "https://codestorm-2026.devpost.com/",
+    "start_date": "Jan 31 - Feb 01, 2026",
+    "location": "Narsimha Reddy Engineering College",
     "source": "Devpost"
   },
   {
@@ -284,6 +284,13 @@
     "url": "https://hacknroll2026.devpost.com/",
     "start_date": "Jan 16 - 17, 2026",
     "location": "RC4-CAPT Dining Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack-Earth",
+    "url": "https://arforearth.devpost.com/",
+    "start_date": "Jan 30 - Feb 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -546,6 +553,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Oink Game Jam 2026",
+    "url": "https://oinkjam.devpost.com/",
+    "start_date": "Jan 23 - Feb 07, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "OmegaHack EAFIT",
     "url": "https://omegahack.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -613,6 +627,13 @@
     "url": "https://scroll-africa-hackathon.devpost.com/",
     "start_date": "Jan 12 - Feb 08, 2026",
     "location": "5TH Floor ITF Building",
+    "source": "Devpost"
+  },
+  {
+    "title": "SheHacks+10",
+    "url": "https://shehacks-10.devpost.com/",
+    "start_date": "Jan 09 - 11, 2026",
+    "location": "PANDA, Western University, London, ON",
     "source": "Devpost"
   },
   {
@@ -838,6 +859,14 @@
     "mode": "In-Person Only"
   },
   {
+    "title": "AI Hackfest",
+    "url": "https://events.mlh.io/events/13503-ai-hackfest",
+    "start_date": "Apr 17th - 19th",
+    "location": "Everywhere, Worldwide",
+    "source": "MLH",
+    "mode": "Digital Only"
+  },
+  {
     "title": "Bitcamp",
     "url": "https://bit.camp/",
     "start_date": "Apr 10th - 12th",
@@ -930,6 +959,14 @@
     "url": "https://ellehacks.com/",
     "start_date": "Jan 30th",
     "location": "- Feb 1st Toronto, Ontario",
+    "source": "MLH",
+    "mode": "In-Person Only"
+  },
+  {
+    "title": "DIVERSITY Hack McWiCS",
+    "url": "https://www.mcwics.com/hackathon",
+    "start_date": "Feb 7th - 8th",
+    "location": "Montreal, Québec",
     "source": "MLH",
     "mode": "In-Person Only"
   },
