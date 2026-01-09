@@ -1,12 +1,5 @@
 [
   {
-    "title": "(HATCH) HudsonAlpha Tech Challenge 2026",
-    "url": "https://hatch-2026.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
-    "location": "HudsonAlpha Institute for Biotechnology",
-    "source": "Devpost"
-  },
-  {
     "title": "....",
     "url": "https://hacksmart321.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
@@ -60,27 +53,6 @@
     "url": "https://arctic-league.devpost.com/",
     "start_date": "Feb 01 - Mar 31, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "AWS Breaking Barriers Challenge 2026 - Dublin",
-    "url": "https://aws-breaking-barriers-dub-jn26.devpost.com/",
-    "start_date": "Jan 13 - 15, 2026",
-    "location": "Amazon Ireland",
-    "source": "Devpost"
-  },
-  {
-    "title": "AWS Breaking Barriers Challenge 2026 - London",
-    "url": "https://aws-breaking-barriers-lon-jn26.devpost.com/",
-    "start_date": "Jan 13 - 15, 2026",
-    "location": "CodeNode London (primary venue)",
-    "source": "Devpost"
-  },
-  {
-    "title": "AWS Breaking Barriers Challenge 2026 - Manchester",
-    "url": "https://aws-breaking-barriers-man-jn26.devpost.com/",
-    "start_date": "Jan 13 - 15, 2026",
-    "location": "The Bridgewater Hall",
     "source": "Devpost"
   },
   {
@@ -413,9 +385,16 @@
     "source": "Devpost"
   },
   {
+    "title": "HackWilliams",
+    "url": "https://hackwilliams.devpost.com/",
+    "start_date": "Jan 16 - 17, 2026",
+    "location": "Bronfman Auditorium",
+    "source": "Devpost"
+  },
+  {
     "title": "HackXsprint",
     "url": "https://hackxsprint.devpost.com/",
-    "start_date": "Jan 09 - 10, 2026",
+    "start_date": "Jan 17 - 18, 2026",
     "location": "Koni ,Bilaspur , Chhattisgarh",
     "source": "Devpost"
   },
@@ -441,10 +420,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Improving Our Education - Steel City Hacks 2026 Hackathon",
+    "url": "https://improving-education-27415.devpost.com/",
+    "start_date": "Jan 24 - Feb 07, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Infinity Codewave",
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
+    "source": "Devpost"
+  },
+  {
+    "title": "Iterate Designathon",
+    "url": "https://iterate-designathon.devpost.com/",
+    "start_date": "Jan 09 - 11, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -459,13 +452,6 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "KingHacks",
-    "url": "https://kinghacks.devpost.com/",
-    "start_date": "Jan 09 - 16, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -623,6 +609,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SB Hacks XII",
+    "url": "https://sb-hacks-xii.devpost.com/",
+    "start_date": "Jan 10 - 11, 2026",
+    "location": "Corwin Pavilion",
+    "source": "Devpost"
+  },
+  {
     "title": "Scroll Africa Hackathon",
     "url": "https://scroll-africa-hackathon.devpost.com/",
     "start_date": "Jan 12 - Feb 08, 2026",
@@ -669,13 +662,6 @@
     "url": "https://stevens-quackhacks.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "Stevens Institute of Technology",
-    "source": "Devpost"
-  },
-  {
-    "title": "TechElevate ScamShield Hackathon",
-    "url": "https://techelevate-scamshield.devpost.com/",
-    "start_date": "Jan 09 - 31, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -753,6 +739,13 @@
     "url": "https://valleyhacks2026.devpost.com/",
     "start_date": "Jan 10, 2026",
     "location": "Newark Library",
+    "source": "Devpost"
+  },
+  {
+    "title": "W3B Winter Pitchfest - AI + Entrepreneurship",
+    "url": "https://winter-pitchfest.devpost.com/",
+    "start_date": "Jan 17 - 18, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
