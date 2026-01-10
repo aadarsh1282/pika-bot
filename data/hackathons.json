@@ -56,6 +56,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Aubrynt HackVerse",
+    "url": "https://aubrynt-hackverse-0131.devpost.com/",
+    "start_date": "Jan 31, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -151,6 +158,13 @@
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
     "location": "UofT Mississauga - Maanjiwe Nendamowinan",
+    "source": "Devpost"
+  },
+  {
+    "title": "DeltaHacks 12",
+    "url": "https://deltahacks-12.devpost.com/",
+    "start_date": "Jan 10 - 11, 2026",
+    "location": "McMaster University - PGCLL",
     "source": "Devpost"
   },
   {
@@ -308,6 +322,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackDay2026 - CEV",
+    "url": "https://hackday2026.devpost.com/",
+    "start_date": "Jan 20, 2026",
+    "location": "ASAP Room , Main Block CE Vadakara",
+    "source": "Devpost"
+  },
+  {
     "title": "HackFiesta Miami 2026 SubmissionPortal | Register@hackfiestamiami2026.vercel.app",
     "url": "https://hackfiestamiami2026.devpost.com/",
     "start_date": "Mar 09 - 17, 2026",
@@ -354,13 +375,6 @@
     "url": "https://hacksmart-27647.devpost.com/",
     "start_date": "Jan 30 - Feb 01, 2026",
     "location": "Battery Smart HQ, Sector 62, Gurgaon",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackStorm AIoT: Not as Hard as You Think",
-    "url": "https://hackstorm.devpost.com/",
-    "start_date": "Jan 09 - 11, 2026",
-    "location": "Silicon Valley",
     "source": "Devpost"
   },
   {
@@ -431,13 +445,6 @@
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
-    "source": "Devpost"
-  },
-  {
-    "title": "Iterate Designathon",
-    "url": "https://iterate-designathon.devpost.com/",
-    "start_date": "Jan 09 - 11, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -518,6 +525,13 @@
     "source": "Devpost"
   },
   {
+    "title": "MVP Sprint Challenge",
+    "url": "https://mvp-sprint-challenge.devpost.com/",
+    "start_date": "Jan 12 - 16, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "NeuroVista",
     "url": "https://neurovista.devpost.com/",
     "start_date": "Jan 26 - Mar 10, 2026",
@@ -529,6 +543,13 @@
     "url": "https://next-byte-january-2026.devpost.com/",
     "start_date": "Jan 15 - Feb 15, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "NTU Beyond Binary Techathon 2026",
+    "url": "https://ntu-beyond-binary-2026.devpost.com/",
+    "start_date": "Feb 09 - 13, 2026",
+    "location": "NTU",
     "source": "Devpost"
   },
   {
@@ -595,6 +616,13 @@
     "source": "Devpost"
   },
   {
+    "title": "RevenueCat Shipyard: Creator Contest",
+    "url": "https://revenuecat-shipyard-2026.devpost.com/",
+    "start_date": "Jan 15 - Feb 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "RoseHack 2026",
     "url": "https://rosehack.devpost.com/",
     "start_date": "Jan 25, 2026",
@@ -620,13 +648,6 @@
     "url": "https://scroll-africa-hackathon.devpost.com/",
     "start_date": "Jan 12 - Feb 08, 2026",
     "location": "5TH Floor ITF Building",
-    "source": "Devpost"
-  },
-  {
-    "title": "SheHacks+10",
-    "url": "https://shehacks-10.devpost.com/",
-    "start_date": "Jan 09 - 11, 2026",
-    "location": "PANDA, Western University, London, ON",
     "source": "Devpost"
   },
   {
@@ -662,6 +683,13 @@
     "url": "https://stevens-quackhacks.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "Stevens Institute of Technology",
+    "source": "Devpost"
+  },
+  {
+    "title": "Supabase Builders Week",
+    "url": "https://supabase-builders-week.devpost.com/",
+    "start_date": "Feb 01 - 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -880,17 +908,17 @@
     "source": "MLH"
   },
   {
+    "title": "Durham, North Carolina HackDuke Code For Good",
+    "url": "https://2026.hackduke.org/",
+    "start_date": "JAN 31",
+    "location": "- FEB 01 Durham, North Carolina In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Gainesville, Florida SwampHacks XI",
     "url": "https://xi.swamphacks.com/",
     "start_date": "JAN 23 - 25",
     "location": "Gainesville, Florida In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Global Hack Week: Beginners",
-    "url": "https://events.mlh.io/events/13277-global-hack-week-beginners",
-    "start_date": "JAN 09 - 15",
-    "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
@@ -985,13 +1013,6 @@
     "source": "MLH"
   },
   {
-    "title": "London, Ontario DIVERSITY SheHacks+10",
-    "url": "https://www.shehacks.ca",
-    "start_date": "JAN 09 - 11",
-    "location": "London, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Los Angeles, CA DIVERSITY QWER Hacks",
     "url": "https://www.qwerhacks.com/",
     "start_date": "FEB 07 - 08",
@@ -1073,6 +1094,13 @@
     "url": "https://www.henhackshackathon.com/",
     "start_date": "FEB 28",
     "location": "- MAR 01 Newark, Delaware In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Oshawa, Ontario HackHive",
+    "url": "https://www.hackhive.ca/",
+    "start_date": "JAN 23 - 25",
+    "location": "Oshawa, Ontario In-Person",
     "source": "MLH"
   },
   {
@@ -1213,6 +1241,13 @@
     "url": "http://innovateherhacks.org/",
     "start_date": "FEB 07 - 08",
     "location": "West Lafayette, IN In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "West Lafayette, Indiana BoilerMake XIII",
+    "url": "https://boilermake.org/",
+    "start_date": "JAN 23 - 25",
+    "location": "West Lafayette, Indiana In-Person",
     "source": "MLH"
   },
   {
