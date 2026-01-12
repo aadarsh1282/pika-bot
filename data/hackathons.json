@@ -210,6 +210,20 @@
     "source": "Devpost"
   },
   {
+    "title": "Everything But the Byte",
+    "url": "https://everything-but-the-byte.devpost.com/",
+    "start_date": "Jan 14 - Feb 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Film + AI Video Hackathon @ GMI Studio x PixVerse",
+    "url": "https://signal26.devpost.com/",
+    "start_date": "Jan 17, 2026",
+    "location": "The Hibernia",
+    "source": "Devpost"
+  },
+  {
     "title": "Frisco x WAForge Hackathon 2026",
     "url": "https://friscohack.devpost.com/",
     "start_date": "Jan 27 - 29, 2026",
@@ -252,6 +266,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack the Bias 2026",
+    "url": "https://hack-the-bias-2026-28057.devpost.com/",
+    "start_date": "Jan 16 - 18, 2026",
+    "location": "University of Calgary - ENG 60",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack the Coast",
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
@@ -266,6 +287,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack the Galaxy",
+    "url": "https://hack-the-galaxy.devpost.com/",
+    "start_date": "Mar 14, 2026",
+    "location": "Simon Fraser University",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack&Roll 2026",
     "url": "https://hacknroll2026.devpost.com/",
     "start_date": "Jan 16 - 17, 2026",
@@ -276,13 +304,6 @@
     "title": "Hack-Earth",
     "url": "https://arforearth.devpost.com/",
     "start_date": "Jan 30 - Feb 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack4Good 2026",
-    "url": "https://hack4good-2026.devpost.com/",
-    "start_date": "Jan 12 - 20, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -333,6 +354,13 @@
     "url": "https://hackfiestamiami2026.devpost.com/",
     "start_date": "Mar 09 - 17, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackFRee 2026",
+    "url": "https://hackfree-2026.devpost.com/",
+    "start_date": "Jan 17, 2026",
+    "location": "Manalapan High School",
     "source": "Devpost"
   },
   {
@@ -518,13 +546,6 @@
     "source": "Devpost"
   },
   {
-    "title": "MVP Sprint Challenge",
-    "url": "https://mvp-sprint-challenge.devpost.com/",
-    "start_date": "Jan 12 - 16, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "NeuroVista",
     "url": "https://neurovista.devpost.com/",
     "start_date": "Jan 26 - Mar 10, 2026",
@@ -630,13 +651,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Scroll Africa Hackathon",
-    "url": "https://scroll-africa-hackathon.devpost.com/",
-    "start_date": "Jan 12 - Feb 08, 2026",
-    "location": "5TH Floor ITF Building",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -703,6 +717,13 @@
     "title": "The Merge 2026 Hackathon",
     "url": "https://the-merge-2026-hackathon.devpost.com/",
     "start_date": "Jan 21 - Feb 16, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "The Washington State Hackathon",
+    "url": "https://washington-state-hackathon.devpost.com/",
+    "start_date": "Jan 24 - 26, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -908,13 +929,6 @@
     "source": "MLH"
   },
   {
-    "title": "Hamilton , Ontario DeltaHacks",
-    "url": "https://www.deltahacks.com/",
-    "start_date": "JAN 10 - 11",
-    "location": "Hamilton, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Hamilton , Ontario/Canada Mac-a-Thon",
     "url": "https://mac-a-thon.gdscmcmasteru.ca/",
     "start_date": "FEB 06 - 08",
@@ -926,13 +940,6 @@
     "url": "https://datathon.rice.edu/",
     "start_date": "JAN 23 - 25",
     "location": "Houston, TX In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Isla Vista , California SB Hacks XII",
-    "url": "https://sbhacks.com/",
-    "start_date": "JAN 10 - 11",
-    "location": "Isla Vista, California In-Person",
     "source": "MLH"
   },
   {
@@ -982,13 +989,6 @@
     "url": "https://leedshack.com",
     "start_date": "LeedsHack 20",
     "location": "26 FEB 07 - 08 Leeds, West Yorkshire In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "London , Ontario DIVERSITY SheHacks+10",
-    "url": "https://www.shehacks.ca",
-    "start_date": "JAN 09 - 11",
-    "location": "London, Ontario In-Person",
     "source": "MLH"
   },
   {
