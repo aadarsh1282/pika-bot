@@ -35,13 +35,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Systems Challenge: From Research to Revenue",
-    "url": "https://ai-systems-challenge-2026.devpost.com/",
-    "start_date": "Jan 30 - Feb 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "AI Vibe Coding Hackathon",
     "url": "https://vibe.devpost.com/",
     "start_date": "Jan 29 - Feb 01, 2026",
@@ -63,13 +56,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Aubrynt HackVerse",
-    "url": "https://aubrynt-hackverse-0131.devpost.com/",
-    "start_date": "Jan 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -84,10 +70,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Blue Line BuildFest",
-    "url": "https://bluelinebuildfest.devpost.com/",
-    "start_date": "Jan 24, 2026",
-    "location": "To Be Announced (Waukesha, WI)",
+    "title": "btc/acc",
+    "url": "https://btc-acc-27924.devpost.com/",
+    "start_date": "Jan 22 - Feb 08, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Builders Week",
+    "url": "https://builders-weeks.devpost.com/",
+    "start_date": "Feb 01 - 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -199,6 +192,13 @@
     "title": "DVHacks",
     "url": "https://dvhacks2026.devpost.com/",
     "start_date": "Jan 17 - Feb 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "EcoCompute",
+    "url": "https://ecocompute.devpost.com/",
+    "start_date": "Jan 16 - 20, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -686,24 +686,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Supabase Builders Week",
-    "url": "https://supabase-builders-week.devpost.com/",
-    "start_date": "Feb 01 - 07, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "TechnoHack - 2026",
     "url": "https://technions-hackathon-2026.devpost.com/",
     "start_date": "Jan 30 - 31, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "The Developer's Connect",
-    "url": "https://the-developer-s-connect.devpost.com/",
-    "start_date": "Jan 12 - 13, 2026",
-    "location": "Jaipur, India",
     "source": "Devpost"
   },
   {
@@ -718,6 +704,13 @@
     "url": "https://the-merge-2026-hackathon.devpost.com/",
     "start_date": "Jan 21 - Feb 16, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "The Midwest Blockathon",
+    "url": "https://the-midwest-blockathon.devpost.com/",
+    "start_date": "Mar 06 - 08, 2026",
+    "location": "KU School of Engineering",
     "source": "Devpost"
   },
   {
@@ -905,6 +898,13 @@
     "url": "https://xi.swamphacks.com/",
     "start_date": "JAN 23 - 25",
     "location": "Gainesville, Florida In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Global Hack Week: API",
+    "url": "https://events.mlh.io/events/13558-global-hack-week-api",
+    "start_date": "APR 10 - 16",
+    "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
