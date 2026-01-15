@@ -231,13 +231,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Everything But the Byte",
-    "url": "https://everything-but-the-byte.devpost.com/",
-    "start_date": "Jan 14 - Feb 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Film + AI Video Hackathon @ GMI Studio x PixVerse",
     "url": "https://signal26.devpost.com/",
     "start_date": "Jan 17, 2026",
@@ -284,6 +277,13 @@
     "url": "https://hack-for-humanity-26.devpost.com/",
     "start_date": "Feb 01 - 28, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack South West",
+    "url": "https://hack-south-west.devpost.com/",
+    "start_date": "Jan 31 - Feb 01, 2026",
+    "location": "University of Exeter",
     "source": "Devpost"
   },
   {
@@ -528,7 +528,7 @@
     "title": "MakeUofT 2026",
     "url": "https://makeuoft-2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
-    "location": "TBH",
+    "location": "Myhal Centre for Engineering Innovation",
     "source": "Devpost"
   },
   {
@@ -574,9 +574,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Next Byte Hacks: January 2026",
-    "url": "https://next-byte-january-2026.devpost.com/",
-    "start_date": "Jan 15 - Feb 15, 2026",
+    "title": "Norcal Hacks 26: Largest High School Hackathon in Northern California",
+    "url": "https://norcal-hacks.devpost.com/",
+    "start_date": "Feb 12 - 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -770,9 +770,9 @@
     "source": "Devpost"
   },
   {
-    "title": "W3B Winter Pitchfest - AI + Entrepreneurship",
-    "url": "https://winter-pitchfest.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
+    "title": "vibe coder hackathon",
+    "url": "https://vibe-coder-hackathon.devpost.com/",
+    "start_date": "Jan 15 - 31, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -781,6 +781,13 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
+    "source": "Devpost"
+  },
+  {
+    "title": "Winter Pitchfest | High School Startup Pitch | $1600+ prizes | THIS WEEKEND",
+    "url": "https://winter-pitchfest.devpost.com/",
+    "start_date": "Jan 17 - 18, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -952,7 +959,7 @@
   {
     "title": "Hamilton , Ontario/Canada Mac-a-Thon",
     "url": "https://mac-a-thon.gdscmcmasteru.ca/",
-    "start_date": "FEB 06 - 08",
+    "start_date": "FEB 07 - 08",
     "location": "Hamilton, Ontario/Canada In-Person",
     "source": "MLH"
   },
