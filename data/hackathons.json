@@ -28,24 +28,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Accessibility Hackathon",
-    "url": "https://accessibility-hackathon.devpost.com/",
-    "start_date": "Jan 17, 2026",
-    "location": "Entrepreneurs First Office",
-    "source": "Devpost"
-  },
-  {
-    "title": "Agentic Orchestration Hack",
-    "url": "https://agentic-orchestration-hack.devpost.com/",
-    "start_date": "Jan 16, 2026",
-    "location": "AWS Builder Loft",
-    "source": "Devpost"
-  },
-  {
     "title": "Agents Hackathon in Brazil",
     "url": "https://agents-hackathon.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
     "location": "Cubo Itau",
+    "source": "Devpost"
+  },
+  {
+    "title": "AI Vibe Coding Hackathon",
+    "url": "https://vibe.devpost.com/",
+    "start_date": "Jan 29 - Feb 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -86,7 +79,7 @@
   {
     "title": "BrébeufHx 9.0",
     "url": "https://brebeufhx-9-0.devpost.com/",
-    "start_date": "Jan 16 - 17, 2026",
+    "start_date": "Jan 17, 2026",
     "location": "Collège Jean-de-Brébeuf",
     "source": "Devpost"
   },
@@ -168,13 +161,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CookHealthyHackathon",
-    "url": "https://cookhealthy.devpost.com/",
-    "start_date": "Jan 16, 2026",
-    "location": "Toronto, Canada",
-    "source": "Devpost"
-  },
-  {
     "title": "DeerHacks V",
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -221,20 +207,6 @@
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "Student Centre / eSports Lounge",
-    "source": "Devpost"
-  },
-  {
-    "title": "DVHacks",
-    "url": "https://dvhacks2026.devpost.com/",
-    "start_date": "Jan 17 - Feb 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "EcoCompute",
-    "url": "https://ecocompute.devpost.com/",
-    "start_date": "Jan 16 - 20, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -301,13 +273,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack the Bias 2026",
-    "url": "https://hack-the-bias-2026-28057.devpost.com/",
-    "start_date": "Jan 16 - 18, 2026",
-    "location": "University of Calgary - ENG 60",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack the Coast",
     "url": "https://hackthecoast.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
@@ -326,13 +291,6 @@
     "url": "https://hack-the-galaxy.devpost.com/",
     "start_date": "Mar 14, 2026",
     "location": "Simon Fraser University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack&Roll 2026",
-    "url": "https://hacknroll2026.devpost.com/",
-    "start_date": "Jan 16 - 17, 2026",
-    "location": "RC4-CAPT Dining Hall",
     "source": "Devpost"
   },
   {
@@ -368,13 +326,6 @@
     "url": "https://hackcwru-012025.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
     "location": "Case Western Reserve University",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackDay Butwal",
-    "url": "https://butwal.devpost.com/",
-    "start_date": "Jan 16 - 17, 2026",
-    "location": "Lumbini World School ,Tilottama-32903",
     "source": "Devpost"
   },
   {
@@ -469,13 +420,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackWilliams",
-    "url": "https://hackwilliams.devpost.com/",
-    "start_date": "Jan 16 - 17, 2026",
-    "location": "Bronfman Auditorium",
-    "source": "Devpost"
-  },
-  {
     "title": "HackXsprint",
     "url": "https://hackxsprint.devpost.com/",
     "start_date": "Jan 17 - 18, 2026",
@@ -557,6 +501,13 @@
     "url": "https://mcgillaerohacks.devpost.com/",
     "start_date": "Mar 13 - 15, 2026",
     "location": "McGill University - Downtown Campus",
+    "source": "Devpost"
+  },
+  {
+    "title": "McHacks 13",
+    "url": "https://mchacks13.devpost.com/",
+    "start_date": "Jan 17 - 18, 2026",
+    "location": "McGill SSMU Building",
     "source": "Devpost"
   },
   {
@@ -665,6 +616,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Robotech 2026",
+    "url": "https://robotech-2026.devpost.com/",
+    "start_date": "Jan 23 - 25, 2026",
+    "location": "Klaus Advanced Computing Building",
+    "source": "Devpost"
+  },
+  {
     "title": "RoseHack 2026",
     "url": "https://rosehack.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
@@ -763,20 +721,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Triton Hacks 2026",
-    "url": "https://triton-hacks-2026.devpost.com/",
-    "start_date": "Jan 16 - 18, 2026",
-    "location": "San Diego, CA, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "United Hacks V6",
-    "url": "https://unitedhacksv6.devpost.com/",
-    "start_date": "Jan 16 - 18, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "UWB Hacks: The Future!",
     "url": "https://uwb-hacks-the-future.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -791,7 +735,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Winter Pitchfest | High School Startup Pitch | $1600+ prizes | THIS WEEKEND",
+    "title": "Winter Pitchfest | High School Startup Pitch | $1800+ prizes | THIS WEEKEND",
     "url": "https://winter-pitchfest.devpost.com/",
     "start_date": "Jan 17 - 18, 2026",
     "location": "Online",
@@ -873,6 +817,20 @@
     "source": "MLH"
   },
   {
+    "title": "Boston , MA DIVERSITY HackBeanpot",
+    "url": "https://www.hackbeanpot.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackBeanpot",
+    "start_date": "FEB 13 - 15",
+    "location": "Boston, MA In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Cambridge , MA MakeMIT",
+    "url": "https://makemit.net/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MakeMIT",
+    "start_date": "FEB 21 - 22",
+    "location": "Cambridge, MA In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Chapel Hill , North Carolina DIVERSITY Pearl Hacks",
     "url": "https://pearlhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Pearl+Hacks",
     "start_date": "FEB 21 - 22",
@@ -926,6 +884,13 @@
     "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
     "start_date": "JAN 31",
     "location": "- FEB 01 Durham, North Carolina In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "East Lansing , Michigan SpartaHack",
+    "url": "https://spartahack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SpartaHack",
+    "start_date": "JAN 31",
+    "location": "- FEB 01 East Lansing, Michigan In-Person",
     "source": "MLH"
   },
   {
@@ -1108,6 +1073,13 @@
     "url": "https://www.henhackshackathon.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HenHacks",
     "start_date": "FEB 28",
     "location": "- MAR 01 Newark, Delaware In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Norman , Oklahoma Hacklahoma",
+    "url": "https://hacklahoma.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacklahoma",
+    "start_date": "FEB 07 - 08",
+    "location": "Norman, Oklahoma In-Person",
     "source": "MLH"
   },
   {
