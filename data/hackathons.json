@@ -77,13 +77,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BrébeufHx 9.0",
-    "url": "https://brebeufhx-9-0.devpost.com/",
-    "start_date": "Jan 17, 2026",
-    "location": "Collège Jean-de-Brébeuf",
-    "source": "Devpost"
-  },
-  {
     "title": "btc/acc",
     "url": "https://btc-acc-27924.devpost.com/",
     "start_date": "Jan 22 - Feb 08, 2026",
@@ -217,16 +210,16 @@
     "source": "Devpost"
   },
   {
-    "title": "Film + AI Video Hackathon @ GMI Studio x PixVerse",
-    "url": "https://signal26.devpost.com/",
-    "start_date": "Jan 17, 2026",
-    "location": "The Hibernia",
-    "source": "Devpost"
-  },
-  {
     "title": "Frisco x WAForge Hackathon 2026",
     "url": "https://friscohack.devpost.com/",
     "start_date": "Jan 27 - 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "GatewayGS Hackathon",
+    "url": "https://gateway-hackathon-27996.devpost.com/",
+    "start_date": "Mar 15 - Apr 05, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -259,7 +252,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack for Humanity | 2026 (12 non-cash prizes)",
+    "title": "Hack for Humanity | 2026",
     "url": "https://hack-for-humanity-26.devpost.com/",
     "start_date": "Feb 01 - 28, 2026",
     "location": "Online",
@@ -343,17 +336,17 @@
     "source": "Devpost"
   },
   {
-    "title": "HackFRee 2026",
-    "url": "https://hackfree-2026.devpost.com/",
-    "start_date": "Jan 17, 2026",
-    "location": "Manalapan High School",
-    "source": "Devpost"
-  },
-  {
     "title": "HackFW",
     "url": "https://fwtx.devpost.com/",
     "start_date": "Apr 03 - May 02, 2026",
     "location": "Fort Worth",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackGreenwich",
+    "url": "https://hackgreenwich.devpost.com/",
+    "start_date": "Mar 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -413,16 +406,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Hackville 2026",
-    "url": "https://hackville-2026.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
-    "location": "Sheridan College HMC Campus",
-    "source": "Devpost"
-  },
-  {
     "title": "HackXsprint",
     "url": "https://hackxsprint.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
+    "start_date": "Jan 27 - 28, 2026",
     "location": "Koni ,Bilaspur , Chhattisgarh",
     "source": "Devpost"
   },
@@ -504,10 +490,10 @@
     "source": "Devpost"
   },
   {
-    "title": "McHacks 13",
-    "url": "https://mchacks13.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
-    "location": "McGill SSMU Building",
+    "title": "MCIT Hackathon 2026",
+    "url": "https://mcit-hackathon-2026.devpost.com/",
+    "start_date": "Jan 24 - 25, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -546,17 +532,17 @@
     "source": "Devpost"
   },
   {
+    "title": "NorseHacks: Hacking For a Better World",
+    "url": "https://norsehacks.devpost.com/",
+    "start_date": "Jan 24 - 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "NTU Beyond Binary Techathon 2026",
     "url": "https://ntu-beyond-binary-2026.devpost.com/",
     "start_date": "Feb 09 - 13, 2026",
     "location": "NTU",
-    "source": "Devpost"
-  },
-  {
-    "title": "nwHacks 2026",
-    "url": "https://nwhacks-2026.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
-    "location": "UBC LSI Life Sciences Institute",
     "source": "Devpost"
   },
   {
@@ -571,13 +557,6 @@
     "url": "https://omegahack.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Campus Medellín, Universidad EAFIT",
-    "source": "Devpost"
-  },
-  {
-    "title": "Paris Innov'Hack",
-    "url": "https://paris-innov-hack.devpost.com/",
-    "start_date": "Jan 17, 2026",
-    "location": "Lycée Passy Saint-Honoré, Paris 16e",
     "source": "Devpost"
   },
   {
@@ -616,6 +595,13 @@
     "source": "Devpost"
   },
   {
+    "title": "RepliCode",
+    "url": "https://replicode-aits.devpost.com/",
+    "start_date": "Jan 23 - 26, 2026",
+    "location": "AITS Tirupati",
+    "source": "Devpost"
+  },
+  {
     "title": "Robotech 2026",
     "url": "https://robotech-2026.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
@@ -634,6 +620,13 @@
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
     "location": "University of Florida - Newell's Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "SDG Design Challenge 2026",
+    "url": "https://sdg-design-challenge-2026.devpost.com/",
+    "start_date": "Jan 24 - 30, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -732,13 +725,6 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
-    "source": "Devpost"
-  },
-  {
-    "title": "Winter Pitchfest | High School Startup Pitch | $1800+ prizes | THIS WEEKEND",
-    "url": "https://winter-pitchfest.devpost.com/",
-    "start_date": "Jan 17 - 18, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -870,13 +856,6 @@
     "url": "https://tidaltamu.com/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=TidalHack",
     "start_date": "FEB 07 - 08",
     "location": "College Station, Texas In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Delhi , Delhi",
-    "url": "https://brainwave.aimsdtu.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=brAInwave+2.0",
-    "start_date": "brAInwave 2",
-    "location": ".0 JAN 16 - 17 Delhi, Delhi In-Person",
     "source": "MLH"
   },
   {
@@ -1038,13 +1017,6 @@
     "url": "https://polyhacks.io/fr/home?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=PolyHACKS+2026",
     "start_date": "PolyHACKS 20",
     "location": "26 JAN 31 - FEB 01 Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "Montréal , Québec HIGH SCHOOL Bré",
-    "url": "https://brebeufhackathon.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Br%C3%A9beufHx+9.0",
-    "start_date": "beufHx 9",
-    "location": ".0 JAN 16 - 17 Montréal, Québec In-Person",
     "source": "MLH"
   },
   {
