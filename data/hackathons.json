@@ -119,6 +119,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Code Nova",
+    "url": "https://code-nova-28190.devpost.com/",
+    "start_date": "Jan 31 - Feb 02, 2026",
+    "location": "Amity University, Jaipur",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Spring",
     "url": "https://codespring.devpost.com/",
     "start_date": "Jan 20 - Feb 11, 2026",
@@ -326,6 +333,13 @@
     "url": "https://hackday2026.devpost.com/",
     "start_date": "Jan 20, 2026",
     "location": "ASAP Room , Main Block CE Vadakara",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hacker,s Meetup",
+    "url": "https://hacker-s-meetup-28192.devpost.com/",
+    "start_date": "Jan 31 - Feb 02, 2026",
+    "location": "JK Lakshmipat University,Jaipur",
     "source": "Devpost"
   },
   {
@@ -560,6 +574,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Open Source Quest",
+    "url": "https://osq-r3actr.devpost.com/",
+    "start_date": "Jan 31 - Feb 28, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "PINUS HACK 2026",
     "url": "https://pinus-hack-2026.devpost.com/",
     "start_date": "Jan 25 - 31, 2026",
@@ -592,13 +613,6 @@
     "url": "https://rebelhacks.devpost.com/",
     "start_date": "Feb 20 - 21, 2026",
     "location": "University of Nevada Las Vegas - AEB 150",
-    "source": "Devpost"
-  },
-  {
-    "title": "RepliCode",
-    "url": "https://replicode-aits.devpost.com/",
-    "start_date": "Jan 23 - 26, 2026",
-    "location": "AITS Tirupati",
     "source": "Devpost"
   },
   {
@@ -672,6 +686,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SWEeyam",
+    "url": "https://sweeyam-28187.devpost.com/",
+    "start_date": "Jan 22 - 24, 2026",
+    "location": "SRM University Amaravati, AP",
+    "source": "Devpost"
+  },
+  {
     "title": "TechnoHack - 2026",
     "url": "https://technions-hackathon-2026.devpost.com/",
     "start_date": "Jan 30 - 31, 2026",
@@ -710,6 +731,13 @@
     "title": "TreeLine Hacks",
     "url": "https://treelinev1.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "United Hacks V7",
+    "url": "https://unitedhacksv7.devpost.com/",
+    "start_date": "Jul 10 - 12, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -766,13 +794,6 @@
       "2026"
     ],
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
-  },
-  {
-    "title": "Alexandria , Virginia HIGH SCHOOL Hack BI IX",
-    "url": "https://hackbi.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+BI+IX",
-    "start_date": "JAN 17 - 18",
-    "location": "Alexandria, Virginia In-Person",
-    "source": "MLH"
   },
   {
     "title": "Athens , GA",
@@ -985,13 +1006,6 @@
     "source": "MLH"
   },
   {
-    "title": "Mississauga , Ontario DIVERSITY Hackville",
-    "url": "https://www.hackville.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hackville",
-    "start_date": "JAN 17 - 18",
-    "location": "Mississauga, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Montreal , QC DIVERSITY Hack McWiCS",
     "url": "https://www.mcwics.com/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+McWiCS",
     "start_date": "FEB 07 - 08",
@@ -1002,13 +1016,6 @@
     "title": "Montreal , Quebec ConUHacks X",
     "url": "https://www.conuhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ConUHacks+X",
     "start_date": "JAN 24 - 25",
-    "location": "Montreal, Quebec In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Montreal , Quebec McHacks",
-    "url": "https://mchacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=McHacks",
-    "start_date": "JAN 17 - 18",
     "location": "Montreal, Quebec In-Person",
     "source": "MLH"
   },
@@ -1062,24 +1069,10 @@
     "source": "MLH"
   },
   {
-    "title": "Ottawa , Ontario",
-    "url": "https://www.uottahack.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=uOttaHack+8",
-    "start_date": "uOttaHack 8",
-    "location": "JAN 16 - 18 Ottawa, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Patiala , Punjab",
     "url": "https://hacktu.ccstiet.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTU+7.0",
     "start_date": "HackTU 7",
     "location": ".0 FEB 07 - 08 Patiala, Punjab In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Pittsburgh , PA NexHacks",
-    "url": "https://nexhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=NexHacks",
-    "start_date": "JAN 17 - 18",
-    "location": "Pittsburgh, PA In-Person",
     "source": "MLH"
   },
   {
@@ -1132,13 +1125,6 @@
     "source": "MLH"
   },
   {
-    "title": "Santa Cruz , CA CruzHacks",
-    "url": "https://www.cruzhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=CruzHacks",
-    "start_date": "JAN 16 - 18",
-    "location": "Santa Cruz, CA In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Toledo , Ohio Rockethacks",
     "url": "https://www.rockethacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Rockethacks",
     "start_date": "MAR 14 - 15",
@@ -1150,13 +1136,6 @@
     "url": "https://ellehacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ElleHacks",
     "start_date": "JAN 30",
     "location": "- FEB 01 Toronto, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Toronto , Ontario UofTHacks",
-    "url": "https://uofthacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=UofTHacks",
-    "start_date": "JAN 16 - 18",
-    "location": "Toronto, Ontario In-Person",
     "source": "MLH"
   },
   {
@@ -1181,13 +1160,6 @@
     "source": "MLH"
   },
   {
-    "title": "Vancouver , British Columbia nwHacks",
-    "url": "https://nwhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=nwHacks",
-    "start_date": "JAN 17 - 18",
-    "location": "Vancouver, British Columbia In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Washington , DC Hoya Hacks",
     "url": "https://www.hoyahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hoya+Hacks",
     "start_date": "JAN 23 - 25",
@@ -1199,13 +1171,6 @@
     "url": "http://innovateherhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=InnovateHer",
     "start_date": "FEB 07 - 08",
     "location": "West Lafayette, IN In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Worcester , MA GoatHacks",
-    "url": "https://hack.wpi.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=GoatHacks",
-    "start_date": "JAN 16 - 18",
-    "location": "Worcester, MA In-Person",
     "source": "MLH"
   }
 ]
