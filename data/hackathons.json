@@ -126,13 +126,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Code Spring",
-    "url": "https://codespring.devpost.com/",
-    "start_date": "Jan 20 - Feb 11, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "CodeStorm 2026",
     "url": "https://codestorm-2026.devpost.com/",
     "start_date": "Jan 31 - Feb 01, 2026",
@@ -171,13 +164,6 @@
     "title": "DesignXR Hackathon",
     "url": "https://designxr.devpost.com/",
     "start_date": "Feb 20 - Mar 02, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "DevDash",
-    "url": "https://devdash.devpost.com/",
-    "start_date": "Jan 20 - Feb 20, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -434,6 +420,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hebron Hacks",
+    "url": "https://hebronhacks.devpost.com/",
+    "start_date": "Feb 15 - 17, 2026",
+    "location": "Ellicott City, MD, USA",
+    "source": "Devpost"
+  },
+  {
     "title": "Hook 'Em Hacks",
     "url": "https://hook-em-hacks.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -651,6 +644,20 @@
     "source": "Devpost"
   },
   {
+    "title": "SpartaHack 11",
+    "url": "https://spartahack-11.devpost.com/",
+    "start_date": "Jan 31 - Feb 01, 2026",
+    "location": "MSU - STEM Building",
+    "source": "Devpost"
+  },
+  {
+    "title": "Sport Injury Prevention",
+    "url": "https://sport-injury-prevention.devpost.com/",
+    "start_date": "Jan 21 - 31, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Stang Hacks",
     "url": "https://stang-hacks-26.devpost.com/",
     "start_date": "Jan 24, 2026",
@@ -679,6 +686,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SunnyHacks Feb 2026",
+    "url": "https://sunnyhacks-feb-2026.devpost.com/",
+    "start_date": "Feb 01 - Mar 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "SwampHacks XI",
     "url": "https://swamphacks-xi.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
@@ -690,6 +704,20 @@
     "url": "https://sweeyam-28187.devpost.com/",
     "start_date": "Jan 22 - 24, 2026",
     "location": "SRM University Amaravati, AP",
+    "source": "Devpost"
+  },
+  {
+    "title": "TAMUhack 2026",
+    "url": "https://th26.devpost.com/",
+    "start_date": "Jan 24 - 25, 2026",
+    "location": "Texas A&M - Memorial Student Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "TechFiesta'26",
+    "url": "https://techfiesta-26.devpost.com/",
+    "start_date": "Jan 22 - 24, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
