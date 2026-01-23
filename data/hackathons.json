@@ -7,6 +7,13 @@
     "source": "Devpost"
   },
   {
+    "title": "13Hacks",
+    "url": "https://13hacks2026.devpost.com/",
+    "start_date": "Jan 24 - 25, 2026",
+    "location": "UC Berkeley, Anna Head Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "2026 EnergyHack@GT",
     "url": "https://energyhack-gt-26.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
@@ -45,6 +52,13 @@
     "title": "AI Product Hackathon 2026",
     "url": "https://ai-product-hackathon-2026.devpost.com/",
     "start_date": "Jan 24 - 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "AI Vibe Coding Hackathon",
+    "url": "https://vibe.devpost.com/",
+    "start_date": "Jan 29 - Feb 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -109,13 +123,6 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
-    "source": "Devpost"
-  },
-  {
-    "title": "Career Launch 2026 - Computing Catalyst",
-    "url": "https://career-launch-2026-catalyst.devpost.com/",
-    "start_date": "Jan 23 - 29, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -224,13 +231,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Elasticsearch Agent Builder Hackathon",
-    "url": "https://elasticsearch.devpost.com/",
-    "start_date": "Jan 22 - Feb 27, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "EnviroCast Global Engineering Outlook: From Insight to Impact Hackathon",
     "url": "https://from-insight-to-impact.devpost.com/",
     "start_date": "Feb 21 - May 28, 2026",
@@ -270,6 +270,13 @@
     "url": "https://hack-days-futminna-26.devpost.com/",
     "start_date": "Feb 14, 2026",
     "location": "Windows on America, Main Library,",
+    "source": "Devpost"
+  },
+  {
+    "title": "GenAI Dev Hackathon",
+    "url": "https://genaidevhackathon.devpost.com/",
+    "start_date": "Feb 11 - Mar 11, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -336,10 +343,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack-Earth",
+    "url": "https://arforearth.devpost.com/",
+    "start_date": "Jan 30 - Feb 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack4Hope Los Angeles",
     "url": "https://hack4hope-la.devpost.com/",
     "start_date": "Feb 07, 2026",
     "location": "The Trojan Grand Ballroom at USC",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack@Brown 2026",
+    "url": "https://hack-brown-2026.devpost.com/",
+    "start_date": "Jan 31 - Feb 01, 2026",
+    "location": "Brown University - Sayles Hall",
     "source": "Devpost"
   },
   {
@@ -354,13 +375,6 @@
     "url": "https://hackcu12.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Jennie Smoly Caruthers Biotech Building",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackCWRU 2026: Ideas into Impact",
-    "url": "https://hackcwru-012025.devpost.com/",
-    "start_date": "Jan 23 - 25, 2026",
-    "location": "Case Western Reserve University",
     "source": "Devpost"
   },
   {
@@ -483,20 +497,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hoya Hacks 2026 Powered By Cisco",
-    "url": "https://hoya-hacks-2026.devpost.com/",
-    "start_date": "Jan 23 - 25, 2026",
-    "location": "Healey Family Student Center",
-    "source": "Devpost"
-  },
-  {
-    "title": "HTCJ Hackathon × SFWRUNWAY Technology shaping the future of fashion",
-    "url": "https://hack-the-runway-htcj-sfw.devpost.com/",
-    "start_date": "Jan 23 - Feb 12, 2026",
-    "location": "Times Square",
-    "source": "Devpost"
-  },
-  {
     "title": "Improving Our Education - Steel City Hacks 2026 Hackathon",
     "url": "https://improving-education-27415.devpost.com/",
     "start_date": "Jan 24 - Feb 07, 2026",
@@ -574,10 +574,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Mega Hacks",
+    "url": "https://mega-hacks.devpost.com/",
+    "start_date": "Jan 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Mercile J. Lee Hackathon",
     "url": "https://mercile-j-lee-hackathon.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "Madison, WI, USA",
+    "source": "Devpost"
+  },
+  {
+    "title": "MunichTech EXPO",
+    "url": "https://munichtech-expo.devpost.com/",
+    "start_date": "Sep 01 - 20, 2026",
+    "location": "Munich, Germany",
     "source": "Devpost"
   },
   {
@@ -632,7 +646,7 @@
   {
     "title": "PINUS HACK 2026",
     "url": "https://pinus-hack-2026.devpost.com/",
-    "start_date": "Jan 25 - 31, 2026",
+    "start_date": "Jan 25 - Feb 01, 2026",
     "location": "NUS – Shaw Foundation Alumni House",
     "source": "Devpost"
   },
@@ -653,7 +667,7 @@
   {
     "title": "Raven Hacks VTL",
     "url": "https://raven-hacks-vtl.devpost.com/",
-    "start_date": "Feb 10 - 18, 2026",
+    "start_date": "Mar 14 - 23, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -665,10 +679,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Robotech 2026",
-    "url": "https://robotech-2026.devpost.com/",
+    "title": "Rice Datathon 2026",
+    "url": "https://rice-datathon-2026.devpost.com/",
     "start_date": "Jan 23 - 25, 2026",
-    "location": "Klaus Advanced Computing Building",
+    "location": "Rice University - Duncan Hall",
     "source": "Devpost"
   },
   {
@@ -742,13 +756,6 @@
     "source": "Devpost"
   },
   {
-    "title": "SWEeyam",
-    "url": "https://sweeyam-28187.devpost.com/",
-    "start_date": "Jan 22 - 24, 2026",
-    "location": "SRM University Amaravati, AP",
-    "source": "Devpost"
-  },
-  {
     "title": "TAMUhack 2026",
     "url": "https://th26.devpost.com/",
     "start_date": "Jan 24 - 25, 2026",
@@ -795,6 +802,13 @@
     "url": "https://uwb-hacks-the-future.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "University of Washington Bothell - ARC",
+    "source": "Devpost"
+  },
+  {
+    "title": "VCU 24 Hour Mini Hackathon",
+    "url": "https://vcu-mini-hacks.devpost.com/",
+    "start_date": "Jan 30 - 31, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -1157,6 +1171,13 @@
     "url": "https://hacktu.ccstiet.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTU+7.0",
     "start_date": "HackTU 7",
     "location": ".0 FEB 07 - 08 Patiala, Punjab In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Pembroke , North Carolina HackUNCP",
+    "url": "https://hackuncp.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUNCP",
+    "start_date": "FEB 21 - 22",
+    "location": "Pembroke, North Carolina In-Person",
     "source": "MLH"
   },
   {
