@@ -1,12 +1,5 @@
 [
   {
-    "title": "13Hacks",
-    "url": "https://13hacks2026.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "UC Berkeley, Anna Head Hall",
-    "source": "Devpost"
-  },
-  {
     "title": "305 Hack Feb'26 SubmissionPortal | Register@hackuniversity-hackathons.vercel.app",
     "url": "https://305hackfeb2026.devpost.com/",
     "start_date": "Jan 30 - Feb 07, 2026",
@@ -25,13 +18,6 @@
     "url": "https://757-bld-wknd-2026.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
     "location": "Assembly",
-    "source": "Devpost"
-  },
-  {
-    "title": "Agents Hackathon in Brazil",
-    "url": "https://agents-hackathon.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Cubo Itau",
     "source": "Devpost"
   },
   {
@@ -74,6 +60,13 @@
     "url": "https://bisonhacks-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Howard University School of Business",
+    "source": "Devpost"
+  },
+  {
+    "title": "BISV Hacks 2026",
+    "url": "https://bisv-hacks-2026.devpost.com/",
+    "start_date": "Mar 07, 2026",
+    "location": "BASIS Independent Silicon Valley",
     "source": "Devpost"
   },
   {
@@ -137,13 +130,6 @@
     "url": "https://conhacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Conestoga College, Waterloo Campus",
-    "source": "Devpost"
-  },
-  {
-    "title": "ConUHacks X",
-    "url": "https://conuhacks-x.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Concordia JMSB",
     "source": "Devpost"
   },
   {
@@ -399,13 +385,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackSU 2026",
-    "url": "https://hacksu-2026.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Seattle University - Sinegal Building",
-    "source": "Devpost"
-  },
-  {
     "title": "HackTrent 2026",
     "url": "https://hacktrent-2026.devpost.com/",
     "start_date": "Nov 06 - 08, 2026",
@@ -424,13 +403,6 @@
     "url": "https://hackxsprint.devpost.com/",
     "start_date": "Jan 27 - 28, 2026",
     "location": "Koni ,Bilaspur , Chhattisgarh",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hard Hack 2026",
-    "url": "https://hard-hack-2026.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Jacobs Hall",
     "source": "Devpost"
   },
   {
@@ -455,10 +427,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Improving Our Education - Steel City Hacks 2026 Hackathon",
-    "url": "https://improving-education-27415.devpost.com/",
-    "start_date": "Jan 24 - Feb 07, 2026",
-    "location": "Online",
+    "title": "Hoya Hacks 2027",
+    "url": "https://hoya-hacks-2027.devpost.com/",
+    "start_date": "Jan 22 - 24, 2027",
+    "location": "Healey Family Student Center",
     "source": "Devpost"
   },
   {
@@ -511,24 +483,17 @@
     "source": "Devpost"
   },
   {
-    "title": "McGill AeroHacks",
-    "url": "https://mcgillaerohacks.devpost.com/",
-    "start_date": "Mar 13 - 15, 2026",
-    "location": "McGill University - Downtown Campus",
-    "source": "Devpost"
-  },
-  {
-    "title": "MCIT Hackathon 2026",
-    "url": "https://mcit-hackathon-2026.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
+    "title": "Maximally SaaS Sprint: Build in 7 Days",
+    "url": "https://saas-sprint.devpost.com/",
+    "start_date": "Mar 31 - Apr 06, 2026",
     "location": "Online",
     "source": "Devpost"
   },
   {
-    "title": "MCIT Hackathon 2026",
-    "url": "https://mcithackathon2026.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Active Learning Classroom (Upper Floor)",
+    "title": "McGill AeroHacks",
+    "url": "https://mcgillaerohacks.devpost.com/",
+    "start_date": "Mar 13 - 15, 2026",
+    "location": "McGill University - Downtown Campus",
     "source": "Devpost"
   },
   {
@@ -560,16 +525,16 @@
     "source": "Devpost"
   },
   {
-    "title": "Norcal Hacks 26: Largest High School Hackathon in Northern California",
-    "url": "https://norcal-hacks.devpost.com/",
-    "start_date": "Feb 12 - 15, 2026",
+    "title": "ND Social Good Hackathon",
+    "url": "https://nd-social-good-hackathon.devpost.com/",
+    "start_date": "Jan 28 - Mar 12, 2026",
     "location": "Online",
     "source": "Devpost"
   },
   {
-    "title": "NorseHacks: Hacking For a Better World",
-    "url": "https://norsehacks.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
+    "title": "Norcal Hacks 26: Largest High School Hackathon in Northern California",
+    "url": "https://norcal-hacks.devpost.com/",
+    "start_date": "Feb 12 - 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -630,13 +595,6 @@
     "source": "Devpost"
   },
   {
-    "title": "RoseHack 2026",
-    "url": "https://rosehack.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "University of California, Riverside",
-    "source": "Devpost"
-  },
-  {
     "title": "SASEHacks 2026",
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
@@ -655,13 +613,6 @@
     "url": "https://spartahack-11.devpost.com/",
     "start_date": "Jan 31 - Feb 01, 2026",
     "location": "MSU - STEM Building",
-    "source": "Devpost"
-  },
-  {
-    "title": "Stang Hacks",
-    "url": "https://stang-hacks-26.devpost.com/",
-    "start_date": "Jan 24, 2026",
-    "location": "Zoho Corporation",
     "source": "Devpost"
   },
   {
@@ -686,13 +637,6 @@
     "source": "Devpost"
   },
   {
-    "title": "TAMUhack 2026",
-    "url": "https://th26.devpost.com/",
-    "start_date": "Jan 24 - 25, 2026",
-    "location": "Texas A&M - Memorial Student Center",
-    "source": "Devpost"
-  },
-  {
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Feb 27, 2026",
@@ -704,13 +648,6 @@
     "url": "https://the-midwest-blockathon.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
     "location": "KU School of Engineering",
-    "source": "Devpost"
-  },
-  {
-    "title": "The Washington State Hackathon",
-    "url": "https://washington-state-hackathon.devpost.com/",
-    "start_date": "Jan 24 - 26, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
