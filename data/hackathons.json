@@ -182,17 +182,24 @@
     "source": "Devpost"
   },
   {
-    "title": "DevonomicsV1",
-    "url": "https://devonomicsv1.devpost.com/",
-    "start_date": "Feb 06 - 12, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Durham College Hackathon 2026",
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "Student Centre / eSports Lounge",
+    "source": "Devpost"
+  },
+  {
+    "title": "EcoHack",
+    "url": "https://ecohack-28337.devpost.com/",
+    "start_date": "Mar 11 - 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "ElleHacks 2026",
+    "url": "https://ellehacks-2026.devpost.com/",
+    "start_date": "Jan 30 - Feb 01, 2026",
+    "location": "Accolade East",
     "source": "Devpost"
   },
   {
@@ -221,6 +228,13 @@
     "url": "https://gateway-hackathon-27996.devpost.com/",
     "start_date": "Mar 15 - Apr 05, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "GCES Upstart 2026",
+    "url": "https://upstart-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Concordia University, JMSB Building",
     "source": "Devpost"
   },
   {
@@ -287,6 +301,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HACK THE FUTURE OF STELLA",
+    "url": "https://hack-the-future-of-stella.devpost.com/",
+    "start_date": "Mar 09 - 13, 2026",
+    "location": "Orlando, Florida TECH HUB ORLANDO",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack the Galaxy",
     "url": "https://hack-the-galaxy.devpost.com/",
     "start_date": "Mar 14, 2026",
@@ -311,7 +332,7 @@
     "title": "Hack4Hope Los Angeles",
     "url": "https://hack4hope-la.devpost.com/",
     "start_date": "Feb 07, 2026",
-    "location": "The Trojan Grand Ballroom at USC",
+    "location": "Virtual",
     "source": "Devpost"
   },
   {
@@ -441,17 +462,17 @@
     "source": "Devpost"
   },
   {
+    "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
+    "url": "https://onerecord-hkg.devpost.com/",
+    "start_date": "Apr 24 - 26, 2026",
+    "location": "Cathay city",
+    "source": "Devpost"
+  },
+  {
     "title": "Infinity Codewave",
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
-    "source": "Devpost"
-  },
-  {
-    "title": "International Ideathon 2026",
-    "url": "https://international-ideathon-2026.devpost.com/",
-    "start_date": "Feb 07 - 08, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -494,13 +515,6 @@
     "url": "https://mathhacks.devpost.com/",
     "start_date": "Feb 21, 2026",
     "location": "De La Salle College",
-    "source": "Devpost"
-  },
-  {
-    "title": "Maximally SaaS Sprint: Build in 7 Days",
-    "url": "https://saas-sprint.devpost.com/",
-    "start_date": "Mar 31 - Apr 06, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
