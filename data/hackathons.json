@@ -112,6 +112,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Code Fusion",
+    "url": "https://code-fusion.devpost.com/",
+    "start_date": "Feb 23 - 24, 2026",
+    "location": "Arya Main, Kukas, Jaipur",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Nova",
     "url": "https://code-nova-28190.devpost.com/",
     "start_date": "Jan 31 - Feb 02, 2026",
@@ -158,6 +165,13 @@
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
     "location": "UofT Mississauga - Maanjiwe Nendamowinan",
+    "source": "Devpost"
+  },
+  {
+    "title": "DeisHacks 2026",
+    "url": "https://deishacks-2026.devpost.com/",
+    "start_date": "Jan 30 - Feb 01, 2026",
+    "location": "Waltham, MA, USA",
     "source": "Devpost"
   },
   {
@@ -441,13 +455,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackXsprint",
-    "url": "https://hackxsprint.devpost.com/",
-    "start_date": "Jan 28 - 29, 2026",
-    "location": "Koni ,Bilaspur , Chhattisgarh",
-    "source": "Devpost"
-  },
-  {
     "title": "Hebron Hacks",
     "url": "https://hebronhacks.devpost.com/",
     "start_date": "Feb 15 - 17, 2026",
@@ -563,7 +570,7 @@
     "title": "Mercile J. Lee Hackathon",
     "url": "https://mercile-j-lee-hackathon.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
-    "location": "Madison, WI, USA",
+    "location": "Hello, World in Mogridge Hall",
     "source": "Devpost"
   },
   {
@@ -578,13 +585,6 @@
     "url": "https://mvhacks-9-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Mountain View, California, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "ND Social Good Hackathon",
-    "url": "https://nd-social-good-hackathon.devpost.com/",
-    "start_date": "Jan 28 - Mar 12, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -936,6 +936,13 @@
     "source": "MLH"
   },
   {
+    "title": "Hamirpur , Himachal Pradesh Electrothon : Labyrinth of Eternum",
+    "url": "https://electrothon.nith.ac.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Electrothon+%3A+Labyrinth+of+Eternum",
+    "start_date": "MAR 13 - 15",
+    "location": "Hamirpur, Himachal Pradesh In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Jabalpur , Madhya Pradesh",
     "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackByte+4.0",
     "start_date": "HackByte 4",
@@ -1052,6 +1059,13 @@
     "url": "https://hacklahoma.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacklahoma",
     "start_date": "FEB 07 - 08",
     "location": "Norman, Oklahoma In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "NYC , New York Production Engineering Hackathon",
+    "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Production+Engineering+Hackathon",
+    "start_date": "APR 04 - 05",
+    "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
