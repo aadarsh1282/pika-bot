@@ -28,13 +28,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Vibe Coding Hackathon",
-    "url": "https://vibe.devpost.com/",
-    "start_date": "Jan 29 - Feb 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Apertre 3.0",
     "url": "https://apertre.devpost.com/",
     "start_date": "Jan 31 - Mar 01, 2026",
@@ -53,6 +46,13 @@
     "url": "https://aurelion2026.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Karunya University - Coimbatore",
+    "source": "Devpost"
+  },
+  {
+    "title": "Avalon Vibe",
+    "url": "https://avalon-vibe.devpost.com/",
+    "start_date": "Feb 14 - 17, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -105,6 +105,13 @@
     "source": "Devpost"
   },
   {
+    "title": "ChipCraft 2.0",
+    "url": "https://chipcraft-2-0.devpost.com/",
+    "start_date": "Mar 13 - 14, 2026",
+    "location": "DSPSD Lab (321), Block III",
+    "source": "Devpost"
+  },
+  {
     "title": "Citrus Hack 2026",
     "url": "https://citrus-hack-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -123,6 +130,13 @@
     "url": "https://code-nova-28190.devpost.com/",
     "start_date": "Jan 31 - Feb 02, 2026",
     "location": "Amity University, Jaipur",
+    "source": "Devpost"
+  },
+  {
+    "title": "CodeSprout Beginner’s Hackathon 2026",
+    "url": "https://codesprout-hackathon-2026.devpost.com/",
+    "start_date": "Feb 14 - 28, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -252,6 +266,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Frisco Hacks Live 2026",
+    "url": "https://frisco-hacks-live-2026.devpost.com/",
+    "start_date": "Feb 10 - 12, 2026",
+    "location": "Celina High School",
+    "source": "Devpost"
+  },
+  {
     "title": "GatewayGS Hackathon",
     "url": "https://gateway-hackathon-27996.devpost.com/",
     "start_date": "Mar 15 - Apr 05, 2026",
@@ -280,10 +301,24 @@
     "source": "Devpost"
   },
   {
+    "title": "GeoEMERGE",
+    "url": "https://geoemerge.devpost.com/",
+    "start_date": "Jan 31, 2026",
+    "location": "Marston Science Library Room L136",
+    "source": "Devpost"
+  },
+  {
     "title": "Get Funded @Prompt Driven Development with Toolhouse and 500 Global Hackathon",
     "url": "https://get-funded-prompt-driven.devpost.com/",
     "start_date": "Jan 31, 2026",
     "location": "500 Global Office",
+    "source": "Devpost"
+  },
+  {
+    "title": "Goals in Code: AI for Change",
+    "url": "https://goals-in-code.devpost.com/",
+    "start_date": "Mar 08 - 29, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -889,8 +924,8 @@
   {
     "title": "Durham , North Carolina HackDuke Code For Good",
     "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
-    "start_date": "JAN 31",
-    "location": "- FEB 01 Durham, North Carolina In-Person",
+    "start_date": "FEB 28",
+    "location": "- MAR 01 Durham, North Carolina In-Person",
     "source": "MLH"
   },
   {
@@ -905,6 +940,13 @@
     "url": "https://royalhackaway.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Royal+Hackaway+v9",
     "start_date": "JAN 31",
     "location": "- FEB 01 Egham, Surrey In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Gainesville , Florida Code for Change",
+    "url": "https://code-4-change.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Code+for+Change",
+    "start_date": "FEB 07 - 08",
+    "location": "Gainesville, Florida In-Person",
     "source": "MLH"
   },
   {
@@ -1017,13 +1059,6 @@
     "url": "https://www.mcwics.com/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+McWiCS",
     "start_date": "FEB 07 - 08",
     "location": "Montreal, QC In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Montréal , Québec",
-    "url": "https://polyhacks.io/fr/home?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=PolyHACKS+2026",
-    "start_date": "PolyHACKS 20",
-    "location": "26 JAN 31 - FEB 01 Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
@@ -1177,6 +1212,13 @@
     "title": "Vancouver , British Columbia DIVERSITY cmd-f 2026",
     "url": "https://cmd-f.nwplus.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=cmd-f+2026",
     "start_date": "MAR 07 - 08",
+    "location": "Vancouver, British Columbia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Vancouver , British Columbia Hack The Coast",
+    "url": "https://hackathon.susubc.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+The+Coast",
+    "start_date": "FEB 07 - 08",
     "location": "Vancouver, British Columbia In-Person",
     "source": "MLH"
   },
