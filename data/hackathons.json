@@ -21,13 +21,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Apertre 3.0",
-    "url": "https://apertre.devpost.com/",
-    "start_date": "Jan 31 - Mar 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "AURELION",
     "url": "https://aurelion2026.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
@@ -60,13 +53,6 @@
     "url": "https://bisv-hacks-2026.devpost.com/",
     "start_date": "Mar 08, 2026",
     "location": "BASIS Independent Silicon Valley",
-    "source": "Devpost"
-  },
-  {
-    "title": "Builders Week",
-    "url": "https://builders-weeks.devpost.com/",
-    "start_date": "Feb 01 - 07, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -140,6 +126,13 @@
     "source": "Devpost"
   },
   {
+    "title": "CraterHacks",
+    "url": "https://craterhacks404.devpost.com/",
+    "start_date": "Feb 20 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "DeerHacks V",
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -184,7 +177,7 @@
   {
     "title": "EcoHack",
     "url": "https://ecohack-28337.devpost.com/",
-    "start_date": "Mar 11 - 26, 2026",
+    "start_date": "Mar 11 - Apr 23, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -193,6 +186,13 @@
     "url": "https://emerald-innovation-challenge.devpost.com/",
     "start_date": "Feb 07, 2026",
     "location": "Emerald High School",
+    "source": "Devpost"
+  },
+  {
+    "title": "Enigma'26",
+    "url": "https://enigma-26.devpost.com/",
+    "start_date": "Feb 20 - 21, 2026",
+    "location": "RIET Jaipur Campus",
     "source": "Devpost"
   },
   {
@@ -252,10 +252,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Get Funded @Prompt Driven Development with Toolhouse and 500 Global Hackathon",
-    "url": "https://get-funded-prompt-driven.devpost.com/",
-    "start_date": "Jan 31, 2026",
-    "location": "500 Global Office",
+    "title": "Goals in Code: AI for Change",
+    "url": "https://goals-in-code.devpost.com/",
+    "start_date": "Mar 08 - 29, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -305,20 +305,6 @@
     "url": "https://hack-to-the-beat.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Rice Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack4Hope Los Angeles",
-    "url": "https://hack4hope-la.devpost.com/",
-    "start_date": "Jan 31 - Feb 07, 2026",
-    "location": "The Beehive",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack@Brown 2026",
-    "url": "https://hack-brown-2026.devpost.com/",
-    "start_date": "Jan 31 - Feb 01, 2026",
-    "location": "Brown University - Sayles Hall",
     "source": "Devpost"
   },
   {
@@ -427,13 +413,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HSN Hacks",
-    "url": "https://hsn-hacks-wwp.devpost.com/",
-    "start_date": "Jan 31, 2026",
-    "location": "WWP High School North",
-    "source": "Devpost"
-  },
-  {
     "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -466,13 +445,6 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Keywords AI Hackathon - UIUC",
-    "url": "https://keywords-ai-hackathon-uiuc.devpost.com/",
-    "start_date": "Jan 31 - Feb 01, 2026",
-    "location": "iSchool Room 4045",
     "source": "Devpost"
   },
   {
@@ -588,20 +560,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Open Source Quest",
-    "url": "https://osq-r3actr.devpost.com/",
-    "start_date": "Jan 31 - Feb 28, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "PROMPT. TRAIN. PARTY — Hack Days (MLH)",
-    "url": "https://prompt-train-party-mlh.devpost.com/",
-    "start_date": "Jan 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "PROTO-THON'26",
     "url": "https://proto-thon-26.devpost.com/",
     "start_date": "Feb 14 - 16, 2026",
@@ -637,6 +595,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Robotic Agents Hackathon",
+    "url": "https://irlrobots.devpost.com/",
+    "start_date": "Mar 13, 2026",
+    "location": "Frontier Tower - SF",
+    "source": "Devpost"
+  },
+  {
     "title": "SASEHacks 2026",
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
@@ -648,13 +613,6 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
-    "source": "Devpost"
-  },
-  {
-    "title": "SpartaHack 11",
-    "url": "https://spartahack-11.devpost.com/",
-    "start_date": "Jan 31 - Feb 01, 2026",
-    "location": "MSU - STEM Building",
     "source": "Devpost"
   },
   {
@@ -676,13 +634,6 @@
     "url": "https://sunnyhacks-feb-2026.devpost.com/",
     "start_date": "Feb 01 - Mar 01, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Tech For Good 2026: The LLM Desktop Challenge",
-    "url": "https://ccds-techforgood-2026.devpost.com/",
-    "start_date": "Jan 31 - Feb 03, 2026",
-    "location": "College Of Computing & Data Science",
     "source": "Devpost"
   },
   {
@@ -721,13 +672,6 @@
     "source": "Devpost"
   },
   {
-    "title": "UTRA Hacks 2026",
-    "url": "https://utra-hacks-2026.devpost.com/",
-    "start_date": "Jan 31 - Feb 01, 2026",
-    "location": "University of Toronto - Myhal and Bahen",
-    "source": "Devpost"
-  },
-  {
     "title": "UWB Hacks: The Future!",
     "url": "https://uwb-hacks-the-future.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -746,6 +690,13 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
+    "source": "Devpost"
+  },
+  {
+    "title": "Xenia Hackathon 2026",
+    "url": "https://xenia-hackathon-2026.devpost.com/",
+    "start_date": "Feb 13, 2026",
+    "location": "PICT, Pune",
     "source": "Devpost"
   },
   {
@@ -1108,13 +1059,6 @@
     "url": "https://wsu-acm.github.io/crimsoncode/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=CrimsonCode+Hackathon",
     "start_date": "FEB 21 - 22",
     "location": "Pullman, Washington In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Pune , Maharastra DIVERSITY INNERVE",
-    "url": "https://www.innerve.tech/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=INNERVE",
-    "start_date": "JAN 30 - 31",
-    "location": "Pune, Maharastra In-Person",
     "source": "MLH"
   },
   {
