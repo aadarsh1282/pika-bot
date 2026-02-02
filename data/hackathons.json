@@ -21,6 +21,13 @@
     "source": "Devpost"
   },
   {
+    "title": "AeroHack",
+    "url": "https://aerohack.devpost.com/",
+    "start_date": "Feb 02 - 09, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "AURELION",
     "url": "https://aurelion2026.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
@@ -67,6 +74,20 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
+    "source": "Devpost"
+  },
+  {
+    "title": "Campfire Arlington",
+    "url": "https://campfire-arlington.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "Keller Center for Advanced Learning",
+    "source": "Devpost"
+  },
+  {
+    "title": "Campfire Biratnagar 2026: Nepal’s Biggest Game Jam",
+    "url": "https://campfire-biratnagar.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "BIratnagar, Nepal",
     "source": "Devpost"
   },
   {
@@ -270,13 +291,6 @@
     "url": "https://hack-for-humanity-2026.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "Heafey Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack for Humanity | 2026 (participation prizes!)",
-    "url": "https://hack-for-humanity-26.devpost.com/",
-    "start_date": "Feb 01 - 28, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -560,6 +574,13 @@
     "source": "Devpost"
   },
   {
+    "title": "ORIGIN Hackathon",
+    "url": "https://origin.devpost.com/",
+    "start_date": "Feb 04 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "PROTO-THON'26",
     "url": "https://proto-thon-26.devpost.com/",
     "start_date": "Feb 14 - 16, 2026",
@@ -585,13 +606,6 @@
     "url": "https://rebelhacks.devpost.com/",
     "start_date": "Feb 20 - 21, 2026",
     "location": "University of Nevada Las Vegas - AEB 150",
-    "source": "Devpost"
-  },
-  {
-    "title": "Redmond High School's February Hackathon",
-    "url": "https://rhs-february-hackathon.devpost.com/",
-    "start_date": "Feb 01 - Mar 01, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -627,13 +641,6 @@
     "url": "https://stevens-quackhacks.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "Stevens Institute of Technology",
-    "source": "Devpost"
-  },
-  {
-    "title": "SunnyHacks Feb 2026",
-    "url": "https://sunnyhacks-feb-2026.devpost.com/",
-    "start_date": "Feb 01 - Mar 01, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -761,13 +768,6 @@
     "source": "MLH"
   },
   {
-    "title": "Blacksburg , VA DIVERSITY HackViolet VT",
-    "url": "https://www.hackviolet.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackViolet+VT",
-    "start_date": "JAN 31",
-    "location": "- FEB 01 Blacksburg, VA In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Boston , MA DIVERSITY HackBeanpot",
     "url": "https://www.hackbeanpot.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackBeanpot",
     "start_date": "FEB 13 - 15",
@@ -835,20 +835,6 @@
     "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
     "start_date": "FEB 28",
     "location": "- MAR 01 Durham, North Carolina In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "East Lansing , Michigan SpartaHack",
-    "url": "https://spartahack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SpartaHack",
-    "start_date": "JAN 31",
-    "location": "- FEB 01 East Lansing, Michigan In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Egham , Surrey Royal Hackaway v9",
-    "url": "https://royalhackaway.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Royal+Hackaway+v9",
-    "start_date": "JAN 31",
-    "location": "- FEB 01 Egham, Surrey In-Person",
     "source": "MLH"
   },
   {
@@ -1048,13 +1034,6 @@
     "source": "MLH"
   },
   {
-    "title": "Providence , Rhode Island Hack@Brown",
-    "url": "https://hackatbrown.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack%40Brown",
-    "start_date": "JAN 31",
-    "location": "- FEB 01 Providence, Rhode Island In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Pullman , Washington CrimsonCode Hackathon",
     "url": "https://wsu-acm.github.io/crimsoncode/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=CrimsonCode+Hackathon",
     "start_date": "FEB 21 - 22",
@@ -1101,20 +1080,6 @@
     "url": "https://makeuoft.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MakeUofT+2026",
     "start_date": "MakeUofT 20",
     "location": "26 FEB 14 - 15 Toronto, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Toronto , Ontario DIVERSITY ElleHacks",
-    "url": "https://ellehacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ElleHacks",
-    "start_date": "JAN 30",
-    "location": "- FEB 01 Toronto, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Toronto , Ontario UTRA",
-    "url": "https://hackathon.utra.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=UTRA+Hacks+2026",
-    "start_date": "Hacks 20",
-    "location": "26 JAN 31 - FEB 01 Toronto, Ontario In-Person",
     "source": "MLH"
   },
   {
