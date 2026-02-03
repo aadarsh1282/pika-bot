@@ -1,5 +1,12 @@
 [
   {
+    "title": ".devHacks 2026",
+    "url": "https://devhacks-2026.devpost.com/",
+    "start_date": "Feb 20 - 21, 2026",
+    "location": "University of Manitoba @ EITC Building",
+    "source": "Devpost"
+  },
+  {
     "title": "2026 Startup Week Buildathon",
     "url": "https://sw26.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -21,10 +28,10 @@
     "source": "Devpost"
   },
   {
-    "title": "AeroHack",
-    "url": "https://aerohack.devpost.com/",
-    "start_date": "Feb 02 - 09, 2026",
-    "location": "Online",
+    "title": "AI Agent Hackathon - Sunshine Coast",
+    "url": "https://ai-agent-hackathon-australia.devpost.com/",
+    "start_date": "Feb 06, 2026",
+    "location": "Nambour College",
     "source": "Devpost"
   },
   {
@@ -154,6 +161,20 @@
     "source": "Devpost"
   },
   {
+    "title": "CXC 2026 - AI Hackathon",
+    "url": "https://cxc-2026-ai-hackathon.devpost.com/",
+    "start_date": "Feb 06 - 08, 2026",
+    "location": "University of Waterloo - STC",
+    "source": "Devpost"
+  },
+  {
+    "title": "Datathon 2026: Data4Good",
+    "url": "https://datathon-2026-data4good.devpost.com/",
+    "start_date": "Feb 22, 2026",
+    "location": "UCSB - Loma Pelona Center",
+    "source": "Devpost"
+  },
+  {
     "title": "DeerHacks V",
     "url": "https://deerhacks-v.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -165,13 +186,6 @@
     "url": "https://designxr.devpost.com/",
     "start_date": "Feb 20 - Mar 02, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "DeveloperWeek 2026 Hackathon",
-    "url": "https://developerweek-2026-hackathon.devpost.com/",
-    "start_date": "Feb 03 - 20, 2026",
-    "location": "San Jose Convention Center + Online",
     "source": "Devpost"
   },
   {
@@ -263,6 +277,13 @@
     "url": "https://gde-mit-hackathon.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Gábor Dénes Egyetem",
+    "source": "Devpost"
+  },
+  {
+    "title": "GDG McMaster Mac-a-Thon 2026",
+    "url": "https://mac-a-thon-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "L.R. Wilson Hall, McMaster University",
     "source": "Devpost"
   },
   {
@@ -382,6 +403,13 @@
     "url": "https://hackpsu-spring-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "ECoRE Building",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackSussex 2026",
+    "url": "https://hacksussex-2026.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "University of Sussex - Chichester 1",
     "source": "Devpost"
   },
   {
@@ -644,6 +672,13 @@
     "source": "Devpost"
   },
   {
+    "title": "SVC Hackathon: Environmental Conservation",
+    "url": "https://svchackathon2026.devpost.com/",
+    "start_date": "May 02, 2026",
+    "location": "Skagit Valley College - Lewis Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "The Galactic Archives",
     "url": "https://the-galactic-archives-2026.devpost.com/",
     "start_date": "Feb 27, 2026",
@@ -793,6 +828,13 @@
     "url": "https://wicshacks-oss.github.io/WiCSHackathon2025/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+To+The+Beat",
     "start_date": "FEB 21 - 22",
     "location": "Charlottesville, VA In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Charlottesville , Virginia HooHacks",
+    "url": "https://team.hoohacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HooHacks",
+    "start_date": "MAR 21 - 22",
+    "location": "Charlottesville, Virginia In-Person",
     "source": "MLH"
   },
   {
@@ -1080,6 +1122,13 @@
     "url": "https://makeuoft.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MakeUofT+2026",
     "start_date": "MakeUofT 20",
     "location": "26 FEB 14 - 15 Toronto, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "University Park , State College, PA Hack @ Penn State",
+    "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+%40+Penn+State",
+    "start_date": "MAR 28 - 29",
+    "location": "University Park, State College, PA In-Person",
     "source": "MLH"
   },
   {
