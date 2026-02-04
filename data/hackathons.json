@@ -210,6 +210,13 @@
     "source": "Devpost"
   },
   {
+    "title": "EagleHacks 2026",
+    "url": "https://eaglehacks-2026.devpost.com/",
+    "start_date": "Mar 27 - 29, 2026",
+    "location": "Florida Gulf Coast University",
+    "source": "Devpost"
+  },
+  {
     "title": "EcoHack",
     "url": "https://ecohack-28337.devpost.com/",
     "start_date": "Mar 11 - Apr 23, 2026",
@@ -259,6 +266,13 @@
     "source": "Devpost"
   },
   {
+    "title": "G-Hacks 2026",
+    "url": "https://g-hacks-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "University of Calgary",
+    "source": "Devpost"
+  },
+  {
     "title": "GatewayGS Hackathon",
     "url": "https://gateway-hackathon-27996.devpost.com/",
     "start_date": "Mar 15 - Apr 05, 2026",
@@ -304,6 +318,13 @@
     "title": "Grizzly Hacks II",
     "url": "https://grizzly-hacks-ii.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack For Her",
+    "url": "https://hack-for-her.devpost.com/",
+    "start_date": "Feb 09 - 13, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -424,6 +445,13 @@
     "url": "https://hackuncp-2026.devpost.com/",
     "start_date": "Feb 22, 2026",
     "location": "Pembroke, North Carolina",
+    "source": "Devpost"
+  },
+  {
+    "title": "HealthML Challenge",
+    "url": "https://healthml-challenge.devpost.com/",
+    "start_date": "Feb 04 - 11, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -560,6 +588,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Missouri Startup Weekend",
+    "url": "https://missouri-startup-weekend.devpost.com/",
+    "start_date": "Apr 17 - 19, 2026",
+    "location": "EquipmentShare HQ",
+    "source": "Devpost"
+  },
+  {
     "title": "MunichTech EXPO",
     "url": "https://munichtech-expo.devpost.com/",
     "start_date": "Sep 01 - 20, 2026",
@@ -602,6 +637,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Open Sourcery S26 Showcase",
+    "url": "https://open-sourcery-s26-28480.devpost.com/",
+    "start_date": "Feb 09 - May 04, 2026",
+    "location": "University of Maryland – Knight Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "ORIGIN Hackathon",
     "url": "https://origin.devpost.com/",
     "start_date": "Feb 04 - 22, 2026",
@@ -613,6 +655,13 @@
     "url": "https://proto-thon-26.devpost.com/",
     "start_date": "Feb 14 - 16, 2026",
     "location": "chennai",
+    "source": "Devpost"
+  },
+  {
+    "title": "QWER Hacks 2026",
+    "url": "https://qwer-hacks-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Carnesale Commons @ UCLA",
     "source": "Devpost"
   },
   {
@@ -655,6 +704,13 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
+    "source": "Devpost"
+  },
+  {
+    "title": "Society-Centered AI Hackathon",
+    "url": "https://society-centered-ai-hackathon.devpost.com/",
+    "start_date": "Feb 06 - 07, 2026",
+    "location": "Wilkinson Building",
     "source": "Devpost"
   },
   {
@@ -810,6 +866,13 @@
     "source": "MLH"
   },
   {
+    "title": "Brighton , Sussex H",
+    "url": "https://www.hacksussex.com/Events/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackSussex+2026",
+    "start_date": "ackSussex 20",
+    "location": "26 FEB 28 - MAR 01 Brighton, Sussex In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Cambridge , MA MakeMIT",
     "url": "https://makemit.net/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MakeMIT",
     "start_date": "FEB 21 - 22",
@@ -832,7 +895,7 @@
   },
   {
     "title": "Charlottesville , Virginia HooHacks",
-    "url": "https://team.hoohacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HooHacks",
+    "url": "https://hoohacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HooHacks",
     "start_date": "MAR 21 - 22",
     "location": "Charlottesville, Virginia In-Person",
     "source": "MLH"
@@ -929,10 +992,24 @@
     "source": "MLH"
   },
   {
+    "title": "Hoboken , New Jersey Stevens QuackHacks",
+    "url": "https://stevensquackhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Stevens+QuackHacks",
+    "start_date": "FEB 28",
+    "location": "- MAR 01 Hoboken, New Jersey In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Jabalpur , Madhya Pradesh",
     "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackByte+4.0",
     "start_date": "HackByte 4",
     "location": ".0 APR 03 - 05 Jabalpur, Madhya Pradesh In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Jaipur , Rajasthan",
+    "url": "https://acehack.uem.edu.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AceHack+5.0",
+    "start_date": "AceHack 5",
+    "location": ".0 MAR 07 - 08 Jaipur, Rajasthan In-Person",
     "source": "MLH"
   },
   {
