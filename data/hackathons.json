@@ -28,10 +28,24 @@
     "source": "Devpost"
   },
   {
+    "title": "AI Agent Builders - Brisbane",
+    "url": "https://ai-agent-builders-brisbane.devpost.com/",
+    "start_date": "Feb 06, 2026",
+    "location": "QUT Gardens Point Campus",
+    "source": "Devpost"
+  },
+  {
     "title": "AI Agent Hackathon - Sunshine Coast",
     "url": "https://ai-agent-hackathon-australia.devpost.com/",
     "start_date": "Feb 06, 2026",
     "location": "Nambour College",
+    "source": "Devpost"
+  },
+  {
+    "title": "AppXDev",
+    "url": "https://appxdev.devpost.com/",
+    "start_date": "Feb 09 - Mar 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -56,7 +70,7 @@
     "source": "Devpost"
   },
   {
-    "title": "BisonHacks 2026",
+    "title": "BisonHacks 2026: Presented by Ticketmaster",
     "url": "https://bisonhacks-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Howard University School of Business",
@@ -151,6 +165,13 @@
     "url": "https://conhacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Conestoga College, Waterloo Campus",
+    "source": "Devpost"
+  },
+  {
+    "title": "Continual Learning Hackathon",
+    "url": "https://continual-learning-hackathon.devpost.com/",
+    "start_date": "Feb 06, 2026",
+    "location": "Intercom Inc",
     "source": "Devpost"
   },
   {
@@ -303,7 +324,7 @@
   {
     "title": "Gemini Hack Days FUTMINNA '26",
     "url": "https://hack-days-futminna-26.devpost.com/",
-    "start_date": "Feb 14, 2026",
+    "start_date": "Feb 11, 2026",
     "location": "Windows on America, Main Library,",
     "source": "Devpost"
   },
@@ -445,13 +466,6 @@
     "url": "https://hackuncp-2026.devpost.com/",
     "start_date": "Feb 22, 2026",
     "location": "Pembroke, North Carolina",
-    "source": "Devpost"
-  },
-  {
-    "title": "HealthML Challenge",
-    "url": "https://healthml-challenge.devpost.com/",
-    "start_date": "Feb 04 - 11, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -644,13 +658,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ORIGIN Hackathon",
-    "url": "https://origin.devpost.com/",
-    "start_date": "Feb 04 - 22, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "PROTO-THON'26",
     "url": "https://proto-thon-26.devpost.com/",
     "start_date": "Feb 14 - 16, 2026",
@@ -660,7 +667,7 @@
   {
     "title": "QWER Hacks 2026",
     "url": "https://qwer-hacks-2026.devpost.com/",
-    "start_date": "Feb 07 - 08, 2026",
+    "start_date": "Feb 08, 2026",
     "location": "Carnesale Commons @ UCLA",
     "source": "Devpost"
   },
@@ -697,6 +704,13 @@
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
     "location": "University of Florida - Newell's Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "She Innovates 2026",
+    "url": "https://sheinnovates-2026.devpost.com/",
+    "start_date": "Feb 06 - 08, 2026",
+    "location": "University of Pittsburgh- Alumni Hall",
     "source": "Devpost"
   },
   {
@@ -791,6 +805,13 @@
     "source": "Devpost"
   },
   {
+    "title": "World Mission High School Hack Days",
+    "url": "https://wmhs-hack-days.devpost.com/",
+    "start_date": "Mar 06, 2026",
+    "location": "World Mission High School",
+    "source": "Devpost"
+  },
+  {
     "title": "Xenia Hackathon 2026",
     "url": "https://xenia-hackathon-2026.devpost.com/",
     "start_date": "Feb 13, 2026",
@@ -856,6 +877,20 @@
     "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUPC",
     "start_date": "APR 24 - 26",
     "location": "Barcelona, Catalonia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Birmingham , Birmingham Aston",
+    "url": "https://www.astonhack.co.uk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Aston+Hack+11",
+    "start_date": "Hack 11",
+    "location": "FEB 07 - 08 Birmingham, Birmingham In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Boston , Ma DIVERSITY CivicHack",
+    "url": "https://civic-hacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=CivicHack",
+    "start_date": "FEB 21 - 22",
+    "location": "Boston, Ma In-Person",
     "source": "MLH"
   },
   {
@@ -999,6 +1034,13 @@
     "source": "MLH"
   },
   {
+    "title": "Houston , TX HackHCC",
+    "url": "https://hackhcc.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackHCC",
+    "start_date": "MAY 22 - 23",
+    "location": "Houston, TX In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Jabalpur , Madhya Pradesh",
     "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackByte+4.0",
     "start_date": "HackByte 4",
@@ -1125,6 +1167,13 @@
     "source": "MLH"
   },
   {
+    "title": "Northwest , District of Columbia DIVERSITY BisonHacks",
+    "url": "https://business.howard.edu/centers/digital-business/bisonhacks?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BisonHacks",
+    "start_date": "FEB 21 - 22",
+    "location": "Northwest, District of Columbia In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "NYC , New York Production Engineering Hackathon",
     "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Production+Engineering+Hackathon",
     "start_date": "APR 04 - 05",
@@ -1178,6 +1227,13 @@
     "url": "https://wichacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WiCHacks",
     "start_date": "FEB 28",
     "location": "- MAR 01 Rochester, New York In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Rolla , Missouri Pickhacks",
+    "url": "https://pickhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Pickhacks",
+    "start_date": "FEB 27",
+    "location": "- MAR 01 Rolla, Missouri In-Person",
     "source": "MLH"
   },
   {
