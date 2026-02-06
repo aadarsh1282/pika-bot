@@ -28,20 +28,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Agent Builders - Brisbane",
-    "url": "https://ai-agent-builders-brisbane.devpost.com/",
-    "start_date": "Feb 06, 2026",
-    "location": "QUT Gardens Point Campus",
-    "source": "Devpost"
-  },
-  {
-    "title": "AI Agent Hackathon - Sunshine Coast",
-    "url": "https://ai-agent-hackathon-australia.devpost.com/",
-    "start_date": "Feb 06, 2026",
-    "location": "Nambour College",
-    "source": "Devpost"
-  },
-  {
     "title": "AppXDev",
     "url": "https://appxdev.devpost.com/",
     "start_date": "Feb 09 - Mar 07, 2026",
@@ -84,6 +70,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Build with Gemini – Zetech HackDay",
+    "url": "https://build-with-gemini.devpost.com/",
+    "start_date": "Feb 27 - 28, 2026",
+    "location": "Zetech University, Mang'u Campus,",
+    "source": "Devpost"
+  },
+  {
     "title": "CalgaryHacks 2026",
     "url": "https://calgaryhacks2026.devpost.com/",
     "start_date": "Feb 14 - 15, 2026",
@@ -119,10 +112,10 @@
     "source": "Devpost"
   },
   {
-    "title": "ChipCraft 2.0",
-    "url": "https://chipcraft-2-0.devpost.com/",
-    "start_date": "Mar 13 - 14, 2026",
-    "location": "DSPSD Lab (321), Block III",
+    "title": "ChainX",
+    "url": "https://chainx.devpost.com/",
+    "start_date": "Feb 11 - 19, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -130,6 +123,20 @@
     "url": "https://citrus-hack-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "University of California, Riverside",
+    "source": "Devpost"
+  },
+  {
+    "title": "ClarkHacks 2026",
+    "url": "https://clarkhacks-2026.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "Clark University",
+    "source": "Devpost"
+  },
+  {
+    "title": "Code for Change 2026",
+    "url": "https://code-for-change-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Newell Hall",
     "source": "Devpost"
   },
   {
@@ -224,17 +231,17 @@
     "source": "Devpost"
   },
   {
+    "title": "DevonomicsV1",
+    "url": "https://devonomicsv1.devpost.com/",
+    "start_date": "Mar 20 - 27, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Durham College Hackathon 2026",
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "Student Centre / eSports Lounge",
-    "source": "Devpost"
-  },
-  {
-    "title": "EagleHacks 2026",
-    "url": "https://eaglehacks-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
-    "location": "Florida Gulf Coast University",
     "source": "Devpost"
   },
   {
@@ -490,13 +497,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hoya Hacks 2027",
-    "url": "https://hoya-hacks-2027.devpost.com/",
-    "start_date": "Jan 22 - 24, 2027",
-    "location": "Healey Family Student Center",
-    "source": "Devpost"
-  },
-  {
     "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -553,6 +553,13 @@
     "source": "Devpost"
   },
   {
+    "title": "LeedsHack 2026",
+    "url": "https://leedshack-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "Sir William Henry Bragg Building",
+    "source": "Devpost"
+  },
+  {
     "title": "Lone Star Hackathon",
     "url": "https://lone-star-hackathon.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
@@ -599,13 +606,6 @@
     "url": "https://mercile-j-lee-hackathon.devpost.com/",
     "start_date": "Feb 07 - 08, 2026",
     "location": "Hello, World in Mogridge Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Missouri Startup Weekend",
-    "url": "https://missouri-startup-weekend.devpost.com/",
-    "start_date": "Apr 17 - 19, 2026",
-    "location": "EquipmentShare HQ",
     "source": "Devpost"
   },
   {
@@ -665,6 +665,13 @@
     "source": "Devpost"
   },
   {
+    "title": "QHacks 2026",
+    "url": "https://qhacks-2026.devpost.com/",
+    "start_date": "Feb 06 - 08, 2026",
+    "location": "Queen's University - Mitchell Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "QWER Hacks 2026",
     "url": "https://qwer-hacks-2026.devpost.com/",
     "start_date": "Feb 08, 2026",
@@ -690,6 +697,13 @@
     "url": "https://rebelhacks.devpost.com/",
     "start_date": "Feb 20 - 21, 2026",
     "location": "University of Nevada Las Vegas - AEB 150",
+    "source": "Devpost"
+  },
+  {
+    "title": "RHDevs - Inter-Hall Hackathon 2026",
+    "url": "https://inter-hall-hackathon-2026.devpost.com/",
+    "start_date": "Feb 07 - 08, 2026",
+    "location": "NUS Raffles Hall Communal Hall",
     "source": "Devpost"
   },
   {
@@ -791,6 +805,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Victor Hacks",
+    "url": "https://victor-hacks2026.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "Griffin Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "ViTAL Hacks 2026",
     "url": "https://vital-hacks-2026.devpost.com/",
     "start_date": "Mar 21, 2026",
@@ -802,13 +823,6 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
-    "source": "Devpost"
-  },
-  {
-    "title": "World Mission High School Hack Days",
-    "url": "https://wmhs-hack-days.devpost.com/",
-    "start_date": "Mar 06, 2026",
-    "location": "World Mission High School",
     "source": "Devpost"
   },
   {
@@ -978,6 +992,13 @@
     "source": "MLH"
   },
   {
+    "title": "Ewing , New Jersey HackTCNJ",
+    "url": "https://hacktcnj.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTCNJ",
+    "start_date": "FEB 28",
+    "location": "- MAR 01 Ewing, New Jersey In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Fairfax , VA HackFax x PatriotHacks",
     "url": "https://patriothacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackFax+x+PatriotHacks",
     "start_date": "FEB 13 - 15",
@@ -1090,6 +1111,13 @@
     "source": "MLH"
   },
   {
+    "title": "Lawrence , Kansas The Midwest Blockathon",
+    "url": "https://hack.kublockchain.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=The+Midwest+Blockathon",
+    "start_date": "MAR 06 - 08",
+    "location": "Lawrence, Kansas In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Leeds , West Yorkshire",
     "url": "https://leedshack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=LeedsHack+2026",
     "start_date": "LeedsHack 20",
@@ -1115,6 +1143,13 @@
     "url": "https://www.ctrlhackdel.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=CTRL%2BHACK%2BDEL+2.0",
     "start_date": "DEL 2",
     "location": ".0 FEB 13 - 15 Markham, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Merced , CA HackMerced XI",
+    "url": "https://www.hackmerced.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackMerced+XI",
+    "start_date": "MAR 06 - 08",
+    "location": "Merced, CA In-Person",
     "source": "MLH"
   },
   {
