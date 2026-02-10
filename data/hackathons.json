@@ -28,13 +28,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AppXDev",
-    "url": "https://appxdev.devpost.com/",
-    "start_date": "Feb 09 - 15, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "AURELION",
     "url": "https://aurelion2026.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
@@ -74,13 +67,6 @@
     "url": "https://bisv-hacks-2026.devpost.com/",
     "start_date": "Mar 08, 2026",
     "location": "BASIS Independent Silicon Valley",
-    "source": "Devpost"
-  },
-  {
-    "title": "Build What You Imagine Hackathon",
-    "url": "https://build-what-you-imagine.devpost.com/",
-    "start_date": "Mar 01 - 07, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -245,6 +231,13 @@
     "source": "Devpost"
   },
   {
+    "title": "DJXHack 2.0",
+    "url": "https://djxhackathon.devpost.com/",
+    "start_date": "Feb 21 - 22, 2026",
+    "location": "JS Institute of Design",
+    "source": "Devpost"
+  },
+  {
     "title": "Durham College Hackathon 2026",
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
@@ -291,20 +284,6 @@
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Frisco Hacks 2026",
-    "url": "https://friscohack.devpost.com/",
-    "start_date": "Feb 09 - 10, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Frisco Hacks Live 2026",
-    "url": "https://frisco-hacks-live-2026.devpost.com/",
-    "start_date": "Feb 10 - 12, 2026",
-    "location": "Celina High School",
     "source": "Devpost"
   },
   {
@@ -560,6 +539,13 @@
     "source": "Devpost"
   },
   {
+    "title": "LiHacks",
+    "url": "https://lihacks-2026.devpost.com/",
+    "start_date": "Feb 28, 2026",
+    "location": "Location Announced Soon",
+    "source": "Devpost"
+  },
+  {
     "title": "Lone Star Hackathon",
     "url": "https://lone-star-hackathon.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
@@ -609,6 +595,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Mjanga AI Challenge",
+    "url": "https://mjanga-ai-challenge-27371.devpost.com/",
+    "start_date": "Mar 09 - 13, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "MunichTech EXPO",
     "url": "https://munichtech-expo.devpost.com/",
     "start_date": "Sep 01 - 20, 2026",
@@ -627,13 +620,6 @@
     "url": "https://norcal-hacks.devpost.com/",
     "start_date": "Feb 12 - 15, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "NTU Beyond Binary Techathon 2026",
-    "url": "https://ntu-beyond-binary-2026.devpost.com/",
-    "start_date": "Feb 09 - 13, 2026",
-    "location": "NTU",
     "source": "Devpost"
   },
   {
@@ -700,10 +686,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Ruya AI Hackathon 2026: Self-Improving Agents",
+    "url": "https://ruyaai-hackathon-2026.devpost.com/",
+    "start_date": "Feb 14, 2026",
+    "location": "American University in Dubai (AUD)",
+    "source": "Devpost"
+  },
+  {
     "title": "SASEHacks 2026",
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
     "location": "University of Florida - Newell's Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "SHNackathon 2026",
+    "url": "https://shnackathon-2026.devpost.com/",
+    "start_date": "Feb 17 - 20, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -732,6 +732,13 @@
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
     "location": "Skagit Valley College - Lewis Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "TestHack",
+    "url": "https://marinehack.devpost.com/",
+    "start_date": "Feb 21 - Mar 01, 2026",
+    "location": "Vancouver, Canada",
     "source": "Devpost"
   },
   {
@@ -802,6 +809,13 @@
     "url": "https://xenia-hackathon-2026.devpost.com/",
     "start_date": "Feb 13, 2026",
     "location": "PICT, Pune",
+    "source": "Devpost"
+  },
+  {
+    "title": "नव दृष्टि - २०२६",
+    "url": "https://navyadhristi.devpost.com/",
+    "start_date": "Feb 11 - 13, 2026",
+    "location": "Kathmandu, Nepal",
     "source": "Devpost"
   },
   {
