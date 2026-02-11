@@ -147,6 +147,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Code for Connection: Open Lines, Open Source",
+    "url": "https://codeforconnection.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "The Maison Projects",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Fusion",
     "url": "https://code-fusion.devpost.com/",
     "start_date": "Feb 13 - 14, 2026",
@@ -308,6 +315,13 @@
     "source": "Devpost"
   },
   {
+    "title": "GEC CODERS' CLUB HACK DAY",
+    "url": "https://gec-coders-club-hack-day.devpost.com/",
+    "start_date": "Feb 27 - 28, 2026",
+    "location": "Computer Engineering Department",
+    "source": "Devpost"
+  },
+  {
     "title": "Gemini Hack Days FUTMINNA '26",
     "url": "https://hack-days-futminna-26.devpost.com/",
     "start_date": "Feb 11, 2026",
@@ -315,10 +329,24 @@
     "source": "Devpost"
   },
   {
+    "title": "GenAI Zürich Hackathon 2026",
+    "url": "https://genaizurich.devpost.com/",
+    "start_date": "Mar 02 - 18, 2026",
+    "location": "Volkshaus Zürich",
+    "source": "Devpost"
+  },
+  {
     "title": "Goals in Code: AI for Change",
     "url": "https://goals-in-code.devpost.com/",
     "start_date": "Mar 08 - 29, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "GRiP Designathon Spring 2026",
+    "url": "https://grip-designathon-spring-2026.devpost.com/",
+    "start_date": "Feb 15, 2026",
+    "location": "University of Florida",
     "source": "Devpost"
   },
   {
@@ -700,13 +728,6 @@
     "source": "Devpost"
   },
   {
-    "title": "SHNackathon 2026",
-    "url": "https://shnackathon-2026.devpost.com/",
-    "start_date": "Feb 17 - 20, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -795,13 +816,6 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
-    "source": "Devpost"
-  },
-  {
-    "title": "World Mission High School Hack Days",
-    "url": "https://wmhs-hack-days.devpost.com/",
-    "start_date": "Mar 06, 2026",
-    "location": "World Mission High School",
     "source": "Devpost"
   },
   {
@@ -1055,6 +1069,13 @@
     "source": "MLH"
   },
   {
+    "title": "Košice , Košice Region Hack Kosice",
+    "url": "https://hackkosice.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Kosice",
+    "start_date": "APR 18 - 19",
+    "location": "Košice, Košice Region In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "La Jolla , California Dia",
     "url": "https://diamondhacks.acmucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DiamondHacks+2026",
     "start_date": "mondHacks 20",
@@ -1066,6 +1087,13 @@
     "url": "https://hack.kublockchain.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=The+Midwest+Blockathon",
     "start_date": "MAR 06 - 08",
     "location": "Lawrence, Kansas In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Long Beach , California BeachHacks",
+    "url": "https://beachhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BeachHacks",
+    "start_date": "MAR 21 - 22",
+    "location": "Long Beach, California In-Person",
     "source": "MLH"
   },
   {
