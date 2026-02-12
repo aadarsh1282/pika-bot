@@ -28,10 +28,24 @@
     "source": "Devpost"
   },
   {
+    "title": "AfroPix 2026",
+    "url": "https://afropix-2026.devpost.com/",
+    "start_date": "Feb 28, 2026",
+    "location": "Sitterson Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "AURELION",
     "url": "https://aurelion2026.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Karunya University - Coimbatore",
+    "source": "Devpost"
+  },
+  {
+    "title": "Authorized to Act: AI Agents with Auth0",
+    "url": "https://authorizedtoact.devpost.com/",
+    "start_date": "Feb 23 - Apr 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -116,20 +130,6 @@
     "url": "https://cavista-hackathon-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Lagos",
-    "source": "Devpost"
-  },
-  {
-    "title": "ChainX",
-    "url": "https://chainx.devpost.com/",
-    "start_date": "Feb 11 - 19, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "ChipCraft 2.0",
-    "url": "https://chipcraft-2-0.devpost.com/",
-    "start_date": "Mar 13 - 14, 2026",
-    "location": "DSPSD Lab (321), Block III",
     "source": "Devpost"
   },
   {
@@ -282,7 +282,7 @@
   {
     "title": "EnviroCast Global Engineering Outlook: From Insight to Impact Hackathon",
     "url": "https://from-insight-to-impact.devpost.com/",
-    "start_date": "Feb 21 - May 28, 2026",
+    "start_date": "Feb 21 - May 21, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -322,10 +322,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Gemini Hack Days FUTMINNA '26",
-    "url": "https://hack-days-futminna-26.devpost.com/",
-    "start_date": "Feb 11, 2026",
-    "location": "Windows on America, Main Library,",
+    "title": "Geminathon",
+    "url": "https://geminathon.devpost.com/",
+    "start_date": "Mar 01 - 03, 2026",
+    "location": "VIT Chennai",
     "source": "Devpost"
   },
   {
@@ -413,10 +413,10 @@
     "source": "Devpost"
   },
   {
-    "title": "HackFest",
-    "url": "https://hackfest-2202.devpost.com/",
-    "start_date": "Feb 12 - Mar 05, 2026",
-    "location": "Online",
+    "title": "HackFax x PatriotHacks 2026",
+    "url": "https://hackfax-x-patriothacks-2026.devpost.com/",
+    "start_date": "Feb 13 - 15, 2026",
+    "location": "Johnson Center",
     "source": "Devpost"
   },
   {
@@ -497,6 +497,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HenHacks 2026",
+    "url": "https://henhacks-2026.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "University of Delaware - Smith Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "Hook 'Em Hacks",
     "url": "https://hook-em-hacks.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -508,13 +515,6 @@
     "url": "https://hopperhacks-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Student Activities Center (SAC)",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hoya Hacks 2027",
-    "url": "https://hoya-hacks-2027.devpost.com/",
-    "start_date": "Jan 22 - 24, 2027",
-    "location": "Healey Family Student Center",
     "source": "Devpost"
   },
   {
@@ -665,6 +665,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Ordeflow 001",
+    "url": "https://ordeflow-001.devpost.com/",
+    "start_date": "Mar 22 - 24, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Pickhacks 2026",
     "url": "https://sandtpickhacks.devpost.com/",
     "start_date": "Feb 27 - Mar 01, 2026",
@@ -707,13 +714,6 @@
     "source": "Devpost"
   },
   {
-    "title": "RocketHacks 2026",
-    "url": "https://rockethacks26.devpost.com/",
-    "start_date": "Mar 14 - 15, 2026",
-    "location": "UToledo College of Engineering",
-    "source": "Devpost"
-  },
-  {
     "title": "Ruya AI Hackathon 2026: Self-Improving Agents",
     "url": "https://ruyaai-hackathon-2026.devpost.com/",
     "start_date": "Feb 14, 2026",
@@ -732,6 +732,13 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
+    "source": "Devpost"
+  },
+  {
+    "title": "Sillycon Valley",
+    "url": "https://sillycon-valley.devpost.com/",
+    "start_date": "Feb 13 - 14, 2026",
+    "location": "DICE 8th floor",
     "source": "Devpost"
   },
   {
@@ -826,13 +833,6 @@
     "source": "Devpost"
   },
   {
-    "title": "नव दृष्टि - २०२६",
-    "url": "https://navyadhristi.devpost.com/",
-    "start_date": "Feb 11 - 13, 2026",
-    "location": "Kathmandu, Nepal",
-    "source": "Devpost"
-  },
-  {
     "title": "✰ LIVE AI Ivy Plus 2026",
     "url": "https://liveai-ivyplus-2026.devpost.com/",
     "start_date": "Feb 20 - 22, 2026",
@@ -873,6 +873,13 @@
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
   },
   {
+    "title": "Asansol , West Bengal Ha",
+    "url": "https://www.hacktropica.xyz/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTropica+2k26",
+    "start_date": "ckTropica 2",
+    "location": "k26 APR 04 - 05 Asansol, West Bengal In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Atlanta , GA Hacklytics",
     "url": "https://hacklytics.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacklytics",
     "start_date": "FEB 20 - 22",
@@ -905,6 +912,13 @@
     "url": "https://www.hacksussex.com/Events/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackSussex+2026",
     "start_date": "ackSussex 20",
     "location": "26 FEB 28 - MAR 01 Brighton, Sussex In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Burnaby , British Columbia Mountain Madness",
+    "url": "https://madness.sfucsss.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Mountain+Madness",
+    "start_date": "FEB 28",
+    "location": "- MAR 01 Burnaby, British Columbia In-Person",
     "source": "MLH"
   },
   {
@@ -1255,6 +1269,13 @@
     "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ConHacks+2026",
     "start_date": "ConHacks 20",
     "location": "26 MAR 27 - 29 Waterloo, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "West Lafayette , Indiana StarkHacks",
+    "url": "https://www.starkhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=StarkHacks",
+    "start_date": "APR 17 - 19",
+    "location": "West Lafayette, Indiana In-Person",
     "source": "MLH"
   }
 ]
