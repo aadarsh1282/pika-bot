@@ -70,13 +70,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Beginner Friendly Game Jam",
-    "url": "https://beginner-friendly-game-jam.devpost.com/",
-    "start_date": "Feb 23 - Mar 08, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Big Red Hacks 2026",
     "url": "https://big-red-hacks-2026.devpost.com/",
     "start_date": "Apr 11, 2026",
@@ -130,6 +123,13 @@
     "url": "https://campfire-biratnagar.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "BIratnagar, Nepal",
+    "source": "Devpost"
+  },
+  {
+    "title": "Campfire Padova",
+    "url": "https://campfire-padova.devpost.com/",
+    "start_date": "Mar 01, 2026",
+    "location": "Padova",
     "source": "Devpost"
   },
   {
@@ -294,13 +294,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Game Forge",
-    "url": "https://game-forge.devpost.com/",
-    "start_date": "Mar 08 - 11, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "GatewayGS Hackathon",
     "url": "https://gateway-hackathon-27996.devpost.com/",
     "start_date": "Mar 15 - Apr 05, 2026",
@@ -319,6 +312,13 @@
     "url": "https://gec-coders-club-hack-day.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Computer Engineering Department",
+    "source": "Devpost"
+  },
+  {
+    "title": "GenAI Dev Hackathon",
+    "url": "https://genaidevhackathon.devpost.com/",
+    "start_date": "Feb 24 - Mar 24, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -478,8 +478,8 @@
   {
     "title": "HackUNCP 2026",
     "url": "https://hackuncp-2026.devpost.com/",
-    "start_date": "Feb 22, 2026",
-    "location": "Pembroke, North Carolina",
+    "start_date": "Feb 21 - 22, 2026",
+    "location": "UNC Pembroke - James A. Thomas Hall",
     "source": "Devpost"
   },
   {
@@ -508,20 +508,6 @@
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
     "location": "Cathay city",
-    "source": "Devpost"
-  },
-  {
-    "title": "IBM Z Sheridan – BYTE: Enterprise AI Hackathon - TMU Tech Week",
-    "url": "https://ibm-z-sheridan-byte-tmu.devpost.com/",
-    "start_date": "Feb 18 - 20, 2026",
-    "location": "Sheldon & Tracy Levy Student Learning",
-    "source": "Devpost"
-  },
-  {
-    "title": "India PropTech Student Hackathon 2026 – Rental & Co-Living Innovation",
-    "url": "https://proptech-growth-2026.devpost.com/",
-    "start_date": "Feb 25 - 27, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -574,10 +560,10 @@
     "source": "Devpost"
   },
   {
-    "title": "LovHack x Medo",
-    "url": "https://lovhack-x-medo.devpost.com/",
-    "start_date": "Feb 28 - Mar 02, 2026",
-    "location": "Online",
+    "title": "MakeMIT x Harvard 2026",
+    "url": "https://makemit-2026.devpost.com/",
+    "start_date": "Feb 21 - 22, 2026",
+    "location": "Cambridge, MA, USA",
     "source": "Devpost"
   },
   {
@@ -714,6 +700,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Self Improving Agents Hack",
+    "url": "https://self-improving-agents-hack.devpost.com/",
+    "start_date": "Feb 21, 2026",
+    "location": "Datadog",
+    "source": "Devpost"
+  },
+  {
     "title": "She ships - 8M hackathon",
     "url": "https://sheshipshackathon.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
@@ -725,6 +718,13 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
+    "source": "Devpost"
+  },
+  {
+    "title": "SMathHacks 2026",
+    "url": "https://smathhacks-2026.devpost.com/",
+    "start_date": "Mar 14 - 15, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -1146,6 +1146,13 @@
     "source": "MLH"
   },
   {
+    "title": "Montreal , Quebec McGill AeroHacks",
+    "url": "https://mcgillaerohacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=McGill+AeroHacks",
+    "start_date": "MAR 13 - 15",
+    "location": "Montreal, Quebec In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Nashville , TN VandyHacks XII",
     "url": "https://vandyhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=VandyHacks+XII",
     "start_date": "MAR 21 - 22",
@@ -1248,6 +1255,13 @@
     "url": "https://www.rockethacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Rockethacks",
     "start_date": "MAR 14 - 15",
     "location": "Toledo, Ohio In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Union , 1075 Morris Ave, Union, NJ 07083 DIVERSITY KeanUHackThis",
+    "url": "https://www.keanuhackthis.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KeanUHackThis",
+    "start_date": "APR 25 - 26",
+    "location": "Union, 1075 Morris Ave, Union, NJ 07083 In-Person",
     "source": "MLH"
   },
   {
