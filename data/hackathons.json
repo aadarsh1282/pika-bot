@@ -126,20 +126,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Campfire Padova",
-    "url": "https://campfire-padova.devpost.com/",
-    "start_date": "Mar 01, 2026",
-    "location": "Padova",
-    "source": "Devpost"
-  },
-  {
-    "title": "Campfire raipur",
-    "url": "https://campfire-raipur.devpost.com/",
-    "start_date": "Feb 28 - Mar 01, 2026",
-    "location": "carrertronic",
-    "source": "Devpost"
-  },
-  {
     "title": "Cavista Hackathon 2026",
     "url": "https://cavista-hackathon-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
@@ -196,6 +182,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Creative AI & Digital Media",
+    "url": "https://creative-ai-digital-media.devpost.com/",
+    "start_date": "Apr 23 - 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "CrimsonCode Hackathon 2026",
     "url": "https://crimsoncode-2026.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
@@ -226,7 +219,7 @@
   {
     "title": "DesignXR Hackathon",
     "url": "https://designxr.devpost.com/",
-    "start_date": "Feb 20 - Mar 02, 2026",
+    "start_date": "Mar 16 - 22, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -273,10 +266,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Enigma'26",
-    "url": "https://enigma-26.devpost.com/",
-    "start_date": "Feb 20 - 21, 2026",
-    "location": "RIET Jaipur Campus",
+    "title": "EmP Hackfest Winter 2026",
+    "url": "https://emp-hackfest-winter-2026.devpost.com/",
+    "start_date": "Feb 22, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -312,6 +305,13 @@
     "url": "https://gec-coders-club-hack-day.devpost.com/",
     "start_date": "Feb 27 - 28, 2026",
     "location": "Computer Engineering Department",
+    "source": "Devpost"
+  },
+  {
+    "title": "Geminathon",
+    "url": "https://geminathon.devpost.com/",
+    "start_date": "Mar 01 - 03, 2026",
+    "location": "VIT Chennai",
     "source": "Devpost"
   },
   {
@@ -375,6 +375,13 @@
     "url": "https://hack-to-the-beat.devpost.com/",
     "start_date": "Feb 21 - 22, 2026",
     "location": "Rice Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack(H)er413 2026",
+    "url": "https://hackher413-2026.devpost.com/",
+    "start_date": "Feb 21 - 22, 2026",
+    "location": "Computer Science Laboratories (CSL)",
     "source": "Devpost"
   },
   {
@@ -777,13 +784,6 @@
     "source": "Devpost"
   },
   {
-    "title": "UChicago KTP Hackdays 2026",
-    "url": "https://uchicago-ktp-hackdays-2026.devpost.com/",
-    "start_date": "Feb 28, 2026",
-    "location": "CSIL at John Crerar Library @UChicago",
-    "source": "Devpost"
-  },
-  {
     "title": "UVMHacks",
     "url": "https://uvmhacks.devpost.com/",
     "start_date": "Feb 28, 2026",
@@ -891,6 +891,13 @@
     "url": "https://hacklytics.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacklytics",
     "start_date": "FEB 20 - 22",
     "location": "Atlanta, GA In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Baltimore , Maryland DIVERSITY MorganHacks",
+    "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MorganHacks",
+    "start_date": "APR 11 - 12",
+    "location": "Baltimore, Maryland In-Person",
     "source": "MLH"
   },
   {
@@ -1027,13 +1034,6 @@
     "source": "MLH"
   },
   {
-    "title": "Global Hack Week: Data Week",
-    "url": "https://organize.mlh.io/events/13382-global-hack-week-data-week?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Data+Week",
-    "start_date": "FEB 13 - 19",
-    "location": "Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
     "title": "Hamirpur , Himachal Pradesh Electrothon : Labyrinth of Eternum",
     "url": "https://electrothon.nith.ac.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Electrothon+%3A+Labyrinth+of+Eternum",
     "start_date": "MAR 13 - 15",
@@ -1094,6 +1094,13 @@
     "url": "https://hackkosice.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Kosice",
     "start_date": "APR 18 - 19",
     "location": "Košice, Košice Region In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "La Jolla , CA DataHacks",
+    "url": "https://datahacks.ds3ucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DataHacks",
+    "start_date": "APR 18 - 19",
+    "location": "La Jolla, CA In-Person",
     "source": "MLH"
   },
   {
@@ -1227,6 +1234,13 @@
     "url": "https://www.wehackutd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WEHack",
     "start_date": "APR 11 - 12",
     "location": "Richardson, Texas In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Rochester , Michigan G",
+    "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Grizzhacks+8",
+    "start_date": "rizzhacks 8",
+    "location": "MAR 28 - 29 Rochester, Michigan In-Person",
     "source": "MLH"
   },
   {
