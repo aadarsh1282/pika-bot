@@ -51,7 +51,7 @@
   {
     "title": "Authorized to Act: AI Agents with Auth0",
     "url": "https://authorizedtoact.devpost.com/",
-    "start_date": "Feb 23 - Apr 07, 2026",
+    "start_date": "Mar 02 - Apr 07, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -406,13 +406,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackMatrix 2026 – National Level Hackathon.",
-    "url": "https://hackmatrix-nct.devpost.com/",
-    "start_date": "Mar 17 - 18, 2026",
-    "location": "Nandha College of Technology",
-    "source": "Devpost"
-  },
-  {
     "title": "hackMHS XI",
     "url": "https://hackmhs-xi.devpost.com/",
     "start_date": "May 29 - 30, 2026",
@@ -469,13 +462,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hoya Hacks 2027",
-    "url": "https://hoya-hacks-2027.devpost.com/",
-    "start_date": "Jan 22 - 24, 2027",
-    "location": "Healey Family Student Center",
-    "source": "Devpost"
-  },
-  {
     "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -504,6 +490,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Interventions: Entangle Designathon",
+    "url": "https://entangle-designation.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "Northeastern University - ISEC Building",
+    "source": "Devpost"
+  },
+  {
     "title": "Jom AI @ Tampines",
     "url": "https://jom-ai-tampines.devpost.com/",
     "start_date": "Apr 23 - May 29, 2026",
@@ -515,13 +508,6 @@
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "LancerHacks IX",
-    "url": "https://lh-ix.devpost.com/",
-    "start_date": "Mar 21, 2026",
-    "location": "Saint Francis High School",
     "source": "Devpost"
   },
   {
@@ -756,6 +742,13 @@
     "source": "Devpost"
   },
   {
+    "title": "The Grey Conference - Hackathon Spring 2026",
+    "url": "https://gms-neuronight.devpost.com/",
+    "start_date": "Mar 07, 2026",
+    "location": "Alexander Library - Hatchery",
+    "source": "Devpost"
+  },
+  {
     "title": "The Midwest Blockathon",
     "url": "https://the-midwest-blockathon.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
@@ -774,6 +767,13 @@
     "url": "https://uchicago-ktp-hackdays-2026.devpost.com/",
     "start_date": "Feb 28, 2026",
     "location": "CSIL at John Crerar Library @UChicago",
+    "source": "Devpost"
+  },
+  {
+    "title": "United Hacks V7",
+    "url": "https://unitedhacksv7.devpost.com/",
+    "start_date": "Jul 10 - 12, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -945,8 +945,8 @@
   {
     "title": "Durham , North Carolina HackDuke Code For Good",
     "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Durham, North Carolina In-Person",
+    "start_date": "MAR 21 - 22",
+    "location": "Durham, North Carolina In-Person",
     "source": "MLH"
   },
   {
@@ -1146,6 +1146,13 @@
     "source": "MLH"
   },
   {
+    "title": "Richardson , Texas HackAI",
+    "url": "http://hackai.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackAI",
+    "start_date": "MAR 07 - 08",
+    "location": "Richardson, Texas In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Rochester , Michigan G",
     "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Grizzhacks+8",
     "start_date": "rizzhacks 8",
@@ -1213,6 +1220,13 @@
     "url": "https://www.hackcanada.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Canada",
     "start_date": "MAR 06 - 08",
     "location": "Waterloo, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "West Haven , Connecticut Hac",
+    "url": "https://hackunewhaven.github.io/HNH.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackNewHaven+2026",
+    "start_date": "kNewHaven 20",
+    "location": "26 MAR 28 - 29 West Haven, Connecticut In-Person",
     "source": "MLH"
   },
   {
