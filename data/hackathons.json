@@ -56,6 +56,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Autonomous Agents Hackathon",
+    "url": "https://autonomous-agents-hackathon.devpost.com/",
+    "start_date": "Feb 27, 2026",
+    "location": "AWS Builder Loft",
+    "source": "Devpost"
+  },
+  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -81,6 +88,13 @@
     "url": "https://bisv-hacks-2026.devpost.com/",
     "start_date": "Mar 08, 2026",
     "location": "BASIS Independent Silicon Valley",
+    "source": "Devpost"
+  },
+  {
+    "title": "BUHack",
+    "url": "https://buhack-28545.devpost.com/",
+    "start_date": "Mar 05 - 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -280,13 +294,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Generative AI Hackathon",
-    "url": "https://anora.devpost.com/",
-    "start_date": "Mar 20 - 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "GNEC Hackathon 2026 Spring - Compete For UN-Affiliated/NGO Internships & Prizes",
     "url": "https://gnec-hackathon-2026-spring.devpost.com/",
     "start_date": "Mar 12 - May 03, 2026",
@@ -298,13 +305,6 @@
     "url": "https://google-build-with-ai-hackathon.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "St. Louis, MO, USA",
-    "source": "Devpost"
-  },
-  {
-    "title": "GreyHacks Spring 2026",
-    "url": "https://gms-neuronight.devpost.com/",
-    "start_date": "Mar 07, 2026",
-    "location": "Alexander Library - Hatchery",
     "source": "Devpost"
   },
   {
@@ -343,24 +343,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack The East",
-    "url": "https://hacktheeast.devpost.com/",
-    "start_date": "Feb 27 - 28, 2026",
-    "location": "Hong Kong",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack the Galaxy",
     "url": "https://hack-the-galaxy.devpost.com/",
     "start_date": "Mar 14, 2026",
     "location": "Simon Fraser University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack The Student Life 2026",
-    "url": "https://hackthestudentlife2026.devpost.com/",
-    "start_date": "Mar 13, 2026",
-    "location": "Toronto, Canada",
     "source": "Devpost"
   },
   {
@@ -420,6 +406,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackHer 2026",
+    "url": "https://hackher-2026.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "Queen's University - Kingston, ON",
+    "source": "Devpost"
+  },
+  {
     "title": "hackMHS XI",
     "url": "https://hackmhs-xi.devpost.com/",
     "start_date": "May 29 - 30, 2026",
@@ -476,6 +469,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HudHack2026",
+    "url": "https://hudhack2026.devpost.com/",
+    "start_date": "Feb 26, 2026",
+    "location": "The Haslett Building",
+    "source": "Devpost"
+  },
+  {
     "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -508,6 +508,13 @@
     "url": "https://entangle-designation.devpost.com/",
     "start_date": "Mar 20 - 22, 2026",
     "location": "Northeastern University - ISEC Building",
+    "source": "Devpost"
+  },
+  {
+    "title": "IrvineHacks 2026",
+    "url": "https://irvinehacks-2026.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "UCI Student Center - Pacific Ballroom",
     "source": "Devpost"
   },
   {
@@ -550,13 +557,6 @@
     "url": "https://lovhack-x-medo.devpost.com/",
     "start_date": "Feb 28 - Mar 02, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "MakeOHI/O 2026",
-    "url": "https://makeohi-o-2026.devpost.com/",
-    "start_date": "Mar 07 - 08, 2026",
-    "location": "Physics Research Building",
     "source": "Devpost"
   },
   {
@@ -613,13 +613,6 @@
     "url": "https://omegahack.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Campus Medellín, Universidad EAFIT",
-    "source": "Devpost"
-  },
-  {
-    "title": "Open Agents Hackathon",
-    "url": "https://open-agents-hackathon.devpost.com/",
-    "start_date": "Feb 25, 2026",
-    "location": "Yes SF",
     "source": "Devpost"
   },
   {
@@ -683,6 +676,13 @@
     "url": "https://sasehacks.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
     "location": "University of Florida - Newell's Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "SDSS Datathon 2026",
+    "url": "https://sdss-datathon-2026.devpost.com/",
+    "start_date": "Feb 28 - Mar 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -912,6 +912,13 @@
     "url": "https://madness.sfucsss.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Mountain+Madness",
     "start_date": "FEB 28",
     "location": "- MAR 01 Burnaby, British Columbia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Chapel Hill , North Carolina DIVERSITY SolHacks",
+    "url": "https://www.solhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SolHacks",
+    "start_date": "MAR 28 - 29",
+    "location": "Chapel Hill, North Carolina In-Person",
     "source": "MLH"
   },
   {
@@ -1181,6 +1188,13 @@
     "source": "MLH"
   },
   {
+    "title": "Riverside , California Citrus Hack",
+    "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Citrus+Hack",
+    "start_date": "APR 18 - 19",
+    "location": "Riverside, California In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Rochester , Michigan G",
     "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Grizzhacks+8",
     "start_date": "rizzhacks 8",
@@ -1199,6 +1213,13 @@
     "url": "https://pickhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Pickhacks",
     "start_date": "FEB 27",
     "location": "- MAR 01 Rolla, Missouri In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Tampa , Florida HackUSF",
+    "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUSF",
+    "start_date": "MAR 28 - 29",
+    "location": "Tampa, Florida In-Person",
     "source": "MLH"
   },
   {
