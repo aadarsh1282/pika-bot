@@ -35,20 +35,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AURELION",
-    "url": "https://aurelion2026.devpost.com/",
-    "start_date": "Feb 27 - 28, 2026",
-    "location": "Karunya University - Coimbatore",
-    "source": "Devpost"
-  },
-  {
-    "title": "Aurora",
-    "url": "https://aurora-sgf.devpost.com/",
-    "start_date": "Feb 28 - Mar 01, 2026",
-    "location": "Missouri State University - Glass Hall",
-    "source": "Devpost"
-  },
-  {
     "title": "Authorized to Act: AI Agents with Auth0",
     "url": "https://authorizedtoact.devpost.com/",
     "start_date": "Mar 02 - Apr 07, 2026",
@@ -77,10 +63,10 @@
     "source": "Devpost"
   },
   {
-    "title": "BioHacks 2026",
-    "url": "https://biohacks-2026.devpost.com/",
-    "start_date": "Feb 28 - Mar 01, 2026",
-    "location": "UCSC Jack Baskin Engineering 2, BE-180",
+    "title": "BioHack 2026",
+    "url": "https://biohack-2026.devpost.com/",
+    "start_date": "Mar 13 - 14, 2026",
+    "location": "U of Calgary - Hunter Student Commons",
     "source": "Devpost"
   },
   {
@@ -105,17 +91,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Build with Gemini – Zetech HackDay",
-    "url": "https://build-with-gemini.devpost.com/",
-    "start_date": "Feb 27 - 28, 2026",
-    "location": "Zetech University, Mang'u Campus,",
-    "source": "Devpost"
-  },
-  {
     "title": "Caltech Longevity Hackathon 2026",
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
+    "source": "Devpost"
+  },
+  {
+    "title": "Cambridge RealityX VRAR Hackthon",
+    "url": "https://cambridge-realityx.devpost.com/",
+    "start_date": "Mar 07 - 13, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -137,13 +123,6 @@
     "url": "https://campfire-biratnagar.devpost.com/",
     "start_date": "Feb 28 - Mar 01, 2026",
     "location": "BIratnagar, Nepal",
-    "source": "Devpost"
-  },
-  {
-    "title": "Campfire Colorado",
-    "url": "https://campfire-colorado.devpost.com/",
-    "start_date": "Feb 28 - Mar 01, 2026",
-    "location": "UCCS Osborne Center",
     "source": "Devpost"
   },
   {
@@ -207,6 +186,13 @@
     "url": "https://conhacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Conestoga College, Waterloo Campus",
+    "source": "Devpost"
+  },
+  {
+    "title": "DeerHacks V (2026)",
+    "url": "https://deerhacks-v-2026.devpost.com/",
+    "start_date": "Feb 27 - Mar 01, 2026",
+    "location": "UofT Mississauga - Deerfield Hall",
     "source": "Devpost"
   },
   {
@@ -308,10 +294,24 @@
     "source": "Devpost"
   },
   {
+    "title": "GreyHacks Spring 2026",
+    "url": "https://gms-neuronight.devpost.com/",
+    "start_date": "Mar 07, 2026",
+    "location": "Alexander Library - Hatchery",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack Cupertino 2026",
     "url": "https://hack-cupertino-2026.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "Quinlan Community Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Days in Bogotá",
+    "url": "https://hack-days-in-bogota.devpost.com/",
+    "start_date": "Feb 27, 2026",
+    "location": "Universidad Sergio Arboleda - Bogotá",
     "source": "Devpost"
   },
   {
@@ -333,6 +333,13 @@
     "url": "https://hack-for-the-world-2026.devpost.com/",
     "start_date": "Feb 28, 2026",
     "location": "Naperville North High School",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack o Phobia",
+    "url": "https://hack-o-phobia.devpost.com/",
+    "start_date": "Mar 10, 2026",
+    "location": "Chandigarh university Uttar Pradesh",
     "source": "Devpost"
   },
   {
@@ -466,13 +473,6 @@
     "url": "https://hook-em-hacks.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "University of Texas Austin - Union",
-    "source": "Devpost"
-  },
-  {
-    "title": "HudHack2026",
-    "url": "https://hudhack2026.devpost.com/",
-    "start_date": "Feb 26, 2026",
-    "location": "The Haslett Building",
     "source": "Devpost"
   },
   {
@@ -637,13 +637,6 @@
     "source": "Devpost"
   },
   {
-    "title": "PyTheQuest",
-    "url": "https://pythequest.devpost.com/",
-    "start_date": "Feb 26 - 27, 2026",
-    "location": "SSET",
-    "source": "Devpost"
-  },
-  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -777,6 +770,13 @@
     "source": "Devpost"
   },
   {
+    "title": "UCLA Hack on the Hill (HOTH) XIII",
+    "url": "https://ucla-hoth-xiii.devpost.com/",
+    "start_date": "Mar 01 - 02, 2026",
+    "location": "Palisades Room UCLA Carnesale Commons",
+    "source": "Devpost"
+  },
+  {
     "title": "United Hacks V7",
     "url": "https://unitedhacksv7.devpost.com/",
     "start_date": "Jul 10 - 12, 2026",
@@ -880,6 +880,13 @@
     "source": "MLH"
   },
   {
+    "title": "Austin , TX Spring Hacks aka Hack Hack Goose",
+    "url": "https://hackhackgoose.freetailhackers.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Spring+Hacks+aka+Hack+Hack+Goose",
+    "start_date": "APR 03 - 04",
+    "location": "Austin, TX In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Baltimore , Maryland DIVERSITY MorganHacks",
     "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MorganHacks",
     "start_date": "APR 11 - 12",
@@ -964,6 +971,13 @@
     "source": "MLH"
   },
   {
+    "title": "Esbjerg , Region of Southern Denmark Hack Esbjerg",
+    "url": "https://hackesbjerg.dk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Esbjerg",
+    "start_date": "MAR 19 - 20",
+    "location": "Esbjerg, Region of Southern Denmark In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Evanston , Illinois WildHacks",
     "url": "https://www.wildhacks.net/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WildHacks",
     "start_date": "APR 11 - 12",
@@ -972,7 +986,7 @@
   },
   {
     "title": "Ewing , New Jersey HackTCNJ",
-    "url": "https://hacktcnj.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTCNJ",
+    "url": "https://www.hacktcnj.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTCNJ",
     "start_date": "FEB 28",
     "location": "- MAR 01 Ewing, New Jersey In-Person",
     "source": "MLH"
@@ -1115,6 +1129,13 @@
     "url": "https://www.hackmerced.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackMerced+XI",
     "start_date": "MAR 06 - 08",
     "location": "Merced, CA In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Mississauga , Ontario",
+    "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BearHacks+2026",
+    "start_date": "BearHacks 20",
+    "location": "26 APR 24 - 26 Mississauga, Ontario In-Person",
     "source": "MLH"
   },
   {
@@ -1283,6 +1304,13 @@
     "url": "https://www.starkhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=StarkHacks",
     "start_date": "APR 17 - 19",
     "location": "West Lafayette, Indiana In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Westmount , Quebec MariHacks",
+    "url": "https://www.marihacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MariHacks",
+    "start_date": "APR 17 - 18",
+    "location": "Westmount, Quebec In-Person",
     "source": "MLH"
   }
 ]
