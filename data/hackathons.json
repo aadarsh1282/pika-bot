@@ -49,6 +49,13 @@
     "source": "Devpost"
   },
   {
+    "title": "BigRedHacks",
+    "url": "https://bigredhacks-28881.devpost.com/",
+    "start_date": "Mar 06 - 13, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "BioHack 2026",
     "url": "https://biohack-2026.devpost.com/",
     "start_date": "Mar 13 - 14, 2026",
@@ -105,13 +112,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Campfire Padova",
-    "url": "https://campfire-padova.devpost.com/",
-    "start_date": "Mar 01, 2026",
-    "location": "Padova",
-    "source": "Devpost"
-  },
-  {
     "title": "ChipCraft 2.0",
     "url": "https://chipcraft-2-0.devpost.com/",
     "start_date": "Mar 13 - 14, 2026",
@@ -130,6 +130,13 @@
     "url": "https://clarkhacks-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Clark University",
+    "source": "Devpost"
+  },
+  {
+    "title": "cmd-f 2026",
+    "url": "https://cmd-f-2026.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "Life Sciences Institute",
     "source": "Devpost"
   },
   {
@@ -427,6 +434,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackVision",
+    "url": "https://hackvision.devpost.com/",
+    "start_date": "Apr 05, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hook 'Em Hacks",
     "url": "https://hook-em-hacks.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -536,13 +550,6 @@
     "url": "https://mmust-hackday123.devpost.com/",
     "start_date": "Mar 14, 2026",
     "location": "MMUST-(SPD-004)",
-    "source": "Devpost"
-  },
-  {
-    "title": "Mountain Madness 2026",
-    "url": "https://csss-mountain-madness-2026.devpost.com/",
-    "start_date": "Mar 01, 2026",
-    "location": "Burnaby, Canada",
     "source": "Devpost"
   },
   {
@@ -665,16 +672,9 @@
     "source": "Devpost"
   },
   {
-    "title": "TESTING",
-    "url": "https://hacktrent-2026.devpost.com/",
-    "start_date": "Nov 06 - 08, 2026",
-    "location": "Trent University Student Centre",
-    "source": "Devpost"
-  },
-  {
     "title": "The 2030 AI Challenge",
     "url": "https://the-2030-ai-challenge.devpost.com/",
-    "start_date": "Mar 07 - 28, 2026",
+    "start_date": "Mar 08 - 28, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -690,13 +690,6 @@
     "url": "https://treelinev1.devpost.com/",
     "start_date": "Mar 06 - 08, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "UCLA Hack on the Hill (HOTH) XIII",
-    "url": "https://ucla-hoth-xiii.devpost.com/",
-    "start_date": "Mar 01 - 02, 2026",
-    "location": "Palisades Room UCLA Carnesale Commons",
     "source": "Devpost"
   },
   {
@@ -817,20 +810,6 @@
     "source": "MLH"
   },
   {
-    "title": "Brighton , Sussex H",
-    "url": "https://www.hacksussex.com/Events/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackSussex+2026",
-    "start_date": "ackSussex 20",
-    "location": "26 FEB 28 - MAR 01 Brighton, Sussex In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Burnaby , British Columbia Mountain Madness",
-    "url": "https://madness.sfucsss.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Mountain+Madness",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Burnaby, British Columbia In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Chapel Hill , North Carolina DIVERSITY SolHacks",
     "url": "https://www.solhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SolHacks",
     "start_date": "MAR 28 - 29",
@@ -887,13 +866,6 @@
     "source": "MLH"
   },
   {
-    "title": "Ewing , New Jersey HackTCNJ",
-    "url": "https://www.hacktcnj.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTCNJ",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Ewing, New Jersey In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Gainesville , Florida DIVERSITY SASEHacks",
     "url": "https://www.sasehacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SASEHacks",
     "start_date": "MAR 07 - 08",
@@ -936,13 +908,6 @@
     "source": "MLH"
   },
   {
-    "title": "Hoboken , New Jersey Stevens QuackHacks",
-    "url": "https://stevensquackhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Stevens+QuackHacks",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Hoboken, New Jersey In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Houston , TX HackHCC",
     "url": "https://hackhcc.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackHCC",
     "start_date": "MAY 22 - 23",
@@ -968,13 +933,6 @@
     "url": "https://khe.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Kent+Hack+Enough",
     "start_date": "MAR 28 - 29",
     "location": "Kent, Ohio In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Kolkata , West Bengal",
-    "url": "https://diversion.tech/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DIVERSION+2K26",
-    "start_date": "DIVERSION 2",
-    "location": "K26 FEB 28 - MAR 01 Kolkata, West Bengal In-Person",
     "source": "MLH"
   },
   {
@@ -1041,13 +999,6 @@
     "source": "MLH"
   },
   {
-    "title": "Mississauga , Ontario DeerHacks V",
-    "url": "https://deerhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DeerHacks+V",
-    "start_date": "FEB 27",
-    "location": "- MAR 01 Mississauga, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Montreal , Quebec McGill AeroHacks",
     "url": "https://mcgillaerohacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=McGill+AeroHacks",
     "start_date": "MAR 13 - 15",
@@ -1073,13 +1024,6 @@
     "url": "https://events.mlh.io/events/13503-ai-hackfest?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AI+Hackfest",
     "start_date": "APR 17 - 19",
     "location": "Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "Newark , Delaware HenHacks",
-    "url": "https://www.henhackshackathon.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HenHacks",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Newark, Delaware In-Person",
     "source": "MLH"
   },
   {
@@ -1125,20 +1069,6 @@
     "source": "MLH"
   },
   {
-    "title": "Rochester , New York WiCHacks",
-    "url": "https://wichacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WiCHacks",
-    "start_date": "FEB 28",
-    "location": "- MAR 01 Rochester, New York In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Rolla , Missouri Pickhacks",
-    "url": "https://pickhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Pickhacks",
-    "start_date": "FEB 27",
-    "location": "- MAR 01 Rolla, Missouri In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Tampa , Florida HackUSF",
     "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUSF",
     "start_date": "MAR 28 - 29",
@@ -1164,13 +1094,6 @@
     "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+%40+Penn+State",
     "start_date": "MAR 28 - 29",
     "location": "University Park, State College, PA In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Urbana , Illinois HackIllinois",
-    "url": "https://hackillinois.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackIllinois",
-    "start_date": "FEB 27",
-    "location": "- MAR 01 Urbana, Illinois In-Person",
     "source": "MLH"
   },
   {
