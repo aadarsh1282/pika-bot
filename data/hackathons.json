@@ -1,5 +1,12 @@
 [
   {
+    "title": "2026 CodeXtreme Ingenious Hackathon Season 1",
+    "url": "https://codextreme26.devpost.com/",
+    "start_date": "Mar 04 - 07, 2026",
+    "location": "African Leadership University, Rwanda",
+    "source": "Devpost"
+  },
+  {
     "title": "305 Hack Mar26 SubmissionPortal | Register@hackuniversity-hackathons.vercel.app",
     "url": "https://305hackmar2026.devpost.com/",
     "start_date": "Mar 13 - 20, 2026",
@@ -28,10 +35,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Authorized to Act: AI Agents with Auth0",
-    "url": "https://authorizedtoact.devpost.com/",
-    "start_date": "Mar 02 - Apr 07, 2026",
-    "location": "Online",
+    "title": "AdaHacks 2026",
+    "url": "https://adahacks2026.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "ECERF",
+    "source": "Devpost"
+  },
+  {
+    "title": "BAM Hacks",
+    "url": "https://bam-hacks.devpost.com/",
+    "start_date": "Mar 29, 2026",
+    "location": "Purdue University -- Lawson Building",
     "source": "Devpost"
   },
   {
@@ -112,6 +126,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Campfire Sonipat",
+    "url": "https://campfire-sonipat.devpost.com/",
+    "start_date": "Mar 03, 2026",
+    "location": "Rishihood univeristy sonipat",
+    "source": "Devpost"
+  },
+  {
     "title": "ChipCraft 2.0",
     "url": "https://chipcraft-2-0.devpost.com/",
     "start_date": "Mar 13 - 14, 2026",
@@ -175,6 +196,13 @@
     "source": "Devpost"
   },
   {
+    "title": "CYHacks '26",
+    "url": "https://cyhacks26.devpost.com/",
+    "start_date": "Apr 25, 2026",
+    "location": "Central York High School",
+    "source": "Devpost"
+  },
+  {
     "title": "DesignXR Hackathon",
     "url": "https://designxr.devpost.com/",
     "start_date": "Mar 16 - 22, 2026",
@@ -217,6 +245,13 @@
     "source": "Devpost"
   },
   {
+    "title": "EcoHacks",
+    "url": "https://ecohackers.devpost.com/",
+    "start_date": "Mar 06 - Apr 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "evensonarisnord",
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
@@ -242,13 +277,6 @@
     "url": "https://gateway-hackathon-27996.devpost.com/",
     "start_date": "Mar 15 - Apr 05, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "GenAI Zürich Hackathon 2026",
-    "url": "https://genaizurich.devpost.com/",
-    "start_date": "Mar 02 - 18, 2026",
-    "location": "Volkshaus Zürich",
     "source": "Devpost"
   },
   {
@@ -287,10 +315,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Days JNGEC",
-    "url": "https://hack-days-jngec.devpost.com/",
-    "start_date": "Mar 03, 2026",
-    "location": "JNGEC Sundernagar",
+    "title": "Hack Days in the 6ix",
+    "url": "https://hack-days-in-the-6ix.devpost.com/",
+    "start_date": "Mar 07, 2026",
+    "location": "Bergeron Centre - York University",
     "source": "Devpost"
   },
   {
@@ -700,6 +728,13 @@
     "source": "Devpost"
   },
   {
+    "title": "UW Tech Exploration Lab Digital Health Challenge",
+    "url": "https://tel-digital-health-challenge.devpost.com/",
+    "start_date": "Mar 20 - Apr 06, 2026",
+    "location": "Madison, WI, USA",
+    "source": "Devpost"
+  },
+  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
@@ -800,6 +835,13 @@
     "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUPC",
     "start_date": "APR 24 - 26",
     "location": "Barcelona, Catalonia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Belfast , Northern Ireland HackBelfast",
+    "url": "https://www.hackbelfast.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackBelfast",
+    "start_date": "MAR 07 - 08",
+    "location": "Belfast, Northern Ireland In-Person",
     "source": "MLH"
   },
   {
@@ -964,6 +1006,13 @@
     "source": "MLH"
   },
   {
+    "title": "Lawrence , KS HackKU",
+    "url": "https://the-hackku.github.io/hackku26_website/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackKU",
+    "start_date": "APR 17 - 19",
+    "location": "Lawrence, KS In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Long Beach , California BeachHacks",
     "url": "https://beachhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BeachHacks",
     "start_date": "MAR 21 - 22",
@@ -1027,6 +1076,13 @@
     "source": "MLH"
   },
   {
+    "title": "Newark , NJ HackNJIT",
+    "url": "https://hacknjit.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackNJIT",
+    "start_date": "MAR 07 - 08",
+    "location": "Newark, NJ In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "NYC , New York Production Engineering Hackathon",
     "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Production+Engineering+Hackathon",
     "start_date": "APR 04 - 05",
@@ -1083,7 +1139,7 @@
     "source": "MLH"
   },
   {
-    "title": "Union , 1075 Morris Ave, Union, NJ 07083 DIVERSITY KeanUHackThis",
+    "title": "Union , 1075 Morris Ave, Union, NJ 07083 KeanUHackThis",
     "url": "https://www.keanuhackthis.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KeanUHackThis",
     "start_date": "APR 25 - 26",
     "location": "Union, 1075 Morris Ave, Union, NJ 07083 In-Person",
