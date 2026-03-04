@@ -1,12 +1,5 @@
 [
   {
-    "title": "2026 CodeXtreme Ingenious Hackathon Season 1",
-    "url": "https://codextreme26.devpost.com/",
-    "start_date": "Mar 04 - 07, 2026",
-    "location": "African Leadership University, Rwanda",
-    "source": "Devpost"
-  },
-  {
     "title": "305 Hack Mar26 SubmissionPortal | Register@hackuniversity-hackathons.vercel.app",
     "url": "https://305hackmar2026.devpost.com/",
     "start_date": "Mar 13 - 20, 2026",
@@ -126,13 +119,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Campfire Sonipat",
-    "url": "https://campfire-sonipat.devpost.com/",
-    "start_date": "Mar 03, 2026",
-    "location": "Rishihood univeristy sonipat",
-    "source": "Devpost"
-  },
-  {
     "title": "ChipCraft 2.0",
     "url": "https://chipcraft-2-0.devpost.com/",
     "start_date": "Mar 13 - 14, 2026",
@@ -231,6 +217,13 @@
     "source": "Devpost"
   },
   {
+    "title": "DUWiT Hacks 2026",
+    "url": "https://duwithacks2026.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "Durham University Computer Science Dept",
+    "source": "Devpost"
+  },
+  {
     "title": "EagleHacks 2026",
     "url": "https://eaglehacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
@@ -280,13 +273,6 @@
     "source": "Devpost"
   },
   {
-    "title": "GNEC Hackathon 2026 Spring - Compete For UN-Affiliated/NGO Internships & Prizes",
-    "url": "https://gnec-hackathon-2026-spring.devpost.com/",
-    "start_date": "Mar 12 - May 03, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Google Build with AI Hackathon",
     "url": "https://google-build-with-ai-hackathon.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
@@ -297,7 +283,14 @@
     "title": "GreyHacks Spring 2026",
     "url": "https://gms-neuronight.devpost.com/",
     "start_date": "Mar 07, 2026",
-    "location": "Alexander Library - Hatchery",
+    "location": "Academic Building East",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Brooklyn",
+    "url": "https://hack-brooklyn-2026.devpost.com/",
+    "start_date": "Apr 17 - 19, 2026",
+    "location": "Brooklyn College",
     "source": "Devpost"
   },
   {
@@ -462,6 +455,13 @@
     "source": "Devpost"
   },
   {
+    "title": "hackUMBC Mini Hackathon",
+    "url": "https://hackumbc-minihackathon.devpost.com/",
+    "start_date": "Apr 18, 2026",
+    "location": "University of Maryland, Baltimore County",
+    "source": "Devpost"
+  },
+  {
     "title": "HackVision",
     "url": "https://hackvision.devpost.com/",
     "start_date": "Apr 05, 2026",
@@ -501,6 +501,13 @@
     "url": "https://ideaforge2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "ISELF Building",
+    "source": "Devpost"
+  },
+  {
+    "title": "ImpactHacks by HackathonForAll",
+    "url": "https://impacthacks.devpost.com/",
+    "start_date": "Apr 01 - May 05, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -612,6 +619,13 @@
     "title": "Ordeflow 001",
     "url": "https://ordeflow-001.devpost.com/",
     "start_date": "Mar 22 - 24, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "PantherHack 2026",
+    "url": "https://pantherhack-2026.devpost.com/",
+    "start_date": "Apr 17 - 19, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -849,6 +863,13 @@
     "url": "https://www.hackcu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackCU12",
     "start_date": "MAR 07 - 08",
     "location": "Boulder, Colorado In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Canterbury , Kent KentHackIt",
+    "url": "https://www.kenthackit.co.uk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KentHackIt",
+    "start_date": "MAR 21 - 22",
+    "location": "Canterbury, Kent In-Person",
     "source": "MLH"
   },
   {
@@ -1122,6 +1143,13 @@
     "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Grizzhacks+8",
     "start_date": "rizzhacks 8",
     "location": "MAR 28 - 29 Rochester, Michigan In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Southampton , Hampshire SotonHack",
+    "url": "https://sotonhack.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SotonHack",
+    "start_date": "MAR 14 - 15",
+    "location": "Southampton, Hampshire In-Person",
     "source": "MLH"
   },
   {
