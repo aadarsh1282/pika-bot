@@ -77,6 +77,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Boson AI Higgs Audio Hackathon in collaboration with Eigen AI",
+    "url": "https://higgs-audio-hackathon-ai.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "Circuit Launch, Mountain View",
+    "source": "Devpost"
+  },
+  {
     "title": "BUCS Hackathon 2026",
     "url": "https://bucsathon.devpost.com/",
     "start_date": "Mar 07, 2026",
@@ -101,7 +108,7 @@
     "title": "Builders Day by HackUnion",
     "url": "https://builders-day.devpost.com/",
     "start_date": "Apr 03 - 04, 2026",
-    "location": "Lords Skill Academy",
+    "location": "LIET Campus",
     "source": "Devpost"
   },
   {
@@ -259,6 +266,13 @@
     "source": "Devpost"
   },
   {
+    "title": "FoundersHack Sydney 2026",
+    "url": "https://foundershack-sydney-2026-28444.devpost.com/",
+    "start_date": "Mar 19 - 22, 2026",
+    "location": "Sydney, Australia",
+    "source": "Devpost"
+  },
+  {
     "title": "Fuel the Future",
     "url": "https://fuel-the-future.devpost.com/",
     "start_date": "Mar 21 - 23, 2026",
@@ -322,14 +336,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack the Case",
-    "url": "https://hack-the-case.devpost.com/",
-    "start_date": "Mar 07 - 08, 2026",
-    "location": "Toronto, Canada",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack the Galaxy",
+    "title": "Hack the Galaxy 2026",
     "url": "https://hack-the-galaxy.devpost.com/",
     "start_date": "Mar 14, 2026",
     "location": "Simon Fraser University",
@@ -553,6 +560,20 @@
     "source": "Devpost"
   },
   {
+    "title": "LIUX-Talent-Hackathon",
+    "url": "https://liux-talent-hackathon.devpost.com/",
+    "start_date": "Mar 10 - 12, 2026",
+    "location": "España",
+    "source": "Devpost"
+  },
+  {
+    "title": "LUMA Hackathon: Pitch your idea, win $250 cash!",
+    "url": "https://luma.devpost.com/",
+    "start_date": "Mar 25 - Apr 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "MakeOHI/O 2026",
     "url": "https://makeohi-o-2026.devpost.com/",
     "start_date": "Mar 07 - 08, 2026",
@@ -627,6 +648,13 @@
     "url": "https://pantherhack-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Pulse AI NYC X CASTGNY Hackathon",
+    "url": "https://pulse-ai-castgny-hackathon.devpost.com/",
+    "start_date": "Mar 07, 2026",
+    "location": "Fordham Gabelli School of Business",
     "source": "Devpost"
   },
   {
@@ -716,7 +744,7 @@
   {
     "title": "The 2030 AI Challenge",
     "url": "https://the-2030-ai-challenge.devpost.com/",
-    "start_date": "Mar 08 - 28, 2026",
+    "start_date": "Mar 08 - 29, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -751,7 +779,7 @@
   {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
-    "start_date": "Apr 11 - 12, 2026",
+    "start_date": "Apr 18 - 19, 2026",
     "location": "Griffin Hall",
     "source": "Devpost"
   },
@@ -779,7 +807,7 @@
   {
     "title": "World Mission High School Hack Days",
     "url": "https://wmhs-hack-days.devpost.com/",
-    "start_date": "Mar 06, 2026",
+    "start_date": "Mar 05, 2026",
     "location": "World Mission High School",
     "source": "Devpost"
   },
@@ -828,6 +856,13 @@
     "url": "https://www.hacktropica.xyz/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTropica+2k26",
     "start_date": "ckTropica 2",
     "location": "k26 APR 04 - 05 Asansol, West Bengal In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Atlanta , Georgia ImmerseGT",
+    "url": "https://www.immersegt.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ImmerseGT",
+    "start_date": "APR 10 - 12",
+    "location": "Atlanta, Georgia In-Person",
     "source": "MLH"
   },
   {
@@ -1041,13 +1076,6 @@
     "source": "MLH"
   },
   {
-    "title": "Los Angeles , California DIVERSITY AthenaHacks",
-    "url": "https://athenahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AthenaHacks+",
-    "start_date": "MAR 28 - 29",
-    "location": "Los Angeles, California In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Los Angeles , California LA Hacks",
     "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=LA+Hacks",
     "start_date": "APR 24 - 26",
@@ -1115,6 +1143,13 @@
     "url": "https://hack.caltech.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacktech",
     "start_date": "APR 24 - 26",
     "location": "Pasadena, California In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Princeton , New Jersey HackPrinceton",
+    "url": "https://www.hackprinceton.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackPrinceton+Spring+2026",
+    "start_date": "Spring 20",
+    "location": "26 APR 17 - 19 Princeton, New Jersey In-Person",
     "source": "MLH"
   },
   {
