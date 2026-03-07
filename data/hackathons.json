@@ -35,6 +35,20 @@
     "source": "Devpost"
   },
   {
+    "title": "APOGEE GameJam 2026",
+    "url": "https://apogee-gamejam-2026-29050.devpost.com/",
+    "start_date": "Mar 07 - 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "BACSA Hacks",
+    "url": "https://bacsa-hacks.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "BAM Hacks",
     "url": "https://bam-hacks.devpost.com/",
     "start_date": "Mar 29, 2026",
@@ -53,13 +67,6 @@
     "url": "https://big-red-hacks-2026.devpost.com/",
     "start_date": "Apr 11, 2026",
     "location": "The Lawrenceville School",
-    "source": "Devpost"
-  },
-  {
-    "title": "BigRedHacks",
-    "url": "https://bigredhacks-28881.devpost.com/",
-    "start_date": "Mar 06 - 13, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -87,7 +94,7 @@
     "title": "BUCS Hackathon 2026",
     "url": "https://bucsathon.devpost.com/",
     "start_date": "Mar 07, 2026",
-    "location": "Sauder School of Business",
+    "location": "Sauder School of Business (HA 492)",
     "source": "Devpost"
   },
   {
@@ -158,13 +165,6 @@
     "url": "https://codeasite.devpost.com/",
     "start_date": "Apr 10 - 11, 2026",
     "location": "Union Ballroom",
-    "source": "Devpost"
-  },
-  {
-    "title": "Coders Meet",
-    "url": "https://coders-meet.devpost.com/",
-    "start_date": "Mar 07 - 10, 2026",
-    "location": "ACEIT, Kukas, Jaipur",
     "source": "Devpost"
   },
   {
@@ -266,13 +266,6 @@
     "source": "Devpost"
   },
   {
-    "title": "FigBuild 2026",
-    "url": "https://figbuild2026.devpost.com/",
-    "start_date": "Mar 06 - 09, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "FoundersHack Sydney 2026",
     "url": "https://foundershack-sydney-2026-28444.devpost.com/",
     "start_date": "Mar 19 - 22, 2026",
@@ -294,6 +287,13 @@
     "source": "Devpost"
   },
   {
+    "title": "GNEC Hackathon 2026 Spring - Compete For UN-Affiliated/NGO Internships & Prizes",
+    "url": "https://gnec-hackathon-2026-spring.devpost.com/",
+    "start_date": "Mar 12 - May 03, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Google Build with AI Hackathon",
     "url": "https://google-build-with-ai-hackathon.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
@@ -308,17 +308,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Canada 2026",
-    "url": "https://hack-canada-2026.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
-    "location": "SPUR Innovation Centre",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack Cupertino 2026",
     "url": "https://hack-cupertino-2026.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "Quinlan Community Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Day Kanpur",
+    "url": "https://hack-day-kanpur.devpost.com/",
+    "start_date": "Mar 30, 2026",
+    "location": "KANPUR, UTTAR PRADESH",
     "source": "Devpost"
   },
   {
@@ -490,6 +490,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HunterHacks",
+    "url": "https://hunterhacks-battle-of-boros.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "Hunter College North Building",
+    "source": "Devpost"
+  },
+  {
     "title": "IATA ONE Record Hackathon – hosted by Cathay Cargo & CHAMP Cargosystems",
     "url": "https://onerecord-hkg.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -546,6 +553,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Kifiya Inspire 3.0",
+    "url": "https://kifiya-inspire-3-0.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "Kifiya Financial Technology, HQ",
+    "source": "Devpost"
+  },
+  {
     "title": "LancerHacks IX",
     "url": "https://lh-ix.devpost.com/",
     "start_date": "Mar 21, 2026",
@@ -567,17 +581,17 @@
     "source": "Devpost"
   },
   {
-    "title": "LUMA Hackathon: Pitch your idea, win $250 cash!",
-    "url": "https://luma.devpost.com/",
-    "start_date": "Mar 25 - Apr 26, 2026",
+    "title": "LovHack Season 2",
+    "url": "https://lovhack-season2.devpost.com/",
+    "start_date": "Mar 21 - 28, 2026",
     "location": "Online",
     "source": "Devpost"
   },
   {
-    "title": "MakeOHI/O 2026",
-    "url": "https://makeohi-o-2026.devpost.com/",
-    "start_date": "Mar 07 - 08, 2026",
-    "location": "Physics Research Building",
+    "title": "LUMA Hackathon: Pitch your idea, win $250 cash!",
+    "url": "https://luma.devpost.com/",
+    "start_date": "Mar 25 - Apr 26, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -658,6 +672,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Pacific Portal XR",
+    "url": "https://pacific-portal-xr-hack.devpost.com/",
+    "start_date": "May 07 - 09, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "PantherHack 2026",
     "url": "https://pantherhack-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
@@ -709,14 +730,7 @@
   {
     "title": "She ships - 8M hackathon",
     "url": "https://sheshipshackathon.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Ship In a day",
-    "url": "https://ship-in-a-day.devpost.com/",
-    "start_date": "Mar 06 - 07, 2026",
+    "start_date": "Mar 08 - 09, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -749,13 +763,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Tech(Hack)",
-    "url": "https://techhack.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
-    "location": "Georgia Tech - Howey Physics",
-    "source": "Devpost"
-  },
-  {
     "title": "The 2030 AI Challenge",
     "url": "https://the-2030-ai-challenge.devpost.com/",
     "start_date": "Mar 08 - 29, 2026",
@@ -770,13 +777,6 @@
     "source": "Devpost"
   },
   {
-    "title": "The Midwest Blockathon",
-    "url": "https://the-midwest-blockathon.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
-    "location": "KU School of Engineering",
-    "source": "Devpost"
-  },
-  {
     "title": "The Orange Game Jam",
     "url": "https://the-orange-game-jam.devpost.com/",
     "start_date": "Mar 07, 2026",
@@ -784,9 +784,9 @@
     "source": "Devpost"
   },
   {
-    "title": "TreeLine Hacks",
-    "url": "https://treelinev1.devpost.com/",
-    "start_date": "Mar 06 - 08, 2026",
+    "title": "UNIHACK 2026, funded by the European Union",
+    "url": "https://unihack2026.devpost.com/",
+    "start_date": "Mar 13 - 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -826,10 +826,10 @@
     "source": "Devpost"
   },
   {
-    "title": "WayneHacks 4",
-    "url": "https://waynehacks-4.devpost.com/",
-    "start_date": "Apr 11 - 12, 2026",
-    "location": "TechTown Detroit",
+    "title": "Witathon 2026",
+    "url": "https://witathon-2026.devpost.com/",
+    "start_date": "Mar 07 - 08, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -905,6 +905,13 @@
     "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUPC",
     "start_date": "APR 24 - 26",
     "location": "Barcelona, Catalonia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Bothell , WA UWB",
+    "url": "https://uwbhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=UWB+Hacks+26%3A+The+Future%21",
+    "start_date": "Hacks 26",
+    "location": ": The Future! APR 24 - 26 Bothell, WA In-Person",
     "source": "MLH"
   },
   {
