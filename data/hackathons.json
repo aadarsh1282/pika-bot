@@ -56,13 +56,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BISV Hacks 2026",
-    "url": "https://bisv-hacks-2026.devpost.com/",
-    "start_date": "Mar 08, 2026",
-    "location": "BASIS Independent Silicon Valley",
-    "source": "Devpost"
-  },
-  {
     "title": "Boson AI Higgs Audio Hackathon in collaboration with Eigen AI",
     "url": "https://higgs-audio-hackathon-ai.devpost.com/",
     "start_date": "Mar 20 - 22, 2026",
@@ -88,6 +81,13 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
+    "source": "Devpost"
+  },
+  {
+    "title": "CampusAI x MDC AI & Data Hackathon",
+    "url": "https://campusai-x-mdc-hackathon.devpost.com/",
+    "start_date": "Mar 13 - 15, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -137,13 +137,6 @@
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Central York High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "Databricks_Accenture_Hackathon",
-    "url": "https://databricksaccenturehackathon.devpost.com/",
-    "start_date": "Mar 09 - Apr 15, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -220,6 +213,13 @@
     "title": "Fuel the Future",
     "url": "https://fuel-the-future.devpost.com/",
     "start_date": "Mar 21 - 23, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Galuxium Nexus V2",
+    "url": "https://galuxium-nexus-v2.devpost.com/",
+    "start_date": "Jun 01 - Jul 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -343,13 +343,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackFiesta Miami 2026 SubmissionPortal | Register@hackfiestamiami2026.vercel.app",
-    "url": "https://hackfiestamiami2026.devpost.com/",
-    "start_date": "Mar 09 - 17, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "HackFW",
     "url": "https://fwtx.devpost.com/",
     "start_date": "Apr 03 - May 02, 2026",
@@ -455,17 +448,17 @@
     "source": "Devpost"
   },
   {
-    "title": "ImpactHacks by HackathonForAll",
-    "url": "https://impacthacks.devpost.com/",
-    "start_date": "Apr 01 - May 05, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Infinity Codewave",
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
+    "source": "Devpost"
+  },
+  {
+    "title": "Interlake Programming Club Hackathon",
+    "url": "https://interlake-hackathon.devpost.com/",
+    "start_date": "Mar 12 - 19, 2026",
+    "location": "Interlake High School",
     "source": "Devpost"
   },
   {
@@ -637,6 +630,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Richmond Civic Hackathon",
+    "url": "https://hack-for-rva.devpost.com/",
+    "start_date": "Mar 27 - 28, 2026",
+    "location": "VCU School of Business (Snead Hall)",
+    "source": "Devpost"
+  },
+  {
     "title": "Robotic Agents Hackathon",
     "url": "https://irlrobots.devpost.com/",
     "start_date": "Mar 13, 2026",
@@ -648,6 +648,13 @@
     "url": "https://rockethacks26.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "UToledo College of Engineering",
+    "source": "Devpost"
+  },
+  {
+    "title": "Sac City Arduino Day Challenge",
+    "url": "https://sac-city-arduino-day-challenge.devpost.com/",
+    "start_date": "Mar 27, 2026",
+    "location": "Sacramento City College - NAS 107",
     "source": "Devpost"
   },
   {
@@ -667,7 +674,7 @@
   {
     "title": "sporty games",
     "url": "https://sporty-games.devpost.com/",
-    "start_date": "Mar 13 - 16, 2026",
+    "start_date": "Mar 27 - 30, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -690,13 +697,6 @@
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
     "location": "Skagit Valley College - Lewis Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "The 2030 AI Challenge",
-    "url": "https://the-2030-ai-challenge.devpost.com/",
-    "start_date": "Mar 08 - 29, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -756,10 +756,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Weber State AI Hackathon 2026",
+    "url": "https://weber-state-ai-hackathon-2026.devpost.com/",
+    "start_date": "Mar 21 - Apr 04, 2026",
+    "location": "Weber State University Shepherd Union",
+    "source": "Devpost"
+  },
+  {
     "title": "xStocks Hackathon EthCC: Market Open",
     "url": "https://xstocks-market-open.devpost.com/",
     "start_date": "Mar 31 - Apr 02, 2026",
     "location": "Cannes, Provence-Alpes-Côte d'Azur",
+    "source": "Devpost"
+  },
+  {
+    "title": "ZOOTech - Cursor Hackathon",
+    "url": "https://zootech.devpost.com/",
+    "start_date": "Mar 14 - 15, 2026",
+    "location": "University of Calgary",
     "source": "Devpost"
   },
   {
@@ -838,13 +852,6 @@
     "source": "MLH"
   },
   {
-    "title": "Boulder , Colorado HackCU12",
-    "url": "https://www.hackcu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackCU12",
-    "start_date": "MAR 07 - 08",
-    "location": "Boulder, Colorado In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Canterbury , Kent KentHackIt",
     "url": "https://www.kenthackit.co.uk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KentHackIt",
     "start_date": "MAR 21 - 22",
@@ -887,13 +894,6 @@
     "source": "MLH"
   },
   {
-    "title": "Durham , County Durham DIVERSITY DUWiT Hacks",
-    "url": "https://duwithacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DUWiT+Hacks",
-    "start_date": "MAR 07 - 08",
-    "location": "Durham, County Durham In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Durham , North Carolina HackDuke Code For Good",
     "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
     "start_date": "MAR 21 - 22",
@@ -912,13 +912,6 @@
     "url": "https://www.wildhacks.net/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WildHacks",
     "start_date": "APR 11 - 12",
     "location": "Evanston, Illinois In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Gainesville , Florida DIVERSITY SASEHacks",
-    "url": "https://www.sasehacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SASEHacks",
-    "start_date": "MAR 07 - 08",
-    "location": "Gainesville, Florida In-Person",
     "source": "MLH"
   },
   {
@@ -971,13 +964,6 @@
     "source": "MLH"
   },
   {
-    "title": "Jaipur , Rajasthan",
-    "url": "https://acehack.uem.edu.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AceHack+5.0",
-    "start_date": "AceHack 5",
-    "location": ".0 MAR 07 - 08 Jaipur, Rajasthan In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Kent , Ohio Kent Hack Enough",
     "url": "https://khe.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Kent+Hack+Enough",
     "start_date": "MAR 28 - 29",
@@ -1006,13 +992,6 @@
     "source": "MLH"
   },
   {
-    "title": "Lawrence , Kansas The Midwest Blockathon",
-    "url": "https://hack.kublockchain.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=The+Midwest+Blockathon",
-    "start_date": "MAR 06 - 08",
-    "location": "Lawrence, Kansas In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Lawrence , KS HackKU",
     "url": "https://the-hackku.github.io/hackku26_website/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackKU",
     "start_date": "APR 17 - 19",
@@ -1031,13 +1010,6 @@
     "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=LA+Hacks",
     "start_date": "APR 24 - 26",
     "location": "Los Angeles, California In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Merced , CA HackMerced XI",
-    "url": "https://www.hackmerced.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackMerced+XI",
-    "start_date": "MAR 06 - 08",
-    "location": "Merced, CA In-Person",
     "source": "MLH"
   },
   {
@@ -1104,13 +1076,6 @@
     "source": "MLH"
   },
   {
-    "title": "Richardson , Texas HackAI",
-    "url": "http://hackai.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackAI",
-    "start_date": "MAR 07 - 08",
-    "location": "Richardson, Texas In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Riverside , California Citrus Hack",
     "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Citrus+Hack",
     "start_date": "APR 18 - 19",
@@ -1157,20 +1122,6 @@
     "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+%40+Penn+State",
     "start_date": "MAR 28 - 29",
     "location": "University Park, State College, PA In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Vancouver , British Columbia DIVERSITY cmd-f 2026",
-    "url": "https://cmd-f.nwplus.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=cmd-f+2026",
-    "start_date": "MAR 07 - 08",
-    "location": "Vancouver, British Columbia In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Waterloo , Ontario Hack Canada",
-    "url": "https://www.hackcanada.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Canada",
-    "start_date": "MAR 06 - 08",
-    "location": "Waterloo, Ontario In-Person",
     "source": "MLH"
   },
   {
