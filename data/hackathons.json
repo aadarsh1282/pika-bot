@@ -91,6 +91,13 @@
     "source": "Devpost"
   },
   {
+    "title": "CATALYST 2026: UI/UX Designathon",
+    "url": "https://catalyst-2026.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "ChipCraft 2.0",
     "url": "https://chipcraft-2-0.devpost.com/",
     "start_date": "Mar 13 - 14, 2026",
@@ -130,6 +137,13 @@
     "url": "https://conhacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Conestoga College, Waterloo Campus",
+    "source": "Devpost"
+  },
+  {
+    "title": "Contrathon '26",
+    "url": "https://contral.devpost.com/",
+    "start_date": "Mar 31 - Apr 10, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -179,6 +193,13 @@
     "url": "https://durham-college-hackathon-2026.devpost.com/",
     "start_date": "Mar 14 - 15, 2026",
     "location": "Student Centre / eSports Lounge",
+    "source": "Devpost"
+  },
+  {
+    "title": "Durham HackDay",
+    "url": "https://durham-hackday.devpost.com/",
+    "start_date": "Mar 17, 2026",
+    "location": "Durham University MCS Building",
     "source": "Devpost"
   },
   {
@@ -273,10 +294,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack o Phobia",
-    "url": "https://hack-o-phobia.devpost.com/",
-    "start_date": "Mar 10, 2026",
-    "location": "Chandigarh university Uttar Pradesh",
+    "title": "Hack Esbjerg",
+    "url": "https://hack-esbjerg.devpost.com/",
+    "start_date": "Mar 19 - 20, 2026",
+    "location": "Syddansk Erhvervsakademi - Esbjerg",
     "source": "Devpost"
   },
   {
@@ -490,6 +511,13 @@
     "source": "Devpost"
   },
   {
+    "title": "KiwiHacks 2026",
+    "url": "https://kiwihacks-2026.devpost.com/",
+    "start_date": "May 01 - 02, 2026",
+    "location": "GridAKL / John Lysaght Building",
+    "source": "Devpost"
+  },
+  {
     "title": "LancerHacks IX",
     "url": "https://lh-ix.devpost.com/",
     "start_date": "Mar 21, 2026",
@@ -518,9 +546,9 @@
     "source": "Devpost"
   },
   {
-    "title": "LUMA Hackathon: Pitch your idea, win $250 cash!",
+    "title": "LUMA Hackathon: Pitch your idea, win $300 cash!",
     "url": "https://luma.devpost.com/",
-    "start_date": "Mar 25 - Apr 26, 2026",
+    "start_date": "Apr 05 - 26, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -901,6 +929,13 @@
     "source": "MLH"
   },
   {
+    "title": "Electrothon : Labyrinth of Eternum",
+    "url": "https://electrothon.nith.ac.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Electrothon+%3A+Labyrinth+of+Eternum",
+    "start_date": "MAR 13 - 15",
+    "location": "Location TBD In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Esbjerg , Region of Southern Denmark Hack Esbjerg",
     "url": "https://hackesbjerg.dk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Esbjerg",
     "start_date": "MAR 19 - 20",
@@ -933,13 +968,6 @@
     "url": "https://organize.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+GenAI",
     "start_date": "MAY 08 - 14",
     "location": "Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "Hamirpur , Himachal Pradesh Electrothon : Labyrinth of Eternum",
-    "url": "https://electrothon.nith.ac.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Electrothon+%3A+Labyrinth+of+Eternum",
-    "start_date": "MAR 13 - 15",
-    "location": "Hamirpur, Himachal Pradesh In-Person",
     "source": "MLH"
   },
   {
@@ -1097,6 +1125,13 @@
     "source": "MLH"
   },
   {
+    "title": "Sunnyvale , CA HIGH SCHOOL DIVERSITY Los Altos Hacks",
+    "url": "https://www.losaltoshacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Los+Altos+Hacks",
+    "start_date": "APR 11 - 12",
+    "location": "Sunnyvale, CA In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Tampa , Florida HackUSF",
     "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUSF",
     "start_date": "MAR 28 - 29",
@@ -1108,6 +1143,13 @@
     "url": "https://www.rockethacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Rockethacks",
     "start_date": "MAR 14 - 15",
     "location": "Toledo, Ohio In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Tucson , Arizona Hack Arizona",
+    "url": "https://hack.arizona.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Arizona+",
+    "start_date": "APR 25 - 26",
+    "location": "Tucson, Arizona In-Person",
     "source": "MLH"
   },
   {
