@@ -70,10 +70,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Build With Gemini",
-    "url": "https://build-with-gemini-28738.devpost.com/",
-    "start_date": "Mar 11, 2026",
-    "location": "IMS Engineering College - C Block",
+    "title": "Brewing Codes 4.0",
+    "url": "https://brewing-codes-4-0.devpost.com/",
+    "start_date": "Mar 12 - 27, 2028",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build with Trae and MiniMax",
+    "url": "https://build-with-trae-and-minimax.devpost.com/",
+    "start_date": "Mar 27 - 28, 2026",
+    "location": "USC - TCC Franklin Suite",
     "source": "Devpost"
   },
   {
@@ -126,6 +133,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Code as a Canvas",
+    "url": "https://code-as-a-canvas.devpost.com/",
+    "start_date": "Mar 14 - 21, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Code-A-Site",
     "url": "https://codeasite.devpost.com/",
     "start_date": "Apr 10 - 11, 2026",
@@ -136,13 +150,13 @@
     "title": "Codorra",
     "url": "https://codorra1.devpost.com/",
     "start_date": "May 29 - 31, 2026",
-    "location": "Online",
+    "location": "Online / TBA",
     "source": "Devpost"
   },
   {
     "title": "ConHacks 2026",
     "url": "https://conhacks-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
+    "start_date": "Apr 28 - 30, 2026",
     "location": "Conestoga College, Waterloo Campus",
     "source": "Devpost"
   },
@@ -266,6 +280,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Grizzly Hacks III",
+    "url": "https://grizzly-hacks-iii.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack Brooklyn",
     "url": "https://hack-brooklyn-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
@@ -319,13 +340,6 @@
     "url": "https://hackthestudentlife2026.devpost.com/",
     "start_date": "Mar 13, 2026",
     "location": "Toronto, Canada",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack'Her'Thon'26",
-    "url": "https://hack-her-thon-26.devpost.com/",
-    "start_date": "Mar 12 - 13, 2026",
-    "location": "Pennalur, India",
     "source": "Devpost"
   },
   {
@@ -490,24 +504,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Ignite Hack 2.0",
-    "url": "https://ignite-hack-2-0.devpost.com/",
-    "start_date": "Mar 20 - 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Infinity Codewave",
     "url": "https://infinity-codewave.devpost.com/",
     "start_date": "Apr 24 - 25, 2026",
     "location": "Kathmandu University, Dhulikhel, Nepal",
-    "source": "Devpost"
-  },
-  {
-    "title": "Interlake Programming Club Hackathon",
-    "url": "https://interlake-hackathon.devpost.com/",
-    "start_date": "Mar 12 - 19, 2026",
-    "location": "Interlake High School",
     "source": "Devpost"
   },
   {
@@ -728,13 +728,6 @@
     "source": "Devpost"
   },
   {
-    "title": "SS Hacker Team Cybersecurity Challenge 2026",
-    "url": "https://sshackerteam.devpost.com/",
-    "start_date": "May 10 - 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "StarkHacks",
     "url": "https://starkhacks.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
@@ -746,6 +739,13 @@
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
     "location": "Skagit Valley College - Lewis Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Tech to Treasure Hackathon",
+    "url": "https://techtotreasure.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "San Jose, CA, USA",
     "source": "Devpost"
   },
   {
@@ -884,6 +884,13 @@
     "url": "https://sprout.hack.gt/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SproutGT",
     "start_date": "APR 10 - 11",
     "location": "Atlanta, Georgia In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Austin , TX DIVERSITY Hook 'Em Hacks",
+    "url": "https://www.hookemhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hook+%27Em+Hacks",
+    "start_date": "APR 18 - 19",
+    "location": "Austin, TX In-Person",
     "source": "MLH"
   },
   {
