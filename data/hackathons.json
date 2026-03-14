@@ -42,13 +42,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BioHack 2026",
-    "url": "https://biohack-2026.devpost.com/",
-    "start_date": "Mar 13 - 14, 2026",
-    "location": "U of Calgary - Hunter Student Commons",
-    "source": "Devpost"
-  },
-  {
     "title": "Boson AI Higgs Audio Hackathon in collaboration with Eigen AI",
     "url": "https://higgs-audio-hackathon-ai.devpost.com/",
     "start_date": "Mar 20 - 22, 2026",
@@ -84,13 +77,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CampusAI x MDC AI & Data Hackathon",
-    "url": "https://campusai-x-mdc-hackathon.devpost.com/",
-    "start_date": "Mar 13 - 15, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "CATALYST 2026: UI/UX Designathon",
     "url": "https://catalyst-2026.devpost.com/",
     "start_date": "Mar 20 - 22, 2026",
@@ -109,6 +95,13 @@
     "url": "https://clarkhacks-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Clark University",
+    "source": "Devpost"
+  },
+  {
+    "title": "Claude Hackathon x UVicHacks",
+    "url": "https://claude-hackathon-uvichacks.devpost.com/",
+    "start_date": "Mar 21, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -161,6 +154,13 @@
     "source": "Devpost"
   },
   {
+    "title": "CUES x Imperial MechSoc Hackathon 2026",
+    "url": "https://cues-imperial-hackathon-2026.devpost.com/",
+    "start_date": "Mar 14 - 15, 2026",
+    "location": "Cambridgeshire, United Kingdom",
+    "source": "Devpost"
+  },
+  {
     "title": "CYHacks '26",
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
@@ -203,17 +203,10 @@
     "source": "Devpost"
   },
   {
-    "title": "doable: AISoc X Lovable Hackathon 2026",
+    "title": "Doable: AISoc X Lovable Hackathon 2026",
     "url": "https://doable.devpost.com/",
     "start_date": "Mar 23 - 24, 2026",
     "location": "Hilmer Building (E10), Union Rd, UNSW",
-    "source": "Devpost"
-  },
-  {
-    "title": "Durham College Hackathon 2026",
-    "url": "https://durham-college-hackathon-2026.devpost.com/",
-    "start_date": "Mar 14 - 15, 2026",
-    "location": "Student Centre / eSports Lounge",
     "source": "Devpost"
   },
   {
@@ -266,13 +259,6 @@
     "source": "Devpost"
   },
   {
-    "title": "GenAI Genesis 2026",
-    "url": "https://genai-genesis-2026.devpost.com/",
-    "start_date": "Mar 13 - 15, 2026",
-    "location": "University of Toronto",
-    "source": "Devpost"
-  },
-  {
     "title": "Google Build with AI Hackathon",
     "url": "https://google-build-with-ai-hackathon.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
@@ -322,6 +308,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack for Humanity | Summer 2026",
+    "url": "https://hack-for-humanity-27.devpost.com/",
+    "start_date": "Jul 03 - Aug 02, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack the Galaxy 2026",
     "url": "https://hack-the-galaxy.devpost.com/",
     "start_date": "Mar 14, 2026",
@@ -333,13 +326,6 @@
     "url": "https://hackthenet2026.devpost.com/",
     "start_date": "Mar 14 - 22, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack The Student Life 2026",
-    "url": "https://hackthestudentlife2026.devpost.com/",
-    "start_date": "Mar 13, 2026",
-    "location": "Toronto, Canada",
     "source": "Devpost"
   },
   {
@@ -462,6 +448,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackUSF 2026",
+    "url": "https://hackusf-2026.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "University of South Florida - ENB II",
+    "source": "Devpost"
+  },
+  {
     "title": "HackVision",
     "url": "https://hackvision.devpost.com/",
     "start_date": "Apr 05, 2026",
@@ -567,6 +560,13 @@
     "source": "Devpost"
   },
   {
+    "title": "LMU Hacks 2026",
+    "url": "https://lmu-hacks-2026.devpost.com/",
+    "start_date": "Mar 14, 2026",
+    "location": "Keck Lab",
+    "source": "Devpost"
+  },
+  {
     "title": "LovHack Season 2",
     "url": "https://lovhack-season2.devpost.com/",
     "start_date": "Mar 21 - 28, 2026",
@@ -585,20 +585,6 @@
     "url": "https://saas-sprint.devpost.com/",
     "start_date": "Mar 31 - Apr 06, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Missouri Startup Weekend",
-    "url": "https://missouri-startup-weekend.devpost.com/",
-    "start_date": "Apr 17 - 19, 2026",
-    "location": "EquipmentShare HQ",
-    "source": "Devpost"
-  },
-  {
-    "title": "MMUST HACKDAY",
-    "url": "https://mmust-hackday123.devpost.com/",
-    "start_date": "Mar 14, 2026",
-    "location": "MMUST-(SPD-004)",
     "source": "Devpost"
   },
   {
@@ -672,24 +658,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Raven Hacks VTL",
-    "url": "https://raven-hacks-vtl.devpost.com/",
-    "start_date": "Mar 14 - 23, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Richmond Civic Hackathon",
     "url": "https://hack-for-rva.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "VCU School of Business (Snead Hall)",
-    "source": "Devpost"
-  },
-  {
-    "title": "RocketHacks 2026",
-    "url": "https://rockethacks26.devpost.com/",
-    "start_date": "Mar 14 - 15, 2026",
-    "location": "UToledo College of Engineering",
     "source": "Devpost"
   },
   {
@@ -756,13 +728,6 @@
     "source": "Devpost"
   },
   {
-    "title": "UNIHACK 2026, funded by the European Union",
-    "url": "https://unihack2026.devpost.com/",
-    "start_date": "Mar 13 - 15, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "United Hacks V7",
     "url": "https://unitedhacksv7.devpost.com/",
     "start_date": "Jul 10 - 12, 2026",
@@ -788,6 +753,13 @@
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Griffin Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "VISION HACK",
+    "url": "https://vision-hack.devpost.com/",
+    "start_date": "Mar 14, 2026",
+    "location": "Los Angeles, CA, USA",
     "source": "Devpost"
   },
   {
@@ -1000,7 +972,7 @@
   },
   {
     "title": "Global Hack Week: Cloud",
-    "url": "https://events.mlh.io/events/13471-global-hack-week-cloud?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Cloud",
+    "url": "https://organize.mlh.io/events/13471-global-hack-week-cloud?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Cloud",
     "start_date": "MAR 13 - 19",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
@@ -1216,6 +1188,13 @@
     "source": "MLH"
   },
   {
+    "title": "Tempe , Arizona Innovation Hacks",
+    "url": "https://innovationhacks.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Innovation+Hacks",
+    "start_date": "APR 03 - 05",
+    "location": "Tempe, Arizona In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Toledo , Ohio Rockethacks",
     "url": "https://www.rockethacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Rockethacks",
     "start_date": "MAR 14 - 15",
@@ -1244,6 +1223,13 @@
     "source": "MLH"
   },
   {
+    "title": "Waterloo , Ontario",
+    "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ConHacks+2026",
+    "start_date": "ConHacks 20",
+    "location": "26 APR 28 - 30 Waterloo, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "West Haven , Connecticut Hac",
     "url": "https://hackunewhaven.github.io/HNH.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackNewHaven+2026",
     "start_date": "kNewHaven 20",
@@ -1262,6 +1248,13 @@
     "url": "https://www.marihacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MariHacks",
     "start_date": "APR 17 - 18",
     "location": "Westmount, Quebec In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Windsor , Ontario HIGH SCHOOL MasseyHacks",
+    "url": "https://masseyhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MasseyHacks",
+    "start_date": "MAY 09 - 10",
+    "location": "Windsor, Ontario In-Person",
     "source": "MLH"
   }
 ]
