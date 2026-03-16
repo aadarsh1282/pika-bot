@@ -91,6 +91,13 @@
     "source": "Devpost"
   },
   {
+    "title": "CBHS 2026 Hackathon",
+    "url": "https://cbhs-2026-hackathon.devpost.com/",
+    "start_date": "Apr 06 - 13, 2026",
+    "location": "Cypress Bay High",
+    "source": "Devpost"
+  },
+  {
     "title": "Citrus Hack 2026",
     "url": "https://citrus-hack-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -165,13 +172,6 @@
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Central York High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "DesignXR Hackathon",
-    "url": "https://designxr.devpost.com/",
-    "start_date": "Mar 16 - 22, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -302,7 +302,7 @@
   },
   {
     "title": "Hack for Humanity | Summer 2026",
-    "url": "https://hack-for-humanity-27.devpost.com/",
+    "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
     "location": "Online",
     "source": "Devpost"
@@ -445,6 +445,13 @@
     "url": "https://hackvision.devpost.com/",
     "start_date": "Apr 05, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "HooHacks 2026",
+    "url": "https://hoohacks-2026.devpost.com/",
+    "start_date": "Mar 21 - 22, 2026",
+    "location": "University of Virginia School Grounds",
     "source": "Devpost"
   },
   {
@@ -655,6 +662,13 @@
     "url": "https://sac-city-arduino-day-challenge.devpost.com/",
     "start_date": "Mar 27, 2026",
     "location": "Sacramento City College - NAS 107",
+    "source": "Devpost"
+  },
+  {
+    "title": "Seattle Divergent Hackathon",
+    "url": "https://seattle-divergent-hackathon.devpost.com/",
+    "start_date": "Mar 21, 2026",
+    "location": "Microsoft Building 7",
     "source": "Devpost"
   },
   {
@@ -950,13 +964,6 @@
     "source": "MLH"
   },
   {
-    "title": "Hamirpur , Himachal Pradesh Electrothon : Labyrinth of Eternum",
-    "url": "https://electrothon.nith.ac.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Electrothon+%3A+Labyrinth+of+Eternum",
-    "start_date": "MAR 13 - 15",
-    "location": "Hamirpur, Himachal Pradesh In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Hanover , New Hampshire HackDartmouth XI",
     "url": "https://hack-dartmouth.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDartmouth+XI",
     "start_date": "APR 11 - 12",
@@ -1048,13 +1055,6 @@
     "source": "MLH"
   },
   {
-    "title": "Montreal , Quebec McGill AeroHacks",
-    "url": "https://mcgillaerohacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=McGill+AeroHacks",
-    "start_date": "MAR 13 - 15",
-    "location": "Montreal, Quebec In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Nashville , TN VandyHacks XII",
     "url": "https://vandyhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=VandyHacks+XII",
     "start_date": "MAR 21 - 22",
@@ -1132,13 +1132,6 @@
     "source": "MLH"
   },
   {
-    "title": "Southampton , Hampshire SotonHack",
-    "url": "https://sotonhack.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SotonHack",
-    "start_date": "MAR 14 - 15",
-    "location": "Southampton, Hampshire In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Sunnyvale , CA HIGH SCHOOL DIVERSITY Los Altos Hacks",
     "url": "https://www.losaltoshacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Los+Altos+Hacks",
     "start_date": "APR 11 - 12",
@@ -1157,13 +1150,6 @@
     "url": "https://innovationhacks.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Innovation+Hacks",
     "start_date": "APR 03 - 05",
     "location": "Tempe, Arizona In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Toledo , Ohio Rockethacks",
-    "url": "https://www.rockethacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Rockethacks",
-    "start_date": "MAR 14 - 15",
-    "location": "Toledo, Ohio In-Person",
     "source": "MLH"
   },
   {
