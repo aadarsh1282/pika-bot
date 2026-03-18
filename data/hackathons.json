@@ -241,14 +241,7 @@
     "title": "Doable: AISoc X Lovable Hackathon 2026",
     "url": "https://doable.devpost.com/",
     "start_date": "Mar 23 - 24, 2026",
-    "location": "Hilmer Building (E10), Union Rd, UNSW",
-    "source": "Devpost"
-  },
-  {
-    "title": "Durham HackDay",
-    "url": "https://durham-hackday.devpost.com/",
-    "start_date": "Mar 17, 2026",
-    "location": "Durham University MCS Building",
+    "location": "F10 June Griffith M18",
     "source": "Devpost"
   },
   {
@@ -276,13 +269,6 @@
     "title": "Fuel the Future",
     "url": "https://fuel-the-future.devpost.com/",
     "start_date": "Mar 21 - 23, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Galuxium Nexus V2",
-    "url": "https://galuxium-nexus-v2.devpost.com/",
-    "start_date": "Jun 01 - Jul 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -340,6 +326,13 @@
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Like W@CC 2026",
+    "url": "https://hack-like-wacc-2026.devpost.com/",
+    "start_date": "Apr 03 - 04, 2026",
+    "location": "Georgia Tech – Klaus Atrium, Klaus 1116",
     "source": "Devpost"
   },
   {
@@ -532,6 +525,20 @@
     "source": "Devpost"
   },
   {
+    "title": "ITIZ CHALLENGE",
+    "url": "https://itiz-challenge.devpost.com/",
+    "start_date": "Apr 27 - 28, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "JacHacks",
+    "url": "https://jachacks-2026.devpost.com/",
+    "start_date": "Apr 04 - 05, 2026",
+    "location": "UMich - Leinweber CS Building",
+    "source": "Devpost"
+  },
+  {
     "title": "Jechacks",
     "url": "https://jechacks.devpost.com/",
     "start_date": "Jul 11, 2026",
@@ -679,13 +686,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Preventing Inaccurate Fills: Liquid Filling System Calibration",
-    "url": "https://vinawinston.devpost.com/",
-    "start_date": "Mar 18, 2026",
-    "location": "Technopack",
-    "source": "Devpost"
-  },
-  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -693,17 +693,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Rebuilding the OS: Core System Utilities Hackathon",
-    "url": "https://bitbuilders-code-race-apr-2026.devpost.com/",
-    "start_date": "Apr 17 - 30, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Richmond Civic Hackathon",
     "url": "https://hack-for-rva.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "VCU School of Business (Snead Hall)",
+    "source": "Devpost"
+  },
+  {
+    "title": "RidgeHacks 2026",
+    "url": "https://ridgehacks-2026.devpost.com/",
+    "start_date": "Apr 25, 2026",
+    "location": "Ridge High School",
     "source": "Devpost"
   },
   {
@@ -931,7 +931,7 @@
   {
     "title": "Canterbury , Kent KentHackIt",
     "url": "https://www.kenthackit.co.uk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KentHackIt",
-    "start_date": "MAR 21 - 22",
+    "start_date": "APR 11 - 12",
     "location": "Canterbury, Kent In-Person",
     "source": "MLH"
   },
@@ -961,6 +961,13 @@
     "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Bitcamp",
     "start_date": "APR 10 - 12",
     "location": "College Park, Maryland In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Dallas , Texas HackSMU VII",
+    "url": "https://hacksmu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackSMU+VII+",
+    "start_date": "APR 11 - 12",
+    "location": "Dallas, Texas In-Person",
     "source": "MLH"
   },
   {
@@ -1234,6 +1241,13 @@
     "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ConHacks+2026",
     "start_date": "ConHacks 20",
     "location": "26 APR 28 - 30 Waterloo, Ontario In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Waterloo , Ontario HIGH SCHOOL",
+    "url": "https://jamhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=JAMHacks+10",
+    "start_date": "JAMHacks 10",
+    "location": "JUN 12 - 14 Waterloo, Ontario In-Person",
     "source": "MLH"
   },
   {
