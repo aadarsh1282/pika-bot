@@ -42,13 +42,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BAM Hacks",
-    "url": "https://bam-hacks.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Purdue University -- Lawson Building",
-    "source": "Devpost"
-  },
-  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -63,10 +56,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Blu's Hacks 2026",
-    "url": "https://blu-s-hacks-2026.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Branham High School",
+    "title": "BioHackathon Edinburgh 2026",
+    "url": "https://biohackathon-edinburgh-2026.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "University of Edinburgh Nucleus Building",
     "source": "Devpost"
   },
   {
@@ -116,13 +109,6 @@
     "url": "https://catalyst-2026.devpost.com/",
     "start_date": "Mar 20 - 22, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "CBHS 2026 Hackathon",
-    "url": "https://cbhs-2026-hackathon.devpost.com/",
-    "start_date": "Apr 06 - 13, 2026",
-    "location": "Cypress Bay High",
     "source": "Devpost"
   },
   {
@@ -224,6 +210,13 @@
     "source": "Devpost"
   },
   {
+    "title": "DevNetwork [API + Cloud + AI] Hackathon 2026",
+    "url": "https://api-cloud-ai-hackathon-2026.devpost.com/",
+    "start_date": "Aug 17 - Sep 03, 2026",
+    "location": "Santa Clara Convention Center and Online",
+    "source": "Devpost"
+  },
+  {
     "title": "DevonomicsV1",
     "url": "https://devonomicsv1.devpost.com/",
     "start_date": "Jun 04 - 12, 2026",
@@ -249,6 +242,13 @@
     "url": "https://eaglehacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Florida Gulf Coast University",
+    "source": "Devpost"
+  },
+  {
+    "title": "ECU Spark",
+    "url": "https://ecu-spark-2026.devpost.com/",
+    "start_date": "Mar 20, 2026",
+    "location": "Ballard Sounds, Ballard Residence Hall",
     "source": "Devpost"
   },
   {
@@ -282,7 +282,7 @@
   {
     "title": "Grizzly Hacks III",
     "url": "https://grizzly-hacks-iii.devpost.com/",
-    "start_date": "Apr 25 - 26, 2026",
+    "start_date": "Apr 25 - May 02, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -315,6 +315,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack Days in Bhopal 2.0",
+    "url": "https://hackdaybhopal2.devpost.com/",
+    "start_date": "Apr 19, 2026",
+    "location": "Indrapuri, Bhopal",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack Esbjerg",
     "url": "https://hack-esbjerg.devpost.com/",
     "start_date": "Mar 19 - 20, 2026",
@@ -329,10 +336,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack Indy 2026",
+    "url": "https://hack-indy-2026.devpost.com/",
+    "start_date": "Mar 27 - 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack Like W@CC 2026",
     "url": "https://hack-like-wacc-2026.devpost.com/",
     "start_date": "Apr 03 - 04, 2026",
     "location": "Georgia Tech – Klaus Atrium, Klaus 1116",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack4Her 2026",
+    "url": "https://hack4her-mty.devpost.com/",
+    "start_date": "Jun 06 - 07, 2026",
+    "location": "Tecnológico de Monterrey",
     "source": "Devpost"
   },
   {
@@ -525,13 +546,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ITIZ CHALLENGE",
-    "url": "https://itiz-challenge.devpost.com/",
-    "start_date": "Apr 27 - 28, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "JacHacks",
     "url": "https://jachacks-2026.devpost.com/",
     "start_date": "Apr 04 - 05, 2026",
@@ -553,13 +567,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Katz School CS & A.I Club Ideathon",
-    "url": "https://katzschool-cs-ai-deathon.devpost.com/",
-    "start_date": "Mar 23 - Apr 12, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2026",
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -571,13 +578,6 @@
     "url": "https://kifiya-inspire-3-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Kifiya Financial Technology, HQ",
-    "source": "Devpost"
-  },
-  {
-    "title": "KiwiHacks 2026",
-    "url": "https://kiwihacks-2026.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "GridAKL / John Lysaght Building",
     "source": "Devpost"
   },
   {
@@ -683,6 +683,13 @@
     "url": "https://pantherhack-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "ProduHacks 2026",
+    "url": "https://produhacks-2026.devpost.com/",
+    "start_date": "Mar 21 - 22, 2026",
+    "location": "UBC Sauder",
     "source": "Devpost"
   },
   {
@@ -812,13 +819,6 @@
     "source": "Devpost"
   },
   {
-    "title": "WayneHacks 4",
-    "url": "https://waynehacks-4.devpost.com/",
-    "start_date": "Apr 11 - 12, 2026",
-    "location": "TechTown Detroit",
-    "source": "Devpost"
-  },
-  {
     "title": "Weber State AI Hackathon 2026",
     "url": "https://weber-state-ai-hackathon-2026.devpost.com/",
     "start_date": "Mar 21 - Apr 04, 2026",
@@ -922,17 +922,17 @@
     "source": "MLH"
   },
   {
+    "title": "Bengaluru , Karnataka DIVERSITY NMIT Hacks",
+    "url": "https://nmithacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=NMIT+Hacks+",
+    "start_date": "MAY 08 - 10",
+    "location": "Bengaluru, Karnataka In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Bothell , WA UWB",
     "url": "https://uwbhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=UWB+Hacks+26%3A+The+Future%21",
     "start_date": "Hacks 26",
     "location": ": The Future! APR 24 - 26 Bothell, WA In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Canterbury , Kent KentHackIt",
-    "url": "https://www.kenthackit.co.uk/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KentHackIt",
-    "start_date": "APR 11 - 12",
-    "location": "Canterbury, Kent In-Person",
     "source": "MLH"
   },
   {
@@ -961,6 +961,13 @@
     "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Bitcamp",
     "start_date": "APR 10 - 12",
     "location": "College Park, Maryland In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Corvallis , Oregon Be",
+    "url": "https://beaverhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BeaverHacks+2026",
+    "start_date": "averHacks 20",
+    "location": "26 APR 18 - 19 Corvallis, Oregon In-Person",
     "source": "MLH"
   },
   {
@@ -1014,7 +1021,7 @@
   },
   {
     "title": "Global Hack Week: Cloud",
-    "url": "https://organize.mlh.io/events/13471-global-hack-week-cloud?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Cloud",
+    "url": "https://events.mlh.io/events/13471-global-hack-week-cloud?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Cloud",
     "start_date": "MAR 13 - 19",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
@@ -1087,6 +1094,13 @@
     "url": "https://the-hackku.github.io/hackku26_website/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackKU",
     "start_date": "APR 17 - 19",
     "location": "Lawrence, KS In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Ljubljana , Osrednjeslovenska D",
+    "url": "https://dragonhack.si/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Dragonhack+2026",
+    "start_date": "ragonhack 20",
+    "location": "26 APR 18 - 19 Ljubljana, Osrednjeslovenska In-Person",
     "source": "MLH"
   },
   {
