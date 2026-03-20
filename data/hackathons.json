@@ -259,13 +259,6 @@
     "source": "Devpost"
   },
   {
-    "title": "FoundersHack Sydney 2026",
-    "url": "https://foundershack-sydney-2026-28444.devpost.com/",
-    "start_date": "Mar 19 - 22, 2026",
-    "location": "Sydney, Australia",
-    "source": "Devpost"
-  },
-  {
     "title": "Fuel the Future",
     "url": "https://fuel-the-future.devpost.com/",
     "start_date": "Mar 21 - 23, 2026",
@@ -322,23 +315,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Esbjerg",
-    "url": "https://hack-esbjerg.devpost.com/",
-    "start_date": "Mar 19 - 20, 2026",
-    "location": "Syddansk Erhvervsakademi - Esbjerg",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack for Humanity | Summer 2026",
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack Indy 2026",
-    "url": "https://hack-indy-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -455,13 +434,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HackNova 3.0",
-    "url": "https://hacknova-3-0.devpost.com/",
-    "start_date": "Mar 20, 2026",
-    "location": "Mini Hall 2,TP Ganesan Auditorium SRMIST",
-    "source": "Devpost"
-  },
-  {
     "title": "HackPSU Spring 2026",
     "url": "https://hackpsu-spring-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -539,13 +511,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Interventions: Entangle Designathon",
-    "url": "https://entangle-designation.devpost.com/",
-    "start_date": "Mar 20 - 22, 2026",
-    "location": "Northeastern University - ISEC Building",
-    "source": "Devpost"
-  },
-  {
     "title": "JacHacks",
     "url": "https://jachacks-2026.devpost.com/",
     "start_date": "Apr 04 - 05, 2026",
@@ -560,13 +525,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Jom AI @ Tampines",
-    "url": "https://jom-ai-tampines.devpost.com/",
-    "start_date": "Apr 23 - May 29, 2026",
-    "location": "Singapore",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2026",
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -578,6 +536,13 @@
     "url": "https://kifiya-inspire-3-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Kifiya Financial Technology, HQ",
+    "source": "Devpost"
+  },
+  {
+    "title": "LA Hacks 2026",
+    "url": "https://la-hacks-2026.devpost.com/",
+    "start_date": "Apr 24 - 26, 2026",
+    "location": "Pauley Pavilion",
     "source": "Devpost"
   },
   {
@@ -609,6 +574,13 @@
     "source": "Devpost"
   },
   {
+    "title": "LuteHacks-2026",
+    "url": "https://lutehacks-2026.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "MacHacks 2026",
     "url": "https://machacks.devpost.com/",
     "start_date": "Mar 21, 2026",
@@ -620,6 +592,13 @@
     "url": "https://saas-sprint.devpost.com/",
     "start_date": "Mar 31 - Apr 06, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "MindHack 2026",
+    "url": "https://mindhack-2026.devpost.com/",
+    "start_date": "Mar 20 - 22, 2026",
+    "location": "Carleton University",
     "source": "Devpost"
   },
   {
@@ -686,6 +665,20 @@
     "source": "Devpost"
   },
   {
+    "title": "Pixel Forge Jam 2026",
+    "url": "https://pixel-forge-jam-2026.devpost.com/",
+    "start_date": "Apr 18 - 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Product Design Sprint",
+    "url": "https://wfn-product-design-sprint.devpost.com/",
+    "start_date": "Mar 21 - 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "ProduHacks 2026",
     "url": "https://produhacks-2026.devpost.com/",
     "start_date": "Mar 21 - 22, 2026",
@@ -693,17 +686,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Quackathon 2026",
+    "url": "https://quackathon-2026.devpost.com/",
+    "start_date": "Mar 21, 2026",
+    "location": "Queen Mother Building (QMB)",
+    "source": "Devpost"
+  },
+  {
+    "title": "RAMHACK 2026",
+    "url": "https://ramhack-2026.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Fordham University at Lincoln Center",
+    "source": "Devpost"
+  },
+  {
     "title": "RamHacks 2026",
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "Gleeson Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Richmond Civic Hackathon",
-    "url": "https://hack-for-rva.devpost.com/",
-    "start_date": "Mar 27 - 28, 2026",
-    "location": "VCU School of Business (Snead Hall)",
     "source": "Devpost"
   },
   {
@@ -721,17 +721,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Seattle Divergent Hackathon",
-    "url": "https://seattle-divergent-hackathon.devpost.com/",
-    "start_date": "Mar 21, 2026",
-    "location": "Microsoft Building 7",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
+    "source": "Devpost"
+  },
+  {
+    "title": "Southwest MN Hacks",
+    "url": "https://southwestmn-hacks.devpost.com/",
+    "start_date": "Mar 21, 2026",
+    "location": "Upper conference center",
     "source": "Devpost"
   },
   {
@@ -791,13 +791,6 @@
     "source": "Devpost"
   },
   {
-    "title": "UW Tech Exploration Lab Digital Health Challenge",
-    "url": "https://tel-digital-health-challenge.devpost.com/",
-    "start_date": "Mar 20 - Apr 06, 2026",
-    "location": "Madison, WI, USA",
-    "source": "Devpost"
-  },
-  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -816,6 +809,13 @@
     "url": "https://wav-hackathon.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
     "location": "400 Granby Street",
+    "source": "Devpost"
+  },
+  {
+    "title": "WayneHacks 4",
+    "url": "https://waynehacks-4.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "TechTown Detroit",
     "source": "Devpost"
   },
   {
@@ -1016,13 +1016,6 @@
     "title": "Global Hack Week: API",
     "url": "https://events.mlh.io/events/13558-global-hack-week-api?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+API",
     "start_date": "APR 10 - 16",
-    "location": "Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "Global Hack Week: Cloud",
-    "url": "https://events.mlh.io/events/13471-global-hack-week-cloud?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+Cloud",
-    "start_date": "MAR 13 - 19",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
