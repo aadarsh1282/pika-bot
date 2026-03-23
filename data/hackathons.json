@@ -56,6 +56,13 @@
     "source": "Devpost"
   },
   {
+    "title": "BlairHacks 8",
+    "url": "https://8-blairhacks.devpost.com/",
+    "start_date": "May 23 - 25, 2026",
+    "location": "Location Pending",
+    "source": "Devpost"
+  },
+  {
     "title": "Blu's Hacks 2026",
     "url": "https://blu-s-hacks-2026.devpost.com/",
     "start_date": "Mar 29, 2026",
@@ -777,7 +784,7 @@
     "source": "Devpost"
   },
   {
-    "title": "WiCS x Opportunity Hack: Spring 2026 Hackathon",
+    "title": "Women in Computer Science x Opportunity Hack: Spring 2026 Hackathon",
     "url": "https://wics-ohack-sp26-hackathon.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "Tooker eSpaces at ASU Tempe",
@@ -901,13 +908,6 @@
     "source": "MLH"
   },
   {
-    "title": "Charlottesville , Virginia HooHacks",
-    "url": "https://hoohacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HooHacks",
-    "start_date": "MAR 21 - 22",
-    "location": "Charlottesville, Virginia In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Cincinnati , Ohio RevolutionUC",
     "url": "https://revolutionuc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=RevolutionUC",
     "start_date": "MAR 28 - 29",
@@ -940,13 +940,6 @@
     "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDavis+2026+Hackathon",
     "start_date": "HackDavis 20",
     "location": "26 Hackathon MAY 08 - 09 Davis, California In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Durham , North Carolina HackDuke Code For Good",
-    "url": "https://2026.hackduke.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDuke+Code+For+Good",
-    "start_date": "MAR 21 - 22",
-    "location": "Durham, North Carolina In-Person",
     "source": "MLH"
   },
   {
@@ -1048,13 +1041,6 @@
     "source": "MLH"
   },
   {
-    "title": "Long Beach , California BeachHacks",
-    "url": "https://beachhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BeachHacks",
-    "start_date": "MAR 21 - 22",
-    "location": "Long Beach, California In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Los Angeles , California DIVERSITY AthenaHacks",
     "url": "https://athenahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AthenaHacks+",
     "start_date": "MAR 28 - 29",
@@ -1073,13 +1059,6 @@
     "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BearHacks+2026",
     "start_date": "BearHacks 20",
     "location": "26 APR 24 - 26 Mississauga, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Nashville , TN VandyHacks XII",
-    "url": "https://vandyhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=VandyHacks+XII",
-    "start_date": "MAR 21 - 22",
-    "location": "Nashville, TN In-Person",
     "source": "MLH"
   },
   {
