@@ -1,5 +1,12 @@
 [
   {
+    "title": "49er Foundry: 49-MINUTE PITCH COMPETITION- R1",
+    "url": "https://49er-foundry-round-1.devpost.com/",
+    "start_date": "Mar 25 - 26, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "757 BLD WKND 2026 2.0",
     "url": "https://757-bld-wknd-2026-2-0.devpost.com/",
     "start_date": "Jul 17 - 19, 2026",
@@ -56,10 +63,10 @@
     "source": "Devpost"
   },
   {
-    "title": "BlairHacks 8",
-    "url": "https://8-blairhacks.devpost.com/",
-    "start_date": "May 23 - 25, 2026",
-    "location": "Location Pending",
+    "title": "BLOCKCHAIN HACK KRAKOW",
+    "url": "https://blockchain-hack-krakow.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Zabłocie 20",
     "source": "Devpost"
   },
   {
@@ -217,13 +224,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Doable: AISoc X Lovable Hackathon 2026",
-    "url": "https://doable.devpost.com/",
-    "start_date": "Mar 23 - 24, 2026",
-    "location": "F10 June Griffith M18",
-    "source": "Devpost"
-  },
-  {
     "title": "EagleHacks 2026",
     "url": "https://eaglehacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
@@ -242,6 +242,13 @@
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "FemmeHacks 2026",
+    "url": "https://femmehacks-2026.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "Towne Building",
     "source": "Devpost"
   },
   {
@@ -270,6 +277,13 @@
     "url": "https://google-build-with-ai-hackathon.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "St. Louis, MO, USA",
+    "source": "Devpost"
+  },
+  {
+    "title": "Grizzhacks 8",
+    "url": "https://grizzhacks-8.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Oakland University - Engineering Center",
     "source": "Devpost"
   },
   {
@@ -420,6 +434,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hackiethon 2026",
+    "url": "https://hackiethon-2026.devpost.com/",
+    "start_date": "Mar 27 - 30, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Hacklanta",
     "url": "https://progsu.devpost.com/",
     "start_date": "Mar 28, 2026",
@@ -483,13 +504,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hoya Hacks 2027",
-    "url": "https://hoya-hacks-2027.devpost.com/",
-    "start_date": "Jan 22 - 24, 2027",
-    "location": "Healey Family Student Center",
-    "source": "Devpost"
-  },
-  {
     "title": "HunterHacks",
     "url": "https://hunterhacks-battle-of-boros.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
@@ -539,6 +553,13 @@
     "source": "Devpost"
   },
   {
+    "title": "JagHacks 2026",
+    "url": "https://jaghacks-2026.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "Central Academic Building",
+    "source": "Devpost"
+  },
+  {
     "title": "Jechacks",
     "url": "https://jechacks.devpost.com/",
     "start_date": "Jul 11, 2026",
@@ -557,13 +578,6 @@
     "url": "https://kifiya-inspire-3-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Kifiya Financial Technology, HQ",
-    "source": "Devpost"
-  },
-  {
-    "title": "KiwiHacks 2026",
-    "url": "https://kiwihacks-2026.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "GridAKL / John Lysaght Building",
     "source": "Devpost"
   },
   {
@@ -651,9 +665,23 @@
     "source": "Devpost"
   },
   {
+    "title": "PiHacks Enhanced",
+    "url": "https://pihacks-enhanced.devpost.com/",
+    "start_date": "Apr 01 - May 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Pixel Forge Jam 2026",
     "url": "https://pixel-forge-jam-2026.devpost.com/",
     "start_date": "Apr 18 - 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Quantum Ready College Projects -Winter2026",
+    "url": "https://quantum-ready-winter2026.devpost.com/",
+    "start_date": "Mar 26 - 28, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -697,6 +725,13 @@
     "url": "https://sac-city-arduino-day-challenge.devpost.com/",
     "start_date": "Mar 27, 2026",
     "location": "Sacramento City College - NAS 107",
+    "source": "Devpost"
+  },
+  {
+    "title": "SCESoc x Ciena Coding Competition",
+    "url": "https://ciena-coding-competition.devpost.com/",
+    "start_date": "Mar 26, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
