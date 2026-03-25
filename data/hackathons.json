@@ -42,13 +42,6 @@
     "source": "Devpost"
   },
   {
-    "title": "BAM Hacks",
-    "url": "https://bam-hacks.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Purdue University -- Lawson Building",
-    "source": "Devpost"
-  },
-  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -60,13 +53,6 @@
     "url": "https://big-red-hacks-2026.devpost.com/",
     "start_date": "Apr 11, 2026",
     "location": "The Lawrenceville School",
-    "source": "Devpost"
-  },
-  {
-    "title": "BLOCKCHAIN HACK KRAKOW",
-    "url": "https://blockchain-hack-krakow.devpost.com/",
-    "start_date": "Mar 28 - 29, 2026",
-    "location": "Zabłocie 20",
     "source": "Devpost"
   },
   {
@@ -102,13 +88,6 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
-    "source": "Devpost"
-  },
-  {
-    "title": "CBHS 2026 Hackathon",
-    "url": "https://cbhs-2026-hackathon.devpost.com/",
-    "start_date": "Apr 07 - 12, 2026",
-    "location": "Cypress Bay High",
     "source": "Devpost"
   },
   {
@@ -182,6 +161,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Deep Agents Hackathon",
+    "url": "https://deep-agents-hackathon.devpost.com/",
+    "start_date": "Mar 27, 2026",
+    "location": "AWS Builder Loft",
+    "source": "Devpost"
+  },
+  {
     "title": "DesignXR Hackathon",
     "url": "https://designxr.devpost.com/",
     "start_date": "Apr 01 - 10, 2026",
@@ -228,13 +214,6 @@
     "url": "https://eaglehacks-2026.devpost.com/",
     "start_date": "Mar 27 - 29, 2026",
     "location": "Florida Gulf Coast University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Equinox Vancouver Hackathon",
-    "url": "https://equinoxvancouver26.devpost.com/",
-    "start_date": "Mar 28 - 30, 2026",
-    "location": "Young Guns Studio",
     "source": "Devpost"
   },
   {
@@ -399,13 +378,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HACKDAYS SRINAGAR",
-    "url": "https://hackdays-srinagar.devpost.com/",
-    "start_date": "Mar 25, 2026",
-    "location": "CASET COLLEGE, KARAN NAGER SRINAGAR",
-    "source": "Devpost"
-  },
-  {
     "title": "HackDKU 2026",
     "url": "https://hackdku-2026.devpost.com/",
     "start_date": "Apr 11 - 17, 2026",
@@ -497,6 +469,13 @@
     "source": "Devpost"
   },
   {
+    "title": "High Stakes Gamathon",
+    "url": "https://ku-high-stakes-gamathon.devpost.com/",
+    "start_date": "Apr 01 - 02, 2026",
+    "location": "KU School of Engineering",
+    "source": "Devpost"
+  },
+  {
     "title": "Hook 'Em Hacks",
     "url": "https://hook-em-hacks.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -541,7 +520,7 @@
   {
     "title": "ITIZ CHALLENGE",
     "url": "https://itiz-challenge.devpost.com/",
-    "start_date": "Apr 27 - 28, 2026",
+    "start_date": "Apr 29, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -581,6 +560,13 @@
     "source": "Devpost"
   },
   {
+    "title": "KiwiHacks 2026",
+    "url": "https://kiwihacks-2026.devpost.com/",
+    "start_date": "May 01 - 02, 2026",
+    "location": "GridAKL / John Lysaght Building",
+    "source": "Devpost"
+  },
+  {
     "title": "LA Hacks 2026",
     "url": "https://la-hacks-2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -606,6 +592,13 @@
     "url": "https://saas-sprint.devpost.com/",
     "start_date": "Mar 31 - Apr 06, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Multimodal Frontier Hackathon",
+    "url": "https://multimodal-frontier-hackathon.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "WorkOS",
     "source": "Devpost"
   },
   {
@@ -651,6 +644,13 @@
     "source": "Devpost"
   },
   {
+    "title": "OpenClaw Hackathon Vienna",
+    "url": "https://openclaw-hackathon-vienna.devpost.com/",
+    "start_date": "Mar 27 - 28, 2026",
+    "location": "Wien, Austria",
+    "source": "Devpost"
+  },
+  {
     "title": "Pacific Portal XR",
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -661,13 +661,6 @@
     "title": "PantherHack 2026",
     "url": "https://pantherhack-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "PiHacks Enhanced",
-    "url": "https://pihacks-enhanced.devpost.com/",
-    "start_date": "Apr 01 - May 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -704,13 +697,6 @@
     "url": "https://revolutionuc-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "1819 Innovation Hub",
-    "source": "Devpost"
-  },
-  {
-    "title": "Richmond Civic Hackathon",
-    "url": "https://hack-for-rva.devpost.com/",
-    "start_date": "Mar 27 - 28, 2026",
-    "location": "VCU School of Business (Snead Hall)",
     "source": "Devpost"
   },
   {
@@ -763,6 +749,20 @@
     "source": "Devpost"
   },
   {
+    "title": "Stupid Ideas Hackathon (Toronto W26)",
+    "url": "https://sih-toronto-w26.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "New Stadium",
+    "source": "Devpost"
+  },
+  {
+    "title": "Stupid Ideas Hackathon (Waterloo W26)",
+    "url": "https://sih-waterloo-w26.devpost.com/",
+    "start_date": "Mar 29, 2026",
+    "location": "Builders Club",
+    "source": "Devpost"
+  },
+  {
     "title": "SVC Hackathon: Environmental Conservation",
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
@@ -772,7 +772,7 @@
   {
     "title": "Tech to Treasure Hackathon",
     "url": "https://techtotreasure.devpost.com/",
-    "start_date": "Mar 28, 2026",
+    "start_date": "Jun 01, 2026",
     "location": "Tully Community Branch Library",
     "source": "Devpost"
   },
@@ -974,7 +974,7 @@
     "title": "Davis , California DIVERSITY",
     "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDavis+2026+Hackathon",
     "start_date": "HackDavis 20",
-    "location": "26 Hackathon MAY 08 - 09 Davis, California In-Person",
+    "location": "26 Hackathon MAY 09 - 10 Davis, California In-Person",
     "source": "MLH"
   },
   {
@@ -1010,6 +1010,13 @@
     "url": "https://hack-dartmouth.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDartmouth+XI",
     "start_date": "APR 11 - 12",
     "location": "Hanover, New Hampshire In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Highland Heights , KY Victor Hacks",
+    "url": "https://victorhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Victor+Hacks",
+    "start_date": "APR 18 - 19",
+    "location": "Highland Heights, KY In-Person",
     "source": "MLH"
   },
   {
@@ -1073,6 +1080,13 @@
     "url": "https://dragonhack.si/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Dragonhack+2026",
     "start_date": "ragonhack 20",
     "location": "26 APR 18 - 19 Ljubljana, Osrednjeslovenska In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Los Angeles , California DIVERSITY",
+    "url": "https://hackmesa.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HACKMESA+2.0",
+    "start_date": "HACKMESA 2",
+    "location": ".0 APR 17 - 18 Los Angeles, California In-Person",
     "source": "MLH"
   },
   {
