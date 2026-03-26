@@ -1,9 +1,9 @@
 [
   {
-    "title": "49er Foundry: 49-MINUTE PITCH COMPETITION- R1",
-    "url": "https://49er-foundry-round-1.devpost.com/",
-    "start_date": "Mar 25 - 26, 2026",
-    "location": "Online",
+    "title": "2026 Spring Claude Builder Hackathon @ TCD",
+    "url": "https://sp2026-tcd-claude-hackathon.devpost.com/",
+    "start_date": "Mar 27, 2026",
+    "location": "The Portal @ Trinity Business School",
     "source": "Devpost"
   },
   {
@@ -17,7 +17,7 @@
     "title": "AEE Energy Hackathon",
     "url": "https://asu-energy-hackathon.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
-    "location": "Online",
+    "location": "Online / TBA",
     "source": "Devpost"
   },
   {
@@ -350,6 +350,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hackabury 2026",
+    "url": "https://hackabury-2026.devpost.com/",
+    "start_date": "Jun 01 - 02, 2026",
+    "location": "Verena Holmes Building",
+    "source": "Devpost"
+  },
+  {
     "title": "HackAmerica",
     "url": "https://hackamerica.devpost.com/",
     "start_date": "Apr 11 - 18, 2026",
@@ -436,7 +443,7 @@
   {
     "title": "HackNova 1.0",
     "url": "https://hacknova2026.devpost.com/",
-    "start_date": "Mar 25, 2026",
+    "start_date": "Apr 01, 2026",
     "location": "New Auditorium - HBTU East Campus",
     "source": "Devpost"
   },
@@ -518,13 +525,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ITIZ CHALLENGE",
-    "url": "https://itiz-challenge.devpost.com/",
-    "start_date": "Apr 29, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "JacHacks",
     "url": "https://jachacks-2026.devpost.com/",
     "start_date": "Apr 04 - 05, 2026",
@@ -539,13 +539,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Jechacks",
-    "url": "https://jechacks.devpost.com/",
-    "start_date": "Jul 11, 2026",
-    "location": "Mississauga (Location to be decided)",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2026",
     "url": "https://kent-hack-enough-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -557,13 +550,6 @@
     "url": "https://kifiya-inspire-3-0.devpost.com/",
     "start_date": "Mar 28, 2026",
     "location": "Kifiya Financial Technology, HQ",
-    "source": "Devpost"
-  },
-  {
-    "title": "KiwiHacks 2026",
-    "url": "https://kiwihacks-2026.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "GridAKL / John Lysaght Building",
     "source": "Devpost"
   },
   {
@@ -585,20 +571,6 @@
     "url": "https://luma.devpost.com/",
     "start_date": "Apr 05 - 26, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Maximally SaaS Sprint: Build in 7 Days",
-    "url": "https://saas-sprint.devpost.com/",
-    "start_date": "Mar 31 - Apr 06, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Multimodal Frontier Hackathon",
-    "url": "https://multimodal-frontier-hackathon.devpost.com/",
-    "start_date": "Mar 28, 2026",
-    "location": "WorkOS",
     "source": "Devpost"
   },
   {
@@ -637,6 +609,20 @@
     "source": "Devpost"
   },
   {
+    "title": "NJx Hackathon 2026",
+    "url": "https://njxhackathonspring2026.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "Montgomery Innovation Hub",
+    "source": "Devpost"
+  },
+  {
+    "title": "Obserc Safety Hackathon",
+    "url": "https://obserc-safety-hackathon.devpost.com/",
+    "start_date": "Mar 27 - Apr 11, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "OmegaHack EAFIT",
     "url": "https://omegahack.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -672,9 +658,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Quantum Ready College Projects -Winter2026",
-    "url": "https://quantum-ready-winter2026.devpost.com/",
-    "start_date": "Mar 26 - 28, 2026",
+    "title": "Predict4Good Hackathon",
+    "url": "https://predict4good-hackathon.devpost.com/",
+    "start_date": "Mar 28 - Apr 10, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -697,6 +683,13 @@
     "url": "https://revolutionuc-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
     "location": "1819 Innovation Hub",
+    "source": "Devpost"
+  },
+  {
+    "title": "Richmond Civic Hackathon",
+    "url": "https://hack-for-rva.devpost.com/",
+    "start_date": "Mar 27 - 28, 2026",
+    "location": "VCU School of Business (Snead Hall)",
     "source": "Devpost"
   },
   {
@@ -791,6 +784,13 @@
     "source": "Devpost"
   },
   {
+    "title": "UnitedAI Hackathon",
+    "url": "https://unitedai-hackathon.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "USC | Build with Trae and MiniMax",
     "url": "https://build-with-trae-and-minimax.devpost.com/",
     "start_date": "Mar 27 - 28, 2026",
@@ -874,394 +874,401 @@
   },
   {
     "title": "Asansol , West Bengal Ha",
-    "url": "https://www.hacktropica.xyz/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackTropica+2k26",
+    "url": "https://www.hacktropica.xyz/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackTropica+2k26",
     "start_date": "ckTropica 2",
     "location": "k26 APR 04 - 05 Asansol, West Bengal In-Person",
     "source": "MLH"
   },
   {
     "title": "Atlanta , Georgia ImmerseGT",
-    "url": "https://www.immersegt.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ImmerseGT",
+    "url": "https://www.immersegt.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=ImmerseGT",
     "start_date": "APR 10 - 12",
     "location": "Atlanta, Georgia In-Person",
     "source": "MLH"
   },
   {
     "title": "Atlanta , Georgia SproutGT",
-    "url": "https://sprout.hack.gt/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SproutGT",
+    "url": "https://sprout.hack.gt/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=SproutGT",
     "start_date": "APR 10 - 11",
     "location": "Atlanta, Georgia In-Person",
     "source": "MLH"
   },
   {
-    "title": "Austin , TX DIVERSITY Hook 'Em Hacks",
-    "url": "https://www.hookemhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hook+%27Em+Hacks",
+    "title": "Austin , TX Hook 'Em Hacks",
+    "url": "https://www.hookemhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hook+%27Em+Hacks",
     "start_date": "APR 18 - 19",
-    "location": "Austin, TX In-Person",
+    "location": "Austin, TX In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Austin , TX Spring Hacks aka Hack Hack Goose",
-    "url": "https://hackhackgoose.freetailhackers.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Spring+Hacks+aka+Hack+Hack+Goose",
+    "url": "https://hackhackgoose.freetailhackers.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Spring+Hacks+aka+Hack+Hack+Goose",
     "start_date": "APR 03 - 04",
     "location": "Austin, TX In-Person",
     "source": "MLH"
   },
   {
-    "title": "Baltimore , Maryland DIVERSITY MorganHacks",
-    "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MorganHacks",
+    "title": "Baltimore , Maryland MorganHacks",
+    "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=MorganHacks",
     "start_date": "APR 11 - 12",
-    "location": "Baltimore, Maryland In-Person",
+    "location": "Baltimore, Maryland In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Barcelona , Catalonia HackUPC",
-    "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUPC",
+    "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackUPC",
     "start_date": "APR 24 - 26",
     "location": "Barcelona, Catalonia In-Person",
     "source": "MLH"
   },
   {
-    "title": "Bengaluru , Karnataka DIVERSITY NMIT Hacks",
-    "url": "https://nmithacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=NMIT+Hacks+",
+    "title": "Bengaluru , Karnataka NMIT Hacks",
+    "url": "https://nmithacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=NMIT+Hacks+",
     "start_date": "MAY 08 - 10",
-    "location": "Bengaluru, Karnataka In-Person",
+    "location": "Bengaluru, Karnataka In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Bothell , WA UWB",
-    "url": "https://uwbhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=UWB+Hacks+26%3A+The+Future%21",
+    "url": "https://uwbhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=UWB+Hacks+26%3A+The+Future%21",
     "start_date": "Hacks 26",
     "location": ": The Future! APR 24 - 26 Bothell, WA In-Person",
     "source": "MLH"
   },
   {
-    "title": "Chapel Hill , North Carolina DIVERSITY SolHacks",
-    "url": "https://www.solhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=SolHacks",
+    "title": "Chapel Hill , North Carolina SolHacks",
+    "url": "https://www.solhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=SolHacks",
     "start_date": "MAR 28 - 29",
-    "location": "Chapel Hill, North Carolina In-Person",
+    "location": "Chapel Hill, North Carolina In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Cincinnati , Ohio RevolutionUC",
-    "url": "https://revolutionuc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=RevolutionUC",
+    "url": "https://revolutionuc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=RevolutionUC",
     "start_date": "MAR 28 - 29",
     "location": "Cincinnati, Ohio In-Person",
     "source": "MLH"
   },
   {
     "title": "College Park , Maryland Bitcamp",
-    "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Bitcamp",
+    "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Bitcamp",
     "start_date": "APR 10 - 12",
     "location": "College Park, Maryland In-Person",
     "source": "MLH"
   },
   {
     "title": "Corvallis , Oregon Be",
-    "url": "https://beaverhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BeaverHacks+2026",
+    "url": "https://beaverhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=BeaverHacks+2026",
     "start_date": "averHacks 20",
     "location": "26 APR 18 - 19 Corvallis, Oregon In-Person",
     "source": "MLH"
   },
   {
     "title": "Dallas , Texas HackSMU VII",
-    "url": "https://hacksmu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackSMU+VII+",
+    "url": "https://hacksmu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackSMU+VII+",
     "start_date": "APR 11 - 12",
     "location": "Dallas, Texas In-Person",
     "source": "MLH"
   },
   {
-    "title": "Davis , California DIVERSITY",
-    "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDavis+2026+Hackathon",
+    "title": "Davis , California",
+    "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackDavis+2026+Hackathon",
     "start_date": "HackDavis 20",
-    "location": "26 Hackathon MAY 09 - 10 Davis, California In-Person",
+    "location": "26 Hackathon MAY 09 - 10 Davis, California In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Evanston , Illinois WildHacks",
-    "url": "https://www.wildhacks.net/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WildHacks",
+    "url": "https://www.wildhacks.net/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=WildHacks",
     "start_date": "APR 11 - 12",
     "location": "Evanston, Illinois In-Person",
     "source": "MLH"
   },
   {
     "title": "Fullerton , California FullyHacks",
-    "url": "https://fullyhacks.acmcsuf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=FullyHacks",
+    "url": "https://fullyhacks.acmcsuf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=FullyHacks",
     "start_date": "APR 18 - 19",
     "location": "Fullerton, California In-Person",
     "source": "MLH"
   },
   {
-    "title": "Global Hack Week: API",
-    "url": "https://events.mlh.io/events/13558-global-hack-week-api?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+API",
+    "title": "GH Global Hack Week: API",
+    "url": "https://events.mlh.io/events/13558-global-hack-week-api?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+API",
     "start_date": "APR 10 - 16",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
-    "title": "Global Hack Week: GenAI",
-    "url": "https://organize.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Global+Hack+Week%3A+GenAI",
+    "title": "GH Global Hack Week: GenAI",
+    "url": "https://organize.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+GenAI",
     "start_date": "MAY 08 - 14",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
     "title": "Hanover , New Hampshire HackDartmouth XI",
-    "url": "https://hack-dartmouth.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackDartmouth+XI",
+    "url": "https://hack-dartmouth.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackDartmouth+XI",
     "start_date": "APR 11 - 12",
     "location": "Hanover, New Hampshire In-Person",
     "source": "MLH"
   },
   {
     "title": "Highland Heights , KY Victor Hacks",
-    "url": "https://victorhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Victor+Hacks",
+    "url": "https://victorhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Victor+Hacks",
     "start_date": "APR 18 - 19",
     "location": "Highland Heights, KY In-Person",
     "source": "MLH"
   },
   {
     "title": "Houston , TX HackHCC",
-    "url": "https://hackhcc.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackHCC",
+    "url": "https://hackhcc.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackHCC",
     "start_date": "MAY 22 - 23",
     "location": "Houston, TX In-Person",
     "source": "MLH"
   },
   {
     "title": "Indianapolis , Indiana HackIndy",
-    "url": "https://cshackindy.vercel.app/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackIndy",
+    "url": "https://cshackindy.vercel.app/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackIndy",
     "start_date": "MAR 27 - 29",
     "location": "Indianapolis, Indiana In-Person",
     "source": "MLH"
   },
   {
     "title": "Jabalpur , Madhya Pradesh",
-    "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackByte+4.0",
+    "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackByte+4.0",
     "start_date": "HackByte 4",
     "location": ".0 APR 03 - 05 Jabalpur, Madhya Pradesh In-Person",
     "source": "MLH"
   },
   {
     "title": "Kent , Ohio Kent Hack Enough",
-    "url": "https://khe.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Kent+Hack+Enough",
+    "url": "https://khe.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Kent+Hack+Enough",
     "start_date": "MAR 28 - 29",
     "location": "Kent, Ohio In-Person",
     "source": "MLH"
   },
   {
     "title": "Košice , Košice Region Hack Kosice",
-    "url": "https://hackkosice.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Kosice",
+    "url": "https://hackkosice.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+Kosice",
     "start_date": "APR 18 - 19",
     "location": "Košice, Košice Region In-Person",
     "source": "MLH"
   },
   {
     "title": "La Jolla , CA DataHacks",
-    "url": "https://datahacks.ds3ucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DataHacks",
+    "url": "https://datahacks.ds3ucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DataHacks",
     "start_date": "APR 18 - 19",
     "location": "La Jolla, CA In-Person",
     "source": "MLH"
   },
   {
     "title": "La Jolla , California Dia",
-    "url": "https://diamondhacks.acmucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=DiamondHacks+2026",
+    "url": "https://diamondhacks.acmucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DiamondHacks+2026",
     "start_date": "mondHacks 20",
     "location": "26 APR 04 - 05 La Jolla, California In-Person",
     "source": "MLH"
   },
   {
     "title": "Lawrence , KS HackKU",
-    "url": "https://the-hackku.github.io/hackku26_website/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackKU",
+    "url": "https://the-hackku.github.io/hackku26_website/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackKU",
     "start_date": "APR 17 - 19",
     "location": "Lawrence, KS In-Person",
     "source": "MLH"
   },
   {
     "title": "Ljubljana , Osrednjeslovenska D",
-    "url": "https://dragonhack.si/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Dragonhack+2026",
+    "url": "https://dragonhack.si/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Dragonhack+2026",
     "start_date": "ragonhack 20",
     "location": "26 APR 18 - 19 Ljubljana, Osrednjeslovenska In-Person",
     "source": "MLH"
   },
   {
-    "title": "Los Angeles , California DIVERSITY",
-    "url": "https://hackmesa.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HACKMESA+2.0",
+    "title": "Los Angeles , California",
+    "url": "https://hackmesa.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HACKMESA+2.0",
     "start_date": "HACKMESA 2",
-    "location": ".0 APR 17 - 18 Los Angeles, California In-Person",
+    "location": ".0 APR 17 - 18 Los Angeles, California In-Person DIVERSITY",
     "source": "MLH"
   },
   {
-    "title": "Los Angeles , California DIVERSITY AthenaHacks",
-    "url": "https://athenahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AthenaHacks+",
+    "title": "Los Angeles , California A AthenaHacks",
+    "url": "https://athenahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=AthenaHacks+",
     "start_date": "MAR 28 - 29",
-    "location": "Los Angeles, California In-Person",
+    "location": "Los Angeles, California In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Los Angeles , California LA Hacks",
-    "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=LA+Hacks",
+    "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=LA+Hacks",
     "start_date": "APR 24 - 26",
     "location": "Los Angeles, California In-Person",
     "source": "MLH"
   },
   {
+    "title": "Mannheim , Baden-Württemberg Q-Hackathon",
+    "url": "https://www.q-summit.com/hackathon?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Q-Hackathon",
+    "start_date": "APR 08 - 09",
+    "location": "Mannheim, Baden-Württemberg In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Mississauga , Ontario",
-    "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=BearHacks+2026",
+    "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=BearHacks+2026",
     "start_date": "BearHacks 20",
     "location": "26 APR 24 - 26 Mississauga, Ontario In-Person",
     "source": "MLH"
   },
   {
     "title": "New Haven , Connecticut YHack",
-    "url": "https://www.yhack.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=YHack",
+    "url": "https://www.yhack.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=YHack",
     "start_date": "MAR 28 - 29",
     "location": "New Haven, Connecticut In-Person",
     "source": "MLH"
   },
   {
     "title": "New York , New York City AI Hackfest",
-    "url": "https://events.mlh.io/events/13503-ai-hackfest?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=AI+Hackfest",
+    "url": "https://events.mlh.io/events/13503-ai-hackfest?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=AI+Hackfest",
     "start_date": "APR 17 - 19",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
-    "title": "NYC , New York Production Engineering Hackathon",
-    "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Production+Engineering+Hackathon",
+    "title": "NYC , New York PE Production Engineering Hackathon",
+    "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Production+Engineering+Hackathon",
     "start_date": "APR 04 - 05",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
   },
   {
     "title": "Pasadena , California Hacktech",
-    "url": "https://hack.caltech.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hacktech",
+    "url": "https://hack.caltech.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hacktech",
     "start_date": "APR 24 - 26",
     "location": "Pasadena, California In-Person",
     "source": "MLH"
   },
   {
     "title": "Princeton , New Jersey HackPrinceton",
-    "url": "https://www.hackprinceton.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackPrinceton+Spring+2026",
+    "url": "https://www.hackprinceton.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackPrinceton+Spring+2026",
     "start_date": "Spring 20",
     "location": "26 APR 17 - 19 Princeton, New Jersey In-Person",
     "source": "MLH"
   },
   {
     "title": "Queretaro, Queretaro , Queretaro Hackathon",
-    "url": "https://hackathon.fif-uaq.mx/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hackathon+Troyano+2026",
+    "url": "https://hackathon.fif-uaq.mx/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hackathon+Troyano+2026",
     "start_date": "Troyano 20",
     "location": "26 APR 17 - 18 Queretaro, Queretaro, Queretaro In-Person",
     "source": "MLH"
   },
   {
-    "title": "Richardson , Texas DIVERSITY WEHack",
-    "url": "https://www.wehackutd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=WEHack",
+    "title": "Richardson , Texas WEHack",
+    "url": "https://www.wehackutd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=WEHack",
     "start_date": "APR 11 - 12",
-    "location": "Richardson, Texas In-Person",
+    "location": "Richardson, Texas In-Person DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Riverside , California Citrus Hack",
-    "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Citrus+Hack",
+    "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Citrus+Hack",
     "start_date": "APR 18 - 19",
     "location": "Riverside, California In-Person",
     "source": "MLH"
   },
   {
     "title": "Rochester , Michigan G",
-    "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Grizzhacks+8",
+    "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Grizzhacks+8",
     "start_date": "rizzhacks 8",
     "location": "MAR 28 - 29 Rochester, Michigan In-Person",
     "source": "MLH"
   },
   {
     "title": "Sainte-Anne-de-Bellevue , Quebec",
-    "url": "https://jachacks.pages.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=JACHacks+2026",
+    "url": "https://jachacks.pages.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=JACHacks+2026",
     "start_date": "JACHacks 20",
     "location": "26 APR 11 - 12 Sainte-Anne-de-Bellevue, Quebec In-Person",
     "source": "MLH"
   },
   {
-    "title": "Sunnyvale , CA HIGH SCHOOL DIVERSITY Los Altos Hacks",
-    "url": "https://www.losaltoshacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Los+Altos+Hacks",
+    "title": "Sunnyvale , CA Los Altos Hacks",
+    "url": "https://www.losaltoshacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Los+Altos+Hacks",
     "start_date": "APR 11 - 12",
-    "location": "Sunnyvale, CA In-Person",
+    "location": "Sunnyvale, CA In-Person HIGH SCHOOL DIVERSITY",
     "source": "MLH"
   },
   {
     "title": "Tampa , Florida HackUSF",
-    "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackUSF",
+    "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackUSF",
     "start_date": "MAR 28 - 29",
     "location": "Tampa, Florida In-Person",
     "source": "MLH"
   },
   {
     "title": "Tempe , Arizona Innovation Hacks",
-    "url": "https://innovationhacks.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Innovation+Hacks",
+    "url": "https://innovationhacks.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Innovation+Hacks",
     "start_date": "APR 03 - 05",
     "location": "Tempe, Arizona In-Person",
     "source": "MLH"
   },
   {
     "title": "Tucson , Arizona Hack Arizona",
-    "url": "https://hack.arizona.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+Arizona+",
+    "url": "https://hack.arizona.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+Arizona+",
     "start_date": "APR 25 - 26",
     "location": "Tucson, Arizona In-Person",
     "source": "MLH"
   },
   {
     "title": "Union , 1075 Morris Ave, Union, NJ 07083 KeanUHackThis",
-    "url": "https://www.keanuhackthis.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=KeanUHackThis",
+    "url": "https://www.keanuhackthis.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=KeanUHackThis",
     "start_date": "APR 25 - 26",
     "location": "Union, 1075 Morris Ave, Union, NJ 07083 In-Person",
     "source": "MLH"
   },
   {
     "title": "University Park , State College, PA Hack @ Penn State",
-    "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=Hack+%40+Penn+State",
+    "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+%40+Penn+State",
     "start_date": "MAR 28 - 29",
     "location": "University Park, State College, PA In-Person",
     "source": "MLH"
   },
   {
     "title": "Waterloo , Ontario",
-    "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=ConHacks+2026",
+    "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=ConHacks+2026",
     "start_date": "ConHacks 20",
     "location": "26 APR 28 - 30 Waterloo, Ontario In-Person",
     "source": "MLH"
   },
   {
-    "title": "Waterloo , Ontario HIGH SCHOOL",
-    "url": "https://jamhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=JAMHacks+10",
+    "title": "Waterloo , Ontario",
+    "url": "https://jamhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=JAMHacks+10",
     "start_date": "JAMHacks 10",
-    "location": "JUN 12 - 14 Waterloo, Ontario In-Person",
+    "location": "JUN 12 - 14 Waterloo, Ontario In-Person HIGH SCHOOL",
     "source": "MLH"
   },
   {
     "title": "West Haven , Connecticut Hac",
-    "url": "https://hackunewhaven.github.io/HNH.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=HackNewHaven+2026",
+    "url": "https://hackunewhaven.github.io/HNH.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackNewHaven+2026",
     "start_date": "kNewHaven 20",
     "location": "26 MAR 28 - 29 West Haven, Connecticut In-Person",
     "source": "MLH"
   },
   {
     "title": "West Lafayette , Indiana StarkHacks",
-    "url": "https://www.starkhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=StarkHacks",
+    "url": "https://www.starkhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=StarkHacks",
     "start_date": "APR 17 - 19",
     "location": "West Lafayette, Indiana In-Person",
     "source": "MLH"
   },
   {
     "title": "Westmount , Quebec MariHacks",
-    "url": "https://www.marihacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MariHacks",
+    "url": "https://www.marihacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=MariHacks",
     "start_date": "APR 17 - 18",
     "location": "Westmount, Quebec In-Person",
     "source": "MLH"
   },
   {
-    "title": "Windsor , Ontario HIGH SCHOOL MasseyHacks",
-    "url": "https://masseyhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=season_events&utm_content=MasseyHacks",
+    "title": "Windsor , Ontario MasseyHacks",
+    "url": "https://masseyhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=MasseyHacks",
     "start_date": "MAY 09 - 10",
-    "location": "Windsor, Ontario In-Person",
+    "location": "Windsor, Ontario In-Person HIGH SCHOOL",
     "source": "MLH"
   }
 ]
