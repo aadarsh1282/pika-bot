@@ -1,12 +1,5 @@
 [
   {
-    "title": "2026 Spring Claude Builder Hackathon @ TCD",
-    "url": "https://sp2026-tcd-claude-hackathon.devpost.com/",
-    "start_date": "Mar 27, 2026",
-    "location": "The Portal @ Trinity Business School",
-    "source": "Devpost"
-  },
-  {
     "title": "757 BLD WKND 2026 2.0",
     "url": "https://757-bld-wknd-2026-2-0.devpost.com/",
     "start_date": "Jul 17 - 19, 2026",
@@ -18,6 +11,13 @@
     "url": "https://asu-energy-hackathon.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Online / TBA",
+    "source": "Devpost"
+  },
+  {
+    "title": "AI Buildathon",
+    "url": "https://aibuildathon.devpost.com/",
+    "start_date": "Apr 28 - 29, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -42,6 +42,20 @@
     "source": "Devpost"
   },
   {
+    "title": "AWS Kiro x CS Careers Hackathon at Virginia Tech",
+    "url": "https://aws-kiro-cs-careers-vt.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "Virginia Tech - Goodwin Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "BAM Hacks",
+    "url": "https://bam-hacks.devpost.com/",
+    "start_date": "Mar 29, 2026",
+    "location": "Purdue University -- Lawson Building",
+    "source": "Devpost"
+  },
+  {
     "title": "BearHacks 2026",
     "url": "https://bearhacks2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -56,10 +70,10 @@
     "source": "Devpost"
   },
   {
-    "title": "BLOCKCHAIN HACK KRAKOW",
-    "url": "https://blockchain-hack-krakow.devpost.com/",
-    "start_date": "Mar 28 - 29, 2026",
-    "location": "Zabłocie 20",
+    "title": "Blu's Hacks 2026",
+    "url": "https://blu-s-hacks-2026.devpost.com/",
+    "start_date": "Mar 29, 2026",
+    "location": "Branham High School",
     "source": "Devpost"
   },
   {
@@ -74,6 +88,13 @@
     "url": "https://brewing-codes-4-0.devpost.com/",
     "start_date": "Mar 12 - 27, 2028",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build4Good",
+    "url": "https://build4good-2026.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Texas A&amp;M University ILCB",
     "source": "Devpost"
   },
   {
@@ -119,10 +140,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Codorra",
-    "url": "https://codorra1.devpost.com/",
-    "start_date": "May 29 - 31, 2026",
-    "location": "Online / TBA",
+    "title": "CodeBlue",
+    "url": "https://codeblue2026.devpost.com/",
+    "start_date": "Apr 30 - May 02, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "CodeQuantum 2026",
+    "url": "https://codequantum-2026.devpost.com/",
+    "start_date": "Mar 28, 2026",
+    "location": "UTSA Business Building",
     "source": "Devpost"
   },
   {
@@ -154,17 +182,17 @@
     "source": "Devpost"
   },
   {
+    "title": "Creative Lab: AI Coding Hackathon @ UCSD (TRAE & Z.ai)",
+    "url": "https://creative-lab-ai-coding-ucsd.devpost.com/",
+    "start_date": "Mar 31 - Apr 01, 2026",
+    "location": "RIMAC - Triton Conference Room",
+    "source": "Devpost"
+  },
+  {
     "title": "CYHacks '26",
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Central York High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "Deep Agents Hackathon",
-    "url": "https://deep-agents-hackathon.devpost.com/",
-    "start_date": "Mar 27, 2026",
-    "location": "AWS Builder Loft",
     "source": "Devpost"
   },
   {
@@ -210,10 +238,10 @@
     "source": "Devpost"
   },
   {
-    "title": "EagleHacks 2026",
-    "url": "https://eaglehacks-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
-    "location": "Florida Gulf Coast University",
+    "title": "Equinox Vancouver Hackathon",
+    "url": "https://equinoxvancouver26.devpost.com/",
+    "start_date": "Mar 28 - 30, 2026",
+    "location": "Young Guns Studio",
     "source": "Devpost"
   },
   {
@@ -231,16 +259,16 @@
     "source": "Devpost"
   },
   {
-    "title": "Global Fusion hackathon",
-    "url": "https://globalfusionhackathon.devpost.com/",
-    "start_date": "Apr 01 - 15, 2026",
+    "title": "Galuxium Nexus V2",
+    "url": "https://galuxium-nexus-v2-29411.devpost.com/",
+    "start_date": "Jul 01 - Aug 01, 2026",
     "location": "Online",
     "source": "Devpost"
   },
   {
-    "title": "Global Public Health Hackathon 2026",
-    "url": "https://health-hackathon-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
+    "title": "Global Fusion hackathon",
+    "url": "https://globalfusionhackathon.devpost.com/",
+    "start_date": "Apr 01 - 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -311,13 +339,6 @@
     "title": "Hack for Humanity | Summer 2026",
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack Indy 2026",
-    "url": "https://hack-indy-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -434,6 +455,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackNova 1.0",
+    "url": "https://hacknova2026.devpost.com/",
+    "start_date": "Apr 01, 2026",
+    "location": "New Auditorium - HBTU East Campus",
+    "source": "Devpost"
+  },
+  {
     "title": "HackPSU Spring 2026",
     "url": "https://hackpsu-spring-2026.devpost.com/",
     "start_date": "Mar 28 - 29, 2026",
@@ -511,6 +539,13 @@
     "source": "Devpost"
   },
   {
+    "title": "ITIZ CHALLENGE",
+    "url": "https://itiz-challenge.devpost.com/",
+    "start_date": "Apr 29, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "JacHacks",
     "url": "https://jachacks-2026.devpost.com/",
     "start_date": "Apr 04 - 05, 2026",
@@ -539,17 +574,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Kent Hack Enough 2026",
-    "url": "https://kent-hack-enough-2026.devpost.com/",
-    "start_date": "Mar 28 - 29, 2026",
-    "location": "Kent State University",
-    "source": "Devpost"
-  },
-  {
-    "title": "Kifiya Inspire 3.0",
-    "url": "https://kifiya-inspire-3-0.devpost.com/",
-    "start_date": "Mar 28, 2026",
-    "location": "Kifiya Financial Technology, HQ",
+    "title": "KiwiHacks 2026",
+    "url": "https://kiwihacks-2026.devpost.com/",
+    "start_date": "May 01 - 02, 2026",
+    "location": "GridAKL / John Lysaght Building",
     "source": "Devpost"
   },
   {
@@ -602,20 +630,6 @@
     "source": "Devpost"
   },
   {
-    "title": "NeuroHack Spring 2026",
-    "url": "https://neurohack-spring-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
-    "location": "Armory Building - Rm. 331",
-    "source": "Devpost"
-  },
-  {
-    "title": "NeuroHack: Spring 2026",
-    "url": "https://neurohack-spring-2025.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
-    "location": "University of Illinois Urbana Champaign",
-    "source": "Devpost"
-  },
-  {
     "title": "NJx Hackathon 2026",
     "url": "https://njxhackathonspring2026.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
@@ -637,13 +651,6 @@
     "source": "Devpost"
   },
   {
-    "title": "OpenClaw Hackathon Vienna",
-    "url": "https://openclaw-hackathon-vienna.devpost.com/",
-    "start_date": "Mar 27 - 28, 2026",
-    "location": "Wien, Austria",
-    "source": "Devpost"
-  },
-  {
     "title": "Pacific Portal XR",
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -661,13 +668,6 @@
     "title": "Pixel Forge Jam 2026",
     "url": "https://pixel-forge-jam-2026.devpost.com/",
     "start_date": "Apr 18 - 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Predict4Good Hackathon",
-    "url": "https://predict4good-hackathon.devpost.com/",
-    "start_date": "Mar 28 - Apr 10, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -700,13 +700,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Sac City Arduino Day Challenge",
-    "url": "https://sac-city-arduino-day-challenge.devpost.com/",
-    "start_date": "Mar 27, 2026",
-    "location": "Sacramento City College - NAS 107",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -714,10 +707,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Splunk AI Hackathon",
+    "url": "https://splunk.devpost.com/",
+    "start_date": "May 18 - Jun 15, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "SS Hacker Team Cybersecurity GLOBAL Challenge 2026",
     "url": "https://sshackerteamglobal.devpost.com/",
     "start_date": "May 10 - 25, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "StarHack",
+    "url": "https://starhack-polystar.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "Pavillon Lassonde 3e étage",
     "source": "Devpost"
   },
   {
@@ -765,7 +772,7 @@
   {
     "title": "The Climate Change-Makers Challenge: 2026",
     "url": "https://climatechangemakers2026.devpost.com/",
-    "start_date": "Apr 03 - 06, 2026",
+    "start_date": "Apr 03 - 05, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -784,13 +791,6 @@
     "source": "Devpost"
   },
   {
-    "title": "USC | Build with Trae and MiniMax",
-    "url": "https://build-with-trae-and-minimax.devpost.com/",
-    "start_date": "Mar 27 - 28, 2026",
-    "location": "USC - TCC Franklin Suite",
-    "source": "Devpost"
-  },
-  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -798,10 +798,10 @@
     "source": "Devpost"
   },
   {
-    "title": "WAV Hackathon",
-    "url": "https://wav-hackathon.devpost.com/",
-    "start_date": "Mar 27 - 28, 2026",
-    "location": "400 Granby Street",
+    "title": "Video Intelligence for Media and Entertainment Hackathon",
+    "url": "https://twelve-labs-la-me-2026.devpost.com/",
+    "start_date": "Mar 28 - 29, 2026",
+    "location": "WeWork Playa Vista",
     "source": "Devpost"
   },
   {
@@ -812,10 +812,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Webster Hackfest 2026",
-    "url": "https://webster-hackfest-2026.devpost.com/",
-    "start_date": "Mar 27 - 29, 2026",
-    "location": "Webster University",
+    "title": "WildHacks",
+    "url": "https://wildhacks-2026.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "Technological Institute",
     "source": "Devpost"
   },
   {
@@ -1146,7 +1146,7 @@
     "source": "MLH"
   },
   {
-    "title": "Oswego , New York L LakerHacks",
+    "title": "Oswego , New York LakerHacks",
     "url": "https://www.cs.oswego.edu/lakerhacks/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=LakerHacks",
     "start_date": "APR 18 - 19",
     "location": "Oswego, New York In-Person",
@@ -1255,6 +1255,13 @@
     "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+%40+Penn+State",
     "start_date": "MAR 28 - 29",
     "location": "University Park, State College, PA In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Washington DC , DMV GH George Hacks Health",
+    "url": "https://georgehacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=George+Hacks+Health+Hackathon+2026",
+    "start_date": "Hackathon 20",
+    "location": "26 APR 18 - 19 Washington DC, DMV In-Person",
     "source": "MLH"
   },
   {
