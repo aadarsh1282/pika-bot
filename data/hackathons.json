@@ -35,6 +35,13 @@
     "source": "Devpost"
   },
   {
+    "title": "ALI Builds Hackathon",
+    "url": "https://ali-hackathon.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "Cloister Club at Ida Noyes Hall",
+    "source": "Devpost"
+  },
+  {
     "title": "Aurora Global Hackathon",
     "url": "https://aurora-global-hackathon.devpost.com/",
     "start_date": "Mar 31 - Apr 01, 2026",
@@ -42,10 +49,10 @@
     "source": "Devpost"
   },
   {
-    "title": "BAM Hacks",
-    "url": "https://bam-hacks.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Purdue University -- Lawson Building",
+    "title": "Aurora Global Hackathon",
+    "url": "https://aurora-global-hackathon-grid.devpost.com/",
+    "start_date": "Apr 01 - 17, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -67,20 +74,6 @@
     "url": "https://8-blairhacks.devpost.com/",
     "start_date": "May 23 - 25, 2026",
     "location": "Location Pending",
-    "source": "Devpost"
-  },
-  {
-    "title": "Blu's Hacks 2026",
-    "url": "https://blu-s-hacks-2026.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Branham High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "Blu's Hacks 2026",
-    "url": "https://blu-s-hacks-2026-29435.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Branham High School Cafeteria",
     "source": "Devpost"
   },
   {
@@ -147,6 +140,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Cloudathon@SJSU 2026",
+    "url": "https://cloudathon-sjsu-2026.devpost.com/",
+    "start_date": "Apr 25, 2026",
+    "location": "San Jose State University -- Engineering",
+    "source": "Devpost"
+  },
+  {
     "title": "ClubHacks",
     "url": "https://clubhacks.devpost.com/",
     "start_date": "Apr 04, 2026",
@@ -158,13 +158,6 @@
     "url": "https://code-fest.devpost.com/",
     "start_date": "Apr 28, 2026",
     "location": "BTH - Datorsal",
-    "source": "Devpost"
-  },
-  {
-    "title": "Code Innovation",
-    "url": "https://code-innovation.devpost.com/",
-    "start_date": "Apr 23, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -295,6 +288,13 @@
   },
   {
     "title": "Gemini Hack Night by CGI Club at ENSA Marrakech",
+    "url": "https://gemini-hack-night-by-cgi-club.devpost.com/",
+    "start_date": "Apr 10 - 11, 2026",
+    "location": "Code212 UCA",
+    "source": "Devpost"
+  },
+  {
+    "title": "Gemini Hack Night by CGI Club at ENSA Marrakech",
     "url": "https://gemini-hack-night-cgi-club.devpost.com/",
     "start_date": "Apr 10 - 11, 2026",
     "location": "Online",
@@ -340,13 +340,6 @@
     "url": "https://hack-cupertino-2026.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "Quinlan Community Center",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack Day Kanpur",
-    "url": "https://hack-day-kanpur.devpost.com/",
-    "start_date": "Mar 30, 2026",
-    "location": "KANPUR, UTTAR PRADESH",
     "source": "Devpost"
   },
   {
@@ -431,6 +424,13 @@
     "url": "https://hackdays-lucknow.devpost.com/",
     "start_date": "May 18, 2026",
     "location": "IIIT Lucknow",
+    "source": "Devpost"
+  },
+  {
+    "title": "HACKDAYS SRINAGAR",
+    "url": "https://hackdays-srinagar-29370.devpost.com/",
+    "start_date": "Apr 01, 2026",
+    "location": "CASET COLLEGE OF COMPUTER SCIENCE",
     "source": "Devpost"
   },
   {
@@ -658,6 +658,13 @@
     "source": "Devpost"
   },
   {
+    "title": "PantherHacks 2026",
+    "url": "https://pantherhacks2026.devpost.com/",
+    "start_date": "Apr 03 - 05, 2026",
+    "location": "Sandhu Conference Center",
+    "source": "Devpost"
+  },
+  {
     "title": "PiHacks",
     "url": "https://pihacks.devpost.com/",
     "start_date": "Apr 01 - May 01, 2026",
@@ -679,10 +686,24 @@
     "source": "Devpost"
   },
   {
+    "title": "PIXEL.GEMINI 2.0",
+    "url": "https://pixel-gemini-2-0.devpost.com/",
+    "start_date": "Apr 21, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "PMC Power Platform Product Sprint 2026",
     "url": "https://pmc-power-sprint-2026.devpost.com/",
     "start_date": "Apr 04, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Q-Hackathon",
+    "url": "https://q-hack.devpost.com/",
+    "start_date": "Apr 08 - 09, 2026",
+    "location": "University of Mannheim - Aula",
     "source": "Devpost"
   },
   {
@@ -746,13 +767,6 @@
     "url": "https://steminate-hacks-2026.devpost.com/",
     "start_date": "Jun 07 - 13, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Stupid Ideas Hackathon (Waterloo W26)",
-    "url": "https://sih-waterloo-w26.devpost.com/",
-    "start_date": "Mar 29, 2026",
-    "location": "Builders Club",
     "source": "Devpost"
   },
   {
@@ -922,20 +936,6 @@
     "source": "MLH"
   },
   {
-    "title": "Chapel Hill , North Carolina SolHacks",
-    "url": "https://www.solhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=SolHacks",
-    "start_date": "MAR 28 - 29",
-    "location": "Chapel Hill, North Carolina In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Cincinnati , Ohio RevolutionUC",
-    "url": "https://revolutionuc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=RevolutionUC",
-    "start_date": "MAR 28 - 29",
-    "location": "Cincinnati, Ohio In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "College Park , Maryland Bitcamp",
     "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Bitcamp",
     "start_date": "APR 10 - 12",
@@ -1020,24 +1020,10 @@
     "source": "MLH"
   },
   {
-    "title": "Indianapolis , Indiana HackIndy",
-    "url": "http://hackindy.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackIndy",
-    "start_date": "MAR 27 - 29",
-    "location": "Indianapolis, Indiana In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Jabalpur , Madhya Pradesh",
     "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackByte+4.0",
     "start_date": "HackByte 4",
     "location": ".0 APR 03 - 05 Jabalpur, Madhya Pradesh In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Kent , Ohio Kent Hack Enough",
-    "url": "https://khe.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Kent+Hack+Enough",
-    "start_date": "MAR 28 - 29",
-    "location": "Kent, Ohio In-Person",
     "source": "MLH"
   },
   {
@@ -1083,13 +1069,6 @@
     "source": "MLH"
   },
   {
-    "title": "Los Angeles , California AthenaHacks",
-    "url": "https://athenahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=AthenaHacks+",
-    "start_date": "MAR 28 - 29",
-    "location": "Los Angeles, California In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
     "title": "Los Angeles , California LA Hacks",
     "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=LA+Hacks",
     "start_date": "APR 24 - 26",
@@ -1108,13 +1087,6 @@
     "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=BearHacks+2026",
     "start_date": "BearHacks 20",
     "location": "26 APR 24 - 26 Mississauga, Ontario In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "New Haven , Connecticut YHack",
-    "url": "https://www.yhack.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=YHack",
-    "start_date": "MAR 28 - 29",
-    "location": "New Haven, Connecticut In-Person",
     "source": "MLH"
   },
   {
@@ -1181,13 +1153,6 @@
     "source": "MLH"
   },
   {
-    "title": "Rochester , Michigan G",
-    "url": "https://www.grizzhacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Grizzhacks+8",
-    "start_date": "rizzhacks 8",
-    "location": "MAR 28 - 29 Rochester, Michigan In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Sainte-Anne-de-Bellevue , Quebec",
     "url": "https://jachacks.pages.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=JACHacks+2026",
     "start_date": "JACHacks 20",
@@ -1205,13 +1170,6 @@
     "title": "Tampa , Florida Hackabull VII",
     "url": "https://www.hackabull.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hackabull+VII",
     "start_date": "APR 25 - 26",
-    "location": "Tampa, Florida In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Tampa , Florida HackUSF",
-    "url": "https://hackusf.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackUSF",
-    "start_date": "MAR 28 - 29",
     "location": "Tampa, Florida In-Person",
     "source": "MLH"
   },
@@ -1237,13 +1195,6 @@
     "source": "MLH"
   },
   {
-    "title": "University Park , State College, PA Hack @ Penn State",
-    "url": "https://hackpsu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+%40+Penn+State",
-    "start_date": "MAR 28 - 29",
-    "location": "University Park, State College, PA In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Washington DC , DMV GH George Hacks Health",
     "url": "https://georgehacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=George+Hacks+Health+Hackathon+2026",
     "start_date": "Hackathon 20",
@@ -1262,13 +1213,6 @@
     "url": "https://jamhacks.ca/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=JAMHacks+10",
     "start_date": "JAMHacks 10",
     "location": "JUN 12 - 14 Waterloo, Ontario In-Person HIGH SCHOOL",
-    "source": "MLH"
-  },
-  {
-    "title": "West Haven , Connecticut Hac",
-    "url": "https://hackunewhaven.github.io/HNH.github.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackNewHaven+2026",
-    "start_date": "kNewHaven 20",
-    "location": "26 MAR 28 - 29 West Haven, Connecticut In-Person",
     "source": "MLH"
   },
   {
