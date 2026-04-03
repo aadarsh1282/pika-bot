@@ -1,5 +1,12 @@
 [
   {
+    "title": "1st International Prosolve 2026",
+    "url": "https://international-prosolve-2026.devpost.com/",
+    "start_date": "Apr 11 - May 22, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "757 BLD WKND 2026 2.0",
     "url": "https://757-bld-wknd-2026-2-0.devpost.com/",
     "start_date": "Jul 17 - 19, 2026",
@@ -18,13 +25,6 @@
     "url": "https://aibuildathon.devpost.com/",
     "start_date": "Apr 28 - 29, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "AI Club x WiC X SASE Hackathon",
-    "url": "https://ku-high-stakes-gamathon.devpost.com/",
-    "start_date": "Apr 02 - 03, 2026",
-    "location": "KU School of Engineering",
     "source": "Devpost"
   },
   {
@@ -151,6 +151,13 @@
     "url": "https://code-fest.devpost.com/",
     "start_date": "Apr 28, 2026",
     "location": "BTH - Datorsal",
+    "source": "Devpost"
+  },
+  {
+    "title": "Code With Gemini",
+    "url": "https://code-with-gemini.devpost.com/",
+    "start_date": "Apr 29 - May 03, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -315,6 +322,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack Days Nagpur",
+    "url": "https://hack-days-nagpur.devpost.com/",
+    "start_date": "May 02, 2026",
+    "location": "FireBlaze AI School",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack for Humanity | Summer 2026",
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
@@ -403,13 +417,6 @@
     "url": "https://hackdku-2026.devpost.com/",
     "start_date": "Apr 11 - 17, 2026",
     "location": "Duke Kunshan University",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackFW",
-    "url": "https://fwtx.devpost.com/",
-    "start_date": "Apr 03 - May 02, 2026",
-    "location": "Fort Worth",
     "source": "Devpost"
   },
   {
@@ -735,7 +742,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Splunk AI Hackathon",
+    "title": "Splunk Agentic Ops Hackathon",
     "url": "https://splunk.devpost.com/",
     "start_date": "May 18 - Jun 15, 2026",
     "location": "Online",
@@ -777,10 +784,10 @@
     "source": "Devpost"
   },
   {
-    "title": "The Climate Change-Makers Challenge: 2026",
-    "url": "https://climatechangemakers2026.devpost.com/",
-    "start_date": "Apr 03 - 05, 2026",
-    "location": "Online",
+    "title": "Tufts NSDC Datathon",
+    "url": "https://tufts-nsdc-datathon.devpost.com/",
+    "start_date": "Apr 11, 2026",
+    "location": "Tufts University Joyce Cummings Center",
     "source": "Devpost"
   },
   {
