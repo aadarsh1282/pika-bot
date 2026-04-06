@@ -29,15 +29,37 @@ PikaBot solves three real problems:
 
 ## 🖼️ Screenshots
 
-> Add screenshots to `docs/assets/` and update the paths below.
+### Live Hackathon Feed — `#all-hackathons`
+![Hackathon Feed](docs/assets/screenshot-hackathons.png)
+*PikaBot auto-posts new online/global hackathons from Devpost, MLH, Lu.ma, Hack Club, and Hackeroos*
 
-| Feature | Preview |
-|---------|---------|
-| Hackathon auto-feed in Discord | `docs/assets/screenshot-hackathons.png` |
-| `/ask` AI Q&A response | `docs/assets/screenshot-ask.png` |
-| `/poll` command | `docs/assets/screenshot-poll.png` |
-| Winner announcement | `docs/assets/screenshot-winner.png` |
-| Moderation strike alert | `docs/assets/screenshot-moderation.png` |
+### `/ask` Command — AI-Powered Hackathon Discovery
+![Ask Command](docs/assets/screenshot-ask.png)
+*Query upcoming hackathons with filters — results include source, location, date, and direct links*
+
+### `/poll` Command & Full Feed View
+![Poll Command](docs/assets/screenshot-poll.png)
+*Create community polls instantly; full hackathon feed with manual browse links at the bottom*
+
+### Member Onboarding — `#welcome-verify`
+![Verify Channel](docs/assets/screenshot-verify.png)
+*PikaBot greets every new member and prompts them to run `/verify` for server access*
+
+### Announcement Forwarding — `#all-hackathons`
+![Announcements](docs/assets/screenshot-announcements.png)
+*Curated announcements from admins are automatically forwarded to the community feed*
+
+### Railway Deployment — Insights API
+![Railway API](docs/assets/screenshot-railway-api.png)
+*`hackeroos-insights-api` deployed on Railway (us-west2), serving the live hackathon data API*
+
+### Railway Deployment — PikaBot
+![Railway Bot](docs/assets/screenshot-railway-bot.png)
+*`pika-bot` running 24/7 on Railway with automated redeployment on every GitHub push*
+
+### Live API Documentation
+![API Docs](docs/assets/screenshot-api-docs.png)
+*OpenAPI/ReDoc documentation for the Hackeroos Insights API — live at Railway*
 
 ---
 
@@ -182,9 +204,19 @@ python scrape_hackathons.py
 
 ---
 
-## 🔌 Data Feed & API
+## 🔌 Live API
 
-The scraper outputs a standardised JSON feed at `data/hackathons.json` consumable by any external frontend or API.
+PikaBot is backed by the **Hackeroos Insights API** — a production FastAPI service deployed on Railway that powers the bot's hackathon intelligence.
+
+**Base URL:** `https://hackeroos-insights-api-production.up.railway.app`
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/health` | GET | Health check |
+| `/hackathons/upcoming` | GET | Upcoming hackathons (filter by `days`, `tag`, `mode`, `location`) |
+| `/hackathons/stats` | GET | Aggregate stats across the hackathon dataset |
+
+**Interactive docs:** `https://hackeroos-insights-api-production.up.railway.app/redoc`
 
 ### Event Schema
 
