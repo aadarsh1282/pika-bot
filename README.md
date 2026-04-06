@@ -9,8 +9,11 @@
 [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/features/actions)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=flat-square)]()
+[![Discord](https://img.shields.io/badge/Try%20it%20Live-Join%20Hackeroos-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/fRbjEecC)
 
 *Aggregates 250+ hackathons across 5 platforms · AI-driven Q&A · Real-time community moderation · Fully automated*
+
+> **⚡ PikaBot is live.** [Join the Hackeroos Discord](https://discord.gg/fRbjEecC) to see it in action — run `/hackathons`, `/ask`, or `/poll` in the server.
 
 </div>
 
@@ -27,39 +30,25 @@ PikaBot solves three real problems:
 
 ---
 
-## 🖼️ Screenshots
+## 🚀 Try it Live
 
-### Live Hackathon Feed — `#all-hackathons`
-![Hackathon Feed](docs/assets/screenshot-hackathons.png)
-*PikaBot auto-posts new online/global hackathons from Devpost, MLH, Lu.ma, Hack Club, and Hackeroos*
+PikaBot is running 24/7 in the **Hackeroos** Discord server. Join and interact with it directly:
 
-### `/ask` Command — AI-Powered Hackathon Discovery
-![Ask Command](docs/assets/screenshot-ask.png)
-*Query upcoming hackathons with filters — results include source, location, date, and direct links*
+<div align="center">
 
-### `/poll` Command & Full Feed View
-![Poll Command](docs/assets/screenshot-poll.png)
-*Create community polls instantly; full hackathon feed with manual browse links at the bottom*
+[![Join Hackeroos Discord](https://img.shields.io/badge/Join%20Hackeroos-Try%20PikaBot%20Live-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fRbjEecC)
 
-### Member Onboarding — `#welcome-verify`
-![Verify Channel](docs/assets/screenshot-verify.png)
-*PikaBot greets every new member and prompts them to run `/verify` for server access*
+</div>
 
-### Announcement Forwarding — `#all-hackathons`
-![Announcements](docs/assets/screenshot-announcements.png)
-*Curated announcements from admins are automatically forwarded to the community feed*
+Once inside, try these commands in `#pika-bots`:
 
-### Railway Deployment — Insights API
-![Railway API](docs/assets/screenshot-railway-api.png)
-*`hackeroos-insights-api` deployed on Railway (us-west2), serving the live hackathon data API*
-
-### Railway Deployment — PikaBot
-![Railway Bot](docs/assets/screenshot-railway-bot.png)
-*`pika-bot` running 24/7 on Railway with automated redeployment on every GitHub push*
-
-### Live API Documentation
-![API Docs](docs/assets/screenshot-api-docs.png)
-*OpenAPI/ReDoc documentation for the Hackeroos Insights API — live at Railway*
+| Command | What to expect |
+|---------|---------------|
+| `/hackathons` | Live feed of 250+ upcoming hackathons |
+| `/ask upcoming` | AI-curated list with links and dates |
+| `/poll <question>` | Create a poll instantly |
+| `/winners` | See the community leaderboard |
+| `/pika-help` | Full command reference |
 
 ---
 
