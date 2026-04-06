@@ -1,55 +1,300 @@
-# Pika-Bot – Hackeroos Discord Assistant
+<div align="center">
 
-Pika-Bot is a Discord bot built for the **Hackeroos** community to help members discover hackathons, get updates, and stay engaged. It combines:
+# ⚡ PikaBot
 
-- A **Discord bot** (`main.py`) for commands, onboarding, moderation and announcements  
-- A **hackathon scraper** (`scrape_hackathons.py`) that merges events from multiple sources  
-- A **JSON feed** (`data/hackathons.json`) that can also be used by the Hackeroos frontend or other tools  
+**AI-Powered Hackathon Intelligence & Community Automation Platform**
 
-This repository is designed to be easy to hand over and maintain for future development (e.g. Pika-Bot Version 2).
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![discord.py](https://img.shields.io/badge/discord.py-2.3.2-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discordpy.readthedocs.io)
+[![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=flat-square)]()
 
----
+*Aggregates 250+ hackathons across 5 platforms · AI-driven Q&A · Real-time community moderation · Fully automated*
 
-## 🌟 Key Features
-
-- **Hackathon auto-alerts**
-  - Fetches hackathons from the **Hackeroos Insights API** and/or `data/hackathons.json`
-  - Detects new online/global events and posts them in the `#all-hackathons` channel
-- **Hackeroos-specific reminders**
-  - Uses curated Hackeroos events (via `data/hackeroos_events.json` if present)  
-  - Supports pinned countdown/reminder style messaging in announcement channels
-- **Moderation helpers**
-  - Simple PG-friendly word filter
-  - Strike tracking via `strikes.json`
-  - Basic raid / spam detection (joins, emoji spam, mention spam)
-- **AI-ready integration**
-  - Configured to call a Hugging Face router model (`Qwen2.5-72B-Instruct`) via the `openai` client (future/optional `/ask` and insights features)
+</div>
 
 ---
 
-## 🧱 Tech Stack
+## 📌 Overview
 
-- **Language:** Python 3.10+
-- **Discord:** `discord.py`
-- **Config:** `python-dotenv` (`.env` file)
-- **HTTP / APIs:** `httpx`
-- **Scraping:** `httpx`, `beautifulsoup4`, `seleniumbase`, `undetected-chromedriver`
-- **AI:** `openai` client for Hugging Face router (configured via env vars)
-- **Automation:** GitHub Actions (`.github/workflows`)
+PikaBot is a production-grade Discord bot and hackathon intelligence system built for the **Hackeroos** community. It continuously scrapes, deduplicates, and serves hackathon data from multiple platforms — providing community members with real-time event discovery, AI-powered Q&A, and automated moderation through a unified Discord interface.
+
+PikaBot solves three real problems:
+- **Discovery fragmentation** — hackathon events are scattered across Devpost, MLH, Lu.ma, Hack Club, and more
+- **Community noise** — unmoderated servers suffer from spam, raids, and content violations
+- **Insight gap** — participants and organizers lack structured, queryable data on trends and events
 
 ---
 
-## 📂 Project Structure
+## 🖼️ Screenshots
 
-```text
-.
+> Add screenshots to `docs/assets/` and update the paths below.
+
+| Feature | Preview |
+|---------|---------|
+| Hackathon auto-feed in Discord | `docs/assets/screenshot-hackathons.png` |
+| `/ask` AI Q&A response | `docs/assets/screenshot-ask.png` |
+| `/poll` command | `docs/assets/screenshot-poll.png` |
+| Winner announcement | `docs/assets/screenshot-winner.png` |
+| Moderation strike alert | `docs/assets/screenshot-moderation.png` |
+
+---
+
+## 🚀 Key Features
+
+### 🔍 Hackathon Intelligence
+- Aggregates events from **Devpost, MLH, Lu.ma, Hack Club, and Hackeroos** into a single unified feed
+- Auto-deduplicates cross-platform listings
+- Posts new hackathons in real-time to the `#all-hackathons` Discord channel
+- Standardises all event data: title, dates, location, mode (Online / In-Person / Hybrid), source
+
+### 🤖 AI-Powered Q&A
+- `/ask` command powered by **Hugging Face** (Qwen2.5 via `gradio_client`)
+- Users can query hackathon advice, ask community questions, or get project feedback
+- Infrastructure in place to evolve into a full RAG-based analytics assistant
+
+### 📊 Community & Event Management
+- `/hackathons` — browse upcoming events
+- `/poll` — create instant community polls
+- `/winners` & `/set-winner` — track and celebrate hackathon winners
+- `/verify` — member onboarding and role assignment
+- Countdown announcements for curated Hackeroos-specific events
+
+### 🛡️ Advanced Moderation
+- Spam detection with configurable rate-limit thresholds
+- **Persistent strike system** — violation tracking per user stored in `strikes.json`
+- **Raid protection** — detects and mitigates mass-join attacks
+- Word/content filtering with admin control
+- Thread-safe async state management via `asyncio.Lock`
+
+### ⚙️ Automated Data Pipeline
+- Daily scraper runs at **05:00 UTC** via GitHub Actions
+- Smart commit logic — only pushes when new data is detected (`[skip ci]` tagged)
+- Outputs a clean `data/hackathons.json` consumable by external frontends or APIs
+
+---
+
+## 🏗️ Architecture
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                        PikaBot System                         │
+├─────────────────────────┬────────────────────────────────────┤
+│      Data Layer         │          Bot Layer                  │
+│                         │                                     │
+│  scrape_hackathons.py   │           main.py                   │
+│                         │                                     │
+│  Devpost  ──┐           │   ┌─────────────┐  ┌────────────┐  │
+│  MLH  ──────┤           │   │  Slash Cmds │  │ Moderation │  │
+│  Lu.ma  ────┼──► merge  │   │ /hackathons │  │ Spam guard │  │
+│  Hack Club ─┤   dedupe  │   │ /ask        │  │ Raid guard │  │
+│  Hackeroos ─┘     │     │   │ /poll       │  │ Strikes    │  │
+│                   │     │   │ /winners    │  └────────────┘  │
+│  data/            ▼     │   └──────┬──────┘                  │
+│  hackathons.json ◄──────┼──────────┘                         │
+│                         │   AI Q&A (Hugging Face / Qwen2.5)  │
+├─────────────────────────┴────────────────────────────────────┤
+│                     CI/CD Layer                               │
+│              GitHub Actions — Daily @ 05:00 UTC               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+pika-bot/
 ├── .github/
-│   └── workflows/          # GitHub Actions (e.g. scrape + update hackathons.json)
+│   └── workflows/
+│       └── hackathons-scraper.yml   # Automated daily scraper (GitHub Actions)
 ├── data/
-│   ├── hackathons.json     # merged events feed (Devpost + others)
-│   └── hackeroos_events.json (optional, curated Hackeroos events)
-├── main.py                 # Discord bot (commands, alerts, moderation, auto-loops)
-├── scrape_hackathons.py    # Script to build/refresh data/hackathons.json
-├── requirements.txt        # Python dependencies
-├── runtime.txt             # Runtime hint (e.g. for Railway/Heroku-style platforms)
-└── README.md               # This file
+│   ├── hackathons.json              # Aggregated + deduplicated events (250+)
+│   └── hackeroos_events.json        # Curated Hackeroos community events
+├── docs/
+│   └── assets/                      # Screenshots, banners (add yours here)
+├── main.py                          # Discord bot — commands, moderation, AI Q&A
+├── scrape_hackathons.py             # Multi-source hackathon scraper
+├── requirements.txt                 # Python dependencies
+├── runtime.txt                      # Python version pin (3.11.8)
+└── README.md
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### Prerequisites
+- Python 3.11+
+- A Discord bot token ([create one here](https://discord.com/developers/applications))
+- Hugging Face token *(optional — enables `/ask` AI feature)*
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/aadarsh1282/pika-bot.git
+cd pika-bot
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate        # macOS / Linux
+venv\Scripts\activate           # Windows
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file in the project root:
+
+```env
+# Required
+DISCORD_TOKEN=your_discord_bot_token_here
+
+# Optional — enables /ask AI feature
+HF_TOKEN=your_huggingface_token_here
+
+# Optional — custom hackathon feed endpoint
+HACKATHONS_API_BASE=https://your-api-endpoint.com
+```
+
+### 5. Run the bot
+
+```bash
+python main.py
+```
+
+### 6. Run the scraper manually *(optional)*
+
+```bash
+python scrape_hackathons.py
+```
+
+> The scraper runs automatically every day at 05:00 UTC via GitHub Actions. Running it manually refreshes `data/hackathons.json` immediately.
+
+---
+
+## 🔌 Data Feed & API
+
+The scraper outputs a standardised JSON feed at `data/hackathons.json` consumable by any external frontend or API.
+
+### Event Schema
+
+```json
+{
+  "title": "HackSydney 2026",
+  "url": "https://devpost.com/hacksydney2026",
+  "start_date": "Apr 28 - 29, 2026",
+  "end_date": "2026-04-29T23:59:59Z",
+  "location": "Sydney, Australia",
+  "mode": "in-person",
+  "source": "Devpost",
+  "tags": ["ai", "fintech", "sustainability"],
+  "description": "48-hour hackathon at the University of Sydney."
+}
+```
+
+### Supported Sources
+
+| Source | Method | Approx. Events |
+|--------|--------|----------------|
+| Devpost | REST API | ~100+ |
+| MLH | Selenium (JS-rendered) | ~50+ |
+| Lu.ma | BeautifulSoup | ~40+ |
+| Hack Club | HTML scraper | ~30+ |
+| Hackeroos | Curated JSON | ~20+ |
+
+### Consuming the feed
+
+```python
+import json
+
+with open("data/hackathons.json") as f:
+    hackathons = json.load(f)
+
+online = [h for h in hackathons if h.get("mode") == "online"]
+print(f"{len(online)} online hackathons found")
+```
+
+---
+
+## 🤖 Discord Commands
+
+| Command | Description | Access |
+|---------|-------------|--------|
+| `/hackathons` | Browse upcoming hackathon events | Everyone |
+| `/ask <question>` | AI-powered Q&A via Hugging Face | Everyone |
+| `/poll <question>` | Create a community poll | Everyone |
+| `/winners` | View hackathon winners leaderboard | Everyone |
+| `/set-winner` | Record a hackathon winner | Admin |
+| `/verify` | Member onboarding & role assignment | Everyone |
+| `/pika-help` | Show all available commands | Everyone |
+| `/about` | About PikaBot | Everyone |
+| `/faq` | Frequently asked questions | Everyone |
+
+---
+
+## 🔄 CI/CD Pipeline
+
+```
+Trigger: Daily cron at 05:00 UTC  (or manual via workflow_dispatch)
+│
+├── Checkout repo
+├── Setup Python 3.11
+├── pip install -r requirements.txt
+├── python scrape_hackathons.py
+└── data/hackathons.json changed?
+    ├── Yes → git commit "Update hackathons JSON [skip ci]" + push
+    └── No  → skip (no unnecessary commits)
+```
+
+---
+
+## 🛣️ Roadmap
+
+- [x] Multi-source hackathon aggregation (5 platforms)
+- [x] Discord slash commands
+- [x] AI Q&A via Hugging Face
+- [x] Moderation system (spam, raids, strikes)
+- [x] Automated daily scraper via GitHub Actions
+- [ ] RAG-based AI using the hackathon dataset as a knowledge base
+- [ ] Web dashboard for browsing hackathon analytics
+- [ ] Trend detection and winning pattern analysis
+- [ ] REST API for external integrations
+- [ ] User authentication & personalised event recommendations
+- [ ] MLOps pipeline for production model deployment
+- [ ] Real-time WebSocket feed for live event updates
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m 'Add your feature'`
+4. Push: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+<div align="center">
+
+Built with ⚡ by **Aadarsh Karki**
+
+[GitHub](https://github.com/aadarsh1282) · [Email](mailto:aadarshk56@gmail.com)
+
+</div>
