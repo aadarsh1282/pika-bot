@@ -14,13 +14,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ACC x ADSC Project-A-Thon",
-    "url": "https://acc-x-adsc-project-a-thon.devpost.com/",
-    "start_date": "Apr 05, 2026",
-    "location": "PETR 118",
-    "source": "Devpost"
-  },
-  {
     "title": "AEE Energy Hackathon",
     "url": "https://asu-energy-hackathon.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -32,6 +25,13 @@
     "url": "https://agenthon-001-agent-hackathon.devpost.com/",
     "start_date": "Apr 11, 2026",
     "location": "House of AI",
+    "source": "Devpost"
+  },
+  {
+    "title": "AI Autonomous Smart City Hackathon 2026",
+    "url": "https://ai-smart-city-2026.devpost.com/",
+    "start_date": "Apr 15 - 23, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -189,10 +189,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Design and Development Hackathon",
+    "url": "https://design-and-development.devpost.com/",
+    "start_date": "Apr 07 - 08, 2026",
+    "location": "STEAMhouse",
+    "source": "Devpost"
+  },
+  {
     "title": "Designathon Spring 2026",
     "url": "https://design-competition-2026.devpost.com/",
     "start_date": "Apr 10 - 12, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "DevClash",
+    "url": "https://devclash-29558.devpost.com/",
+    "start_date": "Apr 11 - 12, 2026",
+    "location": "DY Patil Institute of Technology, Pimpri",
     "source": "Devpost"
   },
   {
@@ -319,6 +333,13 @@
     "url": "https://hackdaybhopal2.devpost.com/",
     "start_date": "Apr 19, 2026",
     "location": "Indrapuri, Bhopal",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack days in hosur",
+    "url": "https://hack-days-in-hosur.devpost.com/",
+    "start_date": "Apr 07 - 08, 2026",
+    "location": "Hosur",
     "source": "Devpost"
   },
   {
@@ -602,6 +623,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Panther Hacks",
+    "url": "https://panther-hacks-2026.devpost.com/",
+    "start_date": "Apr 18, 2026",
+    "location": "Burlingame High School",
+    "source": "Devpost"
+  },
+  {
     "title": "PantherHack 2026",
     "url": "https://pantherhack-2026.devpost.com/",
     "start_date": "Apr 17 - 19, 2026",
@@ -749,17 +777,17 @@
     "source": "Devpost"
   },
   {
-    "title": "UTSC Hacks",
-    "url": "https://utsc-hacks.devpost.com/",
-    "start_date": "Apr 05, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Griffin Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "vsHacks 2026",
+    "url": "https://vshacks-2026.devpost.com/",
+    "start_date": "Jul 11 - 12, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -822,13 +850,6 @@
       "2026"
     ],
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
-  },
-  {
-    "title": "Asansol , West Bengal Ha",
-    "url": "https://www.hacktropica.xyz/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackTropica+2k26",
-    "start_date": "ckTropica 2",
-    "location": "k26 APR 04 - 05 Asansol, West Bengal, IN In-Person",
-    "source": "MLH"
   },
   {
     "title": "Atlanta , Georgia ImmerseGT",
@@ -964,13 +985,6 @@
     "source": "MLH"
   },
   {
-    "title": "Jabalpur , Madhya Pradesh",
-    "url": "https://www.hackbyte.in/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackByte+4.0",
-    "start_date": "HackByte 4",
-    "location": ".0 APR 03 - 05 Jabalpur, Madhya Pradesh, IN In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Košice , Košice Region Hack Kosice",
     "url": "https://hackkosice.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+Kosice",
     "start_date": "APR 18 - 19",
@@ -982,13 +996,6 @@
     "url": "https://datahacks.ds3ucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DataHacks",
     "start_date": "APR 18 - 19",
     "location": "La Jolla, CA, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "La Jolla , California Dia",
-    "url": "https://diamondhacks.acmucsd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DiamondHacks+2026",
-    "start_date": "mondHacks 20",
-    "location": "26 APR 04 - 05 La Jolla, California, US In-Person",
     "source": "MLH"
   },
   {
@@ -1037,13 +1044,6 @@
     "title": "New York , New York City AI Hackfest",
     "url": "https://events.mlh.io/events/13503-ai-hackfest?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=AI+Hackfest",
     "start_date": "APR 17 - 19",
-    "location": "Everywhere, Worldwide, US Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "NYC , New York PE Production Engineering Hackathon",
-    "url": "https://events.mlh.io/events/13606?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Production+Engineering+Hackathon",
-    "start_date": "APR 04 - 05",
     "location": "Everywhere, Worldwide, US Digital",
     "source": "MLH"
   },
@@ -1115,13 +1115,6 @@
     "url": "https://www.hackabull.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hackabull+VII",
     "start_date": "APR 25 - 26",
     "location": "Tampa, Florida, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Tempe , Arizona Innovation Hacks",
-    "url": "https://innovationhacks.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Innovation+Hacks",
-    "start_date": "APR 03 - 05",
-    "location": "Tempe, Arizona, US In-Person",
     "source": "MLH"
   },
   {
