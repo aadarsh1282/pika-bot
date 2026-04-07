@@ -189,13 +189,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Design and Development Hackathon",
-    "url": "https://design-and-development.devpost.com/",
-    "start_date": "Apr 07 - 08, 2026",
-    "location": "STEAMhouse",
-    "source": "Devpost"
-  },
-  {
     "title": "Designathon Spring 2026",
     "url": "https://design-competition-2026.devpost.com/",
     "start_date": "Apr 10 - 12, 2026",
@@ -336,13 +329,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack days in hosur",
-    "url": "https://hack-days-in-hosur.devpost.com/",
-    "start_date": "Apr 07 - 08, 2026",
-    "location": "Hosur",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack Days Nagpur",
     "url": "https://hack-days-nagpur.devpost.com/",
     "start_date": "May 02, 2026",
@@ -469,17 +455,17 @@
     "source": "Devpost"
   },
   {
+    "title": "HackNova 2026 (TEST)",
+    "url": "https://hacknova-2026.devpost.com/",
+    "start_date": "Apr 08 - 11, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "hackUMBC Mini Hackathon",
     "url": "https://hackumbc-minihackathon.devpost.com/",
     "start_date": "Apr 18, 2026",
     "location": "University of Maryland, Baltimore County",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackZard 2.0 Hackathon",
-    "url": "https://hackhazard-2-0-hackathon.devpost.com/",
-    "start_date": "May 01 - 10, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -560,6 +546,13 @@
     "source": "Devpost"
   },
   {
+    "title": "LakerHacks 2026",
+    "url": "https://lakerhacks2026.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "State University of New york at Oswego",
+    "source": "Devpost"
+  },
+  {
     "title": "LaunchHacks V",
     "url": "https://launchhacks-v.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
@@ -595,10 +588,10 @@
     "source": "Devpost"
   },
   {
-    "title": "natIgnite 2026",
-    "url": "https://natignite-2026.devpost.com/",
-    "start_date": "May 08 - 10, 2026",
-    "location": "Donadeo Innovation Centre of Engineering",
+    "title": "NighthawkHacks",
+    "url": "https://nighthawk-hacks.devpost.com/",
+    "start_date": "Apr 14, 2026",
+    "location": "Nightingale Bamford School",
     "source": "Devpost"
   },
   {
@@ -620,6 +613,13 @@
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Palmetto Hacks",
+    "url": "https://palmetto-hacks.devpost.com/",
+    "start_date": "Apr 11, 2026",
+    "location": "Columbia, SC, USA",
     "source": "Devpost"
   },
   {
@@ -662,6 +662,13 @@
     "url": "https://qwen-ai-build-day.devpost.com/",
     "start_date": "Apr 10 - 17, 2026",
     "location": "Riverside Palace, Ho Chi Minh",
+    "source": "Devpost"
+  },
+  {
+    "title": "Ramblin' Hacks 2026",
+    "url": "https://ramblin-hacks-2026.devpost.com/",
+    "start_date": "Apr 10 - 11, 2026",
+    "location": "Atlanta, GA, USA",
     "source": "Devpost"
   },
   {
@@ -777,6 +784,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Vibe Coding Hackathon",
+    "url": "https://vibecodinghackathon.devpost.com/",
+    "start_date": "Apr 12, 2026",
+    "location": "LOW 4050",
+    "source": "Devpost"
+  },
+  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -877,6 +891,13 @@
     "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=MorganHacks",
     "start_date": "APR 11 - 12",
     "location": "Baltimore, Maryland, US In-Person DIVERSITY",
+    "source": "MLH"
+  },
+  {
+    "title": "Barcelona , Barcelona INTERHACK BCN",
+    "url": "https://www.interhackbcn.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=INTERHACK+BCN",
+    "start_date": "MAY 09 - 10",
+    "location": "Barcelona, Barcelona, ES In-Person",
     "source": "MLH"
   },
   {
