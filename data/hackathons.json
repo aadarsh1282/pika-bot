@@ -14,6 +14,13 @@
     "source": "Devpost"
   },
   {
+    "title": "305 HackShells Edition April 2026",
+    "url": "https://305hackshellsapril2026.devpost.com/",
+    "start_date": "Apr 10 - 24, 2026",
+    "location": "Florida International University",
+    "source": "Devpost"
+  },
+  {
     "title": "757 BLD WKND 2026 2.0",
     "url": "https://757-bld-wknd-2026-2-0.devpost.com/",
     "start_date": "Jul 17 - 19, 2026",
@@ -25,13 +32,6 @@
     "url": "https://asu-energy-hackathon.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Online / TBA",
-    "source": "Devpost"
-  },
-  {
-    "title": "Agenthon 001 (agent hackathon)",
-    "url": "https://agenthon-001-agent-hackathon.devpost.com/",
-    "start_date": "Apr 11, 2026",
-    "location": "House of AI",
     "source": "Devpost"
   },
   {
@@ -105,16 +105,16 @@
     "source": "Devpost"
   },
   {
-    "title": "Build Guild Toronto",
-    "url": "https://build-guild-toronto.devpost.com/",
-    "start_date": "Apr 25 - 26, 2026",
-    "location": "Toronto, Canada",
-    "source": "Devpost"
-  },
-  {
     "title": "Build with AI: Code Social – From Idea to Demo",
     "url": "https://build-with-ai-cs.devpost.com/",
     "start_date": "Apr 10 - 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build with MeDo Hackathon",
+    "url": "https://medo.devpost.com/",
+    "start_date": "Apr 09 - May 20, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -126,24 +126,10 @@
     "source": "Devpost"
   },
   {
-    "title": "CBHS 2026 Hackathon",
-    "url": "https://cbhs-2026-hackathon.devpost.com/",
-    "start_date": "Apr 21 - 29, 2026",
-    "location": "Cypress Bay High",
-    "source": "Devpost"
-  },
-  {
     "title": "Citrus Hack 2026",
     "url": "https://citrus-hack-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "University of California, Riverside",
-    "source": "Devpost"
-  },
-  {
-    "title": "Code Fest",
-    "url": "https://code-fest.devpost.com/",
-    "start_date": "Apr 28, 2026",
-    "location": "BTH - Datorsal",
     "source": "Devpost"
   },
   {
@@ -186,6 +172,13 @@
     "url": "https://cove.devpost.com/",
     "start_date": "Jun 26 - 28, 2026",
     "location": "To be announced",
+    "source": "Devpost"
+  },
+  {
+    "title": "CSBA x HBA Hack Day",
+    "url": "https://hack-day-2026.devpost.com/",
+    "start_date": "Apr 12, 2026",
+    "location": "UT Austin - McCombs Atrium (3rd floor)",
     "source": "Devpost"
   },
   {
@@ -469,6 +462,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackSMC Spring 2026",
+    "url": "https://hacksmc-spring-2026.devpost.com/",
+    "start_date": "May 09 - 10, 2026",
+    "location": "Santa Monica College - Bundy Campus",
+    "source": "Devpost"
+  },
+  {
     "title": "hackUMBC Mini Hackathon",
     "url": "https://hackumbc-minihackathon.devpost.com/",
     "start_date": "Apr 18, 2026",
@@ -560,7 +560,7 @@
     "source": "Devpost"
   },
   {
-    "title": "LEVIATHAN Hackathon [AXI0M labs]",
+    "title": "LEVIATHAN Hackathon [AXI0M x Lovable]",
     "url": "https://leviathan-hackathon.devpost.com/",
     "start_date": "May 02 - 03, 2026",
     "location": "St Andrews - Jack Cole Lab",
@@ -571,6 +571,20 @@
     "url": "https://los-altos-hacks-x.devpost.com/",
     "start_date": "Apr 11 - 12, 2026",
     "location": "Aspiration Dome",
+    "source": "Devpost"
+  },
+  {
+    "title": "LUMA Hackathon: Pitch your idea, win up to $500",
+    "url": "https://luma-hackathon-500.devpost.com/",
+    "start_date": "May 02 - 16, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "MariHacks IX",
+    "url": "https://marihacks-ix.devpost.com/",
+    "start_date": "Apr 17 - 18, 2026",
+    "location": "Marianopolis College",
     "source": "Devpost"
   },
   {
@@ -651,16 +665,9 @@
     "source": "Devpost"
   },
   {
-    "title": "Q-Hackathon",
-    "url": "https://q-hack.devpost.com/",
-    "start_date": "Apr 08 - 09, 2026",
-    "location": "University of Mannheim - Aula",
-    "source": "Devpost"
-  },
-  {
     "title": "QWEN AI BUILD DAY",
     "url": "https://qwen-ai-build-day.devpost.com/",
-    "start_date": "Apr 10 - 17, 2026",
+    "start_date": "Apr 09 - 17, 2026",
     "location": "Riverside Palace, Ho Chi Minh",
     "source": "Devpost"
   },
@@ -704,13 +711,6 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
-    "source": "Devpost"
-  },
-  {
-    "title": "Social Impact BuildFest 2026 - CU Boulder",
-    "url": "https://iml-pat.devpost.com/",
-    "start_date": "Apr 10 - 12, 2026",
-    "location": "Immersive Media Lab - CU Stadium",
     "source": "Devpost"
   },
   {
@@ -946,7 +946,7 @@
     "title": "Davis , California",
     "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackDavis+2026+Hackathon",
     "start_date": "HackDavis 20",
-    "location": "26 Hackathon MAY 09 - 10 Davis, California, US In-Person DIVERSITY",
+    "location": "26 Hackathon MAY 09 - 10 Davis, California, US In-Person",
     "source": "MLH"
   },
   {
@@ -1069,6 +1069,13 @@
     "source": "MLH"
   },
   {
+    "title": "New York City , New York MH Midnight Hackathon",
+    "url": "https://events.mlh.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Midnight+Hackathon",
+    "start_date": "MAY 15 - 17",
+    "location": "Everywhere, Worldwide, US Digital",
+    "source": "MLH"
+  },
+  {
     "title": "Oswego , New York LakerHacks",
     "url": "https://www.cs.oswego.edu/lakerhacks/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=LakerHacks",
     "start_date": "APR 18 - 19",
@@ -1115,6 +1122,13 @@
     "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Citrus+Hack",
     "start_date": "APR 18 - 19",
     "location": "Riverside, California, US In-Person",
+    "source": "MLH"
+  },
+  {
+    "title": "Riverside , California DesignVerse",
+    "url": "https://www.designverseucr.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DesignVerse",
+    "start_date": "MAY 16 - 17",
+    "location": "Riverside, California, US In-Person DIVERSITY",
     "source": "MLH"
   },
   {
