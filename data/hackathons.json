@@ -168,13 +168,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CSBA x HBA Hack Day",
-    "url": "https://hack-day-2026.devpost.com/",
-    "start_date": "Apr 12, 2026",
-    "location": "UT Austin - McCombs Atrium (3rd floor)",
-    "source": "Devpost"
-  },
-  {
     "title": "CYHacks '26",
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
@@ -273,13 +266,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Girls in STEM: AI for Social Good Hackathon",
-    "url": "https://girls-in-stem-ai-vidopt.devpost.com/",
-    "start_date": "Apr 12 - May 14, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "GlobeHack",
     "url": "https://globehack.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
@@ -311,7 +297,7 @@
     "title": "Hack Days in Bhopal 2.0",
     "url": "https://hackdaybhopal2.devpost.com/",
     "start_date": "Apr 19, 2026",
-    "location": "Indrapuri, Bhopal",
+    "location": "Ratnagiri, Bhopal",
     "source": "Devpost"
   },
   {
@@ -368,6 +354,13 @@
     "url": "https://hackdays-lucknow.devpost.com/",
     "start_date": "May 18, 2026",
     "location": "Virtual",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackMars 3.0: NEON",
+    "url": "https://hackmars-3-0-neon.devpost.com/",
+    "start_date": "May 16 - Jun 09, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -644,13 +637,6 @@
     "source": "Devpost"
   },
   {
-    "title": "SDxUCSD Agent Hackathon",
-    "url": "https://sdxucsd-agent-hackathon.devpost.com/",
-    "start_date": "Apr 12, 2026",
-    "location": "The Basement - UCSD",
-    "source": "Devpost"
-  },
-  {
     "title": "SheBuilds",
     "url": "https://shebuilds-29495.devpost.com/",
     "start_date": "Apr 24, 2026",
@@ -700,6 +686,13 @@
     "source": "Devpost"
   },
   {
+    "title": "strAIght up! Hackathon",
+    "url": "https://straight-up-hackathon.devpost.com/",
+    "start_date": "Apr 18 - 25, 2026",
+    "location": "Lorong AI @ One-North",
+    "source": "Devpost"
+  },
+  {
     "title": "SVC Hackathon: Environmental Conservation",
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
@@ -721,13 +714,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Vibe Coding Hackathon",
-    "url": "https://vibecodinghackathon.devpost.com/",
-    "start_date": "Apr 12, 2026",
-    "location": "LOW 4050",
-    "source": "Devpost"
-  },
-  {
     "title": "VIBECON",
     "url": "https://vibecon.devpost.com/",
     "start_date": "Apr 15 - 17, 2026",
@@ -735,17 +721,17 @@
     "source": "Devpost"
   },
   {
-    "title": "vibeFORWARD",
-    "url": "https://vibeforward.devpost.com/",
-    "start_date": "Apr 12, 2026",
-    "location": "New York, NY, USA",
-    "source": "Devpost"
-  },
-  {
     "title": "Victor Hacks",
     "url": "https://victor-hacks2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Griffin Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "VikingsHacks 25-26",
+    "url": "https://vikingshacks-25-26.devpost.com/",
+    "start_date": "Apr 13 - 25, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -803,24 +789,10 @@
     "description": "Hackeroos Mental Health Buildathon in early 2026 with notable mental health orgs. Dates coming soon. Sponsors can reach out at hello@hackeroos.com.au."
   },
   {
-    "title": "Atlanta , Georgia ImmerseGT",
-    "url": "https://www.immersegt.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=ImmerseGT",
-    "start_date": "APR 10 - 12",
-    "location": "Atlanta, Georgia, US In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Austin , TX Hook 'Em Hacks",
     "url": "https://www.hookemhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hook+%27Em+Hacks",
     "start_date": "APR 18 - 19",
     "location": "Austin, TX, US In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Baltimore , Maryland MorganHacks",
-    "url": "https://morganhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=MorganHacks",
-    "start_date": "APR 11 - 12",
-    "location": "Baltimore, Maryland, US In-Person DIVERSITY",
     "source": "MLH"
   },
   {
@@ -852,31 +824,10 @@
     "source": "MLH"
   },
   {
-    "title": "College Park , Maryland Bitcamp",
-    "url": "https://bit.camp/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Bitcamp",
-    "start_date": "APR 10 - 12",
-    "location": "College Park, Maryland, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Dallas , Texas HackSMU VII",
-    "url": "https://hacksmu.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackSMU+VII+",
-    "start_date": "APR 11 - 12",
-    "location": "Dallas, Texas, US In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Davis , California",
     "url": "https://hackdavis.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackDavis+2026+Hackathon",
     "start_date": "HackDavis 20",
     "location": "26 Hackathon MAY 09 - 10 Davis, California, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Evanston , Illinois WildHacks",
-    "url": "https://www.wildhacks.net/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=WildHacks",
-    "start_date": "APR 11 - 12",
-    "location": "Evanston, Illinois, US In-Person",
     "source": "MLH"
   },
   {
@@ -898,13 +849,6 @@
     "url": "https://organize.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+GenAI",
     "start_date": "MAY 08 - 14",
     "location": "Everywhere, Worldwide Digital",
-    "source": "MLH"
-  },
-  {
-    "title": "Hanover , New Hampshire HackDartmouth XI",
-    "url": "https://hack-dartmouth.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackDartmouth+XI",
-    "start_date": "APR 11 - 12",
-    "location": "Hanover, New Hampshire, US In-Person",
     "source": "MLH"
   },
   {
@@ -1027,13 +971,6 @@
     "source": "MLH"
   },
   {
-    "title": "Richardson , Texas WEHack",
-    "url": "https://www.wehackutd.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=WEHack",
-    "start_date": "APR 11 - 12",
-    "location": "Richardson, Texas, US In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
     "title": "Riverside , California Citrus Hack",
     "url": "https://www.citrushack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Citrus+Hack",
     "start_date": "APR 18 - 19",
@@ -1045,20 +982,6 @@
     "url": "https://www.designverseucr.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DesignVerse",
     "start_date": "MAY 16 - 17",
     "location": "Riverside, California, US In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Sainte-Anne-de-Bellevue , Quebec",
-    "url": "https://jachacks.pages.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=JACHacks+2026",
-    "start_date": "JACHacks 20",
-    "location": "26 APR 11 - 12 Sainte-Anne-de-Bellevue, Quebec, CA In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Sunnyvale , CA Los Altos Hacks",
-    "url": "https://www.losaltoshacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Los+Altos+Hacks",
-    "start_date": "APR 11 - 12",
-    "location": "Sunnyvale, CA, US In-Person HIGH SCHOOL DIVERSITY",
     "source": "MLH"
   },
   {
