@@ -14,13 +14,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Autonomous Smart City Hackathon 2026",
-    "url": "https://ai-smart-city-2026.devpost.com/",
-    "start_date": "Apr 15 - 23, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "AI Buildathon",
     "url": "https://aibuildathon.devpost.com/",
     "start_date": "Apr 28 - 29, 2026",
@@ -98,17 +91,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Build for Impact — CBC Hackathon @ UR-CST",
-    "url": "https://cbc-ur.devpost.com/",
-    "start_date": "Apr 14 - 20, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Build Guild Toronto",
     "url": "https://build-guild-toronto.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "Toronto, Canada",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build with AI 2026 x MLH Hackathon in Ahlen",
+    "url": "https://build-with-ai-mlh-ahlen.devpost.com/",
+    "start_date": "May 23, 2026",
+    "location": "Ahlen, Germany",
     "source": "Devpost"
   },
   {
@@ -252,6 +245,13 @@
     "source": "Devpost"
   },
   {
+    "title": "FusionHack 2026",
+    "url": "https://fusionhack-2026.devpost.com/",
+    "start_date": "Apr 16 - 21, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Galuxium Nexus V2",
     "url": "https://galuxium-nexus-v2-29411.devpost.com/",
     "start_date": "Jul 01 - Aug 01, 2026",
@@ -329,6 +329,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack Your Life",
+    "url": "https://hack-your-life.devpost.com/",
+    "start_date": "May 30 - 31, 2026",
+    "location": "BCIT Burnaby",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack4Her 2026",
     "url": "https://hack4her-mty.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
@@ -375,6 +382,13 @@
     "url": "https://hackmhs-xi.devpost.com/",
     "start_date": "May 29 - 30, 2026",
     "location": "Millburn High School",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hacknarok",
+    "url": "https://hacknarok-180426.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "Lubicz",
     "source": "Devpost"
   },
   {
@@ -455,13 +469,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Infinity Codewave",
-    "url": "https://infinity-codewave.devpost.com/",
-    "start_date": "Apr 25 - 26, 2026",
-    "location": "Kathmandu University, Dhulikhel, Nepal",
-    "source": "Devpost"
-  },
-  {
     "title": "Innovate for Impact - NGM Group",
     "url": "https://innovate-for-impact-ngm-group.devpost.com/",
     "start_date": "May 11 - 13, 2026",
@@ -539,6 +546,13 @@
     "source": "Devpost"
   },
   {
+    "title": "MarinHacks",
+    "url": "https://marinhacks.devpost.com/",
+    "start_date": "Aug 02, 2026",
+    "location": "Marin Catholic High School",
+    "source": "Devpost"
+  },
+  {
     "title": "MATLAB HackaTOn : Mission on Mars",
     "url": "https://matlab-hackaton-mission-mars.devpost.com/",
     "start_date": "Apr 18, 2026",
@@ -564,13 +578,6 @@
     "url": "https://neurologic26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "NighthawkHacks",
-    "url": "https://nighthawk-hacks.devpost.com/",
-    "start_date": "Apr 14, 2026",
-    "location": "Nightingale Bamford School",
     "source": "Devpost"
   },
   {
@@ -641,6 +648,13 @@
     "url": "https://ramhacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "Gleeson Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Real World AI Agents",
+    "url": "https://real-world-ai-agents.devpost.com/",
+    "start_date": "May 07 - 09, 2026",
+    "location": "BINUS University @Alam Sutera",
     "source": "Devpost"
   },
   {
@@ -738,6 +752,13 @@
     "title": "United Hacks V7",
     "url": "https://unitedhacksv7.devpost.com/",
     "start_date": "Jul 10 - 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "VDS Ideathon 2026",
+    "url": "https://vds-ideathon.devpost.com/",
+    "start_date": "Apr 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
