@@ -101,7 +101,7 @@
     "title": "Build with AI 2026 x MLH Hackathon in Ahlen",
     "url": "https://build-with-ai-mlh-ahlen.devpost.com/",
     "start_date": "May 23, 2026",
-    "location": "Ahlen, Germany",
+    "location": "Initiative Bürgerzentrum Schuhfabrik e.V",
     "source": "Devpost"
   },
   {
@@ -129,7 +129,7 @@
     "title": "Citrus Hack 2026",
     "url": "https://citrus-hack-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
-    "location": "University of California, Riverside",
+    "location": "UC Riverside - Winston Chung Hall",
     "source": "Devpost"
   },
   {
@@ -238,20 +238,6 @@
     "source": "Devpost"
   },
   {
-    "title": "FIND EVIL!",
-    "url": "https://findevil.devpost.com/",
-    "start_date": "Apr 15 - Jun 15, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "FusionHack 2026",
-    "url": "https://fusionhack-2026.devpost.com/",
-    "start_date": "Apr 16 - 21, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Galuxium Nexus V2",
     "url": "https://galuxium-nexus-v2-29411.devpost.com/",
     "start_date": "Jul 01 - Aug 01, 2026",
@@ -270,6 +256,13 @@
     "url": "https://george-hacks-united-nations.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
     "location": "Science &amp; Engineering Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "GLITCHED GAMES",
+    "url": "https://glitch-to-win-games.devpost.com/",
+    "start_date": "Apr 16 - Jun 30, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -319,6 +312,13 @@
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack Kosice 2026",
+    "url": "https://hack-kosice-2026.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "Košice",
     "source": "Devpost"
   },
   {
@@ -403,6 +403,13 @@
     "url": "https://hackonomics27.devpost.com/",
     "start_date": "Jul 01, 2026 - Jun 01, 2027",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackPrinceton Spring '26",
+    "url": "https://hackprinceton-spring-26.devpost.com/",
+    "start_date": "Apr 17 - 19, 2026",
+    "location": "Princeton University - JRR and LAS",
     "source": "Devpost"
   },
   {
@@ -665,10 +672,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Rutgers IEEE X RU HART Build-a-thon",
+    "title": "RoyalHacks",
+    "url": "https://royalhacks.devpost.com/",
+    "start_date": "Apr 18 - 19, 2026",
+    "location": "IT University of Copenhagen",
+    "source": "Devpost"
+  },
+  {
+    "title": "Rutgers IEEE X HART Build-a-thon",
     "url": "https://rieee-build-a-thon-2026.devpost.com/",
     "start_date": "Apr 18 - 19, 2026",
-    "location": "Rutgers University",
+    "location": "Rutgers Fiber Optics Building",
     "source": "Devpost"
   },
   {
@@ -756,24 +770,10 @@
     "source": "Devpost"
   },
   {
-    "title": "VDS Ideathon 2026",
-    "url": "https://vds-ideathon.devpost.com/",
-    "start_date": "Apr 15, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Ventura Challenge",
     "url": "https://ventura-challenge.devpost.com/",
     "start_date": "Jul 06 - 24, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "VIBECON",
-    "url": "https://vibecon.devpost.com/",
-    "start_date": "Apr 15 - 17, 2026",
-    "location": "Polaris School of Technology, Bengaluru",
     "source": "Devpost"
   },
   {
@@ -794,6 +794,13 @@
     "title": "West Hacks",
     "url": "https://westhacks.devpost.com/",
     "start_date": "May 01 - Jun 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
+    "url": "https://idea-vs-1000-marketers.devpost.com/",
+    "start_date": "Jun 14 - 29, 2026",
     "location": "Online",
     "source": "Devpost"
   },
