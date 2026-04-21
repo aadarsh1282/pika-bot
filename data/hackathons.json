@@ -24,7 +24,7 @@
     "title": "ALI Builds Hackathon",
     "url": "https://ali-hackathon.devpost.com/",
     "start_date": "May 10 - 11, 2026",
-    "location": "Cloister Club at Ida Noyes Hall",
+    "location": "Polsky Center",
     "source": "Devpost"
   },
   {
@@ -67,6 +67,13 @@
     "url": "https://broncohacks-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "Cal Poly Pomona",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build for the Border - Immigrant Hackathon NYC",
+    "url": "https://immigrant-hack-nyc.devpost.com/",
+    "start_date": "May 09, 2026",
+    "location": "Soma Capital",
     "source": "Devpost"
   },
   {
@@ -144,6 +151,13 @@
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Central York High School",
+    "source": "Devpost"
+  },
+  {
+    "title": "demo",
+    "url": "https://demo-29802.devpost.com/",
+    "start_date": "Apr 22 - 24, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -413,6 +427,13 @@
     "source": "Devpost"
   },
   {
+    "title": "KODA Hacks 2026",
+    "url": "https://koda-hacks-2026.devpost.com/",
+    "start_date": "Jun 06 - 10, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "LA Hacks 2026",
     "url": "https://la-hacks-2026.devpost.com/",
     "start_date": "Apr 24 - 26, 2026",
@@ -490,17 +511,17 @@
     "source": "Devpost"
   },
   {
+    "title": "Paris Fintech Hackathon 2026",
+    "url": "https://paris-fintech-hackathon-2026.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "HEC paris",
+    "source": "Devpost"
+  },
+  {
     "title": "PIXEL.GEMINI 2.0",
     "url": "https://pixel-gemini-2-0.devpost.com/",
     "start_date": "Apr 21, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Plug and Play Foundation Small Business Innovation Sprint Hackathon",
-    "url": "https://pnptcf-smb-hackathon.devpost.com/",
-    "start_date": "Apr 25, 2026",
-    "location": "Plug and Play",
     "source": "Devpost"
   },
   {
@@ -536,13 +557,6 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
-    "source": "Devpost"
-  },
-  {
-    "title": "Social Services and AI Hackathon",
-    "url": "https://social-services.devpost.com/",
-    "start_date": "Apr 21 - 25, 2026",
-    "location": "Frontier Labs",
     "source": "Devpost"
   },
   {
@@ -741,7 +755,7 @@
   },
   {
     "title": "GH Global Hack Week: GenAI",
-    "url": "https://organize.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+GenAI",
+    "url": "https://events.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+GenAI",
     "start_date": "MAY 08 - 14",
     "location": "Everywhere, Worldwide Digital",
     "source": "MLH"
