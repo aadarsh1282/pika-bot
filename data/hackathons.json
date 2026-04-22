@@ -105,13 +105,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CBHS 2026 Hackathon",
-    "url": "https://cbhs-2026-hackathon.devpost.com/",
-    "start_date": "Apr 21 - 29, 2026",
-    "location": "Cypress Bay High",
-    "source": "Devpost"
-  },
-  {
     "title": "Code Crush 2026",
     "url": "https://code-crush-2026.devpost.com/",
     "start_date": "May 23 - 24, 2026",
@@ -151,13 +144,6 @@
     "url": "https://cyhacks26.devpost.com/",
     "start_date": "Apr 25, 2026",
     "location": "Central York High School",
-    "source": "Devpost"
-  },
-  {
-    "title": "demo",
-    "url": "https://demo-29802.devpost.com/",
-    "start_date": "Apr 22 - 24, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -273,6 +259,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Hack2Impact 2026",
+    "url": "https://hack2impact-2026.devpost.com/",
+    "start_date": "May 02 - 03, 2026",
+    "location": "Tom Bradley International Hall 300",
+    "source": "Devpost"
+  },
+  {
     "title": "Hack4Her 2026",
     "url": "https://hack4her-mty.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
@@ -340,6 +333,13 @@
     "url": "https://hackstorm2.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Silicon Valley",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hacktech by Caltech 2026",
+    "url": "https://hacktech-by-caltech-2026.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "California Institute of Technology",
     "source": "Devpost"
   },
   {
@@ -497,13 +497,6 @@
     "source": "Devpost"
   },
   {
-    "title": "NO//CODE : BUILD CHAOS",
-    "url": "https://no-code-build-chaos.devpost.com/",
-    "start_date": "Apr 22, 2026",
-    "location": "Bhagwan Parshuram Institute ofTechnology",
-    "source": "Devpost"
-  },
-  {
     "title": "Pacific Portal XR",
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -515,13 +508,6 @@
     "url": "https://paris-fintech-hackathon-2026.devpost.com/",
     "start_date": "Apr 25 - 26, 2026",
     "location": "HEC paris",
-    "source": "Devpost"
-  },
-  {
-    "title": "PIXEL.GEMINI 2.0",
-    "url": "https://pixel-gemini-2-0.devpost.com/",
-    "start_date": "Apr 21, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -639,7 +625,7 @@
   {
     "title": "Ventura Challenge",
     "url": "https://ventura-challenge.devpost.com/",
-    "start_date": "Jul 06 - 24, 2026",
+    "start_date": "Jun 01 - Jul 15, 2026",
     "location": "Online",
     "source": "Devpost"
   },
