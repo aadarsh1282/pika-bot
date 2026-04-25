@@ -1,5 +1,12 @@
 [
   {
+    "title": "2026 Cornell Claude Builders Club Hackathon",
+    "url": "https://2026-claude-hackathon.devpost.com/",
+    "start_date": "Apr 25, 2026",
+    "location": "Cornell University - eHub Collegetown",
+    "source": "Devpost"
+  },
+  {
     "title": "757 BLD WKND 2026 2.0",
     "url": "https://757-bld-wknd-2026-2-0.devpost.com/",
     "start_date": "Jul 17 - 19, 2026",
@@ -35,10 +42,10 @@
     "source": "Devpost"
   },
   {
-    "title": "BearHacks 2026",
-    "url": "https://bearhacks2026.devpost.com/",
-    "start_date": "Apr 24 - 26, 2026",
-    "location": "Sheridan College Hazel McCallion Campus",
+    "title": "BeanHacks",
+    "url": "https://beanhacks.devpost.com/",
+    "start_date": "Jun 30 - Jul 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -58,7 +65,7 @@
   {
     "title": "Box Box",
     "url": "https://box-box.devpost.com/",
-    "start_date": "May 01 - 03, 2026",
+    "start_date": "May 22 - 24, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -98,13 +105,6 @@
     "source": "Devpost"
   },
   {
-    "title": "bunq Hackathon 7.0 - Multimodal AI",
-    "url": "https://bunq-hackathon-7-0.devpost.com/",
-    "start_date": "Apr 24 - 25, 2026",
-    "location": "bunq HQ",
-    "source": "Devpost"
-  },
-  {
     "title": "Calgary Maker Faire 2026 Designathon University Level",
     "url": "https://cmf-uni-2026-designathon.devpost.com/",
     "start_date": "May 01 - 03, 2026",
@@ -116,6 +116,13 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
+    "source": "Devpost"
+  },
+  {
+    "title": "CBC Hackathon 2026 @ NJIT",
+    "url": "https://cbc-hackathon-2026.devpost.com/",
+    "start_date": "Apr 26, 2026",
+    "location": "NJIT - Kupfrian Hall",
     "source": "Devpost"
   },
   {
@@ -165,13 +172,6 @@
     "url": "https://dwny-2026-hackathon.devpost.com/",
     "start_date": "May 25 - Jun 10, 2026",
     "location": "TWA Hotel + Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "DevFest + AI Hackathon Spring 2026 — Build with AI",
-    "url": "https://devfest-ai-hack-apr2026.devpost.com/",
-    "start_date": "Apr 24, 2026",
-    "location": "Florida International University, Miami",
     "source": "Devpost"
   },
   {
@@ -238,6 +238,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Geospatial Video Intelligence Hackathon",
+    "url": "https://geospatial-hackathon-12labs.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "T-REX",
+    "source": "Devpost"
+  },
+  {
     "title": "Give It a Face - Design × Dev Hackathon",
     "url": "https://future-of-nyc-design-hackathon.devpost.com/",
     "start_date": "May 16, 2026",
@@ -291,6 +298,13 @@
     "url": "https://hack-your-life.devpost.com/",
     "start_date": "May 30 - 31, 2026",
     "location": "BCIT Burnaby",
+    "source": "Devpost"
+  },
+  {
+    "title": "Hack-A-Damien",
+    "url": "https://hack-a-damien2026.devpost.com/",
+    "start_date": "Apr 25 - 26, 2026",
+    "location": "ETEC Building, UAlbany",
     "source": "Devpost"
   },
   {
@@ -378,20 +392,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hacktech by Caltech 2026",
-    "url": "https://hacktech-by-caltech-2026.devpost.com/",
-    "start_date": "Apr 25 - 26, 2026",
-    "location": "California Institute of Technology",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackUPC 2026",
-    "url": "https://hackupc-2026.devpost.com/",
-    "start_date": "Apr 24 - 26, 2026",
-    "location": "Universitat Politècnica de Catalunya",
-    "source": "Devpost"
-  },
-  {
     "title": "Hoya Hacks 2027",
     "url": "https://hoya-hacks-2027.devpost.com/",
     "start_date": "Jan 22 - 24, 2027",
@@ -448,13 +448,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Kiro Spark Challenge",
-    "url": "https://kiro-spark-challenge.devpost.com/",
-    "start_date": "Apr 24 - 25, 2026",
-    "location": "Sun Devil Fitness Complex",
-    "source": "Devpost"
-  },
-  {
     "title": "KiroHacks Cal Poly",
     "url": "https://kiro-hacks-cal-poly.devpost.com/",
     "start_date": "May 02 - 03, 2026",
@@ -483,13 +476,6 @@
     "source": "Devpost"
   },
   {
-    "title": "LA Hacks 2026",
-    "url": "https://la-hacks-2026.devpost.com/",
-    "start_date": "Apr 24 - 26, 2026",
-    "location": "Pauley Pavilion",
-    "source": "Devpost"
-  },
-  {
     "title": "LaunchHacks V",
     "url": "https://launchhacks-v.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
@@ -501,13 +487,6 @@
     "url": "https://leviathan-hackathon.devpost.com/",
     "start_date": "May 02 - 03, 2026",
     "location": "St Andrews - Jack Cole Lab",
-    "source": "Devpost"
-  },
-  {
-    "title": "Lyzr Agentathon",
-    "url": "https://lyzr-agentathon.devpost.com/",
-    "start_date": "Apr 25, 2026",
-    "location": "Polaris School of Technology",
     "source": "Devpost"
   },
   {
@@ -539,13 +518,6 @@
     "source": "Devpost"
   },
   {
-    "title": "NeuroLogic '26: Global NLP Datathon",
-    "url": "https://neurologic26.devpost.com/",
-    "start_date": "Apr 25, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Next Byte Hacks V2",
     "url": "https://next-byte-hacks-v2.devpost.com/",
     "start_date": "May 01 - 31, 2026",
@@ -574,13 +546,6 @@
     "source": "Devpost"
   },
   {
-    "title": "RamHacks 2026",
-    "url": "https://ramhacks-2026.devpost.com/",
-    "start_date": "Apr 25 - 26, 2026",
-    "location": "Gleeson Hall",
-    "source": "Devpost"
-  },
-  {
     "title": "Real World AI Agents",
     "url": "https://real-world-ai-agents.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -595,17 +560,17 @@
     "source": "Devpost"
   },
   {
-    "title": "Ship to Prod - Agentic Engineering Hackathon",
-    "url": "https://ship-to-prod.devpost.com/",
-    "start_date": "Apr 24, 2026",
-    "location": "AWS Builder Loft",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
+    "source": "Devpost"
+  },
+  {
+    "title": "SJHacks 2026",
+    "url": "https://sjhacks-2026.devpost.com/",
+    "start_date": "Apr 26, 2026",
+    "location": "Guildhouse",
     "source": "Devpost"
   },
   {
@@ -644,13 +609,6 @@
     "source": "Devpost"
   },
   {
-    "title": "strAIght up! Hackathon",
-    "url": "https://straight-up-hackathon.devpost.com/",
-    "start_date": "Apr 24 - 25, 2026",
-    "location": "Lorong AI @ One-North",
-    "source": "Devpost"
-  },
-  {
     "title": "SuHack 2026: NeuroBridge AI Hackathon",
     "url": "https://suhack-29696.devpost.com/",
     "start_date": "May 02, 2026",
@@ -682,6 +640,13 @@
     "title": "United Hacks V7",
     "url": "https://unitedhacksv7.devpost.com/",
     "start_date": "Jul 10 - 12, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "USAII Global Hackathon 2026",
+    "url": "https://usaii-global-ai-hackathon-2026.devpost.com/",
+    "start_date": "Jun 14 - 21, 2026",
     "location": "Online",
     "source": "Devpost"
   },
