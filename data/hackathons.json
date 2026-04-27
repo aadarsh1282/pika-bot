@@ -42,13 +42,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Bot To Agent by MLH Hack Days",
-    "url": "https://bot-to-agent-by-mlh-hack-days.devpost.com/",
-    "start_date": "Apr 27, 2026",
-    "location": "IEM ASHRAM BUILDING KOLKATA INDIA",
-    "source": "Devpost"
-  },
-  {
     "title": "Box Box",
     "url": "https://box-box.devpost.com/",
     "start_date": "May 22 - 24, 2026",
@@ -95,13 +88,6 @@
     "url": "https://caltechlongevity.devpost.com/",
     "start_date": "May 22 - 24, 2026",
     "location": "Caltech Longevity Club",
-    "source": "Devpost"
-  },
-  {
-    "title": "CBC Hackathon 2026 @ NJIT",
-    "url": "https://cbc-hackathon-2026.devpost.com/",
-    "start_date": "Apr 26, 2026",
-    "location": "NJIT - Kupfrian Hall",
     "source": "Devpost"
   },
   {
@@ -203,13 +189,6 @@
     "source": "Devpost"
   },
   {
-    "title": "GDSC HackDay  - Build With AI Hackathon",
-    "url": "https://gdsc-hackday.devpost.com/",
-    "start_date": "Apr 26, 2026",
-    "location": "UMD Campus - Brendan Iribe Center for CS",
-    "source": "Devpost"
-  },
-  {
     "title": "Give It a Face - Design × Dev Hackathon",
     "url": "https://future-of-nyc-design-hackathon.devpost.com/",
     "start_date": "May 16, 2026",
@@ -221,6 +200,13 @@
     "url": "https://rapid-agent.devpost.com/",
     "start_date": "May 01 - Jun 11, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "GreenCode Hackathon",
+    "url": "https://greencode-hackathon.devpost.com/",
+    "start_date": "May 30, 2026",
+    "location": "OpenWorks Coworking - Greenville",
     "source": "Devpost"
   },
   {
@@ -256,13 +242,6 @@
     "url": "https://hack-your-life.devpost.com/",
     "start_date": "May 30 - 31, 2026",
     "location": "BCIT Burnaby",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack-A-Damien",
-    "url": "https://hack-a-damien2026.devpost.com/",
-    "start_date": "Apr 26, 2026",
-    "location": "ETEC Building, UAlbany",
     "source": "Devpost"
   },
   {
@@ -642,24 +621,10 @@
     "source": "MLH"
   },
   {
-    "title": "Barcelona , Catalonia HackUPC",
-    "url": "https://hackupc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackUPC",
-    "start_date": "APR 24 - 26",
-    "location": "Barcelona, Catalonia, ES In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Bengaluru , Karnataka NMIT Hacks",
     "url": "https://nmithacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=NMIT+Hacks+",
     "start_date": "MAY 08 - 10",
     "location": "Bengaluru, Karnataka, IN In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Bothell , WA UWB",
-    "url": "https://uwbhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=UWB+Hacks+26%3A+The+Future%21",
-    "start_date": "Hacks 26",
-    "location": ": The Future! APR 24 - 26 Bothell, WA, US In-Person",
     "source": "MLH"
   },
   {
@@ -705,20 +670,6 @@
     "source": "MLH"
   },
   {
-    "title": "Los Angeles , California LA Hacks",
-    "url": "https://lahacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=LA+Hacks",
-    "start_date": "APR 24 - 26",
-    "location": "Los Angeles, California, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Mississauga , Ontario",
-    "url": "https://www.bearhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=BearHacks+2026",
-    "start_date": "BearHacks 20",
-    "location": "26 APR 24 - 26 Mississauga, Ontario, CA In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "New York City , New York MH Midnight Hackathon",
     "url": "https://events.mlh.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Midnight+Hackathon",
     "start_date": "MAY 15 - 17",
@@ -726,45 +677,10 @@
     "source": "MLH"
   },
   {
-    "title": "Pasadena , California Hacktech",
-    "url": "https://hack.caltech.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hacktech",
-    "start_date": "APR 24 - 26",
-    "location": "Pasadena, California, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Pomona , California Br",
-    "url": "https://www.broncohacks.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=BroncoHacks+2026",
-    "start_date": "oncoHacks 20",
-    "location": "26 APR 25 - 26 Pomona, California, US In-Person",
-    "source": "MLH"
-  },
-  {
     "title": "Riverside , California DesignVerse",
     "url": "https://www.designverseucr.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DesignVerse",
     "start_date": "MAY 16 - 17",
     "location": "Riverside, California, US In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Tampa , Florida Hackabull VII",
-    "url": "https://www.hackabull.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hackabull+VII",
-    "start_date": "APR 25 - 26",
-    "location": "Tampa, Florida, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Tucson , Arizona Hack Arizona",
-    "url": "https://hack.arizona.edu/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+Arizona+",
-    "start_date": "APR 25 - 26",
-    "location": "Tucson, Arizona, US In-Person",
-    "source": "MLH"
-  },
-  {
-    "title": "Union , 1075 Morris Ave, Union, NJ 07083 KeanUHackThis",
-    "url": "https://www.keanuhackthis.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=KeanUHackThis",
-    "start_date": "APR 25 - 26",
-    "location": "Union, 1075 Morris Ave, Union, NJ 07083, US In-Person",
     "source": "MLH"
   },
   {
