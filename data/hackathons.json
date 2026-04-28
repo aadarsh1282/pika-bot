@@ -7,13 +7,6 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Buildathon",
-    "url": "https://aibuildathon.devpost.com/",
-    "start_date": "Apr 28 - 29, 2026",
-    "location": "SHMM Govt. Degree College Anantnag",
-    "source": "Devpost"
-  },
-  {
     "title": "AlgoXplore 2.0",
     "url": "https://algoxplore.devpost.com/",
     "start_date": "May 01 - 31, 2026",
@@ -109,6 +102,13 @@
     "url": "https://codecon-universe-26.devpost.com/",
     "start_date": "May 29 - 31, 2026",
     "location": "Discord",
+    "source": "Devpost"
+  },
+  {
+    "title": "CodeFest",
+    "url": "https://code-fest.devpost.com/",
+    "start_date": "Apr 28, 2026",
+    "location": "Blekinge Institute of Technology",
     "source": "Devpost"
   },
   {
@@ -266,6 +266,20 @@
     "source": "Devpost"
   },
   {
+    "title": "HackDay Agra",
+    "url": "https://hackday-agra-29891.devpost.com/",
+    "start_date": "May 30 - 31, 2026",
+    "location": "Agra",
+    "source": "Devpost"
+  },
+  {
+    "title": "HackDays Delhi",
+    "url": "https://hackdays-delhi.devpost.com/",
+    "start_date": "Jun 30, 2026",
+    "location": "India",
+    "source": "Devpost"
+  },
+  {
     "title": "Hackdays Lucknow",
     "url": "https://hackdays-lucknow.devpost.com/",
     "start_date": "May 18, 2026",
@@ -298,13 +312,6 @@
     "url": "https://hackonomics27.devpost.com/",
     "start_date": "Jul 01, 2026 - Jun 01, 2027",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "HackSMC Spring 2026",
-    "url": "https://hacksmc-spring-2026.devpost.com/",
-    "start_date": "May 09 - 10, 2026",
-    "location": "Santa Monica College - Bundy Campus",
     "source": "Devpost"
   },
   {
@@ -462,6 +469,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Robolytics Speed Cad III",
+    "url": "https://robolytics-speed-cad-iii.devpost.com/",
+    "start_date": "May 02, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -515,6 +529,13 @@
     "url": "https://svchackathon2026.devpost.com/",
     "start_date": "May 02, 2026",
     "location": "Skagit Valley College - Lewis Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Swan Hacks Spring 2026",
+    "url": "https://swan-hacks-spring-2026.devpost.com/",
+    "start_date": "May 02 - 03, 2026",
+    "location": "Coover Hall TLA (Room 1313)",
     "source": "Devpost"
   },
   {
