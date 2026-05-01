@@ -7,23 +7,9 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Autonomous Smart City Hackathon 2026",
-    "url": "https://ai-smart-city-hackathon-2026.devpost.com/",
-    "start_date": "Apr 30 - May 04, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "AI Game Week",
     "url": "https://ai-game-week-29908.devpost.com/",
     "start_date": "May 03 - 10, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "AlgoXplore 2.0",
-    "url": "https://algoxplore.devpost.com/",
-    "start_date": "May 01 - 31, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -70,6 +56,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Build the Future with AI — From Code to No-Code",
+    "url": "https://build-the-future-with-ai.devpost.com/",
+    "start_date": "May 31 - Jun 30, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Build with AI 2026 x MLH Hackathon in Ahlen",
     "url": "https://build-with-ai-mlh-ahlen.devpost.com/",
     "start_date": "May 23, 2026",
@@ -98,6 +91,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Clash of Prompts: Worlds 1st Real-Time Prompt Battle Royale",
+    "url": "https://clash-of-prompts.devpost.com/",
+    "start_date": "May 07, 2026",
+    "location": "AWS Builder Loft,",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Crush 2026",
     "url": "https://code-crush-2026.devpost.com/",
     "start_date": "May 23 - 24, 2026",
@@ -123,6 +123,13 @@
     "url": "https://cove.devpost.com/",
     "start_date": "Jun 26 - 28, 2026",
     "location": "To be announced",
+    "source": "Devpost"
+  },
+  {
+    "title": "Cursor Hackathon Toronto Tech Week",
+    "url": "https://cursor-hackathon-ttw.devpost.com/",
+    "start_date": "May 27, 2026",
+    "location": "BrainStation",
     "source": "Devpost"
   },
   {
@@ -434,20 +441,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Next Byte Hacks V2",
-    "url": "https://next-byte-hacks-v2.devpost.com/",
-    "start_date": "May 01 - 31, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Oink Game Jam 2 ($3000+ in prizes)",
-    "url": "https://oink-game-jam-2.devpost.com/",
-    "start_date": "Apr 30 - May 14, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Pacific Portal XR",
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -521,6 +514,13 @@
     "title": "SS Hacker Team Cybersecurity GLOBAL Challenge 2026",
     "url": "https://sshackerteamglobal.devpost.com/",
     "start_date": "May 10 - 25, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Stanford & The Ivy X Andover & Exeter Hackathon",
+    "url": "https://stanford-ivy-x-andover-exeter.devpost.com/",
+    "start_date": "May 11 - 18, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -609,13 +609,6 @@
     "source": "Devpost"
   },
   {
-    "title": "West Hacks",
-    "url": "https://westhacks.devpost.com/",
-    "start_date": "May 01 - Jun 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
     "url": "https://idea-vs-1000-marketers.devpost.com/",
     "start_date": "Jun 14 - 29, 2026",
@@ -698,7 +691,7 @@
     "source": "MLH"
   },
   {
-    "title": "GH Global Hack Week: GenAI",
+    "title": "Global Hack Week: GenAI",
     "url": "https://events.mlh.io/events/13816-global-hack-week-genai?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+GenAI",
     "start_date": "MAY 08 - 14",
     "location": "Everywhere, Worldwide Digital",
@@ -730,13 +723,6 @@
     "url": "https://www.designverseucr.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=DesignVerse",
     "start_date": "MAY 16 - 17",
     "location": "Riverside, California, US In-Person DIVERSITY",
-    "source": "MLH"
-  },
-  {
-    "title": "Waterloo , Ontario",
-    "url": "https://conhacks.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=ConHacks+2026",
-    "start_date": "ConHacks 20",
-    "location": "26 APR 28 - 30 Waterloo, Ontario, CA In-Person",
     "source": "MLH"
   },
   {
