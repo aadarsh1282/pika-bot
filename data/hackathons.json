@@ -17,7 +17,7 @@
     "title": "ALI Builds Hackathon",
     "url": "https://ali-hackathon.devpost.com/",
     "start_date": "May 10 - 11, 2026",
-    "location": "Polsky Center",
+    "location": "Chicago Booth Harper Center - Room 104",
     "source": "Devpost"
   },
   {
@@ -73,13 +73,6 @@
     "title": "Build Your Vision",
     "url": "https://build-your-vision.devpost.com/",
     "start_date": "May 07 - 20, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Calgary Maker Faire 2026 Designathon University Level",
-    "url": "https://cmf-uni-2026-designathon.devpost.com/",
-    "start_date": "May 01 - 03, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -168,13 +161,6 @@
     "source": "Devpost"
   },
   {
-    "title": "EurekaHacks 2026",
-    "url": "https://eurekahacks.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "Waterloo Accelerator Center",
-    "source": "Devpost"
-  },
-  {
     "title": "evensonarisnord",
     "url": "https://evensonarisnord.devpost.com/",
     "start_date": "Dec 31, 2026",
@@ -231,13 +217,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Hack Days Nagpur",
-    "url": "https://hack-days-nagpur.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "FireBlaze AI School",
-    "source": "Devpost"
-  },
-  {
     "title": "Hack for Humanity | Summer 2026",
     "url": "https://hack-for-humanity-summer-26.devpost.com/",
     "start_date": "Jul 03 - Aug 02, 2026",
@@ -256,13 +235,6 @@
     "url": "https://hack-your-life.devpost.com/",
     "start_date": "May 30 - 31, 2026",
     "location": "BCIT Burnaby",
-    "source": "Devpost"
-  },
-  {
-    "title": "Hack2Impact 2026",
-    "url": "https://hack2impact-2026.devpost.com/",
-    "start_date": "May 02 - 03, 2026",
-    "location": "Tom Bradley International Hall 300",
     "source": "Devpost"
   },
   {
@@ -378,20 +350,6 @@
     "source": "Devpost"
   },
   {
-    "title": "KiwiHacks 2026",
-    "url": "https://kiwihacks-2026.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "GridAKL / John Lysaght Building",
-    "source": "Devpost"
-  },
-  {
-    "title": "Knovwy Hack Days 2.0 | Bhopal",
-    "url": "https://knovwy-hack-days-2-0-bhopal.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "TIT Campus, Bhopal",
-    "source": "Devpost"
-  },
-  {
     "title": "KODA Hacks 2026",
     "url": "https://koda-hacks-2026.devpost.com/",
     "start_date": "Jun 06 - 10, 2026",
@@ -409,7 +367,7 @@
     "title": "LEVIATHAN Hackathon [AXI0M x Lovable]",
     "url": "https://leviathan-hackathon.devpost.com/",
     "start_date": "May 02 - 03, 2026",
-    "location": "St Andrews - Jack Cole Lab",
+    "location": "St Andrews - John Honey Lab",
     "source": "Devpost"
   },
   {
@@ -480,13 +438,6 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
     "location": "Bay Area",
-    "source": "Devpost"
-  },
-  {
-    "title": "Singapore StupidHacks",
-    "url": "https://singapore-stupidhacks.devpost.com/",
-    "start_date": "May 01 - 02, 2026",
-    "location": "The Jay &amp;amp Marilyn Ng Greenhouse",
     "source": "Devpost"
   },
   {
@@ -609,6 +560,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Web Summit Vancouver Hackathon",
+    "url": "https://van26-hack.devpost.com/",
+    "start_date": "May 14, 2026",
+    "location": "Vancouver Convention Centre",
+    "source": "Devpost"
+  },
+  {
     "title": "Your idea vs 1,000 other marketers. Let’s see where you actually stand.",
     "url": "https://idea-vs-1000-marketers.devpost.com/",
     "start_date": "Jun 14 - 29, 2026",
@@ -712,7 +670,7 @@
     "source": "MLH"
   },
   {
-    "title": "New York City , New York MH Midnight Hackathon",
+    "title": "New York City , New York Midnight Hackathon",
     "url": "https://events.mlh.io/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Midnight+Hackathon",
     "start_date": "MAY 15 - 17",
     "location": "Everywhere, Worldwide, US Digital",
