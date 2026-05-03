@@ -7,17 +7,17 @@
     "source": "Devpost"
   },
   {
-    "title": "AI Game Week",
-    "url": "https://ai-game-week-29908.devpost.com/",
-    "start_date": "May 03 - 10, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "ALI Builds Hackathon",
     "url": "https://ali-hackathon.devpost.com/",
     "start_date": "May 10 - 11, 2026",
     "location": "Chicago Booth Harper Center - Room 104",
+    "source": "Devpost"
+  },
+  {
+    "title": "Assistive Innovation Challenge 2026",
+    "url": "https://assistive-innovation-challenge.devpost.com/",
+    "start_date": "May 04 - Aug 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -67,6 +67,13 @@
     "url": "https://build-with-ai-mlh-ahlen.devpost.com/",
     "start_date": "May 23, 2026",
     "location": "Initiative Bürgerzentrum Schuhfabrik e.V",
+    "source": "Devpost"
+  },
+  {
+    "title": "Build with AI Hack Days @UITS",
+    "url": "https://build-with-ai-hack-days-uits.devpost.com/",
+    "start_date": "May 12, 2026",
+    "location": "UITS - Multipurpose Hall",
     "source": "Devpost"
   },
   {
@@ -126,6 +133,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Design-A-Thon",
+    "url": "https://design-a-thon-2026.devpost.com/",
+    "start_date": "May 22, 2026",
+    "location": "UWB UW2-141",
+    "source": "Devpost"
+  },
+  {
     "title": "DeveloperWeek New York 2026 Hackathon",
     "url": "https://dwny-2026-hackathon.devpost.com/",
     "start_date": "May 25 - Jun 10, 2026",
@@ -151,13 +165,6 @@
     "url": "https://devonomicsv1.devpost.com/",
     "start_date": "Jun 04 - 12, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "Elevate Hack Days",
-    "url": "https://akash-kumar.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "TIT Campus",
     "source": "Devpost"
   },
   {
@@ -315,13 +322,6 @@
     "source": "Devpost"
   },
   {
-    "title": "HuskyHack 2026",
-    "url": "https://huskyhack-2026.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "George Brown Waterfront Campus",
-    "source": "Devpost"
-  },
-  {
     "title": "IBM x UNSA Hackathon",
     "url": "https://ibm-unsa-hackathon.devpost.com/",
     "start_date": "May 08 - 10, 2026",
@@ -343,13 +343,6 @@
     "source": "Devpost"
   },
   {
-    "title": "KiroHacks Cal Poly",
-    "url": "https://kiro-hacks-cal-poly.devpost.com/",
-    "start_date": "May 02 - 03, 2026",
-    "location": "Cal Poly Multi Activity Center (MAC)",
-    "source": "Devpost"
-  },
-  {
     "title": "KODA Hacks 2026",
     "url": "https://koda-hacks-2026.devpost.com/",
     "start_date": "Jun 06 - 10, 2026",
@@ -361,13 +354,6 @@
     "url": "https://launchhacks-v.devpost.com/",
     "start_date": "Jun 06 - 07, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "LEVIATHAN Hackathon [AXI0M x Lovable]",
-    "url": "https://leviathan-hackathon.devpost.com/",
-    "start_date": "May 02 - 03, 2026",
-    "location": "St Andrews - John Honey Lab",
     "source": "Devpost"
   },
   {
@@ -427,13 +413,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Robolytics Speed Cad III",
-    "url": "https://robolytics-speed-cad-iii.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Shower Hacks",
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -483,10 +462,10 @@
     "source": "Devpost"
   },
   {
-    "title": "SuHack 2026: NeuroBridge AI Hackathon",
-    "url": "https://suhack-29696.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "Sabanci University",
+    "title": "SUMMER HACKATHON 2026",
+    "url": "https://sc-summer-hackathon-2026.devpost.com/",
+    "start_date": "Jun 01 - 07, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -494,20 +473,6 @@
     "url": "https://sunnyhacks-june-2026.devpost.com/",
     "start_date": "Jun 01 - Jul 01, 2026",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "SVC Hackathon: Environmental Conservation",
-    "url": "https://svchackathon2026.devpost.com/",
-    "start_date": "May 02, 2026",
-    "location": "Skagit Valley College - Lewis Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Swan Hacks Spring 2026",
-    "url": "https://swan-hacks-spring-2026.devpost.com/",
-    "start_date": "May 02 - 03, 2026",
-    "location": "Coover Hall TLA (Room 1313)",
     "source": "Devpost"
   },
   {
