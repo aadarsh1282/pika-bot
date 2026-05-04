@@ -14,13 +14,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Assistive Innovation Challenge 2026",
-    "url": "https://assistive-innovation-challenge.devpost.com/",
-    "start_date": "May 04 - Aug 01, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "BeanHacks",
     "url": "https://beanhacks.devpost.com/",
     "start_date": "Jun 30 - Jul 01, 2026",
@@ -98,10 +91,24 @@
     "source": "Devpost"
   },
   {
+    "title": "Code Crest",
+    "url": "https://codecrest.devpost.com/",
+    "start_date": "May 31 - Jun 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Code Crush 2026",
     "url": "https://code-crush-2026.devpost.com/",
     "start_date": "May 23 - 24, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Code Jam",
+    "url": "https://code-jam-29953.devpost.com/",
+    "start_date": "May 07 - 09, 2026",
+    "location": "TIIPS",
     "source": "Devpost"
   },
   {
@@ -165,6 +172,13 @@
     "url": "https://devonomicsv1.devpost.com/",
     "start_date": "Jun 04 - 12, 2026",
     "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "Easygo Mini Hackathon - Powered by KICK",
+    "url": "https://easygo-mini-hackathon.devpost.com/",
+    "start_date": "Jul 31 - Aug 01, 2026",
+    "location": "Fortress Melbourne",
     "source": "Devpost"
   },
   {
@@ -259,6 +273,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackDavis 2026",
+    "url": "https://hackdavis-2026.devpost.com/",
+    "start_date": "May 09 - 10, 2026",
+    "location": "University Credit Union Center",
+    "source": "Devpost"
+  },
+  {
     "title": "HackDay Agra",
     "url": "https://hackday-agra-29891.devpost.com/",
     "start_date": "May 30 - 31, 2026",
@@ -282,7 +303,7 @@
   {
     "title": "HackJPS 2026",
     "url": "https://hackjps26.devpost.com/",
-    "start_date": "May 29 - 30, 2026",
+    "start_date": "May 29 - 31, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -336,6 +357,13 @@
     "source": "Devpost"
   },
   {
+    "title": "Internal Tools Hacks",
+    "url": "https://internal-tools-hacks.devpost.com/",
+    "start_date": "May 04 - 13, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "JecHacks",
     "url": "https://jechacks.devpost.com/",
     "start_date": "Jul 11, 2026",
@@ -385,6 +413,20 @@
     "source": "Devpost"
   },
   {
+    "title": "NGN Hacks 2026",
+    "url": "https://ngn-hacks-2026.devpost.com/",
+    "start_date": "Aug 07 - 09, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "OneAquaHealth IEEE Global Hackathon",
+    "url": "https://oneaquahealth-ieee-hackathon.devpost.com/",
+    "start_date": "Sep 14 - Oct 01, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Pacific Portal XR",
     "url": "https://pacific-portal-xr-hack.devpost.com/",
     "start_date": "May 07 - 09, 2026",
@@ -392,7 +434,7 @@
     "source": "Devpost"
   },
   {
-    "title": "Pixel Forge Jam #2",
+    "title": "Pixel Forge Jam #2 [Haunted Edition]",
     "url": "https://pixel-forge-jam-2.devpost.com/",
     "start_date": "Jun 27 - Jul 04, 2026",
     "location": "Online",
@@ -487,6 +529,13 @@
     "url": "https://techtotreasure.devpost.com/",
     "start_date": "Jun 01, 2026",
     "location": "Tully Community Branch Library",
+    "source": "Devpost"
+  },
+  {
+    "title": "Techspire",
+    "url": "https://techspire.devpost.com/",
+    "start_date": "Jun 01, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
