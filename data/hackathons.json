@@ -140,10 +140,10 @@
     "source": "Devpost"
   },
   {
-    "title": "CodeBox Hacks",
-    "url": "https://codebox-hacks.devpost.com/",
-    "start_date": "Sep 05 - 06, 2026",
-    "location": "Cal Poly Advanced Technology Lab",
+    "title": "Codebox Hacks Makeup",
+    "url": "https://codebox-hacks-makeup.devpost.com/",
+    "start_date": "Sep 07 - 10, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -203,13 +203,6 @@
     "source": "Devpost"
   },
   {
-    "title": "EmP Hackfest Summer 2026",
-    "url": "https://emp-hackfest-summer-2026.devpost.com/",
-    "start_date": "Sep 05 - 06, 2026",
-    "location": "DigiPen Institute of Technology",
-    "source": "Devpost"
-  },
-  {
     "title": "EurekaDev 2026",
     "url": "https://eurekadev.devpost.com/",
     "start_date": "Aug 27 - Oct 20, 2027",
@@ -263,6 +256,13 @@
     "url": "https://geauxhack-2026.devpost.com/",
     "start_date": "Oct 23 - 25, 2026",
     "location": "Patrick F. Taylor Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "Gen Agra",
+    "url": "https://gen-agra.devpost.com/",
+    "start_date": "Sep 07 - 12, 2026",
+    "location": "Agra-Delhi Highway, Keetham, Agra",
     "source": "Devpost"
   },
   {
@@ -338,7 +338,7 @@
   {
     "title": "Hack The Weather",
     "url": "https://hack-the-weather.devpost.com/",
-    "start_date": "Sep 05 - 09, 2026",
+    "start_date": "Sep 16 - 18, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -497,6 +497,20 @@
     "source": "Devpost"
   },
   {
+    "title": "ImpactHack 2026",
+    "url": "https://impacthack26.devpost.com/",
+    "start_date": "Oct 01 - 08, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
+    "title": "internal hackathon | Elevate Ecosystem",
+    "url": "https://internal-ee-hackathon.devpost.com/",
+    "start_date": "Sep 11 - 12, 2026",
+    "location": "Bengaluru, India",
+    "source": "Devpost"
+  },
+  {
     "title": "Kent Hack Enough 2027",
     "url": "https://khe-2027.devpost.com/",
     "start_date": "Mar 06 - 07, 2027",
@@ -560,10 +574,10 @@
     "source": "Devpost"
   },
   {
-    "title": "MYHack: ISNA 2026",
-    "url": "https://myhack-isna.devpost.com/",
-    "start_date": "Sep 05 - 06, 2026",
-    "location": "Detroit, MI, USA",
+    "title": "N/A",
+    "url": "https://ai-content-engine-hackathon.devpost.com/",
+    "start_date": "Feb 02 - Apr 06, 2027",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -630,13 +644,6 @@
     "source": "Devpost"
   },
   {
-    "title": "RoadStar Hackathon",
-    "url": "https://roadstarhackathon.devpost.com/",
-    "start_date": "Sep 05 - 13, 2026",
-    "location": "Waterloo, ON",
-    "source": "Devpost"
-  },
-  {
     "title": "Rutgers x Elastic Hackathon",
     "url": "https://rutgers-x-elastic-hackathon.devpost.com/",
     "start_date": "Sep 14, 2026",
@@ -647,7 +654,7 @@
     "title": "SaugaHacks",
     "url": "https://saugahacks-2026.devpost.com/",
     "start_date": "Sep 12, 2026",
-    "location": "Mississauga",
+    "location": "University Of Toronto Mississauga",
     "source": "Devpost"
   },
   {
@@ -655,6 +662,13 @@
     "url": "https://sc-quantathon-v3.devpost.com/",
     "start_date": "Sep 26 - 27, 2026",
     "location": "Watt Family Innovation Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "Shared OS Hackathon",
+    "url": "https://shared-os-hackathon.devpost.com/",
+    "start_date": "Sep 09 - 11, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -742,13 +756,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Syndicate by Maximor",
-    "url": "https://syndicate-by-maximor.devpost.com/",
-    "start_date": "Sep 05 - 06, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Tech to Treasure Hackathon",
     "url": "https://techtotreasure.devpost.com/",
     "start_date": "Mar 03 - 10, 2027",
@@ -823,13 +830,6 @@
     "url": "https://wwu-sj-hack.devpost.com/",
     "start_date": "Oct 16 - 18, 2026",
     "location": "WWU - Kaiser Borsari Building",
-    "source": "Devpost"
-  },
-  {
-    "title": "YC Fall 2026 x Moss: The Zero Latency Builder Sprint",
-    "url": "https://yc-fall-2026-x-moss.devpost.com/",
-    "start_date": "Sep 06 - 20, 2026",
-    "location": "Bengaluru, India",
     "source": "Devpost"
   },
   {
