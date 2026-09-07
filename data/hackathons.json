@@ -121,7 +121,7 @@
   {
     "title": "Case Closed",
     "url": "https://caseclosed.devpost.com/",
-    "start_date": "Sep 20, 2026",
+    "start_date": "Oct 04, 2026",
     "location": "Location TBA",
     "source": "Devpost"
   },
@@ -140,13 +140,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Codebox Hacks Makeup",
-    "url": "https://codebox-hacks-makeup.devpost.com/",
-    "start_date": "Sep 07 - 10, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "codeLinc 11 with Lincoln Financial & AWS",
     "url": "https://codelinc11.devpost.com/",
     "start_date": "Oct 03 - 04, 2026",
@@ -154,10 +147,24 @@
     "source": "Devpost"
   },
   {
+    "title": "COMMA_HACK 7",
+    "url": "https://comma-hack-7.devpost.com/",
+    "start_date": "Sep 18 - 20, 2026",
+    "location": "comma HQ",
+    "source": "Devpost"
+  },
+  {
     "title": "CommuniHacks",
     "url": "https://communihacks.devpost.com/",
     "start_date": "Nov 07 - 08, 2026",
     "location": "Builders Club",
+    "source": "Devpost"
+  },
+  {
+    "title": "CrownHacks",
+    "url": "https://crownhacks.devpost.com/",
+    "start_date": "Oct 09 - 11, 2026",
+    "location": "UNC Charlotte - Union",
     "source": "Devpost"
   },
   {
@@ -205,7 +212,7 @@
   {
     "title": "EurekaDev 2026",
     "url": "https://eurekadev.devpost.com/",
-    "start_date": "Aug 27 - Oct 20, 2027",
+    "start_date": "Sep 27 - Oct 20, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -256,13 +263,6 @@
     "url": "https://geauxhack-2026.devpost.com/",
     "start_date": "Oct 23 - 25, 2026",
     "location": "Patrick F. Taylor Hall",
-    "source": "Devpost"
-  },
-  {
-    "title": "Gen Agra",
-    "url": "https://gen-agra.devpost.com/",
-    "start_date": "Sep 07 - 12, 2026",
-    "location": "Agra-Delhi Highway, Keetham, Agra",
     "source": "Devpost"
   },
   {
@@ -504,13 +504,6 @@
     "source": "Devpost"
   },
   {
-    "title": "internal hackathon | Elevate Ecosystem",
-    "url": "https://internal-ee-hackathon.devpost.com/",
-    "start_date": "Sep 11 - 12, 2026",
-    "location": "Bengaluru, India",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2027",
     "url": "https://khe-2027.devpost.com/",
     "start_date": "Mar 06 - 07, 2027",
@@ -560,14 +553,14 @@
     "source": "Devpost"
   },
   {
-    "title": "Meow",
-    "url": "https://makeuc-2026-30881.devpost.com/",
-    "start_date": "Nov 07 - 08, 2026",
-    "location": "1819 Innovation Hub",
+    "title": "Miami AI Hackathon: Mel + ElevenLabs",
+    "url": "https://hackathon-mel-elevenlabs.devpost.com/",
+    "start_date": "Sep 19, 2026",
+    "location": "MDC- AI Center (building 2 east side)",
     "source": "Devpost"
   },
   {
-    "title": "MLAI Hackathon",
+    "title": "MLAI Hackathon 2026",
     "url": "https://mlai-hackathon.devpost.com/",
     "start_date": "Sep 18 - Oct 16, 2026",
     "location": "Online",
@@ -637,13 +630,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Revolution",
-    "url": "https://revolution-mty2026.devpost.com/",
-    "start_date": "Dec 05 - 06, 2026",
-    "location": "Museo Del Acero Horno 3",
-    "source": "Devpost"
-  },
-  {
     "title": "Rutgers x Elastic Hackathon",
     "url": "https://rutgers-x-elastic-hackathon.devpost.com/",
     "start_date": "Sep 14, 2026",
@@ -662,6 +648,13 @@
     "url": "https://sc-quantathon-v3.devpost.com/",
     "start_date": "Sep 26 - 27, 2026",
     "location": "Watt Family Innovation Center",
+    "source": "Devpost"
+  },
+  {
+    "title": "Seattle GiveCamp 2026",
+    "url": "https://seattle-givecamp-2026.devpost.com/",
+    "start_date": "Oct 16 - 18, 2026",
+    "location": "Microsoft Building 122",
     "source": "Devpost"
   },
   {
@@ -742,6 +735,13 @@
     "source": "Devpost"
   },
   {
+    "title": "STEMinate Wildcard Hack",
+    "url": "https://steminate-texas-wildcard-hack.devpost.com/",
+    "start_date": "Sep 12 - 19, 2026",
+    "location": "Online",
+    "source": "Devpost"
+  },
+  {
     "title": "Stupid Ideas Hackathon (Ottawa F26)",
     "url": "https://stupideas-ottawa-f26.devpost.com/",
     "start_date": "Nov 07, 2026",
@@ -760,6 +760,13 @@
     "url": "https://techtotreasure.devpost.com/",
     "start_date": "Mar 03 - 10, 2027",
     "location": "Tully Community Branch Library",
+    "source": "Devpost"
+  },
+  {
+    "title": "TechCommons Hacks V2 - Hacks to Inspire",
+    "url": "https://techcommons-hacks-v2.devpost.com/",
+    "start_date": "Sep 10 - 17, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -809,13 +816,6 @@
     "url": "https://unitedhacksv8.devpost.com/",
     "start_date": "Jan 08 - 10, 2027",
     "location": "Online",
-    "source": "Devpost"
-  },
-  {
-    "title": "UPAI-Hackdays",
-    "url": "https://upai-hackdays.devpost.com/",
-    "start_date": "Sep 07 - 10, 2026",
-    "location": "Virtual",
     "source": "Devpost"
   },
   {
