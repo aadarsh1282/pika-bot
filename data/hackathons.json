@@ -35,10 +35,10 @@
     "source": "Devpost"
   },
   {
-    "title": "Action Space",
-    "url": "https://action-space-hacks.devpost.com/",
-    "start_date": "Oct 24 - 25, 2026",
-    "location": "Fab Lab",
+    "title": "Agentic Hackathon 2026",
+    "url": "https://agentic-hacks-2026.devpost.com/",
+    "start_date": "Sep 20 - 30, 2026",
+    "location": "BRAC University",
     "source": "Devpost"
   },
   {
@@ -235,6 +235,13 @@
     "url": "https://forward.devpost.com/",
     "start_date": "Sep 11 - 13, 2026",
     "location": "University of Melbourne",
+    "source": "Devpost"
+  },
+  {
+    "title": "Frontier Cascadia",
+    "url": "https://frontier-cascadia-2026.devpost.com/",
+    "start_date": "Sep 12, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -651,13 +658,6 @@
     "source": "Devpost"
   },
   {
-    "title": "Seattle GiveCamp 2026",
-    "url": "https://seattle-givecamp-2026.devpost.com/",
-    "start_date": "Oct 16 - 18, 2026",
-    "location": "Microsoft Building 122",
-    "source": "Devpost"
-  },
-  {
     "title": "Shared OS Hackathon",
     "url": "https://shared-os-hackathon.devpost.com/",
     "start_date": "Sep 09 - 11, 2026",
@@ -840,38 +840,51 @@
     "source": "Devpost"
   },
   {
-    "title": "Cyberdeck Competition 2026",
-    "url": "https://forms.gle/mQR3HeudAtPSYj1W9",
-    "start_date": "deck Competition 2026",
-    "location": "Online / TBA",
-    "source": "Hackeroos"
-  },
-  {
-    "title": "Forge The Future",
-    "url": "https://hackdays.com.au/",
-    "start_date": "March 2nd, 2026",
-    "location": "Sydney, Australia",
+    "title": "A tech scenebeyond the city.",
+    "url": "https://linuxvictoria.org/events/lait-night-chat-linux-and-ai/",
+    "start_date": "",
+    "location": "In-Person",
     "source": "Hackeroos",
     "mode": "In-Person"
   },
   {
-    "title": "Hackeroos & MLAI AUS present:",
-    "url": "https://www.mlai.au/",
-    "start_date": "Sept 8th - 28th, 2025",
-    "location": "Online",
-    "source": "Hackeroos",
-    "mode": "Online"
-  },
-  {
-    "title": "Hackeroos Spooky",
-    "url": "https://developers.reddit.com/docs/",
-    "start_date": "Oct 8th - 28th, 2025",
+    "title": "Directories & Resources",
+    "url": "/events",
+    "start_date": "",
     "location": "Online / TBA",
     "source": "Hackeroos"
   },
   {
-    "title": "Join an Event",
+    "title": "Find your next role.",
+    "url": "/login?mode=signup&returnTo=%2Fonboarding",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "Hackeroos merch.",
+    "url": "/shop",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "Makerspaces",
     "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "Meet the community.",
+    "url": "https://discord.com/invite/cvrEcxU5b7",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "Upcoming Events",
+    "url": "/dashboard/events/new",
     "start_date": "",
     "location": "Online / TBA",
     "source": "Hackeroos"
