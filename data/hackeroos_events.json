@@ -1,16 +1,16 @@
 [
   {
     "title": "A tech scenebeyond the city.",
-    "url": "https://linuxvictoria.org/events/lait-night-chat-linux-and-ai/",
-    "start_date": "",
+    "url": "https://www.meetup.com/codeforsydney/events/313473965/",
+    "start_date": "Sept 19 Hybrid Software Freedom Day 2026",
     "location": "In-Person",
     "source": "Hackeroos",
     "mode": "In-Person"
   },
   {
     "title": "Explore the directories",
-    "url": "https://linuxvictoria.org/events/lait-night-chat-linux-and-ai/",
-    "start_date": "",
+    "url": "https://www.meetup.com/codeforsydney/events/313473965/",
+    "start_date": "Sept 19 Hybrid Software Freedom Day 2026",
     "location": "In-Person",
     "source": "Hackeroos",
     "mode": "In-Person"
@@ -44,22 +44,6 @@
     "source": "Hackeroos"
   },
   {
-    "title": "LAIT Night: Linux & AI Tuesday Conversations",
-    "url": "https://www.hackeroos.com.au/#whats-on",
-    "start_date": "",
-    "location": "Online",
-    "source": "Hackeroos",
-    "mode": "Online"
-  },
-  {
-    "title": "Hackeroos Discord Coworking",
-    "url": "https://www.hackeroos.com.au/#whats-on",
-    "start_date": "",
-    "location": "Online",
-    "source": "Hackeroos",
-    "mode": "Online"
-  },
-  {
     "title": "Hackeroos - R U OK? DAY",
     "url": "https://www.hackeroos.com.au/#whats-on",
     "start_date": "",
@@ -76,12 +60,35 @@
     "mode": "In-Person"
   },
   {
+    "title": "Hackeroos Discord Coworking",
+    "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Online",
+    "source": "Hackeroos",
+    "mode": "Online"
+  },
+  {
+    "title": "Software Freedom Day 2026",
+    "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Online",
+    "source": "Hackeroos",
+    "mode": "Online"
+  },
+  {
     "title": "Hackeroos Game Club - Australia and New Zealand",
     "url": "https://www.hackeroos.com.au/#whats-on",
     "start_date": "",
     "location": "Online",
     "source": "Hackeroos",
     "mode": "Online"
+  },
+  {
+    "title": "Linux Town Hall October",
+    "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
   },
   {
     "title": "HEY CHAT! After Party",
@@ -138,21 +145,21 @@
     "source": "Hackeroos"
   },
   {
-    "title": "Project Manager",
+    "title": "Competitive Programming Expert - Freelance AI Trainer",
+    "url": "https://www.hackeroos.com.au/#whats-on",
+    "start_date": "",
+    "location": "Online / TBA",
+    "source": "Hackeroos"
+  },
+  {
+    "title": "We’re hiring in Melbourne! Apply for a Level 2 Engineer, Service Desk Manager, or Head of Technology. Interviews happening ASAP – don’t miss out!",
     "url": "https://www.hackeroos.com.au/#whats-on",
     "start_date": "",
     "location": "Melbourne, Australia",
     "source": "Hackeroos"
   },
   {
-    "title": "Trading Platform Engineer",
-    "url": "https://www.hackeroos.com.au/#whats-on",
-    "start_date": "",
-    "location": "Sydney, Australia",
-    "source": "Hackeroos"
-  },
-  {
-    "title": "OCP Networking Architect",
+    "title": "Digital Marketing Assistant",
     "url": "https://www.hackeroos.com.au/#whats-on",
     "start_date": "",
     "location": "Melbourne, Australia",

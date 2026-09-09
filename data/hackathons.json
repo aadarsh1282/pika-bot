@@ -161,13 +161,6 @@
     "source": "Devpost"
   },
   {
-    "title": "CrownHacks",
-    "url": "https://crownhacks.devpost.com/",
-    "start_date": "Oct 09 - 11, 2026",
-    "location": "UNC Charlotte - Union",
-    "source": "Devpost"
-  },
-  {
     "title": "CuseHacks 2026",
     "url": "https://cusehacks-2026.devpost.com/",
     "start_date": "Sep 19 - 20, 2026",
@@ -392,6 +385,13 @@
     "source": "Devpost"
   },
   {
+    "title": "HackKentucky",
+    "url": "https://hackkentucky.devpost.com/",
+    "start_date": "Sep 11 - 12, 2026",
+    "location": "Genuine Works",
+    "source": "Devpost"
+  },
+  {
     "title": "Hacklanta",
     "url": "https://hacklanta.devpost.com/",
     "start_date": "Oct 09 - 11, 2026",
@@ -504,13 +504,6 @@
     "source": "Devpost"
   },
   {
-    "title": "ImpactHack 2026",
-    "url": "https://impacthack26.devpost.com/",
-    "start_date": "Oct 01 - 08, 2026",
-    "location": "Online",
-    "source": "Devpost"
-  },
-  {
     "title": "Kent Hack Enough 2027",
     "url": "https://khe-2027.devpost.com/",
     "start_date": "Mar 06 - 07, 2027",
@@ -557,6 +550,13 @@
     "url": "https://makeuc-2026-30884.devpost.com/",
     "start_date": "Nov 07 - 08, 2026",
     "location": "1819 Innovation Hub",
+    "source": "Devpost"
+  },
+  {
+    "title": "MantisGrid AI Hackathon 2026",
+    "url": "https://mantisgrid-ai-hackathon-2026.devpost.com/",
+    "start_date": "Sep 17, 2026",
+    "location": "Mitchell Park Community Center",
     "source": "Devpost"
   },
   {
@@ -660,7 +660,7 @@
   {
     "title": "Shared OS Hackathon",
     "url": "https://shared-os-hackathon.devpost.com/",
-    "start_date": "Sep 09 - 11, 2026",
+    "start_date": "Sep 11 - 13, 2026",
     "location": "Online",
     "source": "Devpost"
   },
@@ -683,13 +683,6 @@
     "url": "https://showerhacks.devpost.com/",
     "start_date": "Sep 26 - 27, 2026",
     "location": "Bay Area",
-    "source": "Devpost"
-  },
-  {
-    "title": "SHPE Jr. Designathon",
-    "url": "https://shpe-jr-designathon.devpost.com/",
-    "start_date": "Sep 19, 2026",
-    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -732,6 +725,13 @@
     "url": "https://steelhacksxiii.devpost.com/",
     "start_date": "Sep 19 - 20, 2026",
     "location": "University of Pittsburgh - Posvar Hall",
+    "source": "Devpost"
+  },
+  {
+    "title": "STEMergent Hacks 2026",
+    "url": "https://stemergent-hacks.devpost.com/",
+    "start_date": "Oct 18 - 31, 2026",
+    "location": "Online",
     "source": "Devpost"
   },
   {
@@ -835,14 +835,14 @@
   {
     "title": "Zoftware Hireathon",
     "url": "https://zoftware-hireathon.devpost.com/",
-    "start_date": "Sep 09, 2026",
+    "start_date": "Sep 19, 2026",
     "location": "Delhi",
     "source": "Devpost"
   },
   {
     "title": "A tech scenebeyond the city.",
-    "url": "https://linuxvictoria.org/events/lait-night-chat-linux-and-ai/",
-    "start_date": "",
+    "url": "https://www.meetup.com/codeforsydney/events/313473965/",
+    "start_date": "Sept 19 Hybrid Software Freedom Day 2026",
     "location": "In-Person",
     "source": "Hackeroos",
     "mode": "In-Person"
@@ -925,6 +925,13 @@
     "source": "MLH"
   },
   {
+    "title": "Atlanta , Georgia Hacklanta",
+    "url": "https://hacklanta.dev/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hacklanta",
+    "start_date": "OCT 09 - 11",
+    "location": "Atlanta, Georgia, US In-Person",
+    "source": "MLH"
+  },
+  {
     "title": "Atlanta, , GA HackHers @GSU",
     "url": "https://hackhers.club/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackHers+%40GSU",
     "start_date": "SEP 18 - 19",
@@ -974,6 +981,13 @@
     "source": "MLH"
   },
   {
+    "title": "Charlottesville , VA Girls Hoo",
+    "url": "https://www.girlshoohack.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Girls+Hoo+Hack+2026",
+    "start_date": "Hack 20",
+    "location": "26 OCT 17 - 18 Charlottesville, VA, US In-Person DIVERSITY HARDWARE",
+    "source": "MLH"
+  },
+  {
     "title": "Cincinnati , Ohio RevolutionUC",
     "url": "https://www.revolutionuc.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=RevolutionUC",
     "start_date": "FEB 27 - 28",
@@ -1012,14 +1026,14 @@
     "title": "Flushing , New York Hack Knight",
     "url": "https://hackknight.org/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Hack+Knight",
     "start_date": "OCT 09 - 11",
-    "location": "Flushing, New York, US In-Person DIVERSITY",
+    "location": "Flushing, New York, US In-Person",
     "source": "MLH"
   },
   {
     "title": "Gainesville , Florida Gator Quant Hacks",
     "url": "https://www.gqhacks.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Gator+Quant+Hacks",
     "start_date": "OCT 02 - 04",
-    "location": "Gainesville, Florida, US In-Person DIVERSITY",
+    "location": "Gainesville, Florida, US In-Person",
     "source": "MLH"
   },
   {
@@ -1041,6 +1055,13 @@
     "url": "https://events.mlh.io/events/14416-global-hack-week-data?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=Global+Hack+Week%3A+Data",
     "start_date": "SEP 11 - 17",
     "location": "Everywhere, Worldwide Digital",
+    "source": "MLH"
+  },
+  {
+    "title": "Green Bay , WI HackGB",
+    "url": "https://hackgb.com/?utm_source=mlh&utm_medium=referral&utm_campaign=events&utm_content=HackGB",
+    "start_date": "OCT 17 - 18",
+    "location": "Green Bay, WI, US In-Person",
     "source": "MLH"
   },
   {
